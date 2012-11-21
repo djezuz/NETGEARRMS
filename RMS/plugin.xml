@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         point="org.eclipse.ui.perspectives">
+      <perspective
+            name="RCP Perspective"
+            class="AdminLoader.Perspective"
+            id="RMS.perspective">
+      </perspective>
+   </extension>
+   <extension
+         point="org.eclipse.ui.editors">
+      <editor
+            class="Editor.DashBoard"
+            default="false"
+            id="RMS.WebJieMian"
+            name="Web界面1">
+      </editor>
+      <editor
+            class="Editor.DashBoard_history"
+            default="false"
+            id="RMS.editor2"
+            name="Web界面2">
+      </editor>
+      <editor
+            class="Editor.DashBoard_alters"
+            default="false"
+            id="RMS.editor3"
+            name="Web界面3">
+      </editor>
+   </extension>
+   <extension
+         point="org.eclipse.rap.ui.entrypoint">
+      <entrypoint
+            class="AdminLoader.Entrypoint"
+            id="rms.entrypoint"
+            parameter="rms">
+      </entrypoint>
+   </extension>
+   <extension
+         point="org.eclipse.rap.ui.branding">
+      <branding
+            defaultEntrypointId="AdminLoader.Entrypoint"
+            id="rms"
+            servletName="rms"
+            title="ReadyNAS Monitoring System">
+      </branding>
+   </extension>
+
+</plugin>
