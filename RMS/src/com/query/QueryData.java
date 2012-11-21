@@ -28,6 +28,7 @@ public class QueryData {
 			pst = conn.prepareStatement(sql);
 			//pst.setInt(0, id);
 			rs=pst.executeQuery();
+			if(rs!=null){
 			while(rs.next()){
 				Router router=new Router();
 				System.out.println(rs.getString("serial"));
@@ -38,6 +39,7 @@ public class QueryData {
 				router.setClearedBy(rs.getString("clearedBy"));
 				
 				li.add(router);
+			}
 			}
 		}catch (SQLException e) {
 			e.printStackTrace();
@@ -64,6 +66,7 @@ public class QueryData {
 			pst = conn.prepareStatement(sql);
 			//pst.setInt(0, id);
 			rs=pst.executeQuery();
+			if(rs!=null){
 			while(rs.next()){
 				Router router=new Router();
 				System.out.println(rs.getString("serial"));
@@ -74,6 +77,7 @@ public class QueryData {
 				router.setClearedBy(rs.getString("clearedBy"));
 				
 				li.add(router);
+			}
 			}
 		}catch (SQLException e) {
 			e.printStackTrace();
@@ -89,13 +93,15 @@ public class QueryData {
 		PreparedStatement pst = null;
 		ResultSet rs = null;
 		String  sql="SELECT time from router WHERE id=(SELECT MAX(id) from router)";
-		String time=null;
+		String time="";
 		try {
 			pst = conn.prepareStatement(sql);
 			rs=pst.executeQuery();
+			if(rs!=null){
 			while(rs.next()){
 				time=rs.getString("time");
 			
+			}
 			}
 		}catch (SQLException e) {
 			e.printStackTrace();
@@ -116,6 +122,7 @@ public class QueryData {
 			try {
 				pst = conn.prepareStatement(sql);
 				rs=pst.executeQuery();
+				if(rs!=null){
 				while(rs.next()){
 					Router router=new Router();
 		            router.setSerial(rs.getString("serial"));	
@@ -124,6 +131,7 @@ public class QueryData {
 					router.setClearedBy(rs.getString("clearedBy"));
 					
 					li.add(router);
+				}
 				}
 			}catch (SQLException e) {
 				e.printStackTrace();
@@ -144,6 +152,7 @@ public class QueryData {
 					try {
 						pst = conn.prepareStatement(sql);
 						rs=pst.executeQuery();
+						if(rs!=null){
 						while(rs.next()){
 							Router router=new Router();
 				            router.setSerial(rs.getString("serial"));	
@@ -152,6 +161,7 @@ public class QueryData {
 							router.setClearedBy(rs.getString("clearedBy"));
 							
 							li.add(router);
+						}
 						}
 					}catch (SQLException e) {
 						e.printStackTrace();
@@ -172,6 +182,7 @@ public class QueryData {
 					try {
 						pst = conn.prepareStatement(sql);
 						rs=pst.executeQuery();
+						if(rs!=null){
 						while(rs.next()){
 							Router router=new Router();
 				            router.setSerial(rs.getString("serial"));	
@@ -181,6 +192,7 @@ public class QueryData {
 							router.setClearedBy(rs.getString("clearedBy"));
 							
 							li.add(router);
+						}
 						}
 					}catch (SQLException e) {
 						e.printStackTrace();
@@ -192,6 +204,33 @@ public class QueryData {
 					
 				}
 	
+        //大于一个小时的数据--错过的心跳数据
+				public  String  queryMoreOne(){
+					Connection conn = DBConnection.getConnection();
+					PreparedStatement pst = null;
+					ResultSet rs = null;
+					String  sql="select time FROM router WHERE date_sub(SYSDATE(),INTERVAL 1 Hour)>STR_TO_DATE(time,'%a %b %d %H:%i:%s HKT %Y') and id=(SELECT max(id) FROM router r order by id)";
+					String time="";
+					try {
+						pst = conn.prepareStatement(sql);
+						rs=pst.executeQuery();
+						if(rs!=null){
+							while(rs.next()){
+								time=rs.getString("time");
+							
+							}
+						}
+					}catch (SQLException e) {
+						e.printStackTrace();
+					} finally{
+						DBConnection.free(rs, null, pst, conn);
+					}		
+				
+					return  time;
+					
+				}
+					
+				
 	public static void main(String[] arg0){
 		query("all");
 	}

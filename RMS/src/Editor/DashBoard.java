@@ -159,18 +159,18 @@ public class DashBoard extends EditorPart {
 			
 			tblclmnNewColumn = new TableColumn(table, SWT.NONE);
 			tblclmnNewColumn.setText("Serial");
-			tblclmnNewColumn.setWidth(105);
+			tblclmnNewColumn.setWidth(184);
 			
 			tblclmnNewColumn_1 = new TableColumn(table, SWT.NONE);
-			tblclmnNewColumn_1.setWidth(125);
+			tblclmnNewColumn_1.setWidth(229);
 			tblclmnNewColumn_1.setText("Level");
 			
 			tblclmnNewColumn_2 = new TableColumn(table, SWT.NONE);
-			tblclmnNewColumn_2.setWidth(300);
+			tblclmnNewColumn_2.setWidth(356);
 			tblclmnNewColumn_2.setText("Message");
 			
 			tblclmnNewColumn_3 = new TableColumn(table, SWT.NONE);
-			tblclmnNewColumn_3.setWidth(268);
+			tblclmnNewColumn_3.setWidth(305);
 			tblclmnNewColumn_3.setText("Date/Time");
 			
 			tblclmnNewColumn_4 = new TableColumn(table, SWT.NONE);
@@ -202,7 +202,7 @@ public class DashBoard extends EditorPart {
 			table_1.setLinesVisible(true);
 			
 			tblclmnDatetime = new TableColumn(table_1, SWT.CENTER);
-			tblclmnDatetime.setWidth(223);
+			tblclmnDatetime.setWidth(293);
 			tblclmnDatetime.setText("Date/Time");
 			
 			table_2 = new Table(composite_3, SWT.BORDER | SWT.FULL_SELECTION);
@@ -211,8 +211,9 @@ public class DashBoard extends EditorPart {
 			table_2.setLinesVisible(true);
 			
 			tblclmnNewColumn_5 = new TableColumn(table_2, SWT.CENTER);
-			tblclmnNewColumn_5.setWidth(236);
+			tblclmnNewColumn_5.setWidth(431);
 			tblclmnNewColumn_5.setText("Last Successful  Heartbeat");
+			Table1();
 			Table2();
 			fillTable();
 		}
@@ -230,6 +231,14 @@ public class DashBoard extends EditorPart {
 			QueryData qd = new QueryData();
 		   String time=qd.queryLast();
 				TableItem ti = new TableItem(table_2,SWT.NONE);
+				ti.setText(time);
+		
+		}
+		public void Table1(){
+			table_1.removeAll();
+			QueryData qd = new QueryData();
+		   String time=qd.queryMoreOne();
+				TableItem ti = new TableItem(table_1,SWT.NONE);
 				ti.setText(time);
 		
 		}
