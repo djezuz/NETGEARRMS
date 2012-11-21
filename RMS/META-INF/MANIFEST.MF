@@ -8,5 +8,5 @@ Require-Bundle: org.eclipse.rap.ui,
  org.eclipse.core.runtime
 Bundle-ActivationPolicy: lazy
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6
-Bundle-ClassPath: META-INF/mysql-connector-java-5.0.4-bin.jar,
- .
+Bundle-ClassPath: .,
+ META-INF/lib/mysql-connector-java-5.0.4-bin.jar
