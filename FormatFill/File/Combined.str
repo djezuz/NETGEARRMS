@@ -1,0 +1,2466 @@
+ACCESS_DISABLED,0::::Disabled
+ACCESS_DISABLED_LIMITED::::Disabled with exceptions
+ACCESS_READONLY,readonly,4,5::::Read-only
+ACCESS_READONLY_LIMITED::::Read-only with exceptions
+ACCESS_RULES::::Access Rules
+ACCESS_SAME_AS_FIRST::::Share access same as first share.
+ACCESS_WRITEABLE,writeable,6,7::::Read/write
+ACCESS_WRITEABLE_LIMITED::::Read/write with exceptions
+ACCOUNT,tab_account::::Accounts
+ACCOUNT_ACTIVATED::::Share access activated on
+ACCOUNT_ACTIVATED_MESG1::::Congratulations!  You have been given access to network storage space on
+ACCOUNT_ACTIVATED_MESG2::::Your login and initial password are set to the following:
+ACCOUNT_ACTIVATED_MESG2_NO_PASSWORD::::Your login is set to the following:
+ACCOUNT_ACTIVATED_MESG3::::You can use the same http address to access shares using your web browser.  To access the shares under Windows, in the Explorer Address bar, type
+ACCOUNT_ACTIVATED_MESG4::::To access the shares under Windows, in the Explorer Address bar, type
+ACCOUNT_PASSWORD_CHANGE_INSTR::::You can change your password at
+ACCOUNT_RENAMED::::User account name changed
+ACCOUNT_RENAMED_MESG::::This is to inform you that your user account name was changed.
+ACCOUNT_USERS_NOT_FOUND::::User accounts not found.
+ACCOUNT_GROUPS_NOT_FOUND::::Group accounts not found.
+ACTIVE::::Active
+ADD::::Add
+ADDGROUPS::::Add group(s)
+ADDGROUP_MESG::::Enter new group
+ADDING_DATA_REDUNDANCY::::Adding data redundancy to volume
+ADDITIONAL::::Additional
+ADDON_IMAGE_INCOMPATIBLE::::The add-on image is incompatible.
+ADDON_IMAGE_VALID::::The add-on image is valid.  Click <B> Install add-on </B> if you wish to install the image now.
+ADDSHARE,tab_share_add::::Add Shares
+ADDSHARE_MESG::::Enter new share name
+ADDUSER,tab_adduser::::Add User
+ADDUSERS::::Add user(s)
+ADDUSER_MESG::::Enter new user(s)
+ADD_CONTACT::::Add Contact
+ADD_NEW_ROUTE::::Add new route
+ADD_VOLUME,tab_add_volume::::Add Volume
+ADHOC::::Ad-Hoc - this device is on a peer-to-peer network
+ADMIN_PASSWORD::::Admin Password
+ADVANCED::::Advanced Control
+BUTTON_ADVANCED::::Switch to Advanced Control
+ADVANCED_CIFS_OPTIONS::::Advanced CIFS Options
+ADVANCED_CONTROL::::Advanced Control
+ADVANCED_OPTIONS,tab_adv::::Advanced Options
+ADVANCED_PERM_DISABLED::::Disabled
+ADVANCED_PERM_READONLY::::Read-only
+ADVANCED_PERM_READWRITE::::Read/write
+ADVANCED_SHARE_OPTIONS::::Share Options
+ALERT,tab_alert::::Alerts
+ALERT_CONTACT_SAVED::::Alert contact(s) saved.
+ALERT_MESG::::If you receive this message, the email alert notification is working properly.
+ALERT_SETTINGS_SAVED::::Alert settings saved.
+ALERT_TESTING::::Alert Testing
+ALL,tab_all::::All
+ALL_CONTENT_TYPES::::All
+ALLOCATED::::allocated
+ATALKD_ADVERTISE_AFP_MESG::::AFP service now advertised over AppleTalk.
+ATALKD_UNADVERTISE_AFP_MESG::::AFP service no longer advertised over AppleTalk.
+AUTHENTICATION::::Authentication
+AUTOMATIC_VOLUME_EXPANSION::::Automatic Volume Expansion
+AUTOMATIC_VOLUME_EXPANSION_DISABLED_INPLACE1::::Volume expansion process has been skipped because the Automatic Volume Expansion option in the RAID Settings tab in FrontView is disabled.  Please enable it and reboot to proceed with the expansion.
+AUTOMATIC_VOLUME_EXPANSION_DISABLED_INPLACE2::::A prior volume expansion process has been postponed because the Automatic Volume Expansion option in the RAID Settings tab in FrontView is disabled.  Please enable it and reboot to proceed with the expansion.
+AUTOMATIC_VOLUME_EXPANSION_DISABLED_NEW_DISKS1::::New expandable disk(s) have been detected.  If you wish to proceed with the expansion, please enable the Automatic Volume Expansion option in the RAID Settings tab in FrontView.
+AUTOMATIC_VOLUME_EXPANSION_DISABLED_NEW_DISKS2::::Volume expansion to expandable disks have been postponed because the Automatic Volume Expansion option in the RAID Settings tab in FrontView is disabled.  Please enable it and reboot to proceed with the expansion.
+AUTOMATIC_VOLUME_EXPANSION_INFO::::If you have recently added one or more disks, you must reboot this device to start the automatic volume expansion process.
+VOLUME_DETECT_ISCSI_SUPPORT::::This volume cannot be deleted until all iSCSI LUN(s) on this volume has been deactivated or deleted.
+AUTONEGOTIATION::::Auto-negotiation
+B::::Bytes
+BACKUP_ADD_BACKUP::::Backup:Add Backup
+BACKUP_EDIT_BACKUP::::Backup:Edit Backup
+BACKUP_BUTTON_JOB_FINISHED::::Backup button jobs finished.
+BACKUP_BUTTON_DEFAULT_LOGS_CLEAR::::Clear default backup button job logs
+BACKUP_BUTTON_DEFAULT_LOGS_VIEW::::View default backup button job logs
+BACKUP_CANCEL_BACKGROUNDED::::The backup job will be cancelled in the background.  You will be notified when the cancellation process has been completed.
+BUTTON_CANCEL_CONSISTENCY::::  Cancel Check
+BUTTON_CANCEL_SCRUBBING::::Cancel Scrubbing
+BUTTON_EXPAND_VOLUME::::Expand Volume
+BACKUP_COMPLETED_SUBJECT_1::::Backup job
+BACKUP_COMPLETED_SUBJECT_2::::completed.
+BACKUP_INFO_DESTINATION::::Destination
+BACKUP_INFO_JOB,JOB::::Job
+BACKUP_INFO_PROTOCOL::::Protocol
+BACKUP_INFO_SOURCE::::Source
+BACKUP_ISCSI_LUN::::LUN
+BACKUP_JOBS,tab_backup_jobs::::Backup Listing
+BACKUP_JOB_BUTTON::::button
+BACKUP_JOB_CANCELLED::::Backup cancelled.
+BACKUP_JOB_FAILED::::Backup failed.
+BACKUP_JOB_FINISHED::::Backup finished.
+BACKUP_JOB_PLACED_IN_QUEUE::::The backup job has been placed in the backup queue.  You will be notified when the job starts and when it is completed.
+BACKUP_JOB_QUEUED::::Backup started.
+BACKUP_JOB_QUEUED_UNTIL::::Queued until:
+BACKUP_LOGS_CLEAR::::Clear logs
+BACKUP_LOGS_VIEW::::View logs
+BACKUP_LOG_CLEARED::::Backup log cleared.
+BACKUP_LOG_EMAIL_INSTR::::Please find below the logs for this backup job.  If you do not wish to receive a backup log email after a backup job runs, go to the Backup page in dashboard, edit the job, and select \"errors only\" or \"status and errors\" option.
+BACKUP_OPTION_SEND_LOGS_TO_ALERT_EMAIL::::Send backup log to the alert email address when a backup completes.,
+BACKUP_REASON_FOR_FAILURE::::Reason for failure:
+BACKUP_STATUS_CANCELLED::::Cancelled
+BACKUP_STATUS_CANCELLING::::Cancelling...
+BACKUP_STATUS_COMPLETED::::Completed
+BACKUP_STATUS_FAILED::::Failed
+BACKUP_STATUS_IN_PROGRESS::::In Progress
+BACKUP_STATUS_IN_QUEUE::::In Queue
+BACKUP_STATUS_READY::::Ready
+BACKUP_STATUS_STARTING::::Starting...
+BACKUP_TIME_MACHINE::::Time Machine
+BAD_PACKET::::Bad packets
+BATTERY::::Battery
+BATTERY_CHARGE::::Battery charge
+BATTERY_RUNTIME::::Runtime
+BATTERY_VOLTAGE::::Voltage
+BETWEEN_LOWER::::between
+BETWEEN_UPPER::::Between
+BLINKING_DISK::::Blinking disk
+BLINKING_DISK_LCD::::Blinking disk lcd
+BONJOUR::::Bonjour
+BONJOUR_ADVERTISE_AFP_MESG::::AFP service now advertised over Bonjour.
+BONJOUR_ADVERTISE_FRONTVIEW_MESG::::FrontView now advertised over Bonjour.
+BONJOUR_ADVERTISE_PRINTER::::Advertise printers over Bonjour
+BONJOUR_ADVERTISE_PRINTER_MESG::::Printers will be advertised when reconnected or when the ReadyNAS is rebooted.
+BONJOUR_UNADVERTISE_AFP_MESG::::AFP service no longer advertised over Bonjour.
+BONJOUR_UNADVERTISE_FRONTVIEW_MESG::::FrontView no longer advertised over Bonjour.
+BONJOUR_UNADVERTISE_PRINTER_MESG::::Printers no longer advertised over Bonjour.
+BUTTON_ACTIVATE::::Activate
+BUTTON_ADD_LUN::::+LUN
+BUTTON_ADD_ROUTE::::Add new route
+BUTTON_ADD_TO_VOLUME::::Add to Volume
+BUTTON_ADD_SSH_KEY::::Add Key
+BUTTON_APPLY::::Apply
+BUTTON_BROWSE::::Browse
+BUTTON_BACK::::<< Back
+BUTTON_CANCEL,BUTTON_CANCEL_TWO::::Cancel
+BUTTON_CANCEL_VOLUME_ADD::::Abort volume add
+BUTTON_CHANGE_MYPASSWORD::::Change Password
+BUTTON_CHECK_FOR_UPDATE::::Check for Update
+BUTTON_CLEAR_LOGS::::Clear logs
+BUTTON_CLOSE::::Close
+BUTTON_CONFIG_BACKUP_BACKUP::::Download configuration archive
+BUTTON_CONFIG_LAUNCH::::Manage ReadyNAS Vault
+BUTTON_CREATE_IQN_ADD_ROW::::Add
+BUTTON_CREATE_IQN_DELETE::::Remove
+BUTTON_DEACTIVATE::::Deactivate
+BUTTON_DELETE::::Delete
+BUTTON_DELETE_PRINT_JOB::::Delete Print Job
+BUTTON_DELETE_VOLUME::::Delete volume
+BUTTON_ERASE::::Erase
+BUTTON_GENERATE_NEW_KEY::::Generate new key
+BUTTON_GO::::   Go
+BUTTON_HOME::::Home
+BUTTON_HOTSPARE::::Make hot spare
+BUTTON_INSTALL_ADDON::::Install
+BUTTON_IMPORT_USERS::::Import Users
+BUTTON_IMPORT_GROUPS::::Import Groups
+BUTTON_IMPORT_DOMAIN_LIST::::Import Domain ID Map
+BUTTON_ISCSI_RENAME::::Rename
+BUTTON_ISNS_SAVE::::Save
+BUTTON_LATER::::Later
+BUTTON_LOCATE,LOCATE::::Locate
+BUTTON_LOGOUT,LABEL_VAULT_LOGOUT::::Logout
+BUTTON_MANAGE_SSH_KEYS::::Manage SSH Keys
+BUTTON_MODIFYLUN_APPLY,BUTTON_ADDLUN_APPLY::::Apply
+BUTTON_MODIFYLUN_CANCEL,BUTTON_ADDLUN_CANCEL::::Cancel
+BUTTON_MODIFYLUN_DELETE::::Delete
+BUTTON_MODIFYLUN_EXPAND::::Expand
+BUTTON_CHANGE_TO_MD_RAID::::Change to Flex-Raid.
+BUTTON_NEXT::::Next >>
+BUTTON_PASSWORD_RESET_AND_EMAIL::::Reset password and email
+BUTTON_PROMO_BACK::::<< Back
+BUTTON_PROMO_NEXT::::Next >>
+BUTTON_REBOOT_LATER::::Reboot Later.
+BUTTON_REBOOT_NOW::::Reboot Now.
+BUTTON_REGISTER_PRODUCT::::Register Product
+BUTTON_REMOVE,BUTTON_REMOVE_0,BUTTON_REMOVE_1,BUTTON_REMOVE_2,BUTTON_REMOVE_3,BUTTON_REMOVE_4,REMOVE::::Remove
+BUTTON_RESET_ERROR_COUNTS::::Reset error counts
+BUTTON_RESTORE_CONFIG::::Restore
+BUTTON_RESYNC_VOLUME::::Resync volume
+BUTTON_SELECT_ALL_DAYS::::Select All Days
+BUTTON_SELECT_PAGE::::Show
+BUTTON_SEND_GROUP_LIST::::Send group list
+BUTTON_SEND_TEST_MESSAGE::::Send Test Message
+BUTTON_SEND_USER_LIST::::Send user list
+BUTTON_SETUP::::Setup
+BUTTON_SMART_INFO_PLUS::::SMART+
+BUTTON_SNAPSHOT_RESIZE_CANCEL::::Cancel resize
+BUTTON_SHOW_SHARE_LIST::::Display Share List
+BUTTON_UPNPAV_ADD_ROW::::Add new folder
+BUTTON_UPNPAV_FOLDER_DELETE::::Remove
+BUTTON_UPNPAV_RESCAN,BUTTON_RESCAN_MEDIA_FILES::::Rescan media files
+BUTTON_UPNPAV_SCAN_IN_PROGRESS::::Scan in progress...
+BUTTON_UPNPAV_UPDATE,BUTTON_UPDATE_MEDIA_FILES::::Update media files
+BUTTON_SET_FAN_RPM::::Set Fan RPM
+BUTTON_MODIFY_APPLY,BUTTON_EXPAND_APPLY,BUTTON_DELETE_APPLY::::Apply
+BUTTON_MODIFY_IQN_ADD_ROW::::Add
+BUTTON_MODIFY_IQN_DELETE::::Remove
+BUTTON_CREATE_CANCEL,BUTTON_EXPAND_CANCEL,BUTTON_MODIFY_CANCEL,BUTTON_DELETE_CANCEL::::Cancel
+BUTTON_EXPAND::::Expand
+BUTTON_MODIFY,BUTTON_MODIFY_LUN::::Modify
+BUTTON_CREATE::::Create
+BUTTON_ISCSI_CREATE::::Create iSCSI Target
+BYTES::::bytes
+CACHE::::Cache
+CANCEL::::Cancel
+CANCELLATION_MESSAGE::::The backup job was cancelled.
+CANCELLED::::cancelled
+CANCELLING::::cancelling
+CAPACITY::::Capacity
+CHANNEL::::Channel
+CHANNEL_NOT_PRESENT::::Channel %CHANNEL_NUM%: not present.
+CHAN_CH::::Ch
+CHAN_DISK::::Disk
+CHECK_FOR_UPDATE_MESG::::Click <b> Check for Update </b> to check if a remote update image is available.
+CHECK_FS::::Check Filesystem
+CHECK_ISCSI_EXIST::::Volume deletion has been blocked because an iSCSI target exists on the volume.  Please delete the iSCSI target first before attempting to delete the volume.
+CHOWN_SHARE_CONTENTS::::The user and group ownership of the contents of the shares will be changed to the share user and group.  If you would like to cancel the ownership change procedure, please click Cancel and the security mode will be changed without modifying file and directory ownership.
+CIFS-AB::::Remote, Windows (Archive Bit)
+CIFS_AB_REQUIRES_WRITEABLE_SOURCE::::The source share for an archive bit backup must be writeable over the network.  Otherwise, the backup will fail when it attempts to clear the archive bit from archived files.  Please verify that the source share is properly configured before running this backup job.
+CIFS_TIMESTAMP::::Remote, Windows/NAS (Timestamp)
+CLEAR,BUTTON_CLEAR,LABEL_CLEAR::::Clear
+CLICK_APPLY_TO_CHANGE_SECURITY::::Click Apply to proceed with changing the security mode.
+CLICK_FOR_ADVANCED_OPTIONS::::click for Share Options
+CLICK_NEXT::::To get started, click <b> Next </b> .
+CLICK_TO_LOCATE::::click to blink disk LED
+CLICK_TO_VIEW::::Click to view
+CLICK_TO_VIEW_LOG::::Click to view log.
+CLOSE::::Close
+COLLISIONS::::Collisions
+COMPLETE::::complete
+COMPLETED::::COMPLETED
+CONFIG_BACKUP_RESTORED::::ReadyNAS configuration restored.  Please reboot this system for the changes to take effect.
+CONFIG_BACKUP_RESTORE_FAILED::::Invalid configuration backup archive.
+CONFIRM_SET_ACCESS_CONTROL::::Please set access control if the LUN will be accessed by more than one host.
+CONFIRM_ACTIVE_ISCSI_SESSIONS_PROCEED_WITH_SHUTDOWN::::There are active iSCSI sessions that will be disconnected if the ReadyNAS is rebooted or powered off.  To prevent potential data loss, disconnect the iSCSI initiator gracefully first.  Do you want to proceed with rebooting or powering off the ReadyNAS?
+CONFIRM_CANCEL_BACKUP_JOB::::Are you sure you want to cancel this backup job?
+CONFIRM_CANCEL_CONSISTENCY_CHECK::::Are you sure you want to cancel the on-line filesystem consistency check?
+CONFIRM_CANCEL_DISK_SCRUB::::Are you sure you want to cancel the disk scrubbing?
+CONFIRM_CHANGE_PASSWORD::::You will have to re-login after the password has been changed.  Some browsers may need to be refreshed before continuing.
+CONFIRM_CREATE_ISCSI_TARGET::::Are you sure you want to create this iSCSI Target?
+CONFIRM_DELETE::::Deleting the selected share(s) will destroy all data the share(s). Are you sure you want to delete the share(s)?
+CONFIRM_DELETE_BACKUP_JOB::::Are you sure you want to delete this backup job?
+CONFIRM_DELETE_GROUP::::Are you sure you want to delete the selected group(s)?
+CONFIRM_DELETE_LUN::::Deletion of the iSCSI LUN device will wipe out all the data residing on it. If you are sure you want to do this, click OK to proceed.
+CONFIRM_DELETE_IQN_ENTRIES::::Are you sure you want to delete the IQN(s)?
+CONFIRM_DELETE_PRINT_JOB::::Are you sure you want to delete the selected print job(s)?
+CONFIRM_DELETE_SNAPSHOT::::Deleting this snapshot will remove all snapshot shares. Are you sure you want to delete this snapshot?
+CONFIRM_DELETE_USER::::Are you sure you want to delete the selected user(s)?
+CONFIRM_DELETE_UPNP_FOLDERS::::Are you sure you want to remove the selected folder(s) from the ReadyDLNA scan list?
+CONFIRM_DELETE_VOLUME::::To proceed, type DELETE VOLUME
+CONFIRM_FACTORY_MODE::::Factory mode will wipe out all data and configuration. To proceed, please type FACTORY
+CONFIRM_FILE_SYSTEM_CHECK::::Do you want to perform a filesystem check ?
+CONFIRM_GENERATE_NEW_KEY::::You may need to remove previously cached SSL key in your browser settings to accept the new key.  Do you want to continue?
+CONFIRM_KEEP_ADDON_DATA::::Would you like to preserve the configuration and data for the add-on?  Click OK to preserve or Cancel to remove.
+CONFIRM_REMOVE_ADDON::::Are you sure you want to delete this add-on?
+CONFIRM_REMOVE_BEFORE_BACKUP::::This option will remove all files in the destination path before a backup is performed.  Please verify that the backup destination path is correct before continuing.
+CONFIRM_RESYNC_VOLUME::::Resyncing a RAID volume will take several hours but the process will be done in the background.  During resync, you will encounter a slowdown in file transfer speed.  Would you like to continue?
+CONFIRM_SAVE_CHANGES::::You have not applied your changes.  Do you want to continue?
+CONFIRM_SECURITY_MODE_CHANGE_FROM_DOMAIN::::Changing security mode can cause unrecoverable permission problems with files created under the previous security setting.  When changing from the Domain mode, any user or group restrictions for your shares will no longer apply because these accounts reside only in the domain.  Before switching security mode, you should temporarily set permissions on your files and folders to Full Control for Everyone from your Windows client, and reset the permissions to the desired settings after the ReadyNAS device security mode has been changed.  You can do this by right-clicking on your files and folders, and selecting the Security tab.
+CONFIRM_SECURITY_MODE_CHANGE_FROM_SHARE::::Changing security mode can cause unexpected permission problems with files created under the previous security setting.  When changing from the Share mode, you may not be able to access existing files until the admin or Administrator user manually change the file access control list (ACL) settings to allow access to the desired user and group accounts.
+CONFIRM_SECURITY_MODE_CHANGE_FROM_USER::::Changing security mode can cause unrecoverable permission problems with files created under the previous security setting.  When changing from the User mode, any user or group restrictions for your shares will no longer apply because these accounts are not available in the other security options.  Before switching security mode, set permissions on your files and folders to Full Control for Everyone from your Windows client.  You can do this by right-clicking on your files and folders, and selecting the Security tab.  If you are switching to the Domain mode, you can reset the permissions to the desired domain user or group after the new security mode has taken effect.
+CONFIRM_SERVICE_DISABLE::::Disabling this service will disable access to all shares currently available over this service.\n\nAre you sure you want to disable this service?
+CONFIRM_SNAPSHOT_RESIZE::::Snapshot resizing is a lengthy process and involves volume resizing.  Please backup your important data before continuing.  Are you sure you want to continue with this process?
+CONFIRM_SNAPSHOT_RESIZE_CANCEL::::Are you sure you want to cancel the snapshot resizing?
+CONFIRM_UPLOAD::::The update process will take a few minutes, during which time the system and the browser should not be interrupted. When finished, email notification will be sent to the alert contact list.  Would you like to proceed with the update?
+CONFIRM_USB_FORMAT::::The format option will wipe out all of the data on this partition.  Do you want to continue?
+CONFIRM_USB_FORMAT_DISK::::The format option will wipe out all of the partitions and data on this disk.  After the format, the disk will contain one partition occupying all of the disk space.  Do you want to continue?
+CONFIRM_USB_MOUNT::::Do you want mount this device?
+CONFIRM_USB_UNMOUNT::::Disconnecting this device will unmount all partition shares on this USB device.  Do you want to continue?
+CONFIRM_VERIFY::::The upload and verification process will take several minutes. Do not interrupt the browser during this time. You will be asked for final confirmation before the actual update is performed.
+CONNECTED_TO::::connected to
+CONTACTS,tab_contacts::::Contacts
+COPYRIGHT::::&#169; 2004, Infrant Technologies, Inc.
+COUNT::::Count
+CREATION_PENDING::::Pending...
+CURRENT::::current
+CURRENT_CPU_SPEED::::Current CPU speed
+CURRENT_STATE::::Current state
+DAAPD_RESCAN_STARTED::::iTunes media file rescan started.
+DAILY::::Daily
+DATA_ENCRYPTION::::Data encryption
+DATE::::Date
+DEAD::::Dead
+DEFAULT_GATEWAY::::Default Gateway:
+DEFAULT_GROUP_DISK_QUOTA_FOR_VOLUME::::Default group disk quota for volume
+DEFAULT_USER_DISK_QUOTA_FOR_VOLUME::::Default user disk quota for volume
+DEGRADED::::Degraded.  A disk failure will render this volume non-redundant.
+DEGRADED_RAID10::::Degraded.  The volume may survive another disk failure if the next failure does not occur with the drive marked <img src="/images/Icons/warning.png"/>.
+DEGRADED_SINGLE_DISK_X2::::Unprotected.  A disk failure will render this volume dead.
+DELETE_SNAPSHOT::::Delete snapshot
+DELETE_VOLUME_LITERAL::::DELETE VOLUME
+DESIRED_CPU_SPEED::::Desired CPU speed
+DEVICE_DISCONNECTED::::Device disconnected.
+DEVICE_MOUNTED::::Device mounted.
+DEVICE_STATUS::::Status
+DHCP,tab_dhcp::::DHCP
+DIAGNOSTICS,tab_diagnostics::::Diagnostics
+DISABLED,disabled::::Disabled
+DISABLED_BECAUSE_OF_HIDDEN_SHARE::::These options have been disabled because this protocol does not support hidden shares.  To re-enable these options, please go to the Windows [CIFS] tab and disable share hiding.
+DISCONNECT::::Disconnect
+DISCOVERY,tab_discovery::::Discovery Services
+DISK::::Disk
+DISKS::::disks
+DISK_ON_CHANNEL::::Disk on channel
+DISK_OVERTEMP_BODY::::The reported temperature of a disk in the ReadyNAS has exceeded maximum recommended temperature.  Shutting down the system to prevent hardware damage.
+DISK_OVERTEMP_SUB::::Disk temperature limit exceeded
+DISK_OVERTEMP_UPTIME_1::::The system has been up for
+DISK_OVERTEMP_UPTIME_2::::minutes.
+DISK_OVERTEMP_WARN_BODY::::The reported temperature of a disk in the ReadyNAS has exceeded maximum recommended temperature.  Automatic shutdown on high disk temperature is currently enabled, but the system will not be shutdown until it has been running for over 30 minutes.  This will give you time to perform any critical actions before the shutdown takes place.
+DISK_SPINDOWN_DISABLED::::Automatic disk spin-down disabled.
+DISK_SPINDOWN_ENABLED::::Automatic disk spin-down enabled.
+DISK_SPINDOWN_REQUIRES_REBOOT::::Automatic disk spin-down will occur after rebooting this device.
+DNS_ASSIGNMENT::::DNS assignment
+DNS_NAMESERVER::::Domain name server
+DOMAIN_AUTHENTICATION_HEADING::::Domain Authentication
+DOMAIN_LIST_FILE_UPLOAD_SUCCESSFUL_MSG::::Domain Id map file upload successful.
+DOMAIN_LIST_FILE_UPLOAD_FAILED_MSG::::Domain Id map file upload successful.
+DOMAIN_CHANGED_TO::::The specified domain name appears to be incorrect.  Automatically changed to
+DONE::::done
+DO_NOT_SAVE_ENCRYPTED_PAGES::::If duplicate popup messages are seen, please go to browser Tools -> Internet options -> Advanced menu tab and select the "Do not save encrypted pages to disk" checkbox.
+DOWN::::down
+DOWNLOADING_UPDATE_IMAGE::::Downloading update image
+ECOUNTER_HOT_ADD::::Hot-add events
+ECOUNTER_HOT_REMOVE::::Hot-remove events
+ECOUNTER_LP_STAT::::Lp stat events
+ECOUNTER_POWER_GLITCH::::Power glitches
+ECOUNTER_RESET::::Hard disk resets
+ECOUNTER_RETRY::::Retries
+ECOUNTER_XRAIDECC::::Repaired sectors
+ENABLE::::Enable
+ENABLE_AUTOMATIC_VOLUME_EXPANSION::::Enable automatic volume expansion
+ENABLE_NIS::::Enable NIS
+ENCRYPTION_KEY::::Encryption key (hex)
+ENTER_HOME_SHARE_USER::::Enter home share user
+ENTER_SSL_CERT::::Upload optional SSL certificate
+ERROR::::Error
+ERROR_ADDON_SERVICES_CONFLICT::::Installation of this add-on conflicts with an existing service.  Aborting installation.
+ERROR_ADS_TIME_SYNC::::WARNING!\n\nUnsuccessful synchronizing clock with ADS server. Please note that this can cause problems with user authentication by ADS.  This is not fatal, but you should ensure that your ReadyNAS system clock and the ADS server clock are set to the same time.
+ERROR_ADDON_DIRECTORY_CLEANUP_FAILED::::The temporary directory that is to created for installation purposes already exist and cannot be cleaned up prior to installation.
+ERROR_ADDON_DOWNLOAD_FAILED::::The add-on download has failed.
+ERROR_ADDON_DOWNLOAD_PROTOCOL_NOT_SUPPORTED::::The add-on download protocol is not supported.
+ERROR_ADDON_EXTRACTION_FAILURE::::Extraction of the add-on has failed.
+ERROR_ADDON_NOT_PERMITTED::::Installation of the add-on is not allowed due to a name conflict.
+ERROR_ADDON_PAYLOAD_EMPTY::::Add-on binary file is empty.
+ERROR_ADDONS_NO_INTERNET_CONNECTIVITY::::The available add-ons cannot be displayed as there is no internet connectivity.
+ERROR_ADDONS_SERVER_UNREACHABLE::::The available add-ons cannot be displayed as the server cannot be contacted.
+ERROR_ADDONS_DIRECTORY_CREATION_FAILED::::Failed to create temporary add-on directory since it may already exist. Please remove /tmp/addons/%ADDON% manually.
+ERROR_ANSWER_EMPTY::::Please specify an answer for password recovery.
+ERROR_BACKUP_ABORTED_SUBJECT::::Backup aborted for Backup Job
+ERROR_BACKUP_ALREADY_RUNNING::::A previous run of backup job ${job} is still running.  Check if that backup job has stalled, or you may need to adjust the backup interval to account for the amount of data you are backing up.
+ERROR_BACKUP_CANNOT_ACQUIRE_LOCK::::Could not acquire resources lock.
+ERROR_BACKUP_COPY::::Error encountered copying data from source path
+ERROR_BACKUP_COPY_SUBJECT::::Backup error during copy for Backup Job
+ERROR_BACKUP_DEST_ACCESS::::Unable to access destination path
+ERROR_BACKUP_DEST_ACCESS_SUBJECT::::Backup destination access error for Backup Job
+ERROR_BACKUP_DEST_SHARE_NOT_PRESENT::::The backup destination is a non-existent local share.
+ERROR_BACKUP_DEST_SYMBOLIC_LINK::::Backup destination path cannot be a symbolic link.
+ERROR_BACKUP_HOME_SHARE_DOES_NOT_EXIST::::The specified home share does not exist.
+ERROR_BACKUP_REASON_CREDENTIALS::::due to invalid login credentials
+ERROR_BACKUP_REASON_FILE_READ::::due to error during file read
+ERROR_BACKUP_REASON_INVALID_FILENAME_CHAR::::due to unsupported filename characters in the destination filesystem
+ERROR_BACKUP_REASON_LACK_OF_SPACE::::due to lack of disk space
+ERROR_BACKUP_REASON_LOCK::::Could not acquire the necessary resources lock to allow the backup job to start.  Check if a backup job has stalled, or you may need to adjust a backup interval to account for the amount of data you are backing up.
+ERROR_BACKUP_REASON_MISSING_SSH_KEY::::due to missing or improperly installed SSH key
+ERROR_BACKUP_REASON_PASSWORD_EXPIRED::::due to expired login credentials
+ERROR_BACKUP_REASON_PERMISSION::::due to permission denial on one or more files
+ERROR_BACKUP_REASON_UNKNOWN::::due to unknown reason.  Please see log
+ERROR_BACKUP_REMOTE_ACCESS::::Unable to access remote path
+ERROR_BACKUP_REMOTE_ACCESS_SUBJECT::::Remote access error for Backup Job
+ERROR_BACKUP_REMOTE_COPY::::Error encountered copying data from remote source path
+ERROR_BACKUP_ROOT_WRITE::::Correcting root write error on backup.  Please contact support.
+ERROR_BACKUP_ROOT_WRITE_SUBJECT::::Root write error encountered.
+ERROR_BACKUP_SOURCE_ACCESS::::Unable to access source path
+ERROR_BACKUP_SOURCE_DEST_SAME::::The backup source and destination cannot be exactly the same.
+ERROR_BACKUP_SOURCE_SHARE_NOT_PRESENT::::The backup source does not exist.
+ERROR_BACKUP_SOURCE_SUBJECT::::Backup source access error for Backup Job
+ERROR_BACKUP_SOURCE_SYMBOLIC_LINK::::Backup source path cannot be a symbolic link.
+ERROR_BACKUP_TIME_MACHINE_NOT_PRESENT::::The backup source is a non-existent Time Machine archive.
+ERROR_BACKUP_USB_DEST_ACCESS::::The destination for this backup job is a USB device that is currently not connected.  If it is attached, please try removing and reattaching the device.
+ERROR_BACKUP_USB_SOURCE_ACCESS::::The source for this backup job is a USB device that is currently not connected.  If it is attached, please try removing and reattaching the device.
+ERROR_BACKUP_VOLUME_TO_SAME_VOLUME::::The volume cannot be backed up to a share on the same volume.
+ERROR_BACKUP_HOST_IS_NULL::::Host and path are null, please add the host and path.
+ERROR_BAD_CHECKSUM::::Invalid checksum detected in the update file.  Update aborted.
+ERROR_BAD_EMAIL_FORMAT::::Bad email format.
+ERROR_BURNING::::Error encountered while burning update image to CF.
+ERROR_CANNOT_EXPAND::::Unsupported Expansion
+ERROR_CANNOT_EXPAND_EXT2::::Please deselect the 'Disable journaling' option in the FrontView System/Performance tab to continue with the online volume expansion.  Note that you will need to reboot the ReadyNAS to enable journaling.
+ERROR_CANNOT_EXPAND_SNAPSHOT::::Found free space to expand the volume onto, but expansion cannot occur with an active snapshot.  Please disable the snapshot at your convenience, then either reboot the system or reinsert the drive to begin expansion.
+ERROR_CANNOT_EXPAND_INVALID_SNAPSHOT::::Found free space to expand the volume onto, but expansion cannot occur with an inactive snapshot.  Please remove the snapshot at your convenience, then either reboot the system or reinsert the drive to begin expansion.
+ERROR_CHANGE_PASSWORD::::Unsuccessful changing password.
+ERROR_CHANGE_UTF8_NAMES::::Error changing allow/disallow Unicode for user, group and share names.
+ERROR_CLOCK_SET::::Error setting clock.
+ERROR_CONNECT::::Error connecting to
+ERROR_CONNECTING_TO_REMOTE_SERVER::::Error connecting to remote server.
+ERROR_CONNECT_WLAN::::Cannot connect wireless network.
+ERROR_CONTACT_INFO_NOT_FOUND::::Contact information not found.
+ERROR_COULD_NOT_CREATE_TARGET::::ERROR: Could not create target.  Make sure that the volume does not contain a target or share of the same name.
+ERROR_COULD_NOT_MOVE_TARGET::::ERROR: Could not move target.  Make sure that the destination volume does not contain a target or share of the same name.
+ERROR_COULD_NOT_RENAME_TARGET::::ERROR: Could not rename target.  Make sure that the new target name does not match that of an existing target or share on the particular volume.
+ERROR_DELETE_FAILED::::ERROR: Could not delete target.
+ERROR_DAY_MISSING::::Snapshot days not specified.
+ERROR_DHCP_RANGE_CONFLICT::::Conflicting IP address / DHCP address pool information.  The IP address of this device cannot be set within the DHCP address pool.
+ERROR_DELETE_SHARE::::Error deleting share.
+ERROR_DISABLED_JUMBO_FRAMES::::Error disabling jumbo frames mode.
+ERROR_DISK_TOO_SMALL::::Disk attempted to add is too small.  Please check the size of disk
+ERROR_DISK_SMART_TEST_FAILED::::Newly added disk has failed SMART test.  Please check disk
+ERROR_DOMAIN_CLOCK_SKEW::::System clock difference between this device and Active Directory is too great.  Please enable the Time Service on your ADS server, or manually sync the system clocks and try again.
+ERROR_DOMAIN_DNS_UPDATE::::WARNING!\n\nUnsuccessful updating this system's DNS record on ADS server. Please check your DNS settings, or manually add this device to your network's DNS records.
+ERROR_DOMAIN_FIND_SERVER::::Could not find valid domain controller at the specified address.
+ERROR_DOMAIN_IDMAP_IMPORT_FAILED::::Failed to import domain account ID map.  Please check the source file.
+ERROR_DOMAIN_JOIN::::Unsuccessful joining domain
+ERROR_DOMAIN_LDAP_SIGNING::::Please try turning off the LDAP signing requirement on the domain controller.
+ERROR_DOMAIN_RESOLVE_LDAP::::Could not resolve LDAP server for this domain.\nPlease check your DNS settings.
+ERROR_DOMAIN_RESOLVE_SERVER::::Could not resolve domain controller for this domain.
+ERROR_DOMAIN_CREATE_IN_OU::::Could not create the machine account object in the specified OU.
+ERROR_DOMAIN_WRONG_REALM::::Could not find domain controller for the specified realm at that address.\n Realm found was:
+ERROR_DOMAIN_UNREACHABLE_OU::::Could not find the specified Organizational Unit.
+ERROR_DUPLICATE_UID::::The requested new UID is already in use.
+ERROR_EMAILADDR::::Invalid email address.
+ERROR_EMAIL_EMPTY::::Please specify an email address for password recovery.
+ERROR_EMAIL_REQUIRED::::Contact email address is required.
+ERROR_EMPTY_NAME::::You must enter a share name.
+ERROR_ENABLED_JUMBO_FRAMES::::Error enabling jumbo frames mode.
+ERROR_EXISTING_DISKS_PARTITION_TOO_BIG::::Detected existing disk(s) using partition size beyond what is currently supported.  Current limitation on expansion will not support this.  If you wish to utilize the new disk, you will need to backup your data, set the ReadyNAS to factory default, and restore the data back to the ReadyNAS.
+ERROR_FTP_PORT_CHANGE::::Error applying new FTP port.
+ERROR_FTP_PORT_IN_USE::::Invalid FTP port -- port is already in use.
+ERROR_GROUPADD::::Unsuccessful adding group
+ERROR_GROUPDEL::::Unsuccessful deleting group
+ERROR_GROUPDEL_PRIMARY_GROUP::::Unsuccessful deleting group because it is the primary group for at least one user
+ERROR_GROUPMOD::::Unsuccessful modifying group
+ERROR_GROUP_EXISTS::::Group name already exists.
+ERROR_GROUP_INVALID_USERS_FOUND::::The following non-existent users have been removed from the group membership lists
+ERROR_HOT_ADD::::Error adding disk to RAID for volume
+ERROR_HOT_REMOVE::::Error removing disk from RAID for volume
+ERROR_HTTP_IMAGE_DOWNLOAD::::There was an error in getting the image from the server.
+ERROR_HTTPS_PORT_CHANGE::::Error applying new HTTPS port.
+ERROR_HTTPS_PORT_IN_USE::::Invalid HTTPS port -- port is already in use.
+ERROR_IMPORT_GROUPS_FAILED::::Import of groups from file failed.
+ERROR_IMPORT_USERS_FAILED::::Import of users from file has failed.
+ERROR_INVALID_LICENSE_KEY::::Invalid license key.
+ERROR_SYSTEM_INTERNAL::::Internal Communication error - restart browser and Frontview
+ERROR_SYSTEM_VPD_CONFIG::::System Error: Please contact customer support
+ERROR_TIVO_ACCESS_KEY_FORMAT::::The TiVo Media Access Key you entered is not in the proper format.
+ERROR_INVALID_AGE_LIMIT::::The age limit must be a positive integer value.
+ERROR_INVALID_CAPACITY::::Invalid LUN size
+ERROR_INVALID_COMMUNITY::::Invalid community name.
+ERROR_INVALID_CONFIGURATION::::Invalid configuration.
+ERROR_INVALID_CSV_FILE::::Invalid file format.
+ERROR_INVALID_DAY_OF_MONTH::::Invalid day.  Please select again.
+ERROR_INVALID_DAY_OF_WEEK::::Please select which days of the week you would like this backup job to run.
+ERROR_INVALID_DC::::Invalid domain controller IP specified.
+ERROR_INVALID_DEST_PATH::::The destination path is invalid.  Please check the path and make any necessary corrections.
+ERROR_INVALID_DNS::::Invalid DNS
+ERROR_INVALID_DOMAIN_NAME::::Invalid domain name.
+ERROR_INVALID_EMAIL::::Invalid email format.
+ERROR_INVALID_ENCRYPTED_PASSWORD::::Invalid encrypted password.
+ERROR_INVALID_ENCRYPTION_KEY::::Invalid encryption key.
+ERROR_INVALID_ENTRY::::Please enter a valid volume size.
+ERROR_INVALID_FLASH_PATH::::Invalid path specified in USB Flash Device Option.
+ERROR_INVALID_FTP_MASQUERADE_ADDRESS::::Invalid FTP masquerade address.  Please enter a valid hostname or IP address.
+ERROR_INVALID_FTP_PORT::::Invalid FTP port.  The port number must be an integer between 1 and 65535.
+ERROR_INVALID_GATEWAY::::Invalid gateway address.
+ERROR_INVALID_GID::::Group id should be greater than 1000. Invalid group id
+ERROR_INVALID_GROUP::::Invalid group.
+ERROR_INVALID_GROUP_CHARS::::Invalid group name.  Only characters a-z, A-Z, 0-9, underscore (_), dash (-), period (.), ampersand (&) or at sign (@) can be used.  Also there are reserved names that cannot be used.
+ERROR_INVALID_GROUP_NUM_CHARS::::Invalid group name. The number of characters should be less than 16 characters.
+ERROR_INVALID_GROUP_SHARE_EXISTS::::Invalid group name.  A group name cannot be the same as an existing share.
+ERROR_INVALID_HIDDEN_CODE::::Invalid hidden remote control code.  Please enter a 3-digit number.
+ERROR_INVALID_HIDDEN_PATH::::Invalid hidden path.
+ERROR_INVALID_HOME_SHARE_DEST::::The home share destination entered does not exist.
+ERROR_INVALID_HOME_SHARE_SOURCE::::The home share source entered does not exist.
+ERROR_INVALID_HOST::::Invalid ip address, hostname, or host expression.\n\nHostname is limited to 24 characters consisting of alpha-numeric, period (.), and dash (-).  It must start with an alpha character and cannot end with a period or dash.  Example of valid hostnames: bigspace.mynas.com, bigspace, big-space.  Make sure hostnames are valid DNS names.\n\nHost expression can be of the form 10.0.1., 10.0.1.0/255.255.255.0, and 10.0.1.0/24.
+ERROR_INVALID_HOSTNAME::::Invalid hostname.
+ERROR_INVALID_HOST_EXPRESSION::::Invalid host expression.\n\nHost expression can be of the form 10.0.1., 10.0.1.0/255.255.255.0, or 10.0.1.0/24.
+ERROR_INVALID_HOST_EXPRESSION_NETMASK_ONLY::::Invalid host expression.\n\nHost expression can be of the form 10.0.1.0, 10.0.1.0/255.255.255.0, or 10.0.1.0/24.  A comma-separated list of hosts is not allowed.
+ERROR_INVALID_HTTP_CONFIG::::The webserver configuration is invalid.  Please check your new settings and make any necessary corrections.
+ERROR_INVALID_HTTPS_PORT::::Invalid HTTPS port number.  Please enter a port number between 1 and 65535.
+ERROR_INVALID_HTTPS_SSL_KEY_HOST::::Invalid HTTPS SSL key host.  Please enter a valid hostname or an IP address.
+ERROR_INVALID_IP::::Invalid IP address.
+ERROR_INVALID_IP_RANGE::::Invalid IP address range.
+ERROR_INVALID_LANMAN_PASSWORD::::Invalid LANMAN password format.
+ERROR_INVALID_LEASE::::Invalid lease time.
+ERROR_INVALID_LOGIN::::Invalid login.
+ERROR_INVALID_IPv6_PREFIX::::Invalid IPv6 prefix.
+ERROR_INVALID_IPv6_PREFIXLEN::::Invalid length of IPv6 prefix.
+ERROR_INVALID_IPv6_GATEWAY::::Invalid IPv6 gateway address.
+ERROR_INVALID_IPv6_LEASE_TIME::::Invalid IPv6 lease time.
+ERROR_INVALID_MAC::::Invalid MAC address.
+ERROR_INVALID_MAX_PLAY_LIST_ITEMS::::Invalid value for Maximum playlist items.
+ERROR_INVALID_MB_LIMIT::::The size limit must be a positive integer value.
+ERROR_INVALID_MTU::::Invalid MTU value.  Please enter a number between 1400 and 1500.
+ERROR_INVALID_IPv6_MTU::::Invalid MTU value.  Please enter a number between 1280 and 1500.
+ERROR_INVALID_NAME::::Invalid name or illegal characters detected in name.  Name is limited to alpha-numeric, underscore (_), dash (-), dollar sign ($), and period characters, and must start with an alpha character.  Name cannot contain '-snap' and name cannot be used by an existing user account.
+ERROR_INVALID_NETMASK::::Invalid netmask.
+ERROR_INVALID_NETWORK::::Invalid network.
+ERROR_INVALID_NETWORK_NAME::::Invalid network name.
+ERROR_INVALID_NIS_DOMAIN::::Invalid NIS domain name.
+ERROR_INVALID_NIS_SERVER::::Invalid NIS server name.
+ERROR_INVALID_NTPSERVER::::Invalid NTP server
+ERROR_INVALID_NT_PASSWORD::::Invalid NT password format.
+ERROR_INVALID_PAGE_LINE_MAX::::Invalid value for Maximum lines displayed per page.
+ERROR_INVALID_PASSIVE_ENDING_PORT::::The value entered for the end of the passive port range is invalid.  The port number must be an integer between 1024 and 65535, and must be larger than the starting port.
+ERROR_INVALID_PASSIVE_STARTING_PORT::::The value entered for the start of the passive port range is invalid.  The port number must be an integer between 1024 and 65535, and must be smaller than the ending port.
+ERROR_INVALID_PASSWORD::::Invalid or missing password.
+ERROR_INVALID_PASSWORD_MUST_CONTAIN_EIGHT::::Invalid password.  Share password cannot contain single quotes and must be less than 8 characters.
+ERROR_INVALID_PASSWORD_TRY_AGAIN::::Invalid password.  Please try again.
+ERROR_INVALID_PATH::::Invalid path.
+ERROR_INVALID_PORT::::Invalid port.  The port number must be an integer between 0 and 65535.
+ERROR_INVALID_QUOTA::::Invalid quota value.
+ERROR_INVALID_REALM::::Invalid realm.
+ERROR_INVALID_SECURITY_MODE::::WARNING: Invalid security mode detected.  This can be caused by attempting to migrate disks over from another ReadyNAS using an unsupported security mode.  Proceeding with Frontview changes can put this device in an unpredictable state.
+ERROR_INVALID_SHARE::::Invalid share name specified.
+ERROR_INVALID_SHARE_GROUP::::The group entered as the share group is not valid.
+ERROR_INVALID_SHARE_USER::::The user entered as the share owner is not valid.
+ERROR_INVALID_SOURCE_PATH::::The source path is invalid.  Please check the path and make any necessary corrections.
+ERROR_INVALID_SYSLOG_SERVER::::Invalid host entry for syslog server.
+ERROR_INVALID_SYSLOG_SERVER_SORRY::::Sorry, bad syslog server.
+ERROR_INVALID_TARGETNAME::::Invalid target name. Only lower-case characters a-z, 0-9, dash (-), period (.) and colon (:) can be used.
+ERROR_INVALID_TIMESHIFT::::The timestamp change entered is invalid.  Please enter an integer value.
+ERROR_INVALID_UID::::Invalid user id
+ERROR_INVALID_USER::::Invalid user.
+ERROR_INVALID_USERNAME::::Invalid username.  Please try again.
+ERROR_INVALID_USER_CHARS::::Invalid user name.  Only characters a-z, A-Z, 0-9, underscore (_), dash (-), period (.), ampersand (&) or at sign (@) can be used.  Also there are reserved names that cannot be used.
+ERROR_INVALID_USER_SHARE_EXISTS::::Invalid user name.  A user name cannot be the same as an existing share.
+ERROR_INVALID_VLAN_TAG::::Invalid VLAN tag.  The tag must be a whole number between 1 and 65535.
+ERROR_INVALID_VLAN_ID::::Invalid VLAN ID.  The id must be a whole number between 1 and 65535.
+ERROR_INVALID_WINS::::Invalid WINS Server address.
+ERROR_INVALID_WORKGROUP_DOMAIN::::Empty or invalid workgroup/domain name.
+ERROR_ISCSI_COULD_NOT_CREATE_TARGET::::ERROR: Could not create target.  Make sure that the volume does not contain a target or share of the same name.
+ERROR_ISCSI_COULD_NOT_CREATE_LUN::::ERROR: Could not create LUN.  Make sure that the volume does not contain a target or share of the same name.
+ERROR_ISCSI_COULD_NOT_EXPAND_LUN::::ERROR: Could not expand target.  Make sure that the volume is not full.
+ERROR_ISCSI_COULD_NOT_MOVE_TARGET::::ERROR: Could not move target.  Make sure that the destination volume does not contain a target or share of the same name.
+ERROR_ISCSI_COULD_NOT_RENAME_TARGET::::ERROR: Could not rename target.  Make sure that the new target name is not the name of an existing target or share.
+ERROR_ISCSI_DELETE_FAILED::::ERROR: Could not delete LUN.
+ERROR_ISCSI_MODIFY_FAILED::::Target modification failed.
+ERROR_ISCSI_TARGET_DELETE_FAILED::::Target deletion failed.
+ERROR_LOCAL_DEST_NOT_AVAILABLE::::The destination for the backup job is currently not available.  Please reconfigure the backup job and try again.
+ERROR_LOCAL_DEST_NOT_AVAILABLE_SUBJECT::::Destination not available for Backup job
+ERROR_LOCAL_FILE_UPLOAD_FAILED::::Local file upload failed
+ERROR_LOGIN_VAULT::::Failed to login into ReadyNAS Vault.
+ERROR_LOGOUT_VAULT::::Failed to logout ReadyNAS Vault.
+ERROR_LVM_LV::::Error creating logical volume.
+ERROR_LVM_PV::::Error creating physical volume.
+ERROR_LVM_VG::::Error creating volume group.
+ERROR_LVREMOVE::::Error removing logical volume.
+ERROR_MASQUERADE_ADDRESS_LOOKUP::::Could not find the masquerade address in DNS.  Please check that the value has a DNS entry or enter a numeric IP address.
+ERROR_MKFS::::Error making filesystem.
+ERROR_MOUNT_FTP::::Unsuccessful mounting ftp share
+ERROR_MTU_CHANGE::::Error changing MTU.
+ERROR_NETWORK_EXISTS::::Network route already exists.
+ERROR_NIS_START::::Error starting NIS service
+ERROR_NIS_STOP::::Error stopping NIS service
+ERROR_NONEXIST_FOLDER::::Folder does not exist in the specified share.
+ERROR_NO_DEST_PATH::::Please enter a destination path.
+ERROR_NO_DEST_SELECTED::::Please select a backup destination.
+ERROR_NO_FILE_SELECTED::::Please select a file first.
+ERROR_NO_KEY_FILE_SELECTED::::Please select the key file.
+ERROR_NO_FS::::No filesystem available for share.
+ERROR_NO_HOME_SHARE_USER_DEST::::No home share user destination selected.
+ERROR_NO_HOME_SHARE_USER_SOURCE::::No home share user source selected.
+ERROR_NO_NTP_SERVER::::No NTP server specified.
+ERROR_NO_SOURCE_PATH::::Please enter a source path.
+ERROR_NO_SOURCE_SELECTED::::Please select a backup source.
+ERROR_NO_VOLUME_EXISTS::::No volume exists.  Some menu options are available only if a valid volume exists.
+ERROR_NOT_FOUND::::Firmware image not found.
+ERROR_NTP_CONNECT::::Unable to connect to specified NTP server(s).
+ERROR_OBTAINING_DHCP_ADDRESS::::Unsuccessful obtaining DHCPv4 address.
+ERROR_OBTAINING_DHCPV6_ADDRESS::::Unsuccessful obtaining DHCPv6 address.
+ERROR_PARTITION_ADD::::Error creating RAID disk partition for volume
+ERROR_PASSWORD_EMPTY::::Empty password not accepted.
+ERROR_PASSWORD_MISMATCH::::Password entries do not match.
+ERROR_PATH_USED_BY_ISCSI_TARGET::::The share could not be created because an iSCSI target with the same name exists on this volume.
+ERROR_PREMIUM_FIRMWARE_LICENCE_KEY_ERROR::::The licence key entered is incorrect.Please re-enter.
+ERROR_QUESTION_EMPTY::::Please specify a question for password recovery.
+ERROR_QUOTACHECK::::Error checking quota.
+ERROR_RAID_CREATE::::Error creating RAID.
+ERROR_RAID_DELETE::::Error deleting RAID.
+ERROR_RAID_START::::Error starting RAID.
+ERROR_READYNAS_VAULT_LOGIN_USER_NOT_FOUND::::Login failed.  Account not found.
+ERROR_READYNAS_VAULT_LOGIN_INCORRECT_PASSWORD::::Login failed.  Incorrect password.
+ERROR_READYNAS_VAULT_LOGIN_CONNECTION_FAILURE::::Login failed due to connection error to service.  Please check your network connection.
+ERROR_READYNAS_VAULT_LOGIN_FAILURE::::Login failed.
+ERROR_READYNAS_VAULT_REGISTRATION_USER_ALREADY_EXISTS::::Registration failed.  Account already exists.
+ERROR_READYNAS_VAULT_REGISTRATION_FAILED::::Registration failed.
+ERROR_READYNAS_VAULT_REGISTRATION_CONNECTION_FAILURE::::Registration failed due to connection error to service.  Please check your network connection.
+ERROR_READYNAS_VAULT_CONNECTION_FAILURE::::Connection error to service.  Please check your network connection.
+ERROR_READYNAS_VAULT_REGISTRATION_FAILURE::::Registration failed.
+ERROR_RECYCLE_BIN_DAYS_CANNOT_BE_NEGATIVE::::The age limit for removing files from the recycle bin must be a positive number.
+ERROR_RECYCLE_BIN_SIZE_CANNOT_BE_NEGATIVE::::The size of the recycle bin must be a positive number.
+ERROR_REGISTERED_VAULT::::Failed to register ReadyNAS Vault.
+ERROR_REMOVE_ADDON::::Error removing add-on package.
+ERROR_REMOVE_SERVICE::::Error removing service.
+ERROR_RESET_PASSWORD::::Unsuccessful resetting the admin password.  One or more of your input is incorrect.
+ERROR_ROOT_HOT_ADD::::Error adding spare disk to OS volume.
+ERROR_RSYNC_ROOT::::The ReadyNAS OS volume cannot be used as an rsync source or destination.
+ERROR_SERIAL_NUMBER_NOT_REGISTERED::::Error serial number not registered.
+ERROR_SERVICE_START_AFP::::Error starting AFP service.
+ERROR_SERVICE_START_CIFS::::Error starting CIFS service.
+ERROR_SERVICE_START_DAAPD::::Error starting Firefly (iTunes) Media Server.
+ERROR_SERVICE_START_FTP::::Error starting FTP service.
+ERROR_SERVICE_START_NFS::::Error starting NFS service.
+ERROR_SERVICE_START_RSYNC::::Error starting Rsync service.  You may not have any share enabled for Rsync access.
+ERROR_SERVICE_START_SLIMSERVER::::Error starting SqueezeCenter service.
+ERROR_SERVICE_START_SNMPD::::Could not start SNMP service.
+ERROR_SERVICE_START_TWONKYVISION::::Error starting TwonkyMedia service.
+ERROR_SERVICE_START_VAULT::::Error starting ReadyNAS Vault.
+ERROR_SERVICE_START_UPNP::::Error starting UPnP service.
+ERROR_SERVICE_START_UPNPAV::::Error starting ReadyDLNA service.
+ERROR_SERVICE_START_WIZD::::Error starting Home Media Streaming Server service.
+ERROR_SERVICE_STOP_AFP::::Error stopping AFP service.
+ERROR_SERVICE_STOP_CIFS::::Error stopping CIFS service.
+ERROR_SERVICE_STOP_DAAPD::::Error stopping Firefly Media Server.
+ERROR_SERVICE_STOP_FTP::::Error stopping FTP service.
+ERROR_SERVICE_STOP_NFS::::Error stopping NFS service.
+ERROR_SERVICE_STOP_RSYNC::::Error stopping Rsync service.
+ERROR_SERVICE_STOP_SLIMSERVER::::Error stopping SqueezeCenter service.
+ERROR_SERVICE_STOP_SNMPD::::Could not stop SNMP service.
+ERROR_SERVICE_STOP_TWONKYVISION::::Error stopping TwonkyMedia service.
+ERROR_SERVICE_STOP_VAULT::::Error stopping ReadyNAS Vault.
+ERROR_SERVICE_STOP_UPNP::::Error stopping UPnP service.
+ERROR_SERVICE_STOP_UPNPAV::::Error stopping ReadyDLNA service.
+ERROR_SERVICE_STOP_WIZD::::Error stopping Home Media Streaming Server service.
+ERROR_SETTING_HOSTNAME::::Unsuccessful setting hostname.
+ERROR_SETTING_IP_ADDRESS::::Unsuccessful applying new network settings.
+ERROR_SET_FAULTY::::Error setting RAID disk to fault mode for volume
+ERROR_SHARE_ADD_FAILURE::::The share could not be created.  Please verify that there is free space available in the volume or try another share name.
+ERROR_SHARES_NOT_FOUND::::The paths for the shares listed below could not be found.  Typically, this occurs when the ReadyNAS is unable to access the data volume.
+ERROR_SHARES_NOT_FOUND_SUBJECT::::Missing shares detected
+ERROR_SHARE_EXISTS::::Share already exists.
+ERROR_SHARE_NOT_FOUND::::Invalid share.
+ERROR_SID_FAILED::::Failed setting SID.
+ERROR_SIZE_OUT_OF_RANGE::::Desired volume size out of range.
+ERROR_SIZE_TOO_SMALL::::Desired size too small.
+ERROR_SMBD_START::::Unsuccessful starting CIFS service.
+ERROR_SNAPSHOT_RESIZE_FAILED_2TB::::Snapshot resize failed because the operation would increase the data volume beyond 2TB.
+ERROR_SNAPSHOT_RESIZE_FAILED_LVEXTEND::::Snapshot resize failed during the logical volume expansion phase.
+ERROR_SNAPSHOT_RESIZE_FAILED_LVREDUCE::::Snapshot resize failed during the logical volume size reduction phase.
+ERROR_SNAPSHOT_RESIZE_FAILED_RESIZE2FS::::Snapshot resize failed during the filesystem expansion phase.
+ERROR_SNAPSHOT_TOO_LARGE::::The snapshot percentage is too large for this volume size.
+ERROR_SOURCE_DEST_SAME::::The backup source and destination cannot be the same.  Please choose a different source or destination.
+ERROR_SSH_KEY_IMPORT_FAILED::::Import of SSH Key failed.
+ERROR_SSL_KEY_GENERATION::::Unsuccessful generating a new SSL key.
+ERROR_STARTING_DHCPD::::Unsuccessful starting DHCP server.
+ERROR_STOPPING_DHCPD::::Unsuccessful stopping DHCP server.
+ERROR_TRAP_DESTINATION::::Invalid trap destination.
+ERROR_TIME_MACHINE_PASSWORD_EMPTY::::The password field is empty.
+ERROR_TIME_MACHINE_CAPACITY_IS_NOT_AN_INTEGER::::The time machine capacity is not a number.
+ERROR_TIME_MACHINE_CAPACITY_CANNOT_BE_NEGATIVE::::The time machine capacity can be a negative number.
+ERROR_TIME_MACHINE_CAPACITY_CANNOT_BE_LARGER_THAN_ALLOWED_VALUE::::The time machine capacity cannot be larger than the allowed value.
+ERROR_UMOUNT::::Error unmounting filesystem.
+ERROR_UNABLE_TO_CANCEL_BACKUP_JOB::::Unsuccessful cancelling backup job.
+ERROR_UNABLE_TO_CONTACT_SMTP_HOST::::Unable to contact SMTP host.  Please check your entry.
+ERROR_UPDATE_FILE_INVALID::::Invalid update image.
+ERROR_UPDATE_FILE_TOO_OLD::::Update image is too old. Please use a version 4.2.16+
+ERROR_UPDATE_FILE_NOT_FOUND::::Update file not found.  Please select the update file again.
+ERROR_UPDATE_FILE_TOO_LARGE::::Update file size is too large for flash.  Update aborted.
+ERROR_UPDATE_FILE_WRONG_ARCHITECTURE::::Update file is not valid for this architecture
+ERROR_UPLOAD::::Error encountered uploading update image.
+ERROR_USB_DEVICE_EXISTS::::USB device name already exists.
+ERROR_BAD_UPS_SERVER::::Could not connect to the specified UPS server.  Please verify that UPS sharing is enabled on that system and try again.
+ERROR_USB_DEVICE_INVALID_NAME::::Invalid name or illegal characters detected in name.  Name is limited to alpha-numeric, underscore (_), dash (-), and period characters, and must start with an alpha character.  Name cannot contain '-snap' and name cannot be used by an existing user account.
+ERROR_USB_FSCK_ERRORS_FIXED_VFAT::::Filesystem check completed.  Some errors were found.  Please connect the USB drive to a Windows PC and run a full filesystem check.
+ERROR_USB_FSCK_ERRORS_INTERNAL::::Filesystem check could not be completed.
+ERROR_USB_FSCK_ERRORS_NOT_FIXED::::Filesystem check completed.  Errors were found, some of which could not be corrected.
+ERROR_USB_MKFS1::::Error making
+ERROR_USB_MKFS2::::filesystem on the USB device.
+ERROR_USERADD::::Unsuccessful adding user
+ERROR_USERDEL::::Unsuccessful deleting user
+ERROR_USERMOD::::Unsuccessful modifying user
+ERROR_USER_EXISTS::::User name already exists.
+ERROR_USER_HOME_RECYCLE_BIN_MAX_DAYS::::Maximum age for Recycle Bin files and folders must be a positive integer.
+ERROR_USER_HOME_RECYCLE_BIN_MAX_SIZE::::Maximum size for the Recycle Bin must be a positive integer.
+ERROR_VALUE_GREATER_THAN_MAX::::The value input is greater than the maximum number of pages available for display  - resetting display page to
+ERROR_VALUE_LESS_THAN_ONE::::The value input is less than 1  - resetting display page to 1
+ERROR_VALUE_NOT_NUMBER::::The value input is not a number - resetting display page to 1
+ERROR_VERSION_NOT_SPECIFIED::::Firmware version not specified.
+ERROR_VGCHANGE::::Error changing volume group state.
+ERROR_VGREMOVE::::Error removing volume group.
+ERROR_VOLUME_EXPAND::::Error encountered during volume expansion
+ERROR_WINBIND_START::::Unsuccessful starting CIFS winbind service.
+ERROR_STARTING_RADVD::::Unsuccessful starting DHCPv6 server.
+ERROR_STOPPING_RADVD::::Unsuccessful stopping DHCPv6 server.
+ETHERNET::::Ethernet
+ETHERNET_0::::Ethernet 1
+ETHERNET_0_DOWN::::Ethernet 1 down
+ETHERNET_0_UP::::Ethernet 1 up
+ETHERNET_1,tab_eth1::::Ethernet 2
+ETHERNET_1_DOWN::::Ethernet 2 down
+ETHERNET_1_UP::::Ethernet 2 up
+ETHERNET_2,tab_eth2::::Ethernet 3
+ETHERNET_2_DOWN::::Ethernet 3 down
+ETHERNET_2_UP::::Ethernet 3 up
+ETHERNET_3,tab_eth3::::Ethernet 4
+ETHERNET_3_DOWN::::Ethernet 4 down
+ETHERNET_3_UP::::Ethernet 4 up
+ETHERNET_4,tab_eth4::::Ethernet 5
+ETHERNET_4_DOWN::::Ethernet 5 down
+ETHERNET_4_UP::::Ethernet 5 up
+ETHERNET_5,tab_eth5::::Ethernet 6
+ETHERNET_5_DOWN::::Ethernet 6 down
+ETHERNET_5_UP::::Ethernet 6 up
+ETHERNET_6,tab_eth6::::Ethernet 7
+ETHERNET_6_DOWN::::Ethernet 7 down
+ETHERNET_6_UP::::Ethernet 7 up
+ETHERNET_7,tab_eth7::::Ethernet 8
+ETHERNET_7_DOWN::::Ethernet 8 down
+ETHERNET_7_UP::::Ethernet 8 up
+ETHERNET_TEAM::::Ethernet 1+2
+EVERY::::Every
+EXAMPLE::::Example
+EXAMPLE_CIFS:::://host/share/path
+EXAMPLE_FTP::::ftp://host/path
+EXAMPLE_HTTP::::http://www.host.com/path
+EXAMPLE_NFS::::host:/path
+EXAMPLE_RSYNC::::host::module/path
+EXPANDABLE_RAID::::Expandable RAID
+EXPANSION_CHANGE_JOURNALING::::Journaling enabled on data volume to proceed with volume expansion.
+EXPANSION_DISK_DETECTED::::Expansion disk detected
+EXPANSION_DISK_INIT::::One or more expansion disks will be initialized and scanned for bad blocks.  You will receive an email when the initialization is complete.  At that time, reboot the ReadyNAS to start the automatic volume expansion.
+EXPANSION_DISK_INIT_ONLINE::::One or more expansion disks will be initialized and scanned for bad blocks.  You will receive an email when the initialization is complete.  Online volume expansion will start automatically at that time.
+EXPANSION_FIRST_STAGE_DONE::::The first stage of the in-place volume expansion is done.  Please reboot the device to complete the volume expansion.
+EXPANSION_POSTPONED::::Volume expansion postponed
+EXPANSION_REQUIRES_REBOOT::::Volume expansion requires reboot
+EXPANSION_UPDATE_SUB::::Volume expansion status
+EXPECTED::::expected
+EXPECTED_RANGE::::expected range
+EXPORT_DOMAIN_ID_MAP::::Export domain ID map
+FACTORY_DEFAULT,tab_factory_default::::Factory Default
+FACTORY_MODE_ABORTED::::Factory mode aborted.
+FACTORY_MODE_ACCEPTED::::The device is being initialized for factory mode.  The process takes approximately 10 minutes, perhaps longer depending on drive capacity.  Use RAIDar to check if the device is back online.
+FAILED::::FAILED
+FALSECARRIER::::False carrier
+FAN::::Fan
+FAN_RPM_OVERRIDE_OPTION::::Fan RPM Override Option
+FAN_RPM_OVERIDE_SUCCESS_MESG::::Fan RPM Overide successful
+FAN_RPM_OVERIDE_ERROR::::Fan RPM Overide failed
+FAN_UNIT::::RPM
+FAULT::::Fault
+FILES_COPIED::::Files copied
+FIRST::::First
+FORCE_CIFS_CASE_SENSITIVITY:::: <b> Force CIFS filename case-sensitivity. </b>  This option provides substantial performance improvement when accessing CIFS shares when many files are being copied; however, before enabling this option, please understand the ramifications.  Windows runs in case-insensitive mode, and one side-effect of enabling this option is that two filenames with different cases (i.e. ABC and abc) will appear as two files but opening one may actually open the wrong one.  Another effect of this option is that you will now need to enter the exact case for search strings for the Find option in Explorer (i.e. find on abc will no longer return file ABC).  Also, some Windows applications that assume case-insensitive operations (i.e. BackupExec) may have problems.  Do not enable this option if you will have clients running Windows NT/95 or earlier accessing the ReadyNAS.
+FORCE_FILESYSTEM_CHECK_QUEUED::::Volume scan will be performed on boot up.
+FORCE_QUOTA_CHECK_QUEUED::::Quota check will be performed on boot up.
+FORMATTING::::Formatting...
+FORMAT_EXT3::::Format EXT3
+FORMAT_FAT32::::Format FAT32
+FOUND_SPACE_WILL_TRY_TO_EXPAND_NEXT_BOOT::::Found space that can be used to expand capacity, expansion process will start during next boot.
+FOUND_SPACE_WILL_TRY_TO_EXPAND_WITHOUT_BOOT::::Found space that can be used to expand capacity,be preparing to do volume expansion. Do not interrupt the system during this time.
+FREE::::free
+FRONTVIEW::::FrontView
+FRONTVIEW_MSVIEW::::MSView
+FRONTVIEW_NASV::::NASView
+FRONTVIEW_SETUP_CONSOLE::::Setup Console
+FSCK_QUEUED::::The filesystem check is being performed in the background.  When the check is complete, an alert message will be sent.
+FS_CHECKING::::Checking filesystem...
+FTP::::Remote: FTP Site
+FTP_MODE::::Authentication mode
+FULL_DUPLEX::::Full-Duplex
+GB::::GB
+GENERATE_NEW_KEY::::Generate new key
+GID::::GID
+GO::::Go
+GROUPADD_SUCCEEDED::::Group successfully added
+GROUPDEL_SUCCEEDED::::Group successfully deleted
+GROUPMOD_SUCCEEDED::::Group successfully modified
+GROUPNAME_MISSING_MESG::::You must enter a group name.
+GROUPS::::GROUPS
+HAS_FAILED::::has failed
+HALF_DUPLEX::::Half-Duplex
+HEADER_ACTION,HEADER_ACTION2::::Action
+HEADER_AFP,HEADER_AFP2::::AFP
+HEADER_BACKUP_BUTTON_ORDER::::Run Order
+HEADER_BACKUP_BUTTON_JOB::::Job
+HEADER_BACKUP_DESTINATION::::Destination
+HEADER_BACKUP_ENABLE::::Enable
+HEADER_BACKUP_JOB::::Job
+HEADER_BACKUP_LOGS::::Logs
+HEADER_BACKUP_SOURCE_DEST::::Source <br> Destination
+HEADER_BACKUP_STATUS::::Status
+HEADER_BACKUP_WHEN::::When
+HEADER_CAPACITY::::Size
+HEADER_CAPACITY_TWO::::Capacity
+HEADER_CATEGORY::::Category
+HEADER_CIFS,HEADER_CIFS2::::CIFS
+HEADER_CREATE_INITIATOR_NAME::::Initiator IQN(s)
+HEADER_MODIFY_INITIATOR_NAME::::Initiator IQN(s)
+HEADER_DATE::::Date
+HEADER_DESCRIPTION,HEADER_DESCRIPTION2::::Description
+HEADER_DEVICE::::Device
+HEADER_DISK_USED::::Used
+HEADER_EMAIL::::Email
+HEADER_ERRORS::::Errors
+HEADER_FILESYSTEM::::FS
+HEADER_FILE_NAME::::File Name
+HEADER_FTP,HEADER_FTP2::::FTP/S
+HEADER_GATEWAY::::Gateway
+HEADER_GID::::GID
+HEADER_GROUP_NAME::::Group Name
+HEADER_GROUP_PRIMARY::::Primary Group
+HEADER_HOME_VOL::::Home
+HEADER_HTTP,HEADER_HTTP2::::HTTP/S
+HEADER_INTERFACE::::Interface
+HEADER_JOB::::Job
+HEADER_MAC_ADDRESS::::MAC Address
+HEADER_MEDIA_CONTENT_UPNPAV::::Content Types
+HEADER_MEDIA_FOLDER_UPNPAV::::Folder
+HEADER_MEDIA_SHARE_UPNPAV::::Share
+HEADER_MESSAGE::::Message
+HEADER_MODIFY_INITIATOR_NAME::::Initiator IQN(s)
+HEADER_NAME::::Name
+HEADER_NETMASK::::Netmask
+HEADER_NETWORK::::Network
+HEADER_NFS,HEADER_NFS2::::NFS
+HEADER_OPTIONAL::::(optional)
+HEADER_PARTITION::::Part.
+HEADER_PASSWORD,HEADER_PASSWORD2::::Password
+HEADER_PRINTER::::Printer
+HEADER_QUOTA_MB::::Quota (MB)
+HEADER_RSYNC,HEADER_RSYNC2::::Rsync
+HEADER_SECONDARY_MEMBERS::::Secondary Members
+HEADER_SEVERITY::::Severity
+HEADER_SHARE_NAME,HEADER_SHARE_NAME2::::Share Name
+HEADER_SHARE_PUBLIC_ACCESS::::Public Access
+HEADER_SIZE::::Size
+HEADER_SPEED::::Speed
+HEADER_STATUS::::Status
+HEADER_TARGETNAME::::Target/LUN
+HEADER_TIME,HEADER_TIME2::::Time
+HEADER_UID::::UID
+HEADER_USER::::User
+HEADER_VOL::::Vol
+HEADING::::Heading
+HEALTH,tab_health::::Health
+HELP,BUTTON_HELP::::Help
+HOME_SHARE::::Home Share
+HOSTNAME::::Hostname
+HOSTS::::HOSTS
+HOT_SPARE_EVENT_DETECTED::::Hot spare event detected
+HOURS_SHORT::::hr
+HR::::hr
+HTTP_REMOTE_WEBSITE::::Remote: Website
+IDLEERROR::::Idle errors
+IMAGE_INFO_NAME::::Name
+IMAGE_INFO_VERSION::::Version
+IMAGE_INFO_DATE::::Date
+IMAGE_INFO_SIZE::::Size
+IMAGE_INFO_DESCRIPTION::::Description
+IMPORT_DOMAIN_ID_MAP::::Import domain ID map
+IMPORT_GROUPS_SUCCESS::::Import of groups from file has succeeded.
+IMPORT_USERS_SUCCESS::::Import of users from file has succeeded.
+IMPORT_SSH_KEY_SUCCESS::::Import of SSH key successful.
+INHERIT_SHARE_PERMISSIONS::::Inherit share permissions for new folders and files
+INIT::::Initializing
+INIT_LONG::::Initializing new disk
+INSTR::::You can create shares easily by entering the share name along with an optional comment, and click <b> Add share </b> .
+INSTR_ACCOUNT_DOMAIN::::The current security mode requires user and group accounts on the domain or active directory for share access.
+INSTR_ENABLE_DIR_FTP_MASK::::When new folders are created over FTP, set folder permission as follows. Group rights are permission for members of the folder owner's group. Everyone refers to all other users not in the folder owner's group.
+INSTR_ENABLE_CREATE_FTP_MASK::::When new files are created over FTP, set file permission as follows. Group rights are permission for  members of the file owner's group. Everyone refers to all other users not in the file owner's group.
+INSTR_ACCOUNT_NO_GROUPS::::User accounts are required to access shares on this device.  It helps to assign distinct group names for groups of users to allow for better control of share access.
+INSTR_ACCOUNT_NO_GROUPS_DOMAIN::::Domain user and group accounts are required to access shares on this device.  Currently, no group accounts exist.  This usually is the case when this device failed to join the domain or the active directory service.
+INSTR_ACCOUNT_NO_USERS::::User accounts are required to access shares on this device.  It helps to assign distinct group names for groups of users to allow for better control of share access.
+INSTR_ACCOUNT_NO_USERS_DOMAIN::::Domain user and group accounts are required to access shares on this device.  Currently, no user accounts exist.  This usually is the case when this device failed to join the domain or the active directory service.
+INSTR_ACCOUNT_SHARE::::The current security mode allows you to make limited changes to share users. Share users will be deleted if their corresponding shares are removed. A quota value of 0 disables disk quota enforcement.
+INSTR_ACCOUNT_USER::::User and group accounts are required for share access if the share is added without public access. You can assign a primary group for each user here and allow the user to belong to other groups in the Group Management page. A quota value of 0 disables disk quota enforcement.
+INSTR_AUTHENTICATION::::Enter the domain name and the domain controller administrative login account and password.  This is needed to join the domain.
+INSTR_AUTHENTICATION_NOT_NEEDED_1::::This device is a member of domain
+INSTR_AUTHENTICATION_NOT_NEEDED_2::::If you prefer to join a different domain, click
+INSTR_BACKUP_BUTTON::::You can program the Backup button on the front of this device to execute one or more backup jobs that you have defined above.  The jobs will be executed in the order that you specify here when the Backup button is pressed.  If no jobs are selected for the button, depressing the button will backup the content of the backup share to the storage device connected to the front USB port.
+INSTR_BACKUP_OPTION::::Select the desired options when backup is performed.  A full backup will copy all data from the backup source.  Incremental backup, where only changed data are copied, occurs between scheduled full backups, unless <b> Every time </b> is selected.
+INSTR_BACKUP_SCHEDULE::::Select when you want the backup performed.
+INSTR_BACKUP_SOURCE::::Specify what you want to backup.  The path you want to backup can be in a share on this device (a USB disk attached to this device will show up as a share) or located remotely.  The backup source and destination cannot both be remote shares.
+INSTR_BACKUP_DESTINATION::::Specify where you want your backup data saved.  As with the backup source, the destination path can be a share on this device or a path on a remote PC or device.
+INSTR_CREATE_SHARE::::You can create shares easily by entering the share name along with an optional comment, and click <b> Add share </b> .
+INSTR_CSV_GROUPADD::::You can upload a CSV (Comma delimited) formatted file to simplify adding a list of groups.  Click Help for format specification and examples.
+INSTR_CSV_GROUP_EXPORT::::You can export the group list on this device into a CSV (Comma delimited) formatted file and have it sent by email.  The file will also be backed up in the admin user home directory.
+INSTR_CSV_GROUP_EXPORT_DOWNLOAD::::You can download the group list on this device into a CSV (Comma delimited) formatted file.  The file will also be backed up in the admin user home directory.
+INSTR_CSV_USER_EXPORT::::You can export the user account list on this device into a CSV (Comma delimited) formatted file and have it sent by email.  The file will also be backed up in the admin user home directory.
+INSTR_CSV_USER_EXPORT_DOWNLOAD::::You can download the user account list on this device into a CSV (Comma delimited) formatted file.  The file will also be backed up in the admin user home directory.
+INSTR_DESTINATION_UMOUNT_USB::::Unmount usb drive after backup.
+INSTR_DHCP::::DHCP, or Dynamic Host Configuration Protocol, service provides a way for individual computers on the IP network to automatically obtain an IP address along with other network parameters to help reduce network administration.
+INSTR_DHCPv6::::Radvd, the Router Advertisement Daemon, is an open-source software product that implements link-local advertisements of IPv6 router addresses and is used by system administrators in stateless autoconfiguration methods of network hosts on Internet Protocol version 6 networks.
+INSTR_DISK_SPINDOWN_OPTION::::You can spin down your disks after a specified period of inactivity.  The disks will spin up automatically as needed.  A UPS is recommended if you enable this option to prevent loss of data in cache due to power failure.
+INSTR_DNS::::DNS, or Domain Name Service, provides a means to translate hostnames to IP addresses.  Enter the DNS IP addresses here.
+INSTR_DNS_DHCP_USED::::DNS, or Domain Name Service, addresses are automatically assigned when DHCP service is used.  This has been automatically set by your DHCP server.
+INSTR_DOMAIN_ID_MAP_EXPORT::::You can export an ID map file for backup purposes, or for use on another ReadyNAS.  This can be very useful for maintaining correct file and folder permissions if you have multiple ReadyNAS systems authenticating in Domain security mode, and you wish to back up one ReadyNAS directly to the other using something like rsync.
+INSTR_DOMAIN_ID_MAP_IMPORT::::You can upload an ID map file that has been exported from this or another ReadyNAS.  This can be very useful for maintaining correct file and folder permissions if you have multiple ReadyNAS systems authenticating in Domain security mode, and you wish to back up one ReadyNAS directly to the other using something like rsync.
+INSTR_ENABLE_AFP_CREATE_MASK::::When new files are created over AFP, set file permission as follows. Group rights are permission for members of the file owner's group. Everyone refers to all other users not in the file owner's group.
+INSTR_ENABLE_AFP_DIR_CREATE_MASK::::When new folders are created over AFP, set file permission as follows. Group rights are permission for members of the file owner's group. Everyone refers to all other users not in the file owner's group.
+INSTR_ENABLE_CREATE_MASK::::When new files are created over CIFS, set file permission as follows.  Group rights are permission for members of the file owner's group.  Everyone refers to all other users not in the file owner's group.
+INSTR_ENABLE_DEST_RSYNC_COMPRESSION::::Enable Compression
+INSTR_ENABLE_DIR_MASK::::When new folders are created over CIFS, set folder permission as follows.  Group rights are permission for members of the folder owner's group.  Everyone refers to all other users not in the folder owner's group.
+INSTR_ENABLE_OPLOCKS::::Opportunistic locking (oplocks) can enhance CIFS performance by allowing files residing on this ReadyNAS to be cached locally on the Windows client, eliminating network latency when files are repeatedly accessed.
+INSTR_ENABLE_RSYNC_FAT_COMPAT::::Enable FAT32 compatibility mode.
+INSTR_ENABLE_RSYNC_OVER_SSH::::Rsync can run over Secure Shell (SSH) to provide encrypted transmission of data over public networks without the need for VPN routers. To do this you will need to forward port 22 on your router to this ReadyNas Ip address and import the clients public SSH key. To manage SSH keys on this ReadyNas, click below.
+INSTR_ENABLE_RSYNC_PASSWORD::::You can set one or more login users and passwords for rsync access to this share.  The user names are specific to rsync and need not be user accounts on the ReadyNAS.
+INSTR_ENABLE_SOURCE_RSYNC_COMPRESSION::::Enable Compression
+INSTR_EXCLUDE_LIST_RSYNC_DEST::::Add files and directories to be excluded as a comma separated list
+INSTR_EXCLUDE_LIST_RSYNC_SOURCE::::Add files and directories to be excluded as a comma separated list
+INSTR_FACTORY_DEFAULT::::Click on Perform Factory Default button below if you wish to reset this device to the factory default state.  This option clears <b> ALL </b> data and configuration on this device, with no recovery option.  Backup any data you wish to save before selecting this option.
+INSTR_FAN_RPM_OVERRIDE_OPTION::::The default fan minimum RPM setting has been selected to provide the best cooling for your disks based on the stock fan shipped with the system.  If you override this minimum, you risk possibly shortening the life of the fan driver circuitry on the system board and voiding your warranty.  This option is provided for the advanced users who are aware of the fan and board specifications.  <b> Use of this option is highly discouraged. </b>
+INSTR_GATEWAY::::The default gateway specifies the IP address of the system/router that network requests out of the current subnet will get routed to.
+INSTR_GATEWAY_DHCP_USED::::The default gateway specifies the IP address of the system/router that network requests out of the current subnet will get routed to.  This has been automatically set by your DHCP server.
+INSTR_HEALTH::::Health
+INSTR_HOSTNAME::::The hostname for this device can be used in place of the IP address when accessing this device over CIFS/SMB.  This name will also be used in various alerts that this device will send out.
+INSTR_IFACE::::Enter the IP address for this network interface.  If your network utilizes a DHCP server to hand out IP addresses, select the DHCP option for your IP assignment method.  Otherwise, enter the IP address, netmask, and gateway values accordingly.
+INSTR_ISCSI::::The iSCSI target service enables you to create one or more iSCSI target volumes on the ReadyNAS. Unlike network file services where you access files in network share folders, the iSCSI target presents itself as a virtual block device and can be treated like a locally attached disk to the client system acting as the iSCSI initiator. Windows for instance could run FAT32 or NTFS on the iSCSI target device, and treat the device as though it was locally attached. Click <a class="pseudo_link"  onclick="spawn_iscsi_info();" target="_blank">here</a>  for more information
+INSTR_MORE_INFO::::More...
+INSTR_MYPASSWORD::::If you wish to change your password, enter new password below and click <b> Change Password </b> .
+INSTR_MYSHARES::::The following shares are accessible using this browser.  Click on the icon to access the share.
+INSTR_MYSHARES_LOADING::::Loading shares directory...
+INSTR_NIS::::UNIX/Linux network environments often utilize NIS (Network Information System) to centralize NFS user and group tables for file access control.  If your network does not need to support NFS, you do not need to enable NIS service.
+INSTR_NO_PRINTER::::No USB printers detected.  You can connect a USB printer to an available USB port on the ReadyNAS to automatically share the printer among Windows and Mac users on your network.
+INSTR_PASSWORD_RECOVERY::::Enter the password recovery email address and answer the question below.  If the input is correct, the admin password will be reset, and the new password will be sent to the admin email address on file.
+INSTR_PASSWORD_RECOVERY_UNAVAILABLE::::Sorry, password recovery information has not been set on this device.  Due to security reasons, password recovery is not available.
+INSTR_POWERON_TIMER::::This device can power itself on and off automatically on a schedule.  Note that if you schedule this device to power off, data transfers will be interrupted and pending backup jobs will not run.  Also note that some devices will not support scheduled power ON, and you will not see this option in the Action list.
+INSTR_PRINTER::::The following USB printers are connected.  The printers appear as print shares to Windows and Mac users.  Alternatively, if you have elected to advertise Printers over Bonjour in Discovery Services, you can use Bonjour to discover and setup the printer(s) over IPP (Internet Printing Protocol).  Queued print jobs will be displayed along with an option to delete the job(s).
+INSTR_PREMIUM_FIRMWARE_DESCRIPTION::::If you would like to upgrade to our premium version please enter your license key below. If you would like to obtain a license key please click <a class="pseudo_link"  onclick="spawn_license_info();" target="_blank">here</a>.
+INSTR_REMOVE_DEST_DELETED_FILES::::Remove deleted files on target.
+INSTR_REMOVE_SOURCE_DELETED_FILES::::Remove deleted files on source.
+INSTR_RSYNC_OVER_SSH::::Remote Rsync over SSH requires adding public SSH key file from the remote system.
+INSTR_SATA_LINK_DISABLE_OPTION:::: You can turn off the <b> connection </b> to your disks after a specified time of inactivity. The connection will be restored when required.
+INSTR_SHARELIST::::Click on the access icon to customize the access control.  Place the mouse cursor over the icon to display the current access level in the status bar.  For instruction on how to access the shares, click Help.
+INSTR_SNAPSHOT_SPACE::::The snapshot space should be set to a value that will fit the amount of changes you will make while a snapshot is active.  Any file addition, changes or deletions will affect the snapshot space usage.  Reduction in the snapshot space will increase your volume.  Changing snapshot space requires a reboot and can take 30 minutes or longer while the volume is being resized.  Note that this process will remove any existing snapshot shares.
+INSTR_SOURCE_UMOUNT_USB::::Unmount usb drive after backup.
+INSTR_TEAMING::::Teaming and Failover support is possible by combining two or more Ethernet interfaces into one. This allows the ReadyNAS to pool the multiple Ethernet bandwidth for use with one IP address, potentially improving performance when the Ethernet interfaces are connected to the same network switch that supports teaming. In addition, if one interface fails, network traffic will automatically failover to the surviving interface(s).
+INSTR_TEAMING_INTERFACES::::Interfaces in team:
+INSTR_TEAMING_MODE::::Select the desired teaming mode.  The mode you select may affect the ReadyNAS performance.  You can get more information on these options  <a class="pseudo_link" onclick="spawn_ready_nas();">here</a>.
+INSTR_TIME_MACHINE::::The ReadyNAS can be used as a backup destination for your OS X Time Machine. After enabling the option below, use the "Change Disk..." option from Time Machine Preferences to select this ReadyNAS. You will need to enter the user name and password specified below when prompted for authentication. Click <a class="pseudo_link" onclick="spawn_time_machine_info();"><b>here</b></a> for more information on ReadyNAS support for Time Machine.
+INSTR_TIMEZONE:::: <b> Step 2. </b> &nbsp;&nbsp;Check here if you wish to set the timezone, and select appropriately.
+INSTR_TUNNEL_SOURCE_RSYNC_SSH::::Tunnel Rsync over SSH. This requires adding the ReadyNAS public key to the remote server authorized SSH key list.
+INSTR_TUNNEL_SOURCE_RSYNC_SSH_DOWNLOAD::::<a href="/get_handler?PAGE=Backup&get_command=ExportSshKey&OPERATION=get&download_file_name=public_ssh_key.txt"><span class="prompt" style="color:blue;">Download public SSH key file</span></a>
+INSTR_TUNNEL_DEST_RSYNC_SSH::::Tunnel Rsync over SSH. This requires adding the ReadyNAS public key to the remote server authorized SSH key list.
+INSTR_TUNNEL_DEST_RSYNC_SSH_DOWNLOAD::::<a href="/get_handler?PAGE=Backup&get_command=ExportSshKey&OPERATION=get&download_file_name=public_ssh_key.txt"><span class="prompt" style="color:blue;">Download public SSH key file</span></a>
+INSTR_UPDATE::::Select the Remote option if this device is connected to the Internet, Local option to upload an update image from your system, or Factory Default if you wish to destructively clear the device.
+INSTR_UPDATE_MISSING_ALERT_CONTACT::::The update procedure relies on the alert contact list for progress notification.  You must first set up the alert contact list in the <b> Alerts </b> tab before the update feature can be enabled.
+INSTR_UPDATE_SETTINGS::::Configure the automatic update settings.
+INSTR_USB::::USB devices are accessed from the network similar to normal data shares.
+INSTR_USB_SHARELIST::::Click on the access icon to customize the access control.  Place the mouse cursor over the icon to display the current access level in the status bar.  For instruction on how to access the shares, click Help.
+INSTR_USB_SHARELIST_SHAREMODE::::Click on the access icon to customize the access control.  Place the mouse cursor over the icon to display the current access level in the status bar.  For instruction on how to access the shares, click <b> Help </b> .
+INSTR_USB_STORAGE::::The following USB storage devices are connected.
+INSTR_USB_STORAGE_NOTDETECTED::::No USB storage devices detected.  You can connect a USB flash device or hard disk and have it be automatically shared on your network.  You can also use the integrated Backup Manager (see Backup menu in Advanced mode) to backup up data from the network or a share on this ReadyNAS, or vice versa.
+INSTR_UTF8_NAMES::::If you select Unicode for above language setting, you can optionally use Unicode for user, group and share names. This option cannot be disabled once you enable this option. Please note that HTTP/WebDAV cannot use user names using Unicode. Also some other restrictions may apply.
+INSTR_VAULT::::ReadyNAS Vault allows continuous and scheduled backups of your ReadyNAS data to a secure online Vault. For convenience, the backup data can be managed and accessed wherever you have Internet access. For more information on ReadyNAS Vault, please click <a href="http://www.readynas.com/Vault" target="_blank"><b>here</b></a>.
+INSTR_VOLUME_EXPANSION::::Your data volume is configured with X-RAID allowing it to automatically expand when adding more disks or when replacing existing disks with larger capacity disks.  By default, this option is disabled to protect against unintended operation.
+INSTR_VOL_MAINT_CONSISTENCY::::Online Filesystem Consistency Checks can be used to detect filesystem problems without making the data volume inaccessible.  If filesystem issues are found, an offline filesystem check will be required.  This procedure should be scheduled for off-peak usage periods.
+INSTR_VOL_MAINT_SCRUBBING::::Disk Scrubbing with Auto Parity Fix can detect and correct potential data corruption by actively searching disks for unreadable and mismatched blocks.  This procedure should be scheduled for off-peak usage periods.
+INSTR_WINS::::WINS, or Windows Internet Name Service, enables clients on a different Windows subnet to browse this device.  If you wish to enable cross-subnet browsing, enter the IP address of the server providing WINS here.
+INSTR_WIZARD::::The Setup Wizard will guide you step-by-step through the configuration process assisting you in quickly integrating this ReadyNAS into your network.
+INSTR_WORKGROUP::::Enter the Windows network workgroup name.
+INSTR_ACCOUNT_DEFAULTS::::Set default parameters for new accounts.
+INSTR_ACCOUNT_GROUP::::User and group accounts are required for share access if the share is added without public access.  You can allow a user to belong to multiple groups by adding the user to the Secondary Members list, separated by commas or one user per line.
+INSTR_ACCOUNT_GROUP_ADD::::Enter group accounts you wish to add.  NFS groups typically will want GIDs matching group accounts on other servers, otherwise leave the GID field blank. A quota value of 0 disables disk quota enforcement.
+INSTR_ACCOUNT_USER_ADD::::Enter user accounts you wish to add.  Specify email address if you wish to inform users of their newly activated account, quota warnings and quota violations (A quota value of 0 disables disk quota enforcement).  You can leave the UID field blank unless the user intends to access this device via NFS.  NFS users typically will want UIDs matching their accounts on other servers.
+INSTR_ADMIN_PASSWORD::::Enter user accounts you wish to add.  Specify email address if you wish to inform users of their newly activated account, quota warnings and quota violations (A quota value of 0 disables disk quota enforcement).  You can leave the UID field blank unless the user intends to access this device via NFS.  NFS users typically will want UIDs matching their accounts on other servers.
+INSTR_ADMIN_PASSWORD_2::::To change the admin password you will need to additionally specify a password recovery question, the expected answer, and an email address. In case you forget the admin password, you can reset the password by answering the password recovery question correctly and specifying the email address where the new admin password will be sent. <b>There is no other way to recover a lost password without setting the device back to factory default or reinstalling the firmware.</b>
+INSTR_ADMIN_PASSWORD_2_WIZARD::::To change the admin password you will need to additionally specify a password recovery question, the expected answer, and an email address. In case you forget the admin password, you can reset the password by answering the password recovery question correctly and specifying the email address where the new admin password will be sent. <b>There is no other way to recover a lost password without setting the device back to factory default or reinstalling the firmware. The following fields must be filled before proceeding to the next page.</b>
+INSTR_ADVANCED::::You are in <b> Advanced Control </b> mode.  In Advanced Control mode, you have access to additional options not available in the Setup Wizard mode.  Some of these options can be destructive so care should be taken in this mode.  If you are performing the setup for the first time, it is highly recommended that you first follow the <b> Setup Wizard </b> to completion.
+INSTR_ADVANCED_SHARE_PERMISSION::::The following options are provided to override the default settings for shares and should be used with caution.
+INSTR_ADVANCED_SHARE_UTILITIES::::The following options provide miscellaneous share and share content functionality.
+INSTR_ALERTS::::In the event of device or enclosure failure, quota violation, low disk space, and other system events requiring attention, email alerts will be sent. Please be aware that some email providers may filter alert emails as spam, be sure to check the appropriate folder.
+INSTR_BACKUP_JOB_LISTING::::The following backup jobs are currently scheduled.
+INSTR_CLOCK::::Accurate clock setting is required to ensure proper file timestamps.
+INSTR_CONFIG_BACKUP_BACKUP::::Select which category of configuration files to backup, then click the "Download configuration archive" button to download a zip archive of the requested files.
+INSTR_CONFIG_BACKUP_RESTORE::::To copy the configuration of a ReadyNAS to this one or to restore a previous backup of the ReadyNAS's configuration files, select the backup archive to use, then click the Restore button.
+INSTR_CONFIG_BACKUP_SELECTION::::Backup and restore ReadyNAS configurations to preserve settings after factory defaults or to replicate settings onto other ReadyNAS devices.
+INSTR_CONTACTS::::Enter the alert contact email addresses where alert messages should be sent. Please note that some email providers may filter alert emails as spam, be sure to check the appropriate folder.
+INSTR_CONTAINER::::	You can choose to have the ReadyNAS create its machine account object in a different OU than the  default "Computers" container.eg. TopLevelOU/SecondLevelOU/ReadyNASOU
+INSTR_CSV_USERADD::::You can upload a CSV (Comma delimited) formatted file to simplify adding a list of users.  Click Help for format specification and examples.
+INSTR_FTP_ICONV::::If your FTP client uses a different character encoding than your ReadyNAS's character encoding specified above, the FTP server on ReadyNAS can convert it when you check the box below.
+INSTR_LANGUAGE::::Select the the language that will be predominantly used by users of this device.  This setting is important to ensure proper filename listing in shares and proper handling of email messages.  Please note that this option does not affect the web browser language display of this management system - use the browser or operating system language setting to do this.
+INSTR_NAS_DEVICE::::This ReadyNAS device has been successfully configured for file sharing.  You can now connect to the shares that you have configured.  If you wish, click <b> Next </b> to enter the Advanced Control mode to fine-tune your configuration.
+INSTR_NETWORK::::Enter the hostname and default gateway for the ReadyNAS.  Settings for each network interface can be found in their respective tabs. <br> <br>
+INSTR_NETWORK_PERFORMANCE::::Use these options to tweak network performance.
+INSTR_NFS_OPTION_SYNC_MODE::::Enabling sync mode forces the ReadyNAS to commit each write request to disk before acknowledging the NFS client that the write request has completed.  This option is typically used to maintain data integrity over unintended shutdowns.  Disabling sync mode allows the ReadyNAS to act in writeback mode providing faster write performance.
+INSTR_NTP::::You can use a local or public NTP (Network Time Protocol) server to update the clock automatically.  Deselect the checkbox if you wish to set the time manually above.
+INSTR_OPTION::::Select the Windows file security mode you wish to deploy.  This mode will be applied to other file services if possible.
+INSTR_OU::::You can also choose to have the ReadyNAS restrict the accounts it will recognize to objects in a specific OU.eg. TopLevelOU/SecondLevelOU/ReadyNASOU
+INSTR_PERFORMANCE::::You can select from the following options to tune your system for better performance.  Keep in mind that these options will introduce a slight risk of data corruption in case of a power failure, so a UPS is highly recommended.
+#%VERSION%  and %MAJOR%  will be automatically replaced with the respective version and major version of the firmware.
+INSTR_PREMIUM_FIRMWARE_AVAILABLE::::Your ReadyNAS can be upgraded with RAIDiator firmware version %VERSION% (<a href="http://www.readynas.com/RAIDiator_x86_%MAJOR%" style="color:#0000ff" target="_blank"><b><u>more info</u></b></a>).  You will need to purchase a license key <a href="http://www.readynas.com/RAIDiator_x86_license" style="color:#0000ff" target="_blank"><b><u>here</u></b></a> and enter it on the next page.  If you would like to check for a maintenance firmware update, click <b><u>Cancel</u></b>.
+#%VERSION%  will be automatically replaced with the respective version of the firmware.
+INSTR_PREMIUM_FIRMWARE_DESCRIPTION::::If you would like to upgrade to our premium version please enter your license key below. If you would like to obtain a license key please click <a class="pseudo_link"  onclick="spawn_license_info();" target="_blank">here</a>.
+INSTR_REALM::::Enter the name of the ADS realm (i.e. mycompany.local) if you want this device to work in an Active Directory environment.
+INSTR_RECYCLE_BIN::::When enabled, deleted files from this share will be dumped in the Recycle Bin folder in the root of the share where it will be kept up to the number of days and capacity specified.
+INSTR_REGISTRATION::::Please do take a minute at this time to register this product online.  Product registration allows you to be informed of the latest software enhancements, important bug fixes, security alerts, and occasional product announcements.
+INSTR_ROUTE::::With multiple network interfaces, network traffic can be optimized by manually setting up a routing table.  If you are unfamiliar with route tables, it is advised that you do not change the defaults.
+INSTR_SERVICE_NO_ADDON::::No add-on packages are currently installed.
+INSTR_SERVICE_NO_AVAILABLE_ADDON::::No add-on packages are currently available.
+INSTR_SERVICE_SELECTION::::Select the file sharing protocol you wish to enable.  In general, disable the protocols you do not intend to use.  You can always enable them later.  Click <b> Help </b> for more information.
+INSTR_SETTINGS::::Select the system warnings you wish to have alerts enabled.  Unless you receive constant spurious alerts, do not disable any warnings.  Disabling Disk Temperature option will disable SMART temperature monitoring which may alleviate certain disks that are prone to locking up on SMART commands.
+INSTR_SHARELIST_NO_SHARES_EXIST::::No shares exist.
+INSTR_SHARELIST_SHAREMODE::::Click on the access icon to customize the access control.  Place the mouse cursor over the icon to display the current access level in the status bar.  A quota value of 0 disables quota enforcement.  For instruction on how to access the shares, click Help.
+INSTR_SHARE_ACCESS_RESTRICTIONS::::Share access for the file protocol can be restricted using the access list(s) below.
+INSTR_SHARE_ADD::::Enter the share names and descriptions you wish to add.
+INSTR_SHARE_ADD_NON_SHARE_MODE::::Enter the share names and descriptions you wish to add. Deselect the Public Access checkbox if you wish to enable user authentication for access to this share via  CIFS and AFP protocols.
+INSTR_SHARE_ADD_SHAREMODE::::You can optionally specify a share password and share-level disk quota.  A disk quota value of 0 disables quota enforcement.
+INSTR_SHARE_DISPLAY_OPTION::::You can hide this share from browsing by selecting the option below.  If enabled, users will not see the share unless they explicitly specify the share name in the browse path.  Please note that enabling this option will disable access to the share from other file protocols.
+INSTR_SMTP::::If your firewall setting prevents alert messages from being sent by the embedded SMTP server, or if your ISP blocks SMTP port 25, enter a remote SMTP server that alert email messages can be routed through.  Some SMTP servers will reject non-fully qualified hostnames, so you may need to change the hostname of this device to FQDN format in the Network tab, i.e. use <b> myhost.domain.com </b> instead of <b> myhost </b> .
+INSTR_SNAPSHOT::::Assign a snapshot interval that fits the usage pattern for this volume.  Any change in the shares on this volume takes up space in the snapshot, so choose an interval that fits your backup requirement but make sure the snapshot space does not get depleted.
+INSTR_SNMP::::SNMP, or Simple Network Management Protocol, is a standard protocol used to monitor network devices.  Enable SNMP service on this device only if you wish to allow third-party SNMP client applications to monitor and be alerted of any abnormal condition on this device.  If you are unsure, disable this service.
+INSTR_SMTP_ADVANCED::::Click here to view advanced options.
+INSTR_SMTP_ADVANCED_COLLAPSE::::Click here to hide advanced options.
+INSTR_SYSLOG:::: You can monitor system log information remotely through the syslog facility.  Enter the hostname or IP address of the remote syslog server where you want this system's logs sent.
+INSTR_TIMESHIFT::::Use this option to adjust the timestamps of the contents of the share.  This can be used to fix issues with incremental backups and sources/destinations that change local timestamps on Daylight Savings changes.  Enter a positive number to push timestamps ahead, negative numbers to push them back.
+INSTR_UPSD_CLIENT::::This device is not physically monitoring a UPS. You may choose to monitor a UPS connected to a remote ReadyNAS.  On receiving a low battery event, this ReadyNAS will shutdown gracefully.
+INSTR_UPSD_CLIENT_HOME::::This device is not physically monitoring a UPS.
+INSTR_UPSD_LOCAL::::This device is physically monitoring a UPS. You may choose to configure the device to be shutdown/switched off when the power level reaches a predetermined threshold. Additionally, you can allow other ReadyNAS unit(s) to monitor the status of the UPS that this ReadyNAS is monitoring.
+INSTR_UPSD_LOCAL_ONLY::::This device is physically monitoring a UPS. You may choose to configure the device to gracefully shutdown when the power level reaches a predetermined threshold.
+INSTR_VAULT_PROMO::::Enable ReadyNAS Vault.  I agree to <a class="pseudo_link" onclick="spawn_readynas_vault_terms_conditions();"><b>Terms and Conditions</b></a>.
+INSTR_VAULT_PROMO_2::::ReadyNAS Vault will use your primary contact email by default.  Just enter the desired password for Vault and click <b>Next</b>.
+INSTR_VAULT_PROMO_OPT_OUT:::: Check here if you prefer not be reminded about ReadyNAS Vault.
+INSTR_WAKE_ON_LAN_OPTION::::You can power-on this device remotely by sending it a "WOL Magic Packet" if the WOL service is enabled.
+INSTR_TEAMING_MODE_LAYER2::::Layer2
+INSTR_TEAMING_MODE_LAYER2PLUS3::::Layer2+3
+INSTR_TEAMING_MODE_LAYER3PLUS4::::Layer3+4
+INSTR_TEAMING_MODE_PRIMARYDEV::::Select the primary device:
+INSTR_XMIT_HASH_POLICY::::Select the xmit_hash_policy:
+INTERFACE::::Interface
+INVALID::::Invalid
+INVALID_IMAGE::::Invalid image.
+INVALID_PASSWORD::::Invalid password.  Please try again.
+IN_PROGRESS::::IN PROGRESS
+IP::::IPv4 Address:
+IP_BROADCAST::::Broadcast
+ITEM_ACCOUNT_EXPORT_DOMAIN_ID_MAP::::Export domain ID map
+ITEM_ACCOUNT_EXPORT_GROUP_LIST::::Export group list
+ITEM_ACCOUNT_EXPORT_USER_LIST::::Export user list
+ITEM_ACCOUNT_IMPORT_DOMAIN_ID_MAP::::Import domain ID map
+ITEM_ACCOUNT_IMPORT_GROUP_LIST,import_group_list::::Import group list
+ITEM_ACCOUNT_IMPORT_USER_LIST,import_user_list::::Import user list
+ITEM_ACCOUNT_MANAGE_GROUPS,group::::Manage groups
+ITEM_ACCOUNT_MANAGE_USERS,user::::Manage users
+ITEM_ACCOUNT_PREFERENCES::::Preferences
+ITEM_ALERTS_BLANK::::Internal
+ITEM_ALERTS_CUSTOM::::Custom
+ITEM_BKUP_FULLBKUP_FREQ_EVERY_2_WEEKS::::Every 2 weeks
+ITEM_BKUP_FULLBKUP_FREQ_EVERY_3_WEEKS::::Every 3 weeks
+ITEM_BKUP_FULLBKUP_FREQ_EVERY_4_WEEKS::::Every 4 weeks
+ITEM_BKUP_FULLBKUP_FREQ_EVERY_8_WEEKS::::Every 8 weeks
+ITEM_BKUP_FULLBKUP_FREQ_EVERY_16_WEEKS::::Every 16 weeks
+ITEM_BKUP_FULLBKUP_FREQ_EVERY_32_WEEKS::::Every 32 weeks
+ITEM_BKUP_FULLBKUP_FREQ_EVERY_TIME::::Every time
+ITEM_BKUP_FULLBKUP_FREQ_EVERY_WEEK::::Every week
+ITEM_BKUP_FULLBKUP_FREQ_FIRST_TIME::::First time
+ITEM_BKUP_EMAIL_BACKUP_LOGS::::full backup logs
+ITEM_BKUP_EMAIL_ERRORS_ONLY::::errors only
+ITEM_BKUP_EMAIL_STATUS_AND_ERRORS::::status and errors
+ITEM_BKUP_SELECT_ISCSI_TARGET,BACKUP_ISCSI_TARGET::::iSCSI:
+ITEM_BKUP_SELECT_ISCSI_VOLUME,BACKUP_ISCSI_VOLUME::::iSCSI Volume:
+ITEM_BKUP_SELECT_SHARE,SELECT_LOCAL_REMOTE::::Select this ReadyNAS or remote
+ITEM_BKUP_SELECT_SHARE_LOCAL_SHARE,BACKUP_LOCAL_SHARE::::Share:
+ITEM_BKUP_SELECT_LOCAL_VOLUME,BACKUP_LOCAL_VOLUME::::Volume:
+ITEM_BKUP_SELECT_USB_DEVICE,BACKUP_USB_DEVICE::::USB Device
+ITEM_BKUP_SELECT_USB_FRONT,BACKUP_USB_FRONT::::USB Device (Front Port)
+ITEM_BKUP_SELECT_USB_REAR_TOP,BACKUP_USB_REAR_TOP::::USB Device (Rear Top Port)
+ITEM_BKUP_SELECT_USB_REAR_BOTTOM,BACKUP_USB_REAR_BOTTOM::::USB Device (Rear Bottom Port)
+ITEM_BKUP_SELECT_USB_REAR_LEFT,BACKUP_USB_REAR_LEFT::::USB Device (Rear Left Port)
+ITEM_BKUP_SELECT_USB_REAR_RIGHT,BACKUP_USB_REAR_RIGHT::::USB Device (Rear Right Port)
+ITEM_BKUP_SELECT_SHARE_HOME,BACKUP_HOME_SHARE::::Home Share:
+ITEM_BKUP_SELECT_SHARE_HOME_NO_COLON,BACKUP_HOME_SHARE_NO_COLON::::Home Share
+ITEM_BKUP_SELECT_SHARE_HOMES,ALL_HOME_SHARES::::All Home Shares
+ITEM_BKUP_SELECT_SHARE_CIFS-AB,BACKUP_REMOTE_SHARE_CIFS-AB::::Remote: Windows (Archive Bit)
+ITEM_BKUP_SELECT_SHARE_CIFS,BACKUP_REMOTE_SHARE_CIFS::::Remote: Windows/NAS (Timestamp)
+ITEM_BKUP_SELECT_SHARE_FTP,BACKUP_REMOTE_SHARE_FTP::::Remote: FTP Site
+ITEM_BKUP_SELECT_SHARE_HTTP,BACKUP_REMOTE_SHARE_HTTP::::Remote: Website
+ITEM_BKUP_SELECT_SHARE_NFS,BACKUP_REMOTE_SHARE_NFS::::Remote: NFS Server
+ITEM_BKUP_SELECT_SHARE_RSYNC,BACKUP_REMOTE_SHARE_RSYNC::::Remote: Rsync Server
+ITEM_SYS_UPS_AUTO::::Auto
+ITEM_SYS_UPS_IETF::::UPS MIB
+ITEM_SYS_UPS_MGE::::MGE
+ITEM_SYS_UPS_APCC::::APC
+ITEM_SYS_UPS_NETVISION::::Netvision
+ITEM_SYS_UPS_PW::::Powerware
+ITEM_COMMON_ENABLED_NO::::Disabled
+ITEM_COMMON_ENABLED_YES::::Enabled
+ITEM_SVC_FTP_MODE_ANON::::Anonymous
+ITEM_SVC_FTP_MODE_USER::::User
+ITEM_NET_ETH_ASSIGN_USING_DHCP::::Use values from a DHCP server
+ITEM_NET_ETH_ASSIGN_USING_STATIC::::Use values below
+ITEM_NET_ETH_ASSIGN_USING_DHCPV6::::Configure automatically
+ITEM_NET_ETH_OFF::::Off
+ITEM_NET_ETH_MODE_AUTO::::Auto-negotiation
+ITEM_NET_ETH_MODE_100F::::100Mb Full-Duplex
+ITEM_NET_ETH_MODE_100H::::100Mb Half-Duplex
+ITEM_LANG_EN-US/UTF-8::::English (Unicode)
+ITEM_LANG_ZH-CN/UTF-8::::Chinese - Simplified (Unicode)
+ITEM_LANG_ZH-TW/UTF-8::::Chinese - Traditional (Unicode)
+ITEM_LANG_JA/UTF-8::::Japanese (Unicode)
+ITEM_LANG_KO/UTF-8::::Korean (Unicode)
+ITEM_LANG_RU/UTF-8::::Russian (Unicode)
+ITEM_LANG_ES/UTF-8::::Spanish (Unicode)
+ITEM_LANG_PT/UTF-8::::Portugues (Unicode)
+ITEM_LANG_DE/UTF-8::::German (Unicode)
+ITEM_LANG_FR/UTF-8::::French (Unicode)
+ITEM_LANG_IT/UTF-8::::Italian (Unicode)
+ITEM_LANG_NL/UTF-8::::Dutch (Unicode)
+ITEM_LANG_PL/UTF-8::::Polish (Unicode)
+ITEM_LANG_CS/UTF-8::::Czech (Unicode)
+ITEM_LANG_HU/UTF-8::::Hungarian (Unicode)
+ITEM_LANG_NB/UTF-8::::Norwegian (Unicode)
+ITEM_LANG_DA/UTF-8::::Danish (Unicode)
+ITEM_LANG_FI/UTF-8::::Finnish (Unicode)
+ITEM_LANG_SV/UTF-8::::Swedish (Unicode)
+ITEM_LANG_EN-US/ASCII::::English (ASCII)
+ITEM_LANG_JA/EUC-JP::::Japanese (euc-jp)
+ITEM_LANG_KO/EUC-KR::::Korean (euc-kr)
+ITEM_PWRTIMER_OFF::::Power OFF
+ITEM_PWRTIMER_ON::::Power ON
+ITEM_TZ_US/Samoa::::GMT -11:00 Samoa
+ITEM_TZ_US/Hawaii::::GMT -10:00 Hawaii
+ITEM_TZ_US/Alaska::::GMT -09:00 Alaska
+ITEM_TZ_US/Pacific::::GMT -08:00 Pacific Time (US & Canada); Tijuana
+ITEM_TZ_US/Arizona::::GMT -07:00 Arizona
+ITEM_TZ_US/Mountain::::GMT -07:00 Mountain Time (US & Canada)
+ITEM_TZ_America/Costa_Rica::::GMT -06:00 Central America
+ITEM_TZ_US/Central::::GMT -06:00 Central Time (US & Canada)
+ITEM_TZ_America/Bogota::::GMT -05:00 Bogota, Lima
+ITEM_TZ_US/Eastern::::GMT -05:00 Eastern Time (US & Canada)
+ITEM_TZ_US/East-Indiana::::GMT -05:00 Indiana (East)
+ITEM_TZ_Canada/Atlantic::::GMT -04:00 Atlantic Time (Canada)
+ITEM_TZ_America/Caracas::::GMT -04:00 Caracas, La Paz
+ITEM_TZ_Canada/Newfoundland::::GMT -03:30 Newfoundland
+ITEM_TZ_America/Buenos_Aires::::GMT -03:00 Buenos Aires, Georgetown
+ITEM_TZ_Atlantic/Bermuda::::GMT -02:00 Mid-Atlantic
+ITEM_TZ_Atlantic/Azores::::GMT -01:00 Azores, Cape Verde Is.
+ITEM_TZ_Africa/Casablanca::::GMT -00:00 Casablanca, Monrovia
+ITEM_TZ_Greenwich::::GMT -00:00 Greenwich Mean Time
+ITEM_TZ_WET::::GMT -00:00 Western European Time; Dublin, London
+ITEM_TZ_Europe/Paris::::GMT +01:00 Amsterdam, Copenhagen, Madrid, Paris
+ITEM_TZ_Europe/Belgrade::::GMT +01:00 Belgrade, Sarajevo, Skopie, Sofija
+ITEM_TZ_Europe/Budapest::::GMT +01:00 Bratislava, Budapest, Prague, Warsaw
+ITEM_TZ_Europe/Brussels::::GMT +01:00 Brussels, Berlin, Rome, Stockholm, Vienna
+ITEM_TZ_Europe/Athens::::GMT +02:00 Athens, Istanbul, Minsk
+ITEM_TZ_Bucharest::::GMT +02:00 Bucharest
+ITEM_TZ_Cairo::::GMT +02:00 Cairo
+ITEM_TZ_Europe/Bucharest::::GMT +02:00 Bucharest
+ITEM_TZ_Africa/Cairo::::GMT +02:00 Cairo
+ITEM_TZ_Africa/Harare::::GMT +02:00 Harare, Pretoria
+ITEM_TZ_Europe/Helsinki::::GMT +02:00 Helsinki, Riga, Tallinn
+ITEM_TZ_Israel::::GMT +02:00 Israel
+ITEM_TZ_Asia/Baghdad::::GMT +03:00 Baghdad, Kuwait, Riyadh
+ITEM_TZ_Europe/Moscow::::GMT +03:00 Moscow, St. Petersburg, Volgograd
+ITEM_TZ_Africa/Nairobi::::GMT +03:00 Nairobi
+ITEM_TZ_Asia/Tehran::::GMT +03:30 Tehran
+ITEM_TZ_Asia/Muscat::::GMT +04:00 Abu Dhabi, Muscat
+ITEM_TZ_Asia/Baku::::GMT +04:00 Baku, Tbilisi
+ITEM_TZ_Asia/Kabul::::GMT +04:30 Kabul
+ITEM_TZ_Asia/Karachi::::GMT +05:00 Islamabad, Karachi, Tashkent
+ITEM_TZ_Asia/Kathmandu::::GMT +05:45 Kathmandu
+ITEM_TZ_Asia/Calcutta::::GMT +05:30 Bombay, Calcutta, Madras, New Delhi
+ITEM_TZ_Asia/Almaty::::GMT +06:00 Almaty, Dhaka
+ITEM_TZ_Asia/Colombo::::GMT +06:00 Colombo
+ITEM_TZ_Asia/Bangkok::::GMT +07:00 Krasnoyarsk, Thailand, Vietnam, Bangkok, Hanoi, Jakarta
+ITEM_TZ_Asia/Hong_Kong::::GMT +08:00 Irkutsk, Ulan Bator, Beijing, Chongquing, Hong Kong, Urumqi
+ITEM_TZ_Australia/Perth::::GMT +08:00 Perth
+ITEM_TZ_Asia/Singapore::::GMT +08:00 Singapore
+ITEM_TZ_Asia/Taipei::::GMT +08:00 Taipei
+ITEM_TZ_Asia/Tokyo::::GMT +09:00 Osaka, Sapporo, Tokyo
+ITEM_TZ_Asia/Seoul::::GMT +09:00 Seoul
+ITEM_TZ_Asia/Yakutsk::::GMT +09:00 Yakutsk
+ITEM_TZ_Australia/Adelaide::::GMT +09:30 Adelaide
+ITEM_TZ_Australia/Darwin::::GMT +09:30 Darwin
+ITEM_TZ_Australia/Brisbane::::GMT +10:00 Brisbane
+ITEM_TZ_Australia/Sydney::::GMT +10:00 Canberra, Melbourne, Sydney
+ITEM_TZ_Pacific/Guam::::GMT +10:00 Guam, Port Moresby
+ITEM_TZ_Australia/Hobart::::GMT +10:00 Hobart
+ITEM_TZ_Asia/Vladivostok::::GMT +10:00 Vladivostok
+ITEM_TZ_Asia/Magadan::::GMT +11:00 Magadan
+ITEM_TZ_Asia/Solomon::::GMT +11:00 Solomon Is., New Caledonia
+ITEM_TZ_Pacific/Fiji::::GMT +12:00 Kwajalein
+ITEM_TZ_NZ::::GMT +12:00 New Zealand
+ITEM_TZ_Kwajalein::::GMT +12:00 Fiji, Kamchatka, Marshall Is.
+ITEM_UPS_THRESHOLD_AUTO::::Auto
+ITEM_MON_1,JAN::::Jan
+ITEM_MON_2,FEB::::Feb
+ITEM_MON_3,MAR::::Mar
+ITEM_MON_4,APR::::Apr
+ITEM_MON_5,MAY::::May
+ITEM_MON_6,JUN::::Jun
+ITEM_MON_7,JUL::::Jul
+ITEM_MON_8,AUG::::Aug
+ITEM_MON_9,SEP::::Sep
+ITEM_MON_10,OCT::::Oct
+ITEM_MON_11,NOV::::Nov
+ITEM_MON_12,DEC::::Dec
+JOIN_DIFFERENT_DOMAIN::::Join a different Domain
+KB::::KB
+KBSEC::::KB/sec
+LABEL_ACCESS_LOWER::::access
+LABEL_FTP_OPTION_ENABLE_MASKS::::Automatically set permissions on new files and folders.
+LABEL_ACCESS_UPPER::::Access
+LABEL_ADDGROUP,tab_addgroup::::Add Group
+LABEL_ADDLUN_ERROR::::Invalid Capacity
+LABEL_ADDON_RUNNING::::Running
+LABEL_ADDON_STOPPED::::Stopped
+LABEL_ADDON_INSTALLATION_SUCESS::::Add-on Installation.
+LABEL_ADDON_UPDATE_SUCESS::::Add-on Update.
+LABEL_ADVERTISE_PRINTER::::Advertise printers over Bonjour
+LABEL_AFP,tab_afp::::AFP
+LABEL_AFP_OPTION_ENABLE_MASKS::::Automatically set permissions on new files and folders. Please keep in mind that the resulting file/folder permission on the ReadyNAS will be the less restrictive of the client setting and the setting here. For instance, if the client default create setting is read/write and the setting here is read-only, the file will be created with read/write permission.
+LABEL_ALERT_CONTACT,LABEL_ALERT_CONTACT_1,LABEL_ALERT_CONTACT_2,LABEL_ALERT_CONTACT_3::::Alert Contact
+LABEL_ALLOW_GROUP::::Groups allowed access
+LABEL_ALLOW_TRUSTED_DOMAINS::::Display users from trusted domains.  In environments with a large number of users, selecting this option will slow down configuration pages.
+LABEL_ALLOW_USER::::Users allowed access
+LABEL_ALLOW_UTF8_NAMES::::Allow Unicode for user, group and share names
+LABEL_AND::::and
+LABEL_ATALKD_ADVERTISE_AFP::::Advertise AFP service over AppleTalk
+LABEL_AUTO_CHECK_UPDATE::::Automatically check for updates
+LABEL_AUTO_DOWNLOAD_UPDATE::::Download updates automatically
+LABEL_AVAILABLE::::Available
+LABEL_BACKUP::::backup
+LABEL_BACKUP_SELECT_FOLDER::::Select Folder
+LABEL_BACKUP_ENTER_HOME_SHARE_HERE::::Enter home share here
+LABEL_BACKUP_OPTION_EMAIL_THIS_ON_COMPLETION_1::::On backup completion, send
+LABEL_BACKUP_OPTION_FULL::::Schedule full backup
+LABEL_BACKUP_OPTION_HOURS_BETWEEN::::hours between
+LABEL_BACKUP_OPTION_CHOWN_TO_SHARE_OWNER::::After backup is complete, change ownership of files in the backup destination to the share owner if the destination is a ReadyNAS share.  <b> Warning: </b>  Do not use this option if any files or directories should retain their current ownership.
+LABEL_BACKUP_OPTION_EMAIL_THIS_ON_COMPLETION_2::::to the alert email address.
+LABEL_BACKUP_OPTION_PERFORM_BACKUP_EVERY::::Perform backup every
+LABEL_BACKUP_OPTION_REMOVE_MISSING_SOURCE_FILES::::Remove deleted files on backup target (rsync only).
+LABEL_BACKUP_OPTION_REMOVE_PREVIOUS_BACKUP::::Remove the contents of the backup destination before a full backup is performed.  This will clean the backup destination of files which were removed in the backup source.  <b> Warning, </b> This will delete all files and folders in the backup destination.
+LABEL_BACKUP_OPTION_WAKE_ON_LAN::::Send Wake on LAN packet to the remote system before performing the backup.
+LABEL_BOARD_TEMP::::Board Temperature
+LABEL_BONJOUR_ADVERTISE_AFP::::Advertise AFP service over Bonjour
+LABEL_BONJOUR_ADVERTISE_FRONTVIEW::::Advertise FrontView over Bonjour
+LABEL_CIFS,tab_cifs::::CIFS
+LABEL_CIFS_OPTION_ENABLE_MASKS::::Automatically set permissions on new files and folders.
+LABEL_CIFS_OPTION_FORCED_MINIMUM::::Do not allow ACL changes to be more restrictive than this.
+LABEL_CLOCK,tab_clock::::Clock
+LABEL_CLICK_HERE_FOR_INFO::::Click <b>here</b> for more info.
+LABEL_COMMENT::::Description
+LABEL_CONFIG_BACKUP,tab_config_backup::::Config Backup
+LABEL_CONFIG_BACKUP_DATA::::<b>Data Volumes</b> - Save the files and folders in the data volumes.  This is useful for transferring folder trees and default share contents.  It is limited to a combined total of 50MB.
+LABEL_CONFIG_BACKUP_EVERYTHING::::<b>Everything</b> - Save all the configuration files used in the ReadyNAS and up to 50MB of data in the data volumes.
+LABEL_CONFIG_BACKUP_MISC::::<b>Miscellaneous Settings</b> - Save the configuration files that do not fit in the above categories.  Examples include email alerts and backup jobs.
+LABEL_CONFIG_BACKUP_NETWORK::::<b>Network Settings</b> - Save the configuration for all network devices and network-related settings.  This includes the hostname, IP address, etc.
+LABEL_CONFIG_BACKUP_SERVICE_INFO::::<b>Services</b> - Save the configuration files for the various services available on the ReadyNAS.  This includes the web-server, FTP server, streaming services configuration, etc.
+LABEL_CONFIG_BACKUP_SHARE_INFO::::<b>Share Access</b> - Save the configuration files that control who can access each share, which protocols they can use (CIFS, NFS, etc.), and how they can access it (Read/Write, Read-only, etc.).
+LABEL_CONFIG_BACKUP_USER_GROUP::::<b>Users and Groups</b> - Save the information for users and groups created on the ReadyNAS.
+LABEL_CREATE_CHAP_PASS_LIMIT,LABEL_MODIFY_CHAP_PASS_LIMIT::::Minimum 12 chars, Maximum 16 chars.
+LABEL_DATABASE_UPDATE_UPNPAV::::Automatically update database.
+LABEL_DATE::::Date
+LABEL_DAYS::::days
+LABEL_DESCRIPTION2,LABEL_DESCRIPTION::::Description
+LABEL_DESIRED_VOLUME_SIZE::::Desired volume size
+LABEL_DISABLE_CIFS_WRITETHRU:::: <b> Enable fast CIFS writes. </b>  This option allows for optimal write performance by enabling aggressive write-back caching for CIFS transactions.  Do not enable this option if shares on this device will be used by multi-user applications (i.e. Quickbooks) where synchronized writes are necessary to keep files in sync.
+LABEL_DISABLE_FULL_DATA_JOURNALLING:::: <b> Disable full data journaling. </b>  Full data journaling makes a backup of data before writing the data out to the intended location, providing an extra level of data protection needed to prevent data corruption for RAID volumes at the expense of disk write performance.
+LABEL_DISABLE_JOURNALLING:::: <b> Disable journaling. </b>  Journaling allows very quick file system check in the event of unintended shutdowns such as a power failure.  Write performance with journaling enabled is slightly slower than without.
+LABEL_DISABLE_SATA_LINK::::Disable drive connection after
+LABEL_DISABLE_USB_SYNC:::: <b> Enable fast USB disk writes. </b>  This option speeds up USB write access by accessing the USB device in asynchronous mode.  If you enable this option, do not remove the USB device without properly unmounting it.  Failure to do so can compromise data integrity on the device.
+LABEL_DISK_FAILURE::::Disk Failure
+LABEL_DISK_FULL::::Disk Full
+LABEL_DISK_QUOTA::::Disk Quota
+LABEL_DISK_SPACE::::Disk space
+LABEL_DISK_TEMP::::Disk Temperature
+LABEL_DISK_SCRUBBING_STATUS_IDLE::::No disk scrubbing in progress.
+LABEL_DISK_SCRUBBING_STATUS_CHECK::::Disk scrubbing in progress.
+LABEL_DISK_SCRUBBING_STATUS_REPAIR::::Disk scrubbing in progress.
+LABEL_DISK_CONSISTENCY_STATUS_IDLE::::No disk consistency check in progress.
+LABEL_DISK_CONSISTENCY_STATUS_CHECK::::Disk consistency check in progress.
+LABEL_DOMAIN_TYPE::::Domain Type:
+LABEL_DOWNLOAD_LOGS::::Download All Logs
+LABEL_DOWNLOAD_GROUP_LIST::::Download Group List
+LABEL_DOWNLOAD_USER_LIST::::Download User List
+LABEL_EMAIL::::Email
+LABEL_EMPTY_TAB_MESSAGE::::This option is available only if the volume has reserved snapshot space.
+LABEL_ENABLE_DHCP_SERVICE::::Enable DHCPv4 service.
+LABEL_ENABLE_DISK_SPINDOWN::::Enable disk spin-down after
+LABEL_ENABLE_DISK_WRITECACHE:::: <b> Enable disk write cache. </b>  Disk write cache allows disk write requests to be acknowledged by disk before data is written out to the platter.  This can give a big boost to write performance, with a drawback that there is a slight chance that unwritten data in the write cache will be lost in the event of a power failure.
+LABEL_ENABLE_ISCSI::::Enable iSCSI support.
+LABEL_ENABLE_JUMBO_FRAMES:::: <b> Enable jumbo frames. </b>  Jumbo frames allows combining of multiple packets into one large packet, reducing network overhead and increasing large-packet transfer performance.  When a jumbo frame-capable switch is used, and client systems have jumbo frame-capable network controllers, you can enable this option.  Make sure the client network driver is set up for jumbo frame support.
+LABEL_ENABLE_OPLOCKS::::Enable oplocks for this share.
+LABEL_ENABLE_PASSWORD_PROTECTION::::Enable password protection
+LABEL_ENABLE_POWERON_TIMER::::Enable power timer
+LABEL_ENABLE_RECYCLE_BIN::::Enable Recycle Bin
+LABEL_ENABLE_RSYNC_SUPPORT::::Enable Rsync support
+LABEL_ENABLE_SNMP::::Enable SNMP service
+LABEL_ENABLE_TEAMING::::Enable Network Teaming/Failover support
+LABEL_ENABLE_TIME_MACHINE::::Enable Time Machine support. Capacity for Time Machine will be limited by the lesser of available disk space and the capacity value below. Please note that AFP Service is required and will be automatically enabled if not already.
+LABEL_ENABLE_VAULT::::Enable ReadyNAS Vault support
+LABEL_ENABLE_UPS_NETWORK_SHARING::::Enable network monitoring of attached UPS
+LABEL_ENABLE_VLAN_SUPPORT::::Enable VLAN support
+LABEL_ENABLE_WAKE_ON_LAN::::Enable Wake-on-LAN service
+LABEL_ENABLE_WEBDAV::::Enable WebDAV support
+LABEL_ENABLE_WINS::::Become a WINS server
+LABEL_ENTER_EMAIL_ADDRESS::::Enter email address(es)
+LABEL_ENABLE_UPS_SNMP_MONITORING::::Enable snmp of attached
+PROMPT_ALLOW_SNMP_ADDR_MONITORING::::Snmp allowed address:
+PROMPT_ENABLE_SNMP_UPS::::Monitor UPS over SNMP
+PROMPT_SNMP_UPS_ADDR::::SNMP UPS address:
+PROMPT_SNMP_USE_MIB::::Use MIB:
+LABEL_ETHERNET,tab_eth0::::Ethernet
+LABEL_EXPORT_DOMAIN_ID_MAP_FILE::::Click here to download domain account ID map file.
+LABEL_EXTENDED_ATTRIBUTE::::Extended Attribute
+LABEL_FAN::::Fan
+LABEL_FORCE_FILESYSTEM_CHECK::::Perform volume scan on next boot.  This process can take several minutes to more than an hour depending on disk capacity and volume content.
+LABEL_FORCE_QUOTA_CHECK::::Check and fix quotas on next boot.  This process can take several minutes to more than an hour depending on disk capacity and the number of files on your volume.
+LABEL_FRI::::Fri
+LABEL_FTP,tab_ftp::::FTP/S
+LABEL_FTP_ICONV::::Enable character encoding conversion for FTP clients.
+LABEL_GROUP::::Group
+LABEL_HIDE_SHARE::::Hide this share when a user browses the ReadyNAS for available shares.
+LABEL_HOME_VOL::::Home
+LABEL_HOTSPARE::::Hot Spare
+LABEL_HOURS_BETWEEN::::hours between
+LABEL_HOURS_LONG::::hours
+LABEL_HTTP,tab_http::::HTTP/S
+LABEL_HTTPS,tab_https::::HTTP/S
+LABEL_HTTP_WEBSERVER_SHARE_NONE_SELECTED::::None selected
+LABEL_INFO::::Info
+LABEL_IP_GATEWAY::::Default gateway
+LABEL_IQN_CREATE_RESERVATION_SUPPORT,LABEL_IQN_MODIFY_RESERVATION_SUPPORT::::(Enable if LUN will be accessed by more than one host.)
+LABEL_ISCSI_ADD_LUN_TITLE::::Add LUN
+LABEL_ISCSI_CREATE_TITLE::::Create iSCSI Target
+LABEL_ISCSI_CREATE_EXPAND_COMPLETE::::Complete
+LABEL_ISCSI_DELETE_TITLE::::Delete iSCSI LUN
+LABEL_ISCSI_DELETE_DESCRIPTION::::Deletion of the iSCSI LUN device will wipe out all the data residing on it. If you are sure you want to do this, please type <b>DELETE LUN</b> and click <b>Apply</b>.
+LABEL_ISCSI_DELETE_ALL_DESCRIPTION::::Deletion of the iSCSI LUN 0 device will wipe out all the data residing on it and will remove the iSCSI target device. If you are sure you want to do this, please type <b>DELETE ALL LUNS</b> and click <b>Apply</b>.
+LABEL_ISCSI_DELETE_ERROR::::Enter "DELETE LUN" if you want to delete this LUN.
+LABEL_ISCSI_DELETE_ALL_LUNS_ERROR::::Enter "DELETE ALL LUNS" if you want to delete all LUNs in this target.
+LABEL_ISCSI_DESCRIPTION::::No iSCSI target exists. To create an iSCSI target, click on the <b>Create iSCSI Target</b> button below.
+LABEL_ISCSI_EXPAND_ALERT::::Please disconnect all initiators of this target before starting the expansion. When you are ready, please click OK to proceed.
+LABEL_ISCSI_EXPAND_ERROR::::Invalid desired size
+LABEL_ISCSI_EXPAND_TITLE::::Expand iSCSI LUN
+LABEL_ISCSI_EXPAND_DESCRIPTION::::This iSCSI LUN can be expanded in capacity to the max available volume size of the ReadyNAS device. Once the LUN has been expanded, you will need to expand your client volume to utilize the newly added space.
+LABEL_ISCSI_MODIFY_LUN_TITLE::::Modify LUN
+LABEL_ISCSI_MODIFY_TITLE::::Modify iSCSI Target
+LABEL_ISCSI_TARGET_CONNECTED_WARNING::::Additional iSCSI capacity will not be available until the expansion has been completed and the connection is restarted. The existing iSCSI storage capacity can be used while the expansion is in progress.
+LABEL_JOB::::Job
+LABEL_LASTING::::lasting
+LABEL_LOCAL_UPDATE_MESG::::Select the firmware or add-on image.
+LABEL_LOCAL_UPDATE_MESG_TWO::::Select the firmware image.
+LABEL_MAKE_WINS_SERVER::::This device can provide WINS service by enabling the option below.  Make sure that there are no other WINS server on the network before doing this.  This option is not available in Domain or Active Directory security modes.
+LABEL_MANAGE_VOLUME::::Manage volume
+LABEL_MASQUERADE_ADDRESS::::Masquerade as:
+LABEL_MB,LABEL_MB1,LABEL_MB2::::MB
+LABEL_MEDIA::::media
+LABEL_MENU_ADDNEW::::Add New
+LABEL_MENU_ADDONS::::Add-ons
+LABEL_MENU_AVAILABLE::::Available
+LABEL_MENU_BACKUP::::Backup
+LABEL_MENU_SYSTEM_BACKUP::::Config Backup
+LABEL_MENU_BACKUP_BACKUP_JOBS::::Backup Jobs
+LABEL_MENU_BACKUP_EDIT_BACKUP_JOB::::Add a New Backup Job
+LABEL_MENU_BACKUP_TIME_MACHINE::::Time Machine
+LABEL_MENU_BACKUP_VAULT,tab_backup_vault::::ReadyNAS Vault
+LABEL_MENU_FACTORY::::Factory
+LABEL_MENU_INSTALLED::::Installed
+LABEL_MENU_NETWORK::::Network
+LABEL_MENU_NETWORK_DHCP::::DHCP
+LABEL_MENU_NETWORK_DNS::::DNS
+LABEL_MENU_NETWORK_ETH0::::Interfaces
+LABEL_MENU_NETWORK_NETWORK::::Global Settings
+LABEL_MENU_NETWORK_ROUTE::::Route
+LABEL_MENU_NETWORK_WINS::::WINS
+LABEL_MENU_PRINTER::::Printers
+LABEL_BACKUP_ISNS_SERVER::::Backup ISNS Server:
+LABEL_PRIMARY_ISNS_SERVER::::Primary ISNS Server:
+LABEL_MENU_PRINTER_QS::::Printer Queue Service
+LABEL_MENU_SECURITY::::Security
+LABEL_MENU_SECURITY_ACCOUNT::::User & Group Accounts
+LABEL_MENU_SECURITY_ADMIN_PASSWORD,tab_admin_password::::Admin Password
+LABEL_MENU_SECURITY_OPTION::::Security Mode
+LABEL_MENU_SERVICES::::Services
+LABEL_MENU_SERVICES_DISCOVERY::::Discovery Services
+LABEL_MENU_SERVICES_STANDARD,tab_standard::::Standard File Protocols
+LABEL_MENU_SERVICES_STREAMING,tab_streaming::::Streaming Services
+LABEL_MENU_SERVICES_ADDON,tab_addon::::Installed Add-ons
+LABEL_MENU_SHARE::::Shares
+LABEL_MENU_SHARE_SHARE_ADD::::Add Shares
+LABEL_MENU_SHARE_SHARE_LIST::::Share Listing
+LABEL_MENU_STATUS::::Status
+LABEL_MENU_STATUS_DIAGNOSTICS::::Diagnostics
+LABEL_MENU_STATUS_HEALTH::::Health
+LABEL_MENU_STATUS_LOG::::Logs
+LABEL_MENU_SYSTEM::::System
+LABEL_MENU_SYSTEM_ALERT::::Alerts
+LABEL_MENU_SYSTEM_ALERT_CONTACTS::::Contacts
+LABEL_MENU_SYSTEM_ALERT_SETTINGS::::Settings
+LABEL_MENU_SYSTEM_ALERT_SMTP::::SMTP
+LABEL_MENU_SYSTEM_ALERT_SNMP::::SNMP
+LABEL_MENU_SYSTEM_CLOCK::::Clock
+LABEL_MENU_SYSTEM_LANGUAGE::::Language
+LABEL_MENU_SYSTEM_PERFORMANCE::::Performance
+LABEL_MENU_SYSTEM_POWER_MANAGEMENT,tab_power_management::::Power
+LABEL_MENU_SYSTEM_SHUTDOWN::::Shutdown
+LABEL_MENU_SYSTEM_UPDATE::::Update
+LABEL_TIVOACCESSKEY_SET::::Enter Media Access Key
+LABEL_MENU_VOLUME::::Volumes
+LABEL_MENU_VOLUME_ADD_VOLUME::::Add Volume
+LABEL_MENU_VOLUME_SETTINGS::::Volume Settings
+LABEL_MENU_VOLUME_USB::::USB Storage
+LABEL_MENU_WELCOME,LABEL_MENU_WELCOME_WELCOME::::Welcome
+LABEL_MESG_QUEUED_ADD::::This volume will not be added until you restart this device.
+LABEL_MESG_SHUTDOWN_DISABLED::::Shutdown options are currently unavailable due to an active background task.  This page will automatically update when the task is complete.  Please attempt the shutdown again at that time.
+LABEL_MINUTES_OF_INACTIVITY,LABEL_MINUTES_OF_INACTIVITY_2::::minutes of inactivity
+LABEL_MON::::Mon
+LABEL_MUSIC_FOLDER::::Music folder
+LABEL_MUSIC_SHARE::::Music share
+LABEL_NAGGING_FOR_REGISTRATION::::Please do take a minute at this time to register this product online. Product registration allows you to be informed of the latest software enhancements, important bug fixes, security alerts, and occasional product announcements.
+LABEL_NAS_REGISTRATION::::Instructions to register ReadyNAS
+LABEL_NETWORK_SETTINGS::::Network Settings
+LABEL_NEW_ADDON::::Visit<a href="http://www.readynas.com/addons" target="_blank">&nbsp;<b>http://www.readynas.com/addons</b>&nbsp;</a>for add-ons developed by NETGEAR and NETGEAR partners, and<a href="http://www.readynas.com/community_addons" target="_blank">&nbsp;<b>http://www.readynas.com/community_addons</b>&nbsp;</a>for add-ons developed by the ReadyNAS Community.
+LABEL_NFS,tab_nfs::::NFS
+LABEL_NFS_OPTION_SYNC_MODE::::Enable sync mode
+LABEL_NOGROUP::::nogroup
+LABEL_NON_OWNER_DELETE::::Grant rename and delete privileges to non-owner of files.
+LABEL_NOT_PRESENT,NOT_PRESENT::::Not present
+LABEL_NO_SHARES_EXIST::::No shares exist.  If you wish to enable file sharing, enter the share names you wish to add below and click Apply.  You can specify a share password and share-level disk quota if this device is configured for <b> Share </b> security mode.
+LABEL_NO_USB_SHARES_EXIST::::No USB shares exist.  Plug in a USB storage device and click Refresh to display a USB share.
+LABEL_NTP_SERVER,LABEL_NTP_SERVER2::::NTP Server
+LABEL_OPTION_DOMAIN:::: <b> Domain. </b> Fit for department or corporate environment.  Select this option if you would like to control access to shares based on user and group accounts and your Windows network utilizes a centralized domain controller or active directory service (ADS) for login authentication. This option will not support disk quotas. Do not select this option if you are unsure.
+LABEL_OPTION_POWEROFF::::Shutdown and turn off device.
+LABEL_OPTION_REBOOT::::Shutdown and reboot device.
+LABEL_OPTION_SHARE:::: <b> Share. </b> Fit for home or small office.  Select this option if you would like to restrict share access with the use of an optional share password.  Each user accesses the shares on the device as a common guest user and will have the same read/write privilege as other users. This option supports setting disk quotas on a per-share basis.
+LABEL_OPTION_USER:::: <b> User. </b> Fit for medium-size office or workgroup.  Select this option if you would like to control access to shares based on user or group accounts and your network does not utilize a domain controller for authentication.  If you select this option, you will need to create a user account for anyone accessing this device.  This option supports setting disk quotas on a per-user or per-group basis.
+LABEL_POWER,POWER::::Power
+LABEL_PSU::::PSU
+LABEL_REASON::::Reason
+LABEL_REMOVE::::Remove
+LABEL_RESCAN_INTERVAL::::Rescan interval (secs)
+LABEL_RSYNC_OVER_SSH::::Rsync Over SSH
+LABEL_RSYNC_SSH_KEYS::::<b>SSH Keys</b>
+LABEL_RESYNC_UNCLEAN_SHUTDOWN,RESYNC_UNCLEAN_SHUTDOWN::::Resync RAID volume(s) on improper shutdowns.  This is recommended.
+LABEL_RSYNC,tab_rsync::::Rsync
+LABEL_RSYNC_PASSWORD::::Password
+LABEL_RSYNC_PASSWORD_OPTION::::Rsync Password Option
+LABEL_RSYNC_USER::::Rsync user
+LABEL_SAT::::Sat
+LABEL_SAVE::::Save
+#Please use %WEEK% and %TIME% for week selection and time selection respectively.
+LABEL_SCHEDULE_SCRUBBING_EVERY::::Scrub disks and fix parity %WEEK% at %TIME%
+LABEL_SCHEDULE_CONSISTENCY_EVERY::::Check file system consistency %WEEK% at %TIME%
+LABEL_SCRUB_SUN::::Sun
+LABEL_SCRUB_MON::::Mon
+LABEL_SCRUB_TUE::::Tue
+LABEL_SCRUB_WED::::Wed
+LABEL_SCRUB_THU::::Thu
+LABEL_SCRUB_FRI::::Fri
+LABEL_SCRUB_SAT::::Sat
+LABEL_SEPARATE_ENTRIES_MESG::::Separate entries with comma
+LABEL_SERVER_NAME::::Server name
+LABEL_SERVICE_AFP_INFO::::<b>AFP</b>, or Apple Filing Protocol, popular in Mac environments.  AFP provides better support for a larger range of characters in filenames and is preferred where this is important.
+LABEL_SERVICE_BONJOUR_INFO::::<b>Bonjour service</b>, allows Mac OS X and Windows clients running Bonjour to automatically detect services advertised by the ReadyNAS.
+LABEL_SERVICE_CIFS_INFO::::<b>CIFS</b>, or Common Internet File System, used predominantly by Windows.  Mac OS X also supports this protocol though it may be referred to as SMB.
+LABEL_SERVICE_DAAPD_INFO::::<b>iTunes Streaming Server</b>, enables iTunes clients to stream media files from the ReadyNAS.
+LABEL_SERVICE_FTP_INFO::::<b>FTP</b>, or File Transfer Protocol, used extensively for basic file upload and downloads.  If you will be making FTP service available to this device outside the firewall, you can specify a custom port for added security.
+LABEL_SERVICE_HTTPS_INFO::::<b>HTTPS</b>, or HTTP with SSL encryption, used where secure web access is desired.  If you will be making HTTPS service available to this device outside the firewall, you can specify an additional port for this purpose for added security.
+LABEL_SERVICE_HTTP_INFO::::<b>HTTP</b>, or Hypertext Transfer Protocol, used everywhere web browsers exist.  Default access to the ReadyNAS over HTTP will show a share list.  If you want to use the ReadyNAS as a web server, you can specify a share where access will be redirected and you can enable or disable login authentication to that share.  Please keep in mind that you will only be allowed to redirect to a share that is set up for <b>read-only</b> access over HTTP.
+LABEL_SERVICE_NFS_INFO::::<b>NFS</b>, or Network File System, widely used in Unix or Linux environments.  Mac OS X also supports this protocol.
+LABEL_SERVICE_RSYNC_INFO::::<b>Rsync</b>, a popular incremental backup protocol used in Unix and Linux environments.
+LABEL_SERVICE_SQUEEZE_CENTER_SCANNER_INFO::::Enable experimental optimized scanner. See <a class="pseudo_link"  onclick="spawn_squeezecenter_scanner_info();" target="_blank">here</a> for details.
+LABEL_SERVICE_SLIMSERVER_INFO::::<b>SqueezeCenter</b>, enables streaming of music to SqueezeBox digital music players.
+LABEL_SERVICE_SQUEEZECENTER_INFO::::<b>SqueezeCenter</b>, enables streaming of music to SqueezeBox digital music players.
+LABEL_SERVICE_SQUEEZECENTER_INFO_ONE::::<br>The SqueezeCenter service on the ReadyNAS is a condensed embedded version. if you require features such as Unicode fonts, SoftSqueeze, update firmware images or other features not available in this version, please see <a class="pseudo_link"  onclick="spawn_squeezecenter_scanner_info();" target="_blank">here</a> for instructions on upgrading to the full version.
+LABEL_SERVICE_TWONKYVISION_INFO::::<b>TwonkyMedia</b>, enables streaming media to UPnP AV and DLNA compliant media players.
+LABEL_SERVICE_UPNP_INFO::::<b>UPnP</b>, allows other UPnP-enabled devices on the network to automatically detect the ReadyNAS.
+LABEL_SERVICE_UPNPAV_INFO::::<b>ReadyDLNA</b>, enables playback of videos, music and pictures from DLNA/UPnP AV network media players.
+LABEL_SERVICE_WIZD_INFO::::<b>Home Media Streaming Server</b>, enables playback of videos, music and pictures from network DVD and media players.
+LABEL_SET_SHARE_CONTENTS_PERMISSIONS::::Set ownership and permission for existing files and folders in this share to the above settings.  This option is useful in cases where you are changing security levels and need to workaround file access problems.
+LABEL_SET_FAN_TO::::Set fan to minimum
+LABEL_SHARE_CONTENT_TIMESHIFT::::Shift share content timestamps by:
+LABEL_SHUTDOWN_ON_DISK_FAILURE::::Power-off ReadyNAS when a disk fails or no longer responds.
+LABEL_SHUTDOWN_ON_DISK_OVERTEMP::::Power-off ReadyNAS when disk temperature exceeds safe levels.
+LABEL_SIZE::::Size
+LABEL_SMART_ATTRIBUTE::::SMART Attribute
+LABEL_SUN::::Sun
+LABEL_THU::::Thu
+LABEL_SSH_KEY_MANAGEMENT::::SSH Key Management
+LABEL_TIMESHIFT_MINUTES::::minutes
+LABEL_TIME_MACHINE_CAPACITY::::GB (Max:%CAPACITY%)
+LABEL_TUE::::Tue
+LABEL_UID::::UID
+LABEL_UPDATE::::Update
+LABEL_UPNPAV_TIVO_SUPPORT::::Enable TiVo<sup>&reg;</sup> support. Click <a class="pseudo_prompt" onclick="spawn_tivo_info();" target="_blank"> <b>here</b></a> for more info.
+LABEL_UPS::::UPS
+LABEL_USE_ISNS::::Use ISNS (Internet Storage Naming Server)
+LABEL_USER::::User
+LABEL_V::::v
+LABEL_VAULT_CONFIG_BACKUPS::::Configure ReadyNAS Vault
+LABEL_VAULT_FIRST_USER::::If you are a first-time ReadyNAS Vault user, you can try the service free for 30 days. To create a new ReadyNAS Vault account enter the account information below, and click <b>Register</b>.
+LABEL_VAULT_RESET_PASSWORD::::Click <a href="#" onclick="READYNASVAULT_open_forgot_link();"><b>here</b></a> to reset your password.
+LABEL_VAULT_FORGOT_MESSAGE::::Please make sure to login with your new password.
+LABEL_VAULT_FORGOT_LINK::::Click <a href="#" onclick="READYNASVAULT_login_link();"><b>here</b></a> to get back to the login page.
+LABEL_VAULT_LOGGED_IN::::Logged in as
+LABEL_VAULT_BACKTO_LOGIN::::Back to the <a href="#" onclick="READYNASVAULT_login_link();">login page</a>.
+LABEL_VAULT_LOGIN,BUTTON_VAULT_LOGIN::::Login
+LABEL_VAULT_REGISTER,BUTTON_VAULT_REGISTER,BUTTON_REGISTER,BUTTON_REGISTER2::::Register
+LABEL_VAULT_FORGOT_PASSWORD::::Forgot password?
+LABEL_VAULT_LOGIN_STATUS::::Don't have an account?&nbsp;&nbsp;<a href="#" onclick="READYNASVAULT_register_link();">Click here to register!</a>
+LABEL_VAULT_REGISTER_STATUS::::Already have an account?&nbsp;&nbsp;<a href="#" onclick="READYNASVAULT_login_link();">Click here to login!</a>
+LABEL_VAULT_PROMO_ONE::::Did you know that your ReadyNAS comes with a built-in online backup system designed to protect your irreplaceable ReadyNAS data from disasters and theft?<br><br>It's called <a class="pseudo_link"  onclick="readynas_vault_info();"><b>ReadyNAS Vault</b></a>, and you can try it <b>FREE</b> for 30 days, no strings attached. Just select the checkbox below, and a share called <b>vault</b> will be created. Anything you drag to this share will be automatically backed up to our secure data center.<br><br>Please click <a class="pseudo_link"  onclick="spawn_here();" ><b>here</b></a> for more info on ReadyNAS Vault.
+LABEL_VAULT_PROMO_ONE_BUSINESS::::Did you know that your ReadyNAS comes with a built-in online backup system designed to protect your irreplaceable ReadyNAS data from disasters and theft?<br><br>It's called <a class="pseudo_link"  onclick="readynas_vault_info();"><b>ReadyNAS Vault</b></a>, and your system comes with <b>100 GB of capacity free for 30 days</b>. Just select the checkbox below, and a share called vault will be created.  Anything you drag to this share will be automatically backed up to our secure data center.<br><br>Please click <a class="pseudo_link" onclick="spawn_here();"><b>here</b></a> for more info on ReadyNAS Vault.
+LABEL_VAULT_PROMO_TWO_BUSINESS::::Did you know that your ReadyNAS comes with a built-in online backup system designed to protect your irreplaceable ReadyNAS data from disasters and theft?<br><br>It's called <a class="pseudo_link"  onclick="readynas_vault_info();" ><b>ReadyNAS Vault</b></a>, and your system comes with <b>2 GB of capacity free for two years</b>. Just select the checkbox below, and a share called vault will be created.  Anything you drag to this share will be automatically backed up to our secure data center.<br><br>Please click <a class="pseudo_link" onclick="spawn_here();"><b>here</b></a> for more info on ReadyNAS Vault.
+LABEL_VAULT_PROMO_CONGRATULATIONS::::Congratulations, you've just successfully set up online backup to <b>ReadyNAS Vault</b>.<br><br>A new share called <b>vault</b> has been created. Simply drag anything that you want backed up online to this share.  Note that you can fine-tune your backups to <b>ReadyNAS Vault</b> from anywhere simply by visiting <a class="pseudo_link" style="color:#0000ff" target="_blank" href=https://vault.readynas.com>https://vault.readynas.com</a>.
+LABEL_VAULT_PROMO_ERROR::::There has been an error in registering a Vault account.
+LABEL_VERSION::::Version
+LABEL_VIEW::::View
+LABEL_VOL_MAINT_CONSISTENCY::::Online File System Consistency Check
+LABEL_VOL_MAINT_SCRUBBING::::Disk Scrubbing with Auto Parity Fix
+LABEL_VOLUME::::Volume
+LABEL_WARN_ENABLE_VLAN::::Virtual Local Area Networking, or VLAN, allows devices on different physical LAN segments to communicate with each other as if they were on the same physical network.  This device can be a member of a VLAN network by enabling the option and specifying a VLAN tag below.  However, <b> do not enable this option </b> unless you are sure your clients also support VLAN.  Otherwise, you will not be able to access this device, and you may have to return it to your vendor to restore access. <br> <br> VLAN settings will take effect on the next boot.
+LABEL_WARN_ENABLE_VLAN_NOREBOOT::::Virtual Local Area Networking, or VLAN, allows devices on different physical LAN segments to communicate with each other as if they were on the same physical network.  This device can be a member of a VLAN network by enabling the option and specifying a VLAN ID below.  However, <b> do not enable this option </b> unless you are sure your clients also support VLAN.  Otherwise, you will not be able to access this device, and you may have to return it to your vendor to restore access.
+LABEL_WARN_NO_BACKUP_JOBS::::No backup jobs have been scheduled.
+LABEL_WED::::Wed
+LABEL_WINS::::WINS
+LABEL_WORKGROUP_SHAREMODE,LABEL_WORKGROUP_USERMODE::::Workgroup:
+LANGUAGE,tab_language::::Language
+LABEL_ADD_TO_VOLUME::::Add To Volume
+LABEL_MAKE_HOT_SPARE::::Make Hot Spare
+LABEL_ENABLE_DHCP_SERVICE::::Enable DHCPv4 service.
+LABEL_WAKE_ON_LAN::::Enable this option to power on the NAS remotely by Wake on LAN. Wake on LAN helps you manage your NAS conveniently.
+LABEL_WAKE_ON_LAN_ADDRESS::::Wake on LAN MAC address:
+LAST::::Last
+LEVEL::::Level
+LIFE_SUPPORT::::On life support - access to volume disabled.  To restore volume, shutdown this device, reconnect the disk(s) if they had been inadvertently disconnected, and power the device back on.  To avoid permanently rendering the disk unusable, do not reconnect the disk(s) while the power is on.
+LINK_FAIL::::Link failures
+LOCAL,tab_local::::Local
+LOCAL_IMAGE_INCOMPATIBLE::::The firmware update or add-on image is incompatible.
+LOCAL_IMAGE_NOT_NEW::::The firmware update or add-on image file is valid but is not newer than the installed image.  Click <B> Perform System Update </B> if you wish to proceed with the update anyway.
+LOCAL_IMAGE_VALID::::The firmware update or add-on image is valid.  Click <B> Perform System Update </B> if you wish to install the image now.
+LOCAL_SHARE::::Share
+LOG,tab_log::::Logs
+LOGIN::::User name
+LOGOUT_MESG::::Please close all browser windows to securely log out.
+LONG_MON::::Monday
+LONG_TUE::::Tuesday
+LONG_WED::::Wednesday
+LONG_THU::::Thursday
+LONG_FRI::::Friday
+LONG_SAT::::Saturday
+LONG_SUN::::Sunday
+MAC::::MAC Address
+MAKEHOTSPARE::::Make hot spare
+MANAGED::::Managed - this device connects to an access point
+MB::::MB
+MBSEC::::MB/sec
+MEMORY::::Memory
+MENU_PRINTER::::Printers
+MENU_SHARED_DISK::::Disk
+MESG_ADD_ON_INSTALLED::::The %ADDON_NAME% add-on can now be viewed in the Installed  tab.
+MESG_ADD_ON_INSTALLED_REBOOT_REQUIRED::::The %ADDON_NAME% add-on has been installed and requires a reboot before it is operational.
+MESG_ADD_ON_UPDATED::::The %ADDON_NAME% add-on has been updated.
+MESG_ADD_ON_UPDATED_REBOOT_REQUIRED::::The %ADDON_NAME% add-on has been updated and requires a reboot before it is operational.
+MESG_ADD_TO_VOLUME_SYNC_QUEUED::::All free disks will be added to the X-RAID2 volume.  Each disk will be resynced sequentially until the expansion is completed.
+MESG_ADD_VOLUME_REQUIRES_REBOOT::::There are pending disk requests that requires rebooting this ReadyNAS device before a new volume can be added.
+MESG_ALLOCATING_SPACE::::Allocating space
+MESG_ALLOCATING_SPACE_PERCENTAGE::::Complete
+MESG_CONFIG_RESTORE_BACKGROUNDED::::The configuration archive will be restored in the background.  A popup will notify you when the process has been completed.
+MESG_ADDON_INSTALLATION_FILES_DELETE::::Cleaning up installation files, please wait...
+MESG_CREATE_SUCCESS::::Target successfully created.
+MESG_DELETE_SUCCESS::::Target successfully deleted.
+MESG_DEFAULT_USER_HOME_VOLUME_CHANGED_TO_VOLUME::::Default home volume for new users has been changed to volume
+MESG_DELETE_VOLUME_ABORTED::::Volume delete aborted.
+MESG_DELETING_SHARES::::The selected shares will be deleted in the background.  A popup will notify you when each share has been removed.
+MESG_DHCP_NOT_AVAILABLE,LABEL_MESG_DHCP_NOT_AVAILABLE::::The service is not available because your current IP or DNS addresses are obtained through a DHCP service.  Configure them statically and isolate this device on a network that currently does not have a DHCP server to avoid conflicts.
+MESG_DHCP_NOT_AVAILABLE_TEAMING,LABEL_MESG_DHCP_NOT_AVAILABLE_TEAMING::::The service is not available because your current ethernet interface has been teamed.  To enable the DHCP server the current ethernet interface should not be teamed with other interfaces.
+MESG_EXPAND_SUCCESS::::Target successfully expanded.
+MESG_FAILED_ADD::::failed to be added.
+MESG_FAILED_DELETE::::was not successfully deleted.
+MESG_FAILED_TO_DELETE_SSH_KEYS::::Failed to delete SSH key(s)
+MESG_HTTP_SERVER_RESTARTING_USE_AFTER_RESTART_MESG::::The HTTP server will be restarted. Please note that you may experience a slight delay with Frontview right after the service is restarted.
+MESG_GROUP_DELETION_BACKGROUNDED::::Group(s) deletion is being performed in the background. The page will be refreshed in 10 seconds
+MESG_HOTADD_REQUIRE_REBOOT::::The hot spare will not take effect until you restart this device.   Please reboot at your earliest convenience.  You will be notified  by email when it becomes active.
+MESG_ADDRAIDDISK_REQUIRE_REBOOT::::Add disk to volume or make hot spare will not take effect until you restart this device. Please reboot at your earliest convenience.
+MESG_HOTSPARE_IN_EFFECT::::A hot spare disk has been added to volume
+MESG_INPROGRESS_ADD::::This volume is being added.  When finished, email notification will be sent to the alert contact list.  Alternatively, you can click Refresh in the Log page to check progress.
+MESG_INITIALIZING_BROWSER::::Initializing Browser, please wait ....
+MESG_ISCSI_ALLOCATING_SPACE::::Allocating space
+MESG_ISCSI_CREATE_SUCCESS::::Target successfully created.
+MESG_ISCSI_LUN_CREATE_SUCCESS::::LUN successfully created.
+MESG_ISCSI_CREATE_INITIATED::::Target creation process started.
+MESG_ISCSI_LUN_CREATE_INITIATED::::LUN creation process started.
+MESG_ISCSI_DELETE_SUCCESS::::LUN successfully deleted.
+MESG_ISCSI_LUN_EXPAND_SUCCESS::::Target LUN successfully expanded.
+MESG_ISCSI_LUN_EXPAND_INITIATED::::Target LUN expansion process started.
+MESG_ISCSI_MODIFY_SUCCESS::::Target successfully modified.
+MESG_ISCSI_MOVE_SUCCESS::::Target successfully moved.
+MESG_ISCSI_RENAME_SUCCESS::::Target successfully renamed.
+MESG_ISCSI_TARGET_DELETE_SUCCESSFUL::::Target successfully deleted.
+MESG_ISCSI_TARGET_CREATION_TIME_DELAY::::This process might take a while.  You can click refresh to see the status of the target creation or wait for an alert to indicate process completion.  Would you like to continue?
+MESSAGE_ISNS_SERVER_SETTINGS_SAVE_FAILURE::::Failed to  save Isns server settings.
+MESSAGE_ISNS_SERVER_SETTINGS_SAVE_SUCCESS::::Successful in saving Isns server settings.
+MESG_LOADING_BACKUPLOG::::Loading backup logs...
+MESG_LOGS_TRUNCATED::::The logs have exceeded the maximum length and have been truncated.  You can access the full backup log by downloading the system logs.
+MESG_MODIFY_SUCCESS::::Target successfully modified.
+MESG_MOVE_SUCCESS::::Target successfully moved.
+MESG_NEW_ALERTS_DETECTED::::New alerts detected.  Please view Logs.
+MESG_NEW_SSL_KEY_BACKGROUNDED::::New SSL key being generated in the background for host:
+MESG_NO_CHANGE_SELECTED::::No change has been selected.
+MESG_NO_FOLDERS_SELECTED::::No folders selected.
+MESG_NO_GROUPS_FOUND::::No groups found.
+MESG_NO_GROUP_SELECTED::::No group selected for deletion.
+MESG_NO_LOGS_EXIST::::No logs exist.
+MESG_NO_SHARE_SELECTED::::No share selected for deletion.
+MESG_NO_USERS_FOUND,LABEL_MESG_NO_USERS_FOUND::::No users found.
+MESG_NO_USER_SELECTED::::No user selected for deletion.
+MESG_RECALIBRATE_FAN::::Fan will be recalibrated over the next few minutes.
+MESG_RENAME_SUCCESS::::Target successfully renamed.
+MESG_RESTART_ISCSI_FOR_EXPAND::::Access to the iSCSI volume could not be disabled successfully for expansion.  The expansion will still occur, but iSCSI initiators may not see the additional space until the iSCSI server is restarted.
+MESG_RESYNC_ALREADY_RUNNING::::RAID resync already in progress.
+MESG_RESYNC_FAILED::::RAID resync failed to start.  Please contact Support.
+MESG_RESYNC_RECOMMENDED::::Resync recommended
+MESG_RESYNC_RECOMMENDED_REASON_SATA_RESET::::A SATA reset has been performed on one or more of your disks that may have affected the RAID parity integrity.  It is recommended that you perform a RAID volume resync from the RAID Settings tab ( accessible in the Volumes page => Volume tab in  FrontView ).  The resync process will run in the background, and you can continue to use the ReadyNAS in the meantime.
+MESG_ROOT_HOTADD_REQUIRE_REBOOT::::Hot spares have been created for the OS partitions, and will not take effect until you restart this device.   Please reboot at your earliest convenience.  You will be notified  by email when it becomes active.
+MESG_ROOT_HOTSPARE_IN_EFFECT::::A hot spare disk has been added to the OS volume.
+MESG_SERVICES_RESTARTED::::Services restarted.  You may continue...
+MESG_SHARE_DELETION_BACKGROUNDED::::Share(s) deletion is being performed in the background. The page will be refreshed in 10 seconds. Do not add any shares until share deletion has been completed.
+MESG_HTTP_SERVICE_RESTARTED::::HTTP service restarted.
+MESG_SHARE_ADDED::::added with default access. Please review the share access restrictions in the Share Listing page to fine-tune any default settings.
+MESG_SHARE_ADD_FAILURE::::could not be created.  Please verify that there is free space available in the volume or try another share name.
+MESG_SHARE_CONTENTS_CHANGED_IN_BG::::The requested changes to the contents of the share may take a while to perform.  The process will run in the background and a popup will inform you when the process has completed.
+MESG_SHARE_CONTENTS_PERMISSIONS_CHANGED::::Share contents ownership and permissions changed to match the share.
+MESG_SHARE_CONTENTS_TIMESTAMPS_CHANGE_COMPLETE::::The timestamp change process has completed.
+MESG_SHARE_CONTENTS_TIMESTAMPS_CHANGE_FAILED::::The timestamps of the contents of the share could not be changed successfully.
+MESG_SHARE_CONTENTS_TIMESTAMPS_CHANGE_IN_BG::::The requested changes to the timestamps of the contents of the share may take a while to perform.  The process will run in the background and a popup will inform you when the process has completed.
+MESG_SHARE_DELETED::::deleted.
+MESG_SHARE_STICKY_SET::::The share and its subfolders have been configured to prevent non-owner delete and rename.
+MESG_SHARE_STICKY_UNSET::::The share and its subfolders have been configured to allow non-owner delete and rename.
+MESG_SNAPSHOT_CHANGE_REQUIRES_REBOOT::::Changes to the snapshot size will occur when the ReadyNAS is rebooted.  It may take 30 minutes or more depending on your volume capacity and number of files in the volume.  Please note that outstanding snapshot will be deleted during the process.
+MESG_SNAPSHOT_DELETION_BACKGROUNDED::::Snapshot deletion is being performed in the background. The page will be refreshed in 10 seconds
+MESG_SNAPSHOT_RESIZE_CANCELLED::::Snapshot resizing has been cancelled.
+MESG_SNAPSHOT_SUCCESS1::::Snapshot space has been successfully resized to
+MESG_SNAPSHOT_SUCCESS2::::.
+MESG_SSL_KEY_GENERATION_BACKGROUNDED::::SSL key generation backgrounded.
+MESG_SUCCESSFULLY_ADDED::::successfully added.
+MESG_SUCCESSFULLY_DELETED::::successfully deleted.
+MESG_SUCCESSFULLY_DELETED_SSH_KEYS::::Successfully deleted SSH key(s)
+MESG_SYSTEM_SECURITY_UPDATE_INPROGRESS::::System Security change update in progress, please wait ....
+MESG_SYSTEM_SECURITY_UPDATE_SUCCESSFUL::::System Security change update successful
+MESG_USER_DELETION_BACKGROUNDED::::User(s) deletion is being performed in the background. The page will be refreshed in 10 seconds
+MESG_USER_HOMES_DIVERTED_TO_VOLUME::::Home directories on the deleted volume have been deleted.  User accounts with home directory on the deleted volume will now have a new home directory on volume
+MESG_VOLUME_ADD_BACKGROUNDED::::The volume creation process has begun.  Do not interrupt the system during this time.  When finished, email notification will be sent to the alert contact list.  Alternatively, you can click Refresh in the Log page to check progress.
+MESG_VOLUME_ADD_REQUIRE_REBOOT::::The volume will not be added until you restart this device.  This process can take 30 minutes or more depending on your volume size, during which you will not be able to access this device. You will be notified by email when the volume add process is complete.
+MESG_VOLUME_DELETE_BACKGROUNDED::::The volume deletion process has begun.  Do not interrupt the system during this time.  When finished, email notification will be sent to the alert contact list.  Alternatively, you can click Refresh in the Log page to check progress.
+MESG_VOLUME_MAINTENANCE_CONSISTENCY_CANCEL_FAIL::::On-line filesystem check cancellation failed.
+MESG_VOLUME_MAINTENANCE_CONSISTENCY_CANCEL_SUCCESS::::On-line filesystem check cancelled.
+MESG_VOLUME_MAINTENANCE_CONSISTENCY_COMPLETED::::The on-line filesystem consistency check completed without errors for
+MESG_VOLUME_MAINTENANCE_CONSISTENCY_FAILED::::The on-line filesystem consistency check detected problems with your data volume.  Please reboot the system with the volume scan checkbox enabled to do a full filesystem consistency check and repair.
+MESG_VOLUME_MAINTENANCE_CONSISTENCY_SKIPPED::::On-line filesystem consistency check skipped due to degraded volume status.
+MESG_VOLUME_MAINTENANCE_CONSISTENCY_SKIPPED_BODY::::The scheduled on-line filesystem consistency check was skipped because the volume was degraded.  Please replace the failed disk(s) and the check will occur at the next scheduled time.
+MESG_VOLUME_MAINTENANCE_CONSISTENCY_STARTED::::The on-line filesystem consistency check has started for
+MESG_VOLUME_MAINTENANCE_SCRUB_CANCEL_FAIL::::Disk scrubbing cancellation failed.
+MESG_VOLUME_MAINTENANCE_SCRUB_CANCEL_SUCCESS::::Disk scrubbing cancelled.
+MESG_VOLUME_MAINTENANCE_SCRUB_SKIPPED::::Disk scrubbing skipped due to degraded volume status.
+MESG_VOLUME_MAINTENANCE_SCRUB_SKIPPED_BODY::::The scheduled disk scrubbing was skipped because the volume was degraded.  Please replace the failed disk(s) and the disk scrubbing will occur at the next scheduled time.
+MESG_VOLUME_MAINTENANCE_SCRUBBING_SKIPPED_SWAP::::Disk scrubbing skipped due to degraded OS volume.
+MESG_VOLUME_MAINTENANCE_SCRUBBING_SKIPPED_SWAP_BODY::::The scheduled disk scrubbing was skipped because the operating system volume was degraded.  Please replace the failed disk(s) and the disk scrubbing will occur at the next scheduled time.
+MESG_WAKEUP_SCHEDULED::::System scheduled to wakeup at
+MESG_WARN_NIS_STARTUP_TIME::::NIS startup can take some time.  Please do not interrupt the process.
+MINUTES_LONG::::minutes
+MINUTES_SHORT::::min
+MISC_SERVICES::::Miscellaneous Services
+MISSING::::Missing
+MKFS_QUEUED::::The format is being performed in the background.  When the format is complete, an alert message will be sent.
+MOUNT::::Mount Device
+MODE_ROUND_ROBIN::::Round-Robin
+MODE_ACTIVE_BACKUP::::Active Backup
+MODE_XOR::::XOR
+MODE_BROADCAST::::Broadcast
+MODE_IEEE8033AD::::IEEE 802.3ad LACP
+MODE_TRANSMIT_LOAD_BALANCE::::Transmit Load Balancing
+MODE_ADAPTIVE_LOAD_BALANCE::::Adaptive Load Balancing
+MUSIC_ONLY::::Music
+NA::::NA
+NETWORK::::Network
+NETWORK_CHANGE_BACKGROUNDED::::Changes to the network is being backgrounded.  The browser will automatically refresh in 10 secs.
+NETWORK_DISCONNECT_WARNING::::Changing jumbo frames mode may affect your network connection.  If you lose connection, close the browser window and reconnect with RAIDar.
+NETWORK_ERRORS::::Network Errors
+NETWORK_INTERFACE_NOT_CONNECTED::::Not Connected
+NETWORK_NAME::::Network name (ESSID)
+NETWORK_STATUS::::Status
+NEW_DISKS_DETECTED::::Expandable disk(s) detected
+NEW_DISK_ADD_REDUNDANCY::::A newly detected disk will be used to add redundancy to the existing volume.  The capacity of the volume will remain the same, but the volume will now be protected from a single disk failure.
+NEW_FIRMWARE_AVAILABLE::::A newer version of the firmware for your ReadyNAS device is now available.  To install it, please go to the System page and click on the Update tab.  Then, go to the Remote tab, click the Check For Update button, then click Perform System Update.
+NEW_FIRMWARE_AVAILABLE_AUTODOWNLOAD::::A newer version of the firmware for your ReadyNAS device is now available.  Your ReadyNAS will download the update and send you further instructions once the download is completed.
+NEW_FIRMWARE_AVAILABLE_FIRSTBOOT::::A newer version of the firmware for your ReadyNAS device is now available.  To install it, please complete the Setup Wizard, then go to the System page and click on the Update tab.  Then, go to the Remote tab, click the Check For Update button, then click Perform System Update.
+NEW_FIRMWARE_AVAILABLE_REDIRECTING_TO_UPDATE::::A newer version of the firmware for your ReadyNAS device is now available. Redirecting control to the update page.
+NEW_FIRMWARE_AVAILABLE_SUBJECT::::New ReadyNAS firmware available
+NEW_NAME::::New name
+NEW_PASSWORD::::New Password
+NEXT_SCHEDULED_SNAPSHOT::::Next scheduled snapshot
+NFS_REMOTE_SERVER::::Remote, NFS Server
+NFS_REQUIRES_ROOT_ACCESS::::Backup source and destination shares that are accessed over the NFS protocol must be accessible by the root user for backups to complete successfully.  Permissions-related problems may appear if root access is not enabled.
+NIS::::NIS
+NIS_DOMAIN::::NIS Domain
+NIS_SERVER::::NIS Server
+NONE::::None
+NORMAL::::Normal
+NOT_REDUNDANT::::Not redundant.  A disk failure will render this volume dead.
+NOT_SCHEDULED::::Not scheduled
+NO_SHARES_ACCESSIBLE_CURRENTLY::::No shares currently accessible.
+NO_BACKUP_LOG_EXISTS::::No backup log exists for this job.
+NO_FS::::No Filesystem
+NO_LOG_EXISTS::::Log is empty.
+NO_PRINT_JOBS_QUEUED::::No print jobs queued.
+NO_SPACE_ALLOCATED_FOR_SNAPSHOT::::No space allocated for snapshots
+NTP_SERVER_SET_TO::::The ReadyNAS will sync its time to the NTP service from
+NUMERIC_0::::0
+NUMERIC_1::::1
+NUMERIC_2::::2
+NUMERIC_3::::3
+NUMERIC_4::::4
+NUMERIC_5::::5
+NUMERIC_6::::6
+NUMERIC_7::::7
+NUMERIC_8::::8
+OF::::of
+OFF::::Off
+OFFLINE::::Offline
+OF_QUOTA,LABEL_OF_QUOTA::::% of quota
+OK,LABEL_OK6,LABEL_OK5,LABEL_OK4,LABEL_OK3,LABEL_OK2,LABEL_OK,BUTTON_OK,BUTTON_OK2::::OK
+OLD_NAME::::Old name
+ONLINE::::Online
+OPERATING_MODE::::Operating mode
+LABEL_OPTIMIZE_FOR_MAC:::: <b> Optimize for OS X. </b> Enable this option for best performance in Mac OS X environments when accessing the ReadyNAS over SMB/CIFS.  This option introduces compatibility issues with Windows NT, so disable this option if this device will be accessed by Windows NT clients.
+OPTION,tab_option::::Security Mode
+OPTIONS::::Options
+OPTION_STANDBY::::Enter standby mode.  You can wake up the device by pressing the front power button.
+OS_SERIAL::::Serial
+OS_VERSION::::Firmware
+OUT_OF_SPEC::::Out of Spec
+PAGE::::Page
+PARTITION::::Partition
+PASSWORD::::Password
+PASSWORD_AND_ACCESS_SAME_AS_FIRST::::Share password and access same as first share.
+PASSWORD_MISSING_MESG::::You must enter a password.
+PASSWORD_RESET_TO::::The admin password has been reset to
+PERFORMANCE,tab_performance::::Performance
+PERFORM_FACTORY_DEFAULT,BUTTON_PERFORM_FACTORY_DEFAULT::::Perform Factory Default
+PERFORM_UPDATE,BUTTON_PERFORM_UPDATE::::Perform System Update
+PICTURE_FOLDER::::Picture folder
+PICTURE_SHARE::::Picture share
+PICTURES_ONLY::::Pictures
+PLEASE_WAIT::::Please wait...
+POWER_MANAGEMENT::::Power
+POWER_OUT_OF_NORMAL_RANGE::::power is out of normal range
+POWER_OUT_OF_SPEC::::power is out of spec
+POWER_UNIT::::v
+PRINT,BUTTON_PRINT::::Print
+PRINTER_FILENAME::::File Name
+PRINTER_NAME::::Printer
+PROMPT_ACTIVE_SNAPSHOT::::Active snapshot:
+PROMPT_ADDLUN_DESCRIPTION,PROMPT_CREATE_LUN_DESCRIPTION::::LUN Description:
+PROMPT_ALLOW_DELETE::::Allow delete from player:
+PROMPT_ALLOW_GUEST_ACCESS::::Allow guest access
+PROMPT_ALLOW_HOST::::Hosts allowed access:
+PROMPT_ALLOW_UPLOAD_RESUMES::::Allow upload resumes:
+PROMPT_AUTHENTICATION_MODE::::Authentication mode:
+PROMPT_AUTHOR::::Author:
+PROMPT_AUTO_DETECT_DC::::Auto detect, or specify IP address:
+PROMPT_AVAILABLE_DISKS::::Available Disks:
+PROMPT_BITTORENT_MANAGEMENT_LINK::::Connect to the BiTorrent setup:
+PROMPT_BOOKMARKS::::Bookmarks:
+PROMPT_CAPACITY,PROMPT_MODIFY_CAPACITY,PROMPT_ADDLUN_CAPACITY,PROMPT_CREATE_CAPACITY::::Capacity:
+PROMPT_COMMUNITY::::Community:
+PROMPT_CONFIGURATION::::Configuration:
+PROMPT_CONTENT_TYPES_UPNPAV::::Content Types
+PROMPT_COPY_AS_OWNER::::Copy as owner:
+PROMPT_DATE::::Date:
+PROMPT_DC_IP::::Domain Controller:
+PROMPT_DELETE_CONFIRMATION::::Confirmation:
+PROMPT_DELETE_TARGETNAME,PROMPT_CREATE_TARGETNAME,PROMPT_MODIFY_TARGETNAME,PROMPT_EXPAND_TARGETNAME,PROMPT_MODIFYLUN_TARGETNAME,PROMPT_ADDLUN_TARGETNAME::::Target Name:
+PROMPT_DISK_SPACE::::Disk space:
+PROMPT_DEFAULT_ACCESS::::Default Access:
+PROMPT_DEFAULT_GROUP::::Default group for new users:
+PROMPT_DEFAULT_HOME_VOLUME::::Default home volume for new users:
+PROMPT_DELETE_LUN,PROMPT_EXPAND_LUN,PROMPT_ADDLUN,PROMPT_MODIFY_LUN::::LUN:
+PROMPT_DHCP_ENDING_IP::::Ending IPv4 Address:
+PROMPT_DHCP_LEASE_TIME::::Lease Time (min):
+PROMPT_DHCP_STARTING_IP::::Starting IPv4 Address:
+PROMPT_DEFAULT_GATEWAY::::Default gateway:
+PROMPT_DISK::::Disk:
+PROMPT_DNS::::DNS:
+PROMPT_DNS_DOMAIN::::Domain name:
+PROMPT_DNS_NAMESERVER1::::Domain name server 1:
+PROMPT_DNS_NAMESERVER2::::Domain name server 2:
+PROMPT_DNS_NAMESERVER3::::Domain name server 3:
+PROMPT_DOMAIN::::Domain:
+PROMPT_DOMAIN_NAME_FQDN::::Domain Name (FQDN):
+PROMPT_DOMAIN_ADMIN_LOGIN::::Domain Administrator:
+PROMPT_EMAIL_ADDRESS::::Email address:
+PROMPT_ENABLE_UPS_ON_ANOTHER_NAS::::Enable monitoring of UPS physically attached to a remote ReadyNAS
+PROMPT_EXPAND_CURRENT_SIZE,PROMPT_MODIFYLUN_CURRENT_CAPACITY::::Current Capacity:
+PROMPT_EXPAND_DESIRED_SIZE,PROMPT_MODIFYLUN_DESIRED_CAPACITY::::Desired Capacity:
+PROMPT_FAN::::Fan:
+PROMPT_FIREFLY_MANAGEMENT_LINK::::Connect to the Firefly setup:
+PROMPT_FIRMWARE::::Firmware:
+PROMPT_GATEWAY::::Gateway:
+PROMPT_HOST_1::::Host:
+PROMPT_HOST_2::::Host:
+PROMPT_HIDDEN_FOLDER::::Hidden folder:
+PROMPT_IP_ADDRESS,PROMPT_IP_ADDRESS2::::IPv4 address:
+PROMPT_IP_ASSIGNMENT::::IPv4 assignment:
+PROMPT_IP_NETMASK::::Subnet mask:
+PROMPT_LOGIN_AUTHENTICATION::::Login authentication on this share:
+PROMPT_MAC_ADDRESS2,PROMPT_MAC_ADDRESS::::MAC address:
+PROMPT_MAXIMUM_PLAYLIST_ITEMS::::Maximum playlist items:
+PROMPT_MAX_LINES_PER_PAGE::::Maximum lines displayed per page:
+PROMPT_MAX_VOLUME_SIZE::::Maximum volume size:
+PROMPT_MEDIA_FOLDER,PROMPT_MEDIA_FOLDER_WIZD::::Media folder:
+PROMPT_MEDIA_SHARE,PROMPT_MEDIA_SHARE_WIZD::::Media share:
+PROMPT_MEMORY::::Memory:
+PROMPT_MODEL::::Model:
+PROMPT_MODIFY_AVAILABILITY,PROMPT_MODIFYLUN_AVAILABILITY::::Availability:
+PROMPT_MODIFY_CHAP,PROMPT_CREATE_CHAP::::CHAP Authentication:
+PROMPT_CREATE_CHAP_ACCESS::::Access Control:
+PROMPT_MODIFY_CHAP_ACCESS::::Access Control:
+PROMPT_MODIFYLUN_DESCRIPTION::::LUN Description:
+PROMPT_MODIFYLUN_AVAILABILITY::::Availability:
+PROMPT_MTU::::MTU:
+PROMPT_MYACCOUNT::::Account:
+PROMPT_MYCURRENTPASSWORD::::Current Password:
+PROMPT_MYPASSWORD::::New password:
+PROMPT_MYPASSWORD_RETYPE::::Re-type new password:
+PROMPT_NAME::::Name:
+PROMPT_NETBIOS_NAME::::NetBIOS Name:
+PROMPT_NEW_ADMIN_PASSWORD::::New admin password:
+PROMPT_NEW_OBJECT_OU::::New object OU:
+PROMPT_DAILY_UPDATE_UPNPAV::::Update media files daily at:
+PROMPT_NO_ROOT_SQUASH_HOST::::Root privilege-enabled hosts:
+PROMPT_ORGUNIT::::Restrict Accounts to OU:
+PROMPT_PASSIVE_PORTS::::Passive ports:
+PROMPT_PASSWORD,PROMPT_PASSWORD2,PROMPT_MODIFY_PASSWORD,PROMPT_CREATE_PASSWORD::::Password:
+PROMPT_MODIFY_PASSWORD2,PROMPT_CREATE_PASSWORD2::::Retype password:
+PROMPT_PASSWORD_RECOVERY_ANSWER::::Password recovery answer:
+PROMPT_PASSWORD_RECOVERY_EMAIL::::Password recovery email address:
+PROMPT_PASSWORD_RECOVERY_QUESTION::::Password recovery question:
+PROMPT_PATH,PROMPT_PATH2::::Path:
+PROMPT_PHYSICAL_CAPACITY::::Physical capacity selected:
+PROMPT_PORT1::::Port 1:
+PROMPT_PORT2::::Port 2:
+PROMPT_PORT::::Port:
+PROMPT_POWER::::Power:
+PROMPT_PREMIUM_FIRMWARE_LICENSE_KEY::::License key:
+PROMPT_PSU::::PSU:
+PROMPT_RAID_DISKS::::RAID Disks:
+PROMPT_READONLY_GROUP::::Read-only groups:
+PROMPT_READONLY_HOST::::Read-only hosts:
+PROMPT_READONLY_USER::::Read-only users:
+PROMPT_REALM::::Realm:
+PROMPT_REASON::::Description:
+PROMPT_RECYCLE_AGE_LIMIT::::Remove files older than:
+PROMPT_RECYCLE_MB_LIMIT::::Limit Recycle Bin to:
+PROMPT_REDIRECT_WEB_ACCESS::::Redirect default web access to this share:
+PROMPT_REMOTE_CONTROL_CODE::::Remote control code for hidden folder (3-digit number):
+PROMPT_REMOTE_IP::::Remote IP address:
+PROMPT_RETYPE_ADMIN_PASSWORD::::Retype admin password:
+PROMPT_SELECT_ADDON_IMAGE_TO_INSTALL::::Select the add-on image to install:
+PROMPT_SELECT_NFS_THREADS::::Select number of nfs threads:
+PROMPT_SELECT_RAID_LEVEL::::Select RAID level:
+PROMPT_SELECT_SHUTDOWN_THRESHOLD::::Select shutdown on battery low threshold:
+PROMPT_SELECT_SNAPSHOT_PCT::::Space reserved for snapshots:
+PROMPT_SERIAL::::Serial:
+PROMPT_SETTIVO_ACCESSKEY::::TiVo Media Access Key (MAK):
+PROMPT_SHARE::::Share:
+PROMPT_SHARE_EVERYONE_PERMISSIONS::::Share folder everyone rights:
+PROMPT_SHARE_EVERYONE_RIGHTS,PROMPT_SHARE_EVERYONE_RIGHTS2::::Everyone rights:
+PROMPT_SHARE_GROUP_OWNER::::Share folder group:
+PROMPT_SHARE_GROUP_PERMISSIONS::::Share folder group rights:
+PROMPT_SHARE_GROUP_RIGHTS,PROMPT_SHARE_GROUP_RIGHTS2::::Group rights:
+PROMPT_SHARE_NAME::::Share Name:
+PROMPT_SHARE_USER_OWNER::::Share folder owner:
+PROMPT_SHARE_USER_PERMISSIONS::::Share folder owner rights:
+PROMPT_SHOW_SERIAL_NUMBER::::When you register, you will be asked for your serial number.  Enter the following:
+PROMPT_SIZE::::Size:
+PROMPT_SLIDE_SHOW_SECONDS::::Slide show delay (secs):
+PROMPT_SLIMSERVER_MANAGEMENT_LINK::::Connect to the SqueezeCenter setup:
+PROMPT_SQUEEZECENTER_MANAGEMENT_LINK::::Connect to the SqueezeCenter setup:
+PROMPT_SMTP_FROM::::From:
+PROMPT_SMTP_LOGIN_TYPE::::Login Type:
+PROMPT_SMTP_PASSWORD::::Password:
+PROMPT_SMTP_PORT::::SMTP port:
+PROMPT_SMTP_SERVER::::SMTP server:
+PROMPT_SMTP_USE_TLS::::Use TLS:
+PROMPT_SMTP_USE_STARTTLS::::Use STARTTLS:
+PROMPT_SMTP_USER::::User:
+PROMPT_SPEED_DUPLEX_MODE,SPEED_DUPLEX_MODE::::Speed/Duplex mode:
+PROMPT_SSL_KEY_HOST::::SSL key host:
+PROMPT_STATUS,PROMPT_STATUS_2,PROMPT_CREATION_STATUS::::Status:
+PROMPT_SYNCHRONIZE_WITH_NTP::::Synchronize clock with the following NTP server(s):
+PROMPT_TARGET_JPEG_OUTPUT::::Target JPEG output:
+PROMPT_TARGET::::Target:
+PROMPT_TEMP::::Temp:
+PROMPT_TIME::::Time:
+PROMPT_TIME_ZONE::::Timezone:
+PROMPT_TIVOBACKUPSCHEDULE::::Schedule:
+PROMPT_TIVOBACKUPPATH::::Archive TiVo<sup>&reg;</sup> videos to:
+PROMPT_TRAP_DESTINATION::::Trap destination:
+PROMPT_TWONKYVISION_MANAGEMENT_LINK::::Connect to the TwonkyMedia setup:
+PROMPT_UPS::::UPS:
+PROMPT_USB_FLASH_AUTO_COPY::::When a USB flash device is detected, automatically copy the content to:
+PROMPT_USER_HOME_FTP_SUPPORT::::Make home shares available over FTP:
+PROMPT_USER_HOME_NFS_SUPPORT::::Export home shares over NFS:
+PROMPT_USER_HOME_RECYCLE_BIN_MAX_DAYS::::Remove Recycle Bin files older than this many days:
+PROMPT_USER_HOME_RECYCLE_BIN_MAX_SIZE::::Limit Recycle Bin to this many MB:
+PROMPT_USER_HOME_RECYCLE_BIN_SUPPORT::::Recycle Bin for private home shares:
+PROMPT_USER_HOME_SUPPORT::::Private home shares for users:
+PROMPT_USER_LOGIN_ONE::::User login 1:
+PROMPT_USER_LOGIN_TWO::::User login 2:
+PROMPT_USER_NAME,PROMPT_MODIFY_USERNAME,PROMPT_CREATE_USERNAME::::User Name:
+PROMPT_USER_PASSWORD_CHANGE::::Allow users to change their passwords:
+PROMPT_VAULT_EMAIL,PROMPT_VAULT_EMAIL2::::Email address:
+PROMPT_VAULT_PASSWORD,PROMPT_VAULT_PASSWORD2::::Password:
+PROMPT_VAULT_CONFIRM_PASSWORD::::Confirm Password:
+PROMPT_VERSION::::Version:
+PROMPT_VLAN_ID::::VLAN ID:
+PROMPT_VLAN_TAG::::VLAN tag:
+PROMPT_VOLUME,PROMPT_MODIFY_VOLUME,PROMPT_CREATE_VOLUME::::Volume:
+PROMPT_VOLUME_C::::Volume C:
+PROMPT_VOLUME_D::::Volume D:
+PROMPT_VOLUME_E::::Volume E:
+PROMPT_VOLUME_F::::Volume F:
+PROMPT_VOLUME_OVERHEAD_NO_SNAPSHOT::::Volume overhead (RAID/FS):
+PROMPT_VOLUME_OVERHEAD::::Volume overhead (RAID/Snapshot/FS):
+PROMPT_WARN_DISK_USAGE::::Warn user when disk usage is:
+PROMPT_WINS_SERVER::::WINS server:
+PROMPT_WORKGROUP::::Workgroup:
+PROMPT_WRITEABLE_GROUP::::Write-enabled groups:
+PROMPT_WRITEABLE_HOST::::Write-enabled hosts:
+PROMPT_WRITEABLE_USER::::Write-enabled users:
+PROMPT_LOGIN,PROMPT_LOGIN2::::Login:
+PROMPT_HOSTNAME::::Hostname:
+PROMPT_SEND_LOGS_GET_DESCRIPTION::::A short description or the problem (include a forum link if possible) is required:
+PROMPT_SEND_LOGS_GET_DEST::::Please enter the destination email address:
+PROMPT_SEND_LOGS_GET_RETURN_ADDRESS::::Please enter the return email address:
+PROMPT_SNAPSHOT_RESIZE_QUEUED::::Snapshot resize queued for next boot:
+PROMPT_MIGRATE5TO6::::Next added drive:
+PROMPT_MIGRATE_EXPANDVOLUME::::Will be used to expand volume
+PROMPT_MIGRATE_ADD_DUAL_REDUNDANCY::::Will be used to add dual redundancy
+PROMPT_IPV6_ASSIGNMENT::::IPv6 assignment:
+PROMPT_IPV6_ADDRESS::::IPv6 address:
+PROMPT_IPV6_PREFIXLENGTH::::Prefix length:
+PROMPT_IPV6_GATEWAY::::Default gateway:
+PROMPT_ENABLE_DHCPV6::::Enable Router Advertisement Daemon:
+PROMPT_PREFIX::::Prefix:
+PROMPT_PREFIX_LENGTH::::Prefix Length:
+PROTOCOL::::Protocol
+PSU::::Power Supply
+QUEUED::::Queued
+QUOTA,LABEL_QUOTA::::Quota
+QUOTA_EXCEEDED,LABEL_QUOTA_EXCEEDED::::Quota Exceeded
+RAID::::RAID
+RAID_CONFIGURATION,LABEL_RAID_CONFIGURATION::::RAID Configuration
+RAID_LEVEL::::RAID Level
+RAID_SETTINGS,tab_raid_settings::::RAID Settings
+RAID_STATUS,LABEL_RAID_STATUS::::Status
+RCVERROR::::Receive errors
+READING_REACHED_WARNING_LEVEL::::reading has reached warning level
+READY::::Ready
+REBOOT_REQUIRED::::The performance options you selected will not take effect until you restart this device.
+REBOOT_REQUIRED_WEB_SHARE_CHANGED::::The web share has been changed.\n For the changes to be reflected the system will require a reboot. \n Click Ok to be redirected to the shutdown page.
+RECALIBRATE,BUTTON_RECALIBRATE::::Recalibrate
+RECHECK_FOR_UPDATE_MESG::::Unable to connect to the update server or retrieve update information.  Click <b> Check for Update </b> to retry.
+RECOVERY::::Recovery
+REDUNDANT::::Redundant
+REFRESH,BUTTON_REFRESH::::Refresh
+REFRESH_USER_DATABASE::::User Database successfully refreshed.
+RELEASE_NOTES::::Release notes
+REMOTE,tab_remote::::Remote
+REMOTE_IMAGE_FOUND::::A firmware update is available.  Click <b> Perform System Update </b> if you wish to update to the new image now.
+REMOTE_IMAGE_NOT_NEW::::The system is already running the latest firmware.  Click <b> Perform System Update </b> if you wish to proceed with the update anyway.
+REMOVED_NONEXIST_GROUP1::::Removed
+REMOVED_NONEXIST_GROUP2::::access settings for non-existent group
+REMOVED_NONEXIST_GROUP3::::from share
+REMOVED_NONEXIST_USER1::::Removed
+REMOVED_NONEXIST_USER2::::access settings for non-existent user
+REMOVED_NONEXIST_USER3::::from share
+RENAMED_AS::::renamed as
+RENEW_NOW,BUTTON_RENEW_NOW::::Renew now
+REPORTS_OUT_OF_NORMAL_RANGE::::reports out of normal range
+REPORTS_TEMP::::reports a temperature of
+RESCAN_MEDIA_FILES::::Rescan media files
+RESERVED_FOR_SNAPSHOT::::reserved for snapshots
+RESTART_NOW,BUTTON_RESTART_NOW::::Restart now
+RESHAPE::::Restriping
+RESIZEFS::::Expanding
+RESYNC::::Resync
+RESYNC_DELAYED::::Resync queued
+RETYPE_PASSWORD::::Retype Password
+ROOT_SQUASHED_HOSTS_REMOVED1::::The following hosts do not have NFS access to
+ROOT_SQUASHED_HOSTS_REMOVED2::::and are therefore removed from the root privilege-enabled hosts list
+ROUTE,tab_route::::Route
+RPM,LABEL_RPM::::RPM
+RSYNC::::Remote: Rsync Server
+RX_DROPPED::::RX dropped
+RX_ERRORS::::RX errors
+RX_FRAME::::RX frame
+RX_OVERRUNS::::RX overruns
+RX_PACKETS::::RX packets
+SAVE,BUTTON_SAVE,BUTTON_SAVE2::::Save
+SCHEDULE_SNAPSHOT_EVERY,LABEL_SCHEDULE_SNAPSHOT_EVERY::::Take snapshot every
+SECONDS::::sec
+SECURITY_ACCOUNTS::::Security:Accounts
+SELECT_FILE::::Select update file
+SELECT_NAS_SHARE::::Select ReadyNAS share
+SEND_LOGS,BUTTON_SEND_LOGS::::Send All Logs
+SEND_LOGS_INVALID_ADDRESS::::Invalid email address.
+SEND_LOGS_LOGS_NOT_SENT::::Logs not sent.
+SEND_LOGS_SENDING_LOGS::::Sending logs.
+SENT_ALERT_MESG::::Alert test message has been sent.
+SENT_ALERT_MESG_FAILED::::Failed to send alert test message.
+SENT_ALERT_MESG_SMTP_FAILED::::Failed to contact SMTP server.
+SENT_TO::::sent to
+SERVICES::::Services
+SERVICES_BEING_RESTARTED::::Services are being restarted.  Page will automatically refresh when complete.  Click OK now.
+SERVICE_AFP_DISABLED::::Sorry, AFP service is currently disabled.
+SERVICE_CIFS_DISABLED::::Sorry, CIFS service is currently disabled.
+SERVICE_FTP_DISABLED::::Sorry, FTP service is currently disabled.
+SERVICE_NFS_DISABLED::::Sorry, NFS service is currently disabled.
+SERVICES_STANDARD::::Services:Standard
+SETTINGS,tab_settings::::Settings
+SETUP_WIZARD::::Setup Wizard
+SETUP_WIZARD_HEADING::::Welcome to the ReadyNAS Setup Wizard
+SET_DEFAULTS_SUCCEEDED::::Successfully applied accounts defaults.
+SHARENAME_MISSING_MESG::::You must enter a share name.
+SHARES::::Shares
+SHARE_FOLDER_PERMISSION::::Share folder permission.
+SHARE_LIST,tab_share_list::::Share List
+SHARES_SHARE_LIST::::Shares:Share List
+SHARE_TAB::::Share
+SHDR_ALERT_EVENTS::::Alert Events
+SHDR_ADVANCED_AFP_PERMISSION::::Advanced AFP Permission
+SHDR_ADVANCED_FTP_PERMISSION::::Advanced FTP Permission
+SHDR_ADVANCED_CIFS_PERMISSION::::Advanced CIFS Permission
+SHDR_ADVANCED_NFS_OPTIONS::::Advanced NFS Options
+SHDR_ADVANCED_SHARE_PERMISSION::::Advanced Share Permission
+SHDR_ADVANCED_SHARE_UTILITIES::::Advanced Share Utilities
+SHDR_BACKUP_BUTTON_SETUP::::Backup Button Setup
+SHDR_BACKUP_DESTINATION::::STEP 2 - Select backup destination
+SHDR_BACKUP_OPTION::::STEP 4 - Choose backup options
+SHDR_BACKUP_SCHEDULE::::STEP 3 - Choose backup schedule
+SHDR_BACKUP_SCHEDULE_LIST::::Backup Schedule
+SHDR_BACKUP_SOURCE::::STEP 1 - Select backup source
+SHDR_BE_WINS_SERVER::::Make this device a WINS Server
+SHDR_DEFAULT_GATEWAY::::Default Gateway
+SHDR_DISK_SPINDOWN_OPTION::::Disk Spin-down Option
+SHDR_DNS_SETTINGS::::DNS Settings
+SHDR_ENABLE_OPLOCKS_OPTION::::Opportunistic Locking
+SHDR_FAN_RPM_OVERRIDE_OPTION::::Fan RPM Override Option
+SHDR_HOSTNAME::::Hostname
+SHDR_ISCSI::::iSCSI target service
+SHDR_LANGUAGE_SETTING::::Language Setting
+SHDR_NETWORK_PERFORMANCE_SETTINGS::::Performance Settings
+SHDR_NTP_OPTION::::NTP Option
+SHDR_OTHER_ALERT_SETTINGS::::Other Alert Settings
+SHDR_PERFORMANCE_OPTIONS::::Performance Options
+SHDR_POWERON_TIMER::::Power Timer
+SHDR_READYNAS_POWER_SAVING_OPTION::::ReadyNAS Power Saving Option
+SHDR_RECYCLE_BIN::::Recycle Bin
+SHDR_SELECT_CURRENT_TIME::::Select Current Time
+SHDR_SELECT_TIMEZONE::::Select Timezone
+SHDR_SHARES_ON_RAID_VOLUME::::Shares on RAID Volumes
+SHDR_SHARES_ON_USB_STORAGE::::Shares on USB Storage Devices
+SHDR_SHARE_ACCESS_RESTRICTIONS::::Share Access Restrictions
+SHDR_SHARE_DISPLAY_OPTION::::Share Display Option
+SHDR_SHUTDOWN_OPTIONS::::Shutdown Options
+SHDR_SNAPSHOT_SCHEDULE::::Snapshot schedule
+SHDR_SNAPSHOT_SPACE::::Snapshot space
+SHDR_SPECIFY_WINS_SERVER::::Specify a WINS Server
+SHDR_STANDARD_SETTING::::Standard Setting
+SHDR_TEAMING_SETTING::::Teaming/Failover
+SHDR_UPS_CONFIGURATION::::UPS Configuration
+SHDR_USB_STORAGE_DEVICES::::USB Storage Devices
+SHDR_USB_FLASH_OPTION::::USB Flash Device Option
+SHDR_VAULT::::ReadyNAS Vault
+SHDR_VLAN_SETTING::::VLAN Setting
+SHDR_VOLUME_SELECT_DISKS::::STEP 1 - Select disks to include in the new volume
+SHDR_VOLUME_SELECT_CAPACITY::::STEP 3 - Select volume capacity
+SHDR_VOLUME_SELECT_RAID::::STEP 2 - Select RAID level
+SHDR_VOLUME_SELECT_RAID_AND_SNAPSHOT::::STEP 2 - Select RAID level and snapshot space
+SHDR_WAKE_ON_LAN_OPTION::::Wake-on-LAN
+SHDR_WORKGROUP::::Workgroup
+SHOW_ERRORS,BUTTON_SHOW_ERRORS::::Show errors
+SHUTDOWN,tab_shutdown::::Shutdown
+SHUTDOWN_IMMEDIATELY::::Please shutdown the system immediately for service.
+SIGNAL::::Signal
+SINGLE_DISK::::Single disk
+SLEEPING::::Sleeping
+SMART_ATA_ERROR_COUNT::::ATA Error Count
+SMART_ATTR_001::::Raw Read Error Rate
+SMART_ATTR_003::::Spin Up Time
+SMART_ATTR_004::::Start Stop Count
+SMART_ATTR_005::::Reallocated Sector Count
+SMART_ATTR_006::::Read Channel Margin
+SMART_ATTR_007::::Seek Error Rate
+SMART_ATTR_008::::Seek Time Performance
+SMART_ATTR_009_POWER_ON_HOURS::::Power On Hours
+SMART_ATTR_009_POWER_ON_MINUTES::::Power On Minutes
+SMART_ATTR_010::::Spin Retry Count
+SMART_ATTR_011::::Calibration Retry Count
+SMART_ATTR_012::::Power Cycle Count
+SMART_ATTR_192_EMERGENCY_RETRACT_CYCLE_CT::::Emergency Retract Cycle Count
+SMART_ATTR_192_POWER-OFF_RETRACT_COUNT::::Power-Off Retract Count
+SMART_ATTR_194_TEMPERATURE_CELSIUS::::Temperature Celsius
+SMART_ATTR_193::::Load Cycle Count
+SMART_ATTR_195::::Hardware ECC Recovered
+SMART_ATTR_196::::Reallocated Event Count
+SMART_ATTR_197::::Current Pending Sector
+SMART_ATTR_198_OFF-LINE_SCAN_UNC_SECTOR_CT::::Offline Scan Uncorrectable Sector Count
+SMART_ATTR_198_OFFLINE_UNCORRECTABLE::::Offline Uncorrectable
+SMART_ATTR_199::::UDMA CRC Error Count
+SMART_ATTR_200_MULTI_ZONE_ERROR_RATE::::Multi Zone Error Rate
+SMART_ATTR_200_WRITE_ERROR_COUNT::::Write Error Count
+SMART_ATTR_201_DETECTED_TA_COUNT::::Dtected TA Count
+SMART_ATTR_201_SOFT_READ_ERROR_RATE::::Soft Read Error Rate
+SMART_ATTR_202::::TA Increase Count
+SMART_ATTR_203::::Run Out Cancel
+SMART_ATTR_204::::Shock Count Write Operation
+SMART_ATTR_205::::Shock Rate Write Operation
+SMART_ATTR_207::::Spin High Current
+SMART_ATTR_208::::Spin Buzz
+SMART_ATTR_209::::Offline Seek Performance
+SMART_FIRMWARE::::Firmware
+SMART_MODEL::::Model
+SMART_MODEL_FAMILY::::Family
+SMART_NON_FATAL_ERROR_COUNT::::Non-Fatal Count
+SMART_NO_ERRORS_LOGGED::::No SMART errors logged
+SMART_POPUP::::SMART+
+SMART_POPUP_TITLE::::SMART Information for
+SMART_SERIAL::::Serial
+SMART_VALUE::::Value
+SMTP,tab_smtp::::SMTP
+SNAPSHOT,tab_snapshot::::Snapshot
+SNAPSHOT_CONFIG_FAILED::::Snapshot resize failed
+SNAPSHOT_CONFIG_SUCCESSFUL::::Snapshot resize successful
+SNAPSHOT_CREATE_FAILED::::Unsuccessful taking snapshot.
+SNAPSHOT_CREATE_SUCCEEDED::::Snapshot successfully taken.
+SNAPSHOT_DELETE_FAILED::::Unsuccessful deleting snapshot.
+SNAPSHOT_DELETE_SUCCEEDED::::Snapshot successfully deleted.
+SNAPSHOT_DISABLED::::Snapshot scheduling is disabled.
+SNAPSHOT_ENABLED::::Snapshot schedule updated.
+SNAPSHOT_OVERHEAD::::Snapshot overhead
+SNMP,tab_snmp::::SNMP
+SOURCE_DESTINATION::::Source <br> &nbsp;Destination
+SPACE::::Disk space
+SPARE::::Spare
+SPARE_ADDED_REBOOT_REQUIRED::::One or more spare disks were added to existing RAID volumes.   Please reboot the device to activate the spares.
+SPARE_EFFECTIVE_AFTER_REBOOT::::Hot spare active after reboot
+SPEED::::Speed
+STANDARD::::Standard File Protocols
+STANDARD_FILE_PROTOCOLS::::Standard File Protocols
+SQUEEZECENTER_ENABLED_OPT_SCANNER::::Successfully enabled optimized SqueezeCenter scanner.
+SQUEEZECENTER_DISABLED_OPT_SCANNER::::Successfully disabled optimized SqueezeCenter scanner.
+STATUS::::Status
+STATUS_BINARY_EXTRACTION_COMPLETED::::Binary Extraction successful.
+STATUS_BINARY_EXTRACTION_FAILED::::Binary Extraction failed.
+STATUS_BINARY_EXTRACTION_STARTED::::Binary Extraction started.
+STATUS_BYTES::::Bytes
+STATUS_CARRIER::::Carrier
+STATUS_COLLISIONS::::Collisions
+STATUS_COMPRESSED::::Compressed
+STATUS_DOWNLOAD_COMPLETED::::Download completed.
+STATUS_DOWNLOAD_STARTED::::Download started.
+STATUS_DOWNLOAD_IN_PROGRESS::::Download in progress.
+STATUS_DROPS::::Drops
+STATUS_ERRORS::::Errors
+STATUS_FIFO::::FIFO
+STATUS_FRAME::::Frame
+STATUS_INSTALLATION_STARTED::::Installation started.
+STATUS_INSTALLATION_COMPLETED::::Installation completed.
+STATUS_INSTALLATION_FAILED::::Installation failed.
+STATUS_MULTICAST::::Multicast
+STATUS_PACKETS::::Packets
+STATUS_RECEIVE::::Receive
+STATUS_TRANSMIT::::Transmit
+STATUS_TAR_EXTRACTION_STARTED::::Archive extraction started.
+STATUS_TAR_EXTRACTION_COMPLETED::::Archive extraction successful.
+STATUS_TAR_EXTRACTION_FAILED::::Archive extraction failed.
+STREAMING::::Streaming Services
+STREAMING_FILE_PROTOCOLS::::Streaming File Protocols
+STREAMING_FILE_PROTOCOLS_INFO::::All streaming services are provided from the <b> media </b> share by default.
+SUBJECT_CONFIG_BACKUP::::ReadyNAS configuration file archive
+SUBJECT_GROUP_LIST_FILE::::Group list
+SUBJECT_PASSWORD_RESET::::Admin password has been reset
+SUBJECT_USER_LIST_FILE::::User list
+SUCCESS_BACKUP_BUTTON_DEFAULT_RESTORED::::Backup button defaults restored.
+SUCCESS_BACKUP_BUTTON_JOBS_SAVED::::Backup button jobs saved.
+SUCCESS_BACKUP_DELETED::::Backup job(s) successfully deleted.
+SUCCESS_BACKUP_JOB_CANCELLED::::Job cancelled.
+SUCCESS_BACKUP_SAVED::::Backup job successfully saved.
+SUCCESS_BACKUP_SCHEDULE_SAVED::::Backup job successfully saved.
+SUCCESS_CHANGE_PASSWORD::::Successfully changed password.
+SUCCESS_CHANGES_SAVED::::Changes successfully saved.
+SUCCESS_CLOCK_SET::::System clock has been updated.
+SUCCESS_CONNECT::::Successfully connected to
+SUCCESS_DISABLED_DISK_CACHE::::Disk write cache has been disabled.
+SUCCESS_DISABLED_JUMBO_FRAMES::::Jumbo frames mode has been disabled.
+SUCCESS_DOMAIN_IDMAP_IMPORT::::Successfully imported domain account ID map.
+SUCCESS_DOMAIN_JOIN::::Successfully joined domain
+SUCCESS_ENABLED_DISK_CACHE::::Disk write cache has been enabled.
+SUCCESS_ENABLED_JUMBO_FRAMES::::Jumbo frames mode has been enabled.  You will need to reset your client network connections to realize any performance gain.
+SUCCESS_FTP_PORT_CHANGE::::Successfully applied new FTP port.
+SUCCESS_HOT_ADD::::Successfully added spare to RAID volume
+SUCCESS_HOT_REMOVE::::Successfully removed disk from RAID for volume
+SUCCESS_HTTPS_PORT_CHANGE::::Successfully applied new HTTPS port.
+SUCCESS_LANGUAGE_SET::::Successfully set default language.
+SUCCESS_LOGIN_VAULT::::Successfully logged in to ReadyNAS Vault.
+SUCCESS_LOGOUT_VAULT::::Successfully logged out from ReadyNAS Vault.
+SUCCESS_MKFS::::Successfully created a file system.
+SUCCESS_MTU_CHANGE::::Successfully changed MTU.
+SUCCESS_NIS_START::::Successfully started NIS service
+SUCCESS_NIS_STOP::::Successfully stopped NIS service
+SUCCESS_NTP_CONNECT::::Successfully synchronized clock with a NTP server.
+SUCCESS_OBTAINING_DHCP_ADDRESS::::Successfully obtained DHCPv4 address.
+SUCCESS_OBTAINING_DHCPV6_ADDRESS::::Successfully obtained DHCPv6 address.
+SUCCESS_REMOVE_ADDON::::Successfully removed add-on package.
+SUCCESS_REMOVE_SERVICE::::Successfully removed service
+SUCCESS_REGISTERED_VAULT::::Successfully registered ReadyNAS Vault.
+SUCCESS_RESET_PASSWORD::::A new password has been sent to the specified email address.
+SUCCESS_SECURITY_SET::::Successfully applied security setting.
+SUCCESS_SERVICE_START_AFP::::Successfully started AFP service.
+SUCCESS_SERVICE_START_CIFS::::Successfully started CIFS service.
+SUCCESS_SERVICE_START_DAAPD::::Successfully started Firefly (iTunes) Media Server.
+SUCCESS_SERVICE_START_FTP::::Successfully started FTP service.
+SUCCESS_SERVICE_START_HTTP::::Successfully started HTTP service.
+SUCCESS_SERVICE_START_NFS::::Successfully started NFS service.
+SUCCESS_SERVICE_START_RSYNC::::Successfully started Rsync service.
+SUCCESS_SERVICE_START_SLIMSERVER::::Successfully started SqueezeCenter service.
+SUCCESS_SERVICE_START_SNMPD::::Successfully started SNMP service.
+SUCCESS_SERVICE_START_TWONKYVISION::::Successfully started TwonkyMedia service.
+SUCCESS_SERVICE_START_UPNP::::Successfully started UPnP service.
+SUCCESS_SERVICE_START_UPNPAV::::Successfully started ReadyDLNA service.
+SUCCESS_SERVICE_START_VAULT::::Successfully started ReadyNAS Vault service.
+SUCCESS_SERVICE_START_WIZD::::Successfully started Home Media Streaming Server service.
+SUCCESS_SERVICE_STOP_AFP::::Successfully stopped AFP service.
+SUCCESS_SERVICE_STOP_CIFS::::Successfully stopped CIFS service.
+SUCCESS_SERVICE_STOP_DAAPD::::Successfully stopped Firefly (iTunes) Media Server.
+SUCCESS_SERVICE_STOP_FTP::::Successfully stopped FTP service.
+SUCCESS_SERVICE_STOP_HTTP::::Successfully stopped HTTP service.
+SUCCESS_SERVICE_STOP_NFS::::Successfully stopped NFS service.
+SUCCESS_SERVICE_STOP_RSYNC::::Successfully stopped Rsync service.
+SUCCESS_SERVICE_STOP_SLIMSERVER::::Successfully stopped SqueezeCenter service.
+SUCCESS_SERVICE_STOP_SNMPD::::Successfully stopped SNMP service.
+SUCCESS_SERVICE_STOP_TWONKYVISION::::Successfully stopped TwonkyMedia service.
+SUCCESS_SERVICE_STOP_UPNP::::Successfully stopped UPnP service.
+SUCCESS_SERVICE_STOP_UPNPAV::::Successfully stopped ReadyDLNA service.
+SUCCESS_SERVICE_STOP_VAULT::::Successfully stopped ReadyNAS Vault service.
+SUCCESS_SERVICE_STOP_WIZD::::Successfully stopped Home Media Streaming Server service.
+SUCCESS_SETTING_HOSTNAME::::Successfully set new hostname.
+SUCCESS_SETTING_IP_ADDRESS::::Successfully applied new network settings.
+SUCCESS_SSL_KEY_GENERATION::::Successfully generated a new SSL key.
+SUCCESS_STARTING_DHCPD::::Successfully started DHCP server.
+SUCCESS_STOPPING_DHCPD::::Successfully stopped DHCP server.
+SUCCESS_UPS_CONNECT_SERVER::::Successfully connected to remote UPS server.
+SUCCESS_USB_FSCK::::Filesystem check completed with no errors.
+SUCCESS_USB_FSCK_ERRORS_FIXED::::Filesystem check completed.  Errors were found, but have been corrected.
+SUCCESS_USB_MKFS1::::Successfully created
+SUCCESS_USB_MKFS2::::file system on the USB device.
+SUCCESS_STARTING_RADVD::::Successfully starting Router Advertisement Daemon.
+SUCCESS_STOPPING_RADVD::::Successfully stopping Router Advertisement Daemon.
+SUMMARY::::Disk Status
+SYMBOLERROR::::Symbol errors
+SYSLOG::::Syslog
+SYSLOG_ENABLE::::Enable remote syslog monitoring.
+SYSLOG_SERVER::::Enter host
+SYSTEM_BUSY_AUTO_REFRESH_MESG::::System is busy, page will be refreshed in 10 seconds
+SYSTEM_BUSY_MANUAL_REFRESH_MESG::::System is busy, please click the Refresh Button
+SYSTEM_NOT_UPDATED_MESG::::Problem encountered while updating your ReadyNAS device.
+SYSTEM_POWERING_OFF::::Please close this browser session and use RAIDar to reconnect to the device after it is powered back on.  System powering off...
+SYSTEM_POWEROFF::::Powering off device
+SYSTEM_REBOOT::::Rebooting device...
+SYSTEM_REBOOTING::::Please close this browser session and use RAIDar to reconnect to the device.  System rebooting...
+SYSTEM_STANDBY::::System entering standby mode.  Please close this browser session and use the front Power button to wake up this device.  If you have set up a Standby schedule below, the device will wake up at the next specified wakeup time.
+SYSTEM_UPDATED_MESG::::Your ReadyNAS device has been updated with a new firmware image.
+SYSTEM_ADDON_INSTALLED_MESG::::The add-on package has been successfully installed.
+SYSTEM_ADDON_INSTALLATION_SUCCEEDED_MESG::::The % add-on has been successfully installed.
+SYSTEM_ADDON_INSTALLATION_FAILED_MESG::::The % add-on encountered an error during installation.
+SYSTEM_UPDATE_REQUIRES_REBOOT::::Please reboot your ReadyNAS device to continue with the update process.
+SYSTEM_UPDATE_SUBJECT::::System Update Status
+tab_add_backup_job::::Add a New Backup Job
+tab_add_new::::Add New
+tab_available::::Available
+tab_backup_job_log::::Backup Job Log
+tab_bond0::::Team 1
+tab_bond1::::Team 2
+tab_edit_backup_job::::Edit Backup Job
+tab_installed::::Installed
+tab_iscsi::::iSCSI
+tab_time_machine::::Time Machine
+tab_volume_C::::Volume C
+tab_volume_D::::Volume D
+tab_volume_E::::Volume E
+tab_volume_F::::Volume F
+tab_config_backup_backup::::Backup
+tab_config_backup_restore::::Restore
+tab_maintenance::::Volume Maintenance
+tab_myshares::::Shares
+tab_mypassword::::Password
+tab_network::::Global Settings
+tab_share::::Share
+tab_teaming::::Teaming
+TAKE_SNAPSHOT_NOW,BUTTON_TAKE_SNAPSHOT_NOW::::Take snapshot now
+TB::::TB
+TCP_RETRANSMIT::::TCP Retransmits
+TCP_RETRANSMIT_UNRECOVERED::::Unrecovered TCP Retransmits
+TEAMING_DISABLED::::Teamed interface has been disabled:
+TEAMING_ENABLED::::Teamed interface has been enabled:
+TEAMING_NON_REDUNDANT::::Non-Redundant
+TEAMING_REDUNDANT::::Redundant
+TEMP::::Temp
+TEMPERATURE::::Temperature
+TEMP_CELSIUS_UNIT::::C
+TEMP_FAHRENHEIT_UNIT::::F
+TEMP_SENSOR::::Temperature sensor
+TEST_CONNECTION,BUTTON_TEST_CONNECTION2,BUTTON_TEST_CONNECTION::::Test connection
+TIME_TO_FINISH::::Time to finish
+TITLE_ADDONS::::Add-ons
+TITLE_BACKUP::::Backup
+TITLE_FACTORY::::Factory Options
+TITLE_FINISH::::Ready to Share!
+TITLE_MYSHARES::::My Shares
+TITLE_NETWORK::::Network
+TITLE_PASSWORDRECOVERY::::Password Recovery
+TITLE_PRINTER::::Printers
+TITLE_REGISTRATION::::Registration
+TITLE_SECURITY::::Security
+TITLE_SERVICES::::Services
+TITLE_SHARE::::Shares
+TITLE_STATUS::::Status
+TITLE_SYSTEM::::System
+TITLE_USER::::
+TITLE_VOLUME::::Volumes
+TITLE_WELCOME::::Home
+TIVO_STATE_VERIFYING::::Verifying...
+TIVO_STATE_UNAUTHORIZED::::Unauthorized
+TIVO_STATE_IDLE::::Idle
+TIVO_STATE_ARCHIVING::::Archiving...
+TOTAL_PAGES::::Total Pages
+TX_CARRIER::::TX carrier
+TX_DROPPED::::TX dropped
+TX_ERRORS::::TX errors
+TX_OVERRUNS::::TX overruns
+TX_PACKETS::::TX packets
+UIDS::::UIDs
+UNAVAILABLE::::Unavailable
+UNEXPECTED_ENCLOSURE_STATUS_DETECTED::::Unexpected enclosure status detected
+UNMOUNT::::Unmount Device
+UP::::up
+UPDATE,tab_update::::Update
+UPDATE_SETTINGS_SAVED::::Update settings saved.
+UPLOAD_AND_VERIFY_IMAGE::::Upload and verify image..
+UPLOAD_BACKGROUNDED_MESG::::The update process has begun.  Do not interrupt the system during this time.  When finished, email notification will be sent to the alert contact list.
+UPLOAD_FILE::::Upload file
+UPNPAV_RESCAN_STARTED::::ReadyDLNA media file rescan started.
+UPNPAV_RESCAN_COMPLETED::::ReadyDLNA media file rescan completed.
+UPS::::UPS
+USABLE::::Usable
+USB,tab_usb::::USB
+USB_CAPACITY_OF::::of
+USB_CAPACITY_USED::::used
+USB_CONNECT::::Connect
+USB_DISCONNECT::::Disconnect
+USB_FILESYSTEM_ERRORS_FOUND::::USB filesystem errors found
+USB_FSCK_LOGS_SENT::::The logs from the filesystem check have been sent to the admin e-mail address.
+USB_PRINTER,tab_usb_printer::::USB Printers
+USB_SHARE_ACCESS::::USB Share Access
+USB_STORAGE::::USB Storage
+USB_UMOUNT_FAILED::::Could not unmount the USB drive partition.  Please try again.
+USB_UMOUNT_FAILED_SUBJECT::::Could not unmount the USB drive partition
+USED::::used
+USER::::User
+USERADD_SUCCEEDED::::User successfully added
+USERDEL_SUCCEEDED::::User successfully deleted
+USERMOD_SUCCEEDED::::User successfully modified
+USERNAME_MISSING_MESG::::You must enter a user name.
+USERS::::USERS
+USER_ACCOUNT::::User Account
+USER_HOME_DIRECTORIES::::Private user folder
+USER_LOGIN::::User login
+VERIFY,BUTTON_UPLOAD_VERIFY::::Upload and verify image..
+VIDEO_FOLDER::::Video folder
+VIDEO_SHARE::::Video share
+VIDEO_ONLY::::Video
+VIEW_LOG::::View log
+VLAN::::VLAN
+VLAN_REQUIRES_REBOOT::::Changes to VLAN setting will occur after rebooting this device.
+VLAN_ID::::VLAN ID
+VLAN_TAG::::VLAN Tag
+VLAN_TAGS::::VLAN tags
+VOLUME::::Volume
+VOLUME_ADD_NOT_PERMITTED::::Volume add not permitted ....
+VOLUME_DEAD::::Dead.  This volume is no longer available.
+VOLUME_EXPANSION_FAILED::::Volume expansion failed
+VOLUME_EXPANSION_FAILED_DRIVE_TOO_SMALL::::Volume expansion failed, drive is too small.
+VOLUME_EXPANSION_RECOVERY_MESG::::Data volume expansion continuing after interruption.
+VOLUME_EXPANSION_RECOVERY_SUB::::Volume expansion recovery
+VOLUME_EXPANSION_SUCCESSFUL::::Volume expansion successful
+VOLUME_INFO::::Volume Info
+VOLUME_MAINTENANCE_CONSISTENCY_COMPLETED_SUBJECT::::Volume consistency check completed for
+VOLUME_MAINTENANCE_CONSISTENCY_FAILED_SUBJECT::::Volume consistency check failed for
+VOLUME_MAINTENANCE_CONSISTENCY_STARTED_SUBJECT::::Volume consistency check started for
+VOLUME_MISSING_MESG::::A volume no longer exists, possibly due to too many disk failures.
+VOLUME_MISSING_SUBJECT::::Missing volume
+VOLUME_NONREDUNDANT_MESG::::A non-redundant volume has been found, most likely due to a hard disk failure.  Please replace the failed disk as soon as possible to prevent data loss in the event of another disk failure.
+VOLUME_NONREDUNDANT_SUBJECT::::Non-redundant volume
+VOLUME_SUCCESSFULLY_EXPANDED::::Data volume has been successfully expanded to
+VOLUME_SUCCESSFULLY_CREATED::::New data volume has been successfully created.
+WAKEUP::::Wakeup
+WARN::::WARN
+WARN_ONLY_SOME_SSH_KEYS_DELETED::::Only some of the SSH keys have been deleted.
+WARNING::::Warning
+WARNING_CHANGE_TO_DHCP::::Your connection may be lost if your DHCP server assigns a different IP address to this device.  After applying the change, rescan for this MAC address with RAIDar and reconnect.
+WARNING_CHANGE_TO_STATIC::::Your connection may be lost if your new IP address is different.  After applying the change, rescan for this MAC address with RAIDar and reconnect.
+WARNING_CHANGE_HOST_NAME_DOMAIN_MODE::::Your attempt to change the host name while the system is set to Domain security mode may result in DNS resolution errors.
+WARNING_IP_CHANGED::::You will need to reconnect using the new IP address. After applying the change, rescan for this MAC address with RAIDar and reconnect.
+WARNING_RENEW_IP::::Your IP address may change and you may need to reconnect using the new IP address.  After applying the change,  rescan for this MAC address with RAIDar and reconnect.
+WARNING_SELECT_OPTION::::Please select an option for this share.
+WARNING_UPLOAD::::The update process is about to begin.  Do not interrupt...
+WARNING_ISCSI_CONNECTION_NEEDS_RESET::::The iSCSI target LUN expansion has been completed. You will need to restart the connection to utilize the additional capacity.
+WARNING_RSYNC_EXCLUSION_LIST_ILLEGAL_CHARACTER::::The following illegal characters have been deleted from the  exclusion list
+WARN_ADD_REDUNDANCY::::Automatically implementing disk failure protection.  This requires overhead of one disk capacity.
+WARN_AUTHENTICATION_TIME::::This can take 15 secs or more.  Please do not interrupt this process.
+WARN_BACKUP_SOURCE_DEST_SAME::::The backup source and destination are set to the same local share.  Please proceed cautiously when configuring this backup job, otherwise data loss may occur.
+WARN_CONTACT_REQUIRED::::You must specify an alert contact before continuing.
+WARN_DELETE_VOLUME::::Deleting this volume will permanently remove all shares and data on this volume, including user home directories residing on this volume.  User home directories previously on this volume will relocate to the first available volume after this volume is deleted.  Notice that service to shares will be temporarily interrupted during this process, even if the shares reside on other volumes.
+WARN_HIDE_SHARE::::With this feature enabled, users will not be able to see this share when they browse for available shares.  Protocols that do not support share hiding will be disabled to prevent users from discovering them.\n\nWarning: CIFS will be the only access option available for this share.  All other access protocol settings will be lost.
+WARN_MEDIA_RESCAN::::You will need to rescan your media files manually to properly display your files on your media player.  Please keep in mind that this process can take a long time, depending on the number of files you have in your media path.
+WARN_NFS_HOME_SHARE_SECURITY::::NFS access to home shares is provided without host or user restrictions.  Please ensure that the proper security measures are in place on your network.
+WARN_PASSWORD_CHANGE_REQUIRED::::You have not changed the default admin password.  For security reason, you must change it before continuing.
+WARN_RAID_LEVEL1_CHANGED_TO_0::::Not enough disks for RAID level 1.  Reverting to RAID level 0.
+WARN_RAID_LEVEL5_CHANGED_TO_0::::Not enough disks for RAID level 5.  Reverting to RAID level 0.
+WARN_RAID_LEVEL5_CHANGED_TO_1::::Not enough disks for RAID level 5.  Changing RAID level to 1.
+WARN_RAID_LEVEL_0_CANNOT_HAVE_SPARE::::RAID level 0 does not support spares.  Clearing spare(s)...
+WARN_REMOVE_DISK::::Are you sure you want to remove this disk from this volume?
+WARN_REMOVE_DISK_BAD::::Removing this disk from this volume will make this volume  non-redundant. Are you sure you want to proceed?
+WARN_REMOVE_REDUNDANCY::::A single disk configuration will not have disk failure protection.
+WARN_REMOVE_SPARE::::Are you sure you want to remove this spare disk from this volume?
+WARN_SELECT_COMMAND::::Please select the desired shutdown option.
+WARN_UNSIGNED_ADDON::::WARNING: The uploaded image is not a NETGEAR signed add-on.  Please note that unsigned add-ons can potentially compromise your data on the ReadyNAS
+WEEKDAYS::::Weekdays
+WHEN::::When
+WINS,tab_wins::::WINS
+WINS_SERVICE_DISABLED::::WINS service disabled.
+WINS_SERVICE_ENABLED::::WINS service enabled.
+WIRELESS::::Wireless
+WIZARD::::Setup Wizard
+BUTTON_WIZARD::::Switch to Wizard Mode
+WLAN_AUTHENTICATION::::Network Authentication
+WLAN_AUTH_OPEN::::Open Security Mode
+WLAN_AUTH_RESTRICTED::::Shared Key Mode
+WORKGROUP::::Workgroup
+WORKGROUP_DOMAIN::::Workgroup/Domain
+WRITE_CACHE_OFF::::Write-cache OFF
+WRITE_CACHE_ON::::Write-cache ON
+XRAID_EXPAND_ERROR::::Disk capacity expansion error.
+XRAID_EXPAND_SECOND_PASS_START::::Continuing with volume expansion or migration.  Do not interrupt the system during this time.  When complete, email notification will be sent to the alert contact list.
+XRAID_EXPAND_START::::Volume expansion or migration started. Do not interrupt the system during this time.  When finished, email notification will be sent to the alert contact list.
+FLEX_RAID_EXPAND_SECOND_PASS_START::::Continuing with volume expansion.  Do not interrupt the system during this time.  When complete, email notification will be sent to the alert contact list.
+FLEX_RAID_EXPAND_START::::Volume expansion started. Do not interrupt the system during this time.  When finished, email notification will be sent to the alert contact list.
+ARM_XRAID_EXPAND_START::::Volume expansion started. Do not interrupt the system during this time.  When finished, email notification will be sent to the alert contact list.
+ARM_XRAID_EXPAND_SECOND_PASS_START::::Continuing with volume expansion.  Do not interrupt the system during this time.  When complete, email notification will be sent to the alert contact list.
+XRAID_EXPAND_STOP_DRIVE_HAS_DATA::::Volume expansion aborted because the new drive has data.  To override and continue with the expansion, hot-remove the drive, wait 10 seconds, and hot-add the drive.
+XRAID_EXPAND_FOUND_NEW_SPACE::::Newly added drive has more space to expand the volume, will start volume expansion.
+XRAID_EXPAND_REINSERT_DISK_FOR_NEW_SPACE::::Free space can only be used after removal and re-insertion of this disk. Please ensure that the array is not degraded before doing this on [Disk
+XRAID_FOUND_LEFTOVER_EXPANDMD::::Incomplete X-RAID2 expansion detected.  Resuming...
+XRAID_FOUND_LEFTOVER_RESIZEFS::::Incompleted file system expansion detected.  Resuming...
+XRAID_NEW_DISK_ARRAY_FIX_DONE::::Data volume has finished rebuilding.
+XRAID_NEW_DISK_USED_FOR_ARRAY_FIX::::Data volume will be rebuilt with disk
+XRAID_DISK_PARTITION_CHANGED_NEED_REBOOT::::Found unused space which will be used during next reboot, please reboot.
+XRAID_DUAL_REDUNDANCY::::with dual redundancy
+XRAID_MIGRATION_START::::XRAID2 dual redundancy migration started. Do not interrupt the system during this time. When finished, email notification will be sent to the alert contact list.
+FLEXEXPANSION_ADD_VOLUME_CHECK::::The disk will be used to expand the volume after this device is rebooted.
+FLEXEXPANSION_EXPAND_VOLUME_CONFIRM_PARTONE::::Once the device is rebooted, the volume will expand to
+FLEXEXPANSION_EXPAND_VOLUME_CONFIRM_PARTTWO::::Would you like to continue?
+FLEXEXPANSION_MAKE_HOT_SPARE::::This disk will be used as a hot spare for this volume after this device is rebooted.
+FLEX_EXT_NEW_VOLUME_FAILED::::New volume created failed, please replace the disk and try again.
+FLEX_EXT_DISK_NO_ENOUGH_SPACE::::The disk doesn't have enough capacity to do expansion.
+CHAR_PERIOD::::.

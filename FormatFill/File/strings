@@ -1,0 +1,275 @@
+
+
+# Email subjects.
+S_RAID_EVENT_DETECTED="RAID event detected"
+S_HOTPLUG_EVENT_DETECTED="Hotplug disk event detected"
+S_DISK_FAILURE_DETECTED="Disk failure detected."
+S_AUTO_SHUTDOWN_WARN_SUB="Disk failure - automatic shutdown in %%SLEEP_BEFORE_SHUTDOWN_MINS minutes"
+S_AUTO_SHUTDOWN_SUB="Automatic shutdown started"
+S_NEW_DISKS_DETECTED="Expandable disk(s) detected"
+S_DISK_ADDED_SUBJECT="New disk detected."
+
+# Messages.
+S_DISK="Disk "
+S_FAILURE="failure"
+S_EVENT_OCCURRED=" event occurred on SATA channel "
+S_REPLACE_FAILED_DISK="If the failed disk is used in a RAID level 1, 5, or X-RAID volume, please note that volume is now unprotected, and an additional disk failure may render that volume dead."
+S_REPLACE_FAILED_DISK_RAID6="If this disk is a part of a RAID 6 volume, your volume is still protected if this is your first failure.  A 2nd disk failure will make your volume unprotected."
+S_REPLACE_FAILED_DISK_RAID10="If this disk is a part of a RAID 10 volume,your volume is still protected if more than half of the disks alive. But another failure of disks been marked may render that volume dead."
+S_REPLACE_FAILED_DISK2="It is recommended that you replace the failed disk as soon as possible to maintain optimal protection of your volume."
+S_AUTO_SHUTDOWN_WARN="The disk on channel %%chan has failed.  The NAS will automatically shutdown in %%SLEEP_BEFORE_SHUTDOWN_MINS minutes to prevent possible data loss resulting from additional failed drives."
+S_AUTO_SHUTDOWN="The disk on channel %%chan has failed.  Shutting down the system to prevent possible data loss resulting from additional failed drives."
+S_EXPANSION_ABORTED="Expansion aborted."
+S_EXPANSION_ABORTED_OUT_OF_DISK_SPACE="Expansion aborted due to lack of available space in the OS volume."
+
+# Init messages.
+S_COULD_NOT_INIT1="The disk attached to channel "
+S_COULD_NOT_INIT2=" could not be initialized.  The most common reasons are RAID resync in progress, faulty drives, and disks that are too small to be added to the array."
+S_COULD_NOT_USE1="The disk attached to channel "
+S_COULD_NOT_USE2=" could not be used.  The most common reasons are RAID resync in progress, faulty drives, and disks that are too small to be added to the array."
+S_EXPANSION_FINISHED_INIT="One or more expansion disks also finished initializing earlier.  You can reboot the device now to start the expansion process."
+S_DISK_INIT_STARTED1="Disk initialization started.  The estimated time of completion is "
+S_DISK_INIT_STARTED2=", at which time you will be notified via email.  You can also check the progress in Frontview in System tab in Dashboard.  Please do not shutdown the system while the initialization is in progress."
+S_DISK_INIT_STARTED_NOTIME="Disk initialization started.  You will be notified via email when the initialization process has been completed.  You can also check the progress in System tab in Dashboard.  Please do not shutdown the system while the initialization is in progress."
+S_INIT_FAIL1="Disk initialization failed on channel "
+S_INIT_FAIL2=".  This disk should not be used."
+S_INIT_FINISHED="Disk initialization successfully finished."
+S_AUTOMATIC_VOLUME_EXPANSION_DISABLED_NEW_DISKS1="New expandable disk(s) have been detected.  If you wish to proceed with the expansion, please enable the Automatic Volume Expansion option in the RAID Settings tab in Dashboard."
+
+# Sync messages.
+S_INIT_FINISH_SYNC_START="A disk is currently being sync'd.  When the sync process finishes, you can reboot the device to complete the volume expansion process."
+S_SYNC_FINISHED1="RAID sync finished on volume "
+S_SYNC_FINISHED2=".  The volume is now fully redundant."
+S_SYNC_STARTED="RAID sync started on volume "
+
+# Other messages.
+S_REBOOT_COMPLETE_EXPAND="At this time you can reboot the device to complete the volume expansion process."
+S_DOING_ONLINE_EXPANSION="Your system will now begin online expansion.  Please do not reboot until you receive notification that the expansion is complete."
+S_PFA1="Access to the disk on channel "
+S_PFA2=" is producing I/O errors.  Although the array is still redundant, please replace this drive as soon as possible, as it is likely to fail soon."
+S_PERIOD="."
+
+# Actions.
+S_SATA_ACTION_ADD="add"
+S_SATA_ACTION_REMOVE="remove"
+S_SATA_ACTION_READD="xraid_readd"
+S_SATA_ACTION_FAIL="fail"
+S_SATA_ACTION_SYNC_STARTED="xraid_sync_started"
+S_SATA_ACTION_SYNC_FINISHED="xraid_sync_finished"
+S_SATA_ACTION_INIT_STARTED="xraid_disk_init_started"
+S_SATA_ACTION_INIT_FINISHED="xraid_disk_init_finished"
+S_SATA_ACTION_INIT_FAILED="xraid_disk_init_failed"
+S_SATA_ACTION_PFA="PFA"
+
+# Misc.
+S_AND="and"
+S_HOURS="hour(s)"
+S_MINUTES="minute(s)"
+S_CHANNEL="Channel"
+
+S_DISK_ADDED="New disk detected.  If multiple disks have been added, they will be processed one at a time.  Please do not remove any added disk(s) during this time."
+S_LCD_DISK_ADDED="New disk added"
+S_DISK_ADDED_BODY="A new disk was added to the ReadyNAS.  If multiple disks have been added, they will be processed one at a time.  Please do not remove any added disk(s) during this time."
+S_DISK_REMOVED="Disk removal detected."
+S_LCD_DISK_REMOVED="Disk removed"
+S_DISK_REMOVED_RAID_DEGRADED="A disk was removed from the ReadyNAS.  For full protection of your data volume, please add a replacement disk as soon as possible."
+S_DISK_REMOVED_RAID_UNPROTECTED="A disk was removed from the ReadyNAS.  One or more RAID volumes are currently unprotected, and an additional disk failure or removal may result in data loss.  Please add a replacement disk as soon as possible."
+S_DISK_REMOVED_RAID_OKAY="A disk was removed from the ReadyNAS."
+S_REMOVE_VOLUME="Volume will be removed as lost of disk, please reboot ReadyNas device for continue."
+
+#################### check_fsck_needed ####################
+
+S_FSCK_NEEDED_SUBJECT="Improper shutdown detected."
+S_FSCK_NEEDED_BODY="Improper shutdown detected.\n\nTo ensure data integrity, a filesystem check should be performed as soon as possible.  In Dashboard:\n\n1. Navigate to System tab.\n2. Click power button icon in Hardware section.\n3. Select Restart.\n4. Enable the volume scan on next boot checkbox.\n5. Click Yes button to reboot the device."
+S_FSCK_NEEDED_BODY_SHORT="Improper shutdown detected.  To ensure data integrity, a filesystem check should be performed by rebooting the NAS through Dashboard with the volume scan option enabled."
+
+#################### frontview_rc ####################
+
+S_SYSTEM_UP="System is up."
+S_XRAID_NOT_RUNNING_SUBJECT="X-RAID failed to start."
+S_XRAID_NOT_RUNNING_BODY="The X-RAID engine has failed to start.\n\nTo ensure data integrity, please refrain from using the NAS and contact Support immediately."
+S_RAID_DEGRADED_SUBJECT="RAID volume is unprotected."
+S_RAID_DEGRADED_BODY="The volumes listed below are unprotected due to a missing or failed disk.  Please replace the disk in order to run in redundant/protected mode."
+S_RAID_DEGRADED_LOG_MESG="One or more volumes are unprotected due to a missing or failed disk.  Please replace the disk in order to run in redundant/protected mode."
+S_RAID_DEGRADED_VOLUME="Volume"
+
+#################### powerdown.agent ####################
+
+S_SYSTEM_POWERING_OFF="System powering off..."
+
+
+#################### md.agent ####################
+
+S_MD_RAID_EVENT_DETECTED="RAID event detected."
+S_ACTION_ON_VOLUME="RAID %%ACTION on volume %%VOLUME."
+S_MD_ACTION_SYNC_STARTED="sync started"
+S_MD_ACTION_SYNC_FINISHED="sync finished"
+S_MD_ACTION_SCRUB_STARTED="scrubbing started"
+S_MD_ACTION_SCRUB_FINISHED="scrubbing finished"
+S_MD_SYNC_FINISHED_STILL_DEGRADED="The array is still in degraded mode, however.  This can be caused by a disk sync failure or failed disks in a multi-parity disk array."
+
+
+#################### quota.agent ####################
+
+S_WARN_ON_UNRECOGNIZED_VOLUME="Quota warning detected on unrecognized volume"
+S_SOFT_GRACE_MESG="%%TRANS_TYPE_CAP \'%%NAME\' has %%grace_time %%unit of grace time to fall under the soft limit at\nwhich time the %%TRANS_TYPE will be prevented from using additional disk space."
+S_HARD_GRACE_MESG="%%TRANS_TYPE_CAP \'%%NAME\' is now prevented from using additional disk space%%{GRACE_MESSAGE}."
+S_GRACE_EXPIRED=" -- grace time has expired."
+S_QUOTA_SHARE_INFORM_USERS="Please inform the users of this %%TRANS_TYPE of this quota violation or increase the %%TRANS_TYPE quota limit."
+S_QUOTA_INFORM_USERS="Please inform the %%TRANS_TYPE of this quota violation or increase the %%TRANS_TYPE quota limit."
+S_QUOTA_VIOLATION_SUBJECT="Quota violation warning"
+S_QUOTA_VIOLATION_BODY="Disk %%REASON on volume %%VOLUME for %%TRANS_TYPE \'%%NAME\'."
+S_QUOTA_REASON_FILE_LIMIT_REACHED="file limit reached"
+S_QUOTA_REASON_FILE_LIMIT_EXCEEDED_TOO_LONG="file quota exceeded too long"
+S_QUOTA_REASON_FILE_LIMIT_EXCEEDED="file quota exceeded"
+S_QUOTA_REASON_BLOCK_LIMIT_REACHED="block limit reached"
+S_QUOTA_REASON_BLOCK_LIMIT_EXCEEDED_TOO_LONG="block quota exceeded too long"
+S_QUOTA_REASON_BLOCK_LIMIT_EXCEEDED="block quota exceeded"
+S_DISK_SPACE_USED="Disk space used"
+S_FILES_USED="Files used"
+S_QUOTA_LIMITS="Limits"
+S_QUOTA_HARD="hard"
+S_QUOTA_SOFT="soft"
+S_QUOTA_DAYS="days"
+S_QUOTA_HOURS="hours"
+S_QUOTA_HOUR="hour"
+S_QUOTA_MINUTES="minutes"
+S_QUOTA_MINUTE="minute"
+S_QUOTA_SECONDS="seconds"
+S_QUOTA_TYPE_USER="user"
+S_QUOTA_TYPE_USER_CAP="User"
+S_QUOTA_TYPE_SHARE="share"
+S_QUOTA_TYPE_SHARE_CAP="Share"
+S_QUOTA_TYPE_GROUP="group"
+S_QUOTA_TYPE_GROUP_CAP="Group"
+
+
+#################### snapshot.agent ####################
+
+S_SNAPSHOT_EVENT_DETECTED="Snapshot event detected."
+S_SNAPSHOT_INVALIDATED="Snapshot on volume %%volume_name was invalidated and has been removed due to %%REASON."
+S_SNAPSHOT_OUT_OF_SPACE="reserve space being completely used"
+S_SNAPSHOT_IO_ERROR="I/O error"
+S_SNAPSHOT_UNKNOWN_ERROR="an unknown error"
+
+#################### arp.agent ####################
+S_IP_CONFLICT_SUBJECT="IP address conflict found."
+S_IP_CONFLICT_BODY="MAC address %%ARP_INFO claims to have our IP address \(%%ARP_DATA\) \(duplicate IP conflict likely\)"
+
+#################### adjust_fan ####################
+S_FAN_DISK_REACHED_WARNING_LEVEL="Disk on channel %%chan has reached warning level \(%%degrees\)."
+S_FAN_UNEXPECTED_ENCLOSURE_EVENT_SUB="Unexpected enclosure event detected."
+
+#################### check_disk_usage ####################
+S_DISK_USAGE_WARN_SUBJECT="Disk usage warning"
+S_DISK_USAGE_WARN="Volume %%VOLUME is approaching capacity:\n%%USAGE% used\n%%FREE available."
+
+#################### button.agent ####################
+S_BACKUP_BUTTON_JOBS_STARTED="Backup button jobs started."
+S_BACKUP_BUTTON_JOBS_CANCELLED="Backup button jobs cancelled."
+S_BACKUP_BUTTON_NO_USB_HDD="The default backup button job copies the contents of the [backup] share to the USB hard drive directly attached to the front of the NAS.  Please attach a USB hard drive directly to the front USB port before pressing the backup button."
+S_BACKUP_BUTTON_UMOUNT_USB_FAILED="The device attached to the front USB port could not be properly unmounted.  Please try again."
+S_BACKUP_BUTTON_UMOUNT_USB_SUCCESS="The device attached to the front USB port has been unmounted successfully."
+S_BACKUP_BUTTON_MOUNT_USB_FAILED="The device attached to the front USB port could not be properly mounted.  Please try again."
+S_BACKUP_BUTTON_MOUNT_USB_SUCCESS="The device attached to the front USB port has been mounted successfully."
+
+#################### gpio.agent ####################
+S_LCD_UNMOUNT_FAIL="Unmount failed"
+S_LCD_UNMOUNT_SUCCESS="USB unmounted"
+S_LCD_MOUNT_FAIL="USB mount failed"
+S_LCD_MOUNT_SUCCESS="USB mounted"
+S_LCD_BACKUP_STARTED="Backup started"
+S_LCD_BACKUP_FAIL="Backup failed"
+S_LCD_BACKUP_FINISH="Backup finished"
+S_LCD_BACKUP_CANCEL="Backup cancelled"
+
+#################### frontview_rc ####################
+S_BACKUP_IN_PROGRESS="IN PROGRESS"
+S_BACKUP_CANCELLED="CANCELLED"
+
+#################### check_smart_errors ####################
+S_SMART_ERRORS_REALLOCATED_SECTOR_MESG="Reallocated sector count has increased in the last day."
+S_SMART_ERRORS_ATA_ERROR_MESG="ATA error count has increased in the last day."
+S_SMART_ERRORS_PREVIOUS_COUNT="Previous count"
+S_SMART_ERRORS_CURRENT_COUNT="Current count"
+S_SUBJECT_NEW_SMART_ERRORS_DETECTED="New SMART disk errors detected!"
+S_SMART_ERRORS_WARNING="Growing SMART errors indicate a disk that may fail soon.  If the errors continue to increase, you should be prepared to replace the disk."
+S_SMART_STATUS_FAILED="did not pass SMART self-assessment test.  Please replace this disk as soon as possible."
+
+#################### fsck ####################
+S_FSCK_0="Volume scan found no errors."
+S_FSCK_1="Volume scan found and corrected errors."
+S_FSCK_2="Volume scan found and corrected errors.  System should be rebooted to check for other errors."
+S_FSCK_4="Volume scan found errors that it could not easily correct. Please ensure that you have current backups of all valuable data before performing a full volume scan by rebooting the NAS through Dashboard with the volume scan option enabled."
+S_FSCK_8="Volume scan failed to run properly."
+S_FSCK_16="Volume scan encountered a usage error."
+S_FSCK_32="Volume scan was canceled."
+S_FSCK_128="Volume scan encountered a shared library error."
+
+#################### setup_usb_storage ####################
+S_USB_DRIVE_READONLY_1="The USB device"
+S_USB_DRIVE_READONLY_2="contains an NTFS filesystem which appears to have been improperly disconnected, so it will be mounted read-only to prevent data corruption.  You can connect the drive to a Windows PC to resolve this."
+
+#################### firmware updates ####################
+SYSTEM_UPDATE_FAIL_VENDOR="Firmware update failed due to incompatible firmware."
+SYSTEM_UPDATE_FAIL_VERIFY="Firmware update failed verifying flash."
+SYSTEM_UPDATE_FAIL_WRITE="Firmware update failed writing file to flash."
+SYSTEM_UPDATE_FAIL_EXTRACT="Firmware update failed extracting data."
+
+#################### notify_ups ####################
+S_UPS_ON_LINE_POWER="UPS is on line power."
+S_UPS_ON_BATTERY="UPS is on battery power."
+S_UPS_ON_LOW_BATTERY="UPS battery is low; system will shutdown soon."
+S_UPS_FORCE_SHUTDOWN="UPS forcing shutdown."
+S_UPS_COMMUNICATION_OK="Communication with UPS OK."
+S_UPS_COMMUNICATION_ERROR="UPS Communication error."
+S_UPS_SHUTDOWN="UPS is shutting down system."
+S_UPS_REPLACE_BATTERY="UPS battery error.  Please replace the battery."
+S_UPS_NO_COMMUNICATION="Cannot communicate with UPS."
+S_UPS_WARN_SUBJECT="UPS event detected."
+S_UPS_DISCONNECTED="UPS has been disconnected."
+
+#################### snapshot ####################
+S_UNABLE_DELETE_SNAPSHOT_SUBJECT="Unable to delete snapshot"
+S_SNAPSHOT_BUSY_BODY="Snapshot volume appears to be busy.  One or more snapshot shares may be in use."
+
+#################### 080_Poweron ####################
+S_MESG_WAKEUP_SCHEDULED="System power-on scheduled for"
+
+#################### restrict_ssh ####################
+S_MESG_SSH_ACCESS_RSYNC_ONLY="SSH access is available for rsync only."
+S_MESG_RSYNC_ROOT="The ReadyNAS OS volume cannot be used as an rsync source or destination."
+
+#################### account activation ################
+S_ACCOUNT_ACTIVATED="Share access activated on"
+S_ACCOUNT_ACTIVATED_MESG1="Congratulations!  You have been given access to network storage space on"
+S_ACCOUNT_ACTIVATED_MESG2="Your login and initial password are set to the following:"
+S_ACCOUNT_ACTIVATED_MESG2_NO_PASSWORD="Your login is set to the following:"
+S_ACCOUNT_ACTIVATED_MESG3="You can use the same http address to access shares using your web browser.  To access the shares under Windows, in the Explorer Address bar type"
+S_ACCOUNT_ACTIVATED_MESG4="To access the shares under Windows, in the Explorer Address bar type"
+S_ACCOUNT_ACTIVATED_MESG5="To access the shares under OS X, in the Finder, click on"
+S_ACCOUNT_ACTIVATED_MESG6="in the SHARED section of the left bar"
+S_ACCOUNT_PASSWORD_CHANGE_INSTR="You can change your password at"
+
+################### login ######################
+S_LOGIN="User name"
+S_PASSWORD="Password"
+
+################### formatting #################
+S_CHAR_PERIOD="."
+
+################### alert contacts #############
+S_ALERT_CONTACT_SAVED="Alert contact(s) saved."
+S_ALERT_SETTINGS_SAVED="Alert settings saved."
+S_ALERT_TESTING="Alert Testing"
+S_ALERT_MESG="If you receive this message, the email alert notification is working properly."
+S_SENT_ALERT_MESG="Alert test message has been sent."
+S_SENT_ALERT_MESG_FAILED="Failed to send alert test message."
+S_SENT_ALERT_MESG_SMTP_FAILED="Failed to contact SMTP server."
+
+################### password recovery ##########
+S_SUBJECT_PASSWORD_RESET="Admin password has been reset"
+S_PASSWORD_RESET_TO="The admin password has been reset to"
+
+################### firmware ##########
+S_NEW_FIRMWARE_AVAILABLE_FIRSTBOOT="A newer version of the firmware for your ReadyNAS device is now available.  To install it, please complete the Setup Wizard, then go to the System page and click on the Update tab.  Then, go to the Remote tab, click the Check For Update button, then click Perform System Update."
