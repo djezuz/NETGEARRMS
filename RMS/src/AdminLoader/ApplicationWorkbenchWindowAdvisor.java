@@ -44,7 +44,7 @@ public void postWindowOpen() {
 			//所有记录
 			QueryData qd = new QueryData();
 			List li = qd.query("all");
-			 //停止心跳时间	
+			 //停止心跳的记录数据
 			List list = qd.queryStopHeartbeat();
 
 			PlatformUI
