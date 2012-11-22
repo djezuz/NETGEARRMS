@@ -55,6 +55,9 @@ public class DashBoard_history extends EditorPart{
 		this.setSite(site);
 		this.setInput(input);
 		this.setPartName(input.getName());
+		if(input instanceof DashBoard_history_Input){
+			this.router = ((DashBoard_history_Input) input).getRouter();
+		}
 	}
 
 	@Override
@@ -231,6 +234,17 @@ public class DashBoard_history extends EditorPart{
 		TableColumn tblclmnNewColumn_6 = new TableColumn(table_1, SWT.NONE);
 		tblclmnNewColumn_6.setWidth(270);
 		tblclmnNewColumn_6.setText("Cleared by");
+		fillTable();
+	}
+
+	private void fillTable() {
+		table_1.removeAll();
+		for(int i=0;i<router.size();i++){
+			Router r = (Router)router.get(i);
+			TableItem ti = new TableItem(table_1,SWT.NONE);
+			ti.setText(new String[]{r.getSerial(),r.getTime(),r.getClearedBy()});
+		}
+		
 	}
 
 	@Override
