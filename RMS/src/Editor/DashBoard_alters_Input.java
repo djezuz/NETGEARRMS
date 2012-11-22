@@ -1,10 +1,27 @@
 package Editor;
 
+import java.util.List;
+
 import org.eclipse.jface.resource.ImageDescriptor;
 import org.eclipse.ui.IEditorInput;
 import org.eclipse.ui.IPersistableElement;
 
 public class DashBoard_alters_Input implements IEditorInput{
+
+	
+	public List router;
+	
+	public DashBoard_alters_Input(List r){
+		this.router=r;
+	}
+	
+	public List getRouter() {
+		return router;
+	}
+
+	public void setRouter(List router) {
+		this.router = router;
+	}
 
 	@Override
 	public Object getAdapter(Class adapter) {

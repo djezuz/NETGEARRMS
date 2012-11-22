@@ -24,14 +24,12 @@ public class QueryData {
 			}else if(!id.equalsIgnoreCase("all")){
 				sql=sql+" where  serial like '%"+id+"%'";
 			}
-			System.out.println(sql);
 			pst = conn.prepareStatement(sql);
 			//pst.setInt(0, id);
 			rs=pst.executeQuery();
 			if(rs!=null){
 			while(rs.next()){
 				Router router=new Router();
-				System.out.println(rs.getString("serial"));
 	            router.setSerial(rs.getString("serial"));	
 				router.setLevel(rs.getString("level"));
 				router.setMessage(rs.getString("message"));
@@ -62,14 +60,12 @@ public class QueryData {
 			}else if(id.equalsIgnoreCase("")) {
 				sql=sql+" where  level='Alert'";
 			}
-			System.out.println(sql);
 			pst = conn.prepareStatement(sql);
 			//pst.setInt(0, id);
 			rs=pst.executeQuery();
 			if(rs!=null){
 			while(rs.next()){
 				Router router=new Router();
-				System.out.println(rs.getString("serial"));
 	            router.setSerial(rs.getString("serial"));	
 				router.setLevel(rs.getString("level"));
 				router.setMessage(rs.getString("message"));
@@ -229,6 +225,36 @@ public class QueryData {
 					return  time;
 					
 				}
+				
+	  //查询停止心跳的记录数据
+				public List queryStopHeartbeat(){
+					Connection conn = DBConnection.getConnection();
+					PreparedStatement pst = null;
+					ResultSet rs = null;
+					String  sql="select * FROM router WHERE date_sub(SYSDATE(),INTERVAL 1 Hour)>STR_TO_DATE(time,'%a %b %d %H:%i:%s HKT %Y') and id=(SELECT max(id) FROM router r order by id)";
+					List list = new ArrayList();
+					try {
+						pst = conn.prepareStatement(sql);
+						rs=pst.executeQuery();
+						if(rs!=null){
+						while(rs.next()){
+							Router router=new Router();
+				            router.setSerial(rs.getString("serial"));	
+							router.setTime(rs.getString("time"));
+							router.setClearedBy(rs.getString("clearedBy"));
+							
+							list.add(router);
+						}
+						}
+					}catch (SQLException e) {
+						e.printStackTrace();
+					} finally{
+						DBConnection.free(rs, null, pst, conn);
+					}		
+				
+					return  list;
+					
+				}		
 					
 				
 	public static void main(String[] arg0){

@@ -41,21 +41,24 @@ public class ApplicationWorkbenchWindowAdvisor extends WorkbenchWindowAdvisor {
 public void postWindowOpen() {
 	PlatformUI.getWorkbench().getActiveWorkbenchWindow().getShell().setMaximized(true);
 		try {
+			//所有记录
 			QueryData qd = new QueryData();
 			List li = qd.query("all");
-		
+			 //停止心跳时间	
+			List list = qd.queryStopHeartbeat();
+
 			PlatformUI
 			.getWorkbench()
 			.getActiveWorkbenchWindow()
 			.getActivePage()
-			.openEditor(new DashBoard_alters_Input(),
+			.openEditor(new DashBoard_alters_Input(list),
 					DashBoard_alters.ID);
 			
 			PlatformUI
 			.getWorkbench()
 			.getActiveWorkbenchWindow()
 			.getActivePage()
-			.openEditor(new DashBoard_history_Input(li),
+			.openEditor(new DashBoard_history_Input(list),
 					DashBoard_history.ID);
 			
 			PlatformUI

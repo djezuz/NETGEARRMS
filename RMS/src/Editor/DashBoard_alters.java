@@ -1,5 +1,7 @@
 package Editor;
 
+import java.util.List;
+
 import org.eclipse.core.runtime.IProgressMonitor;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.layout.FormLayout;
@@ -14,11 +16,15 @@ import org.eclipse.swt.layout.FormData;
 import org.eclipse.swt.layout.FormAttachment;
 import org.eclipse.swt.widgets.Table;
 import org.eclipse.swt.widgets.TableColumn;
+import org.eclipse.swt.widgets.TableItem;
+
+import com.entity.Router;
 
 public class DashBoard_alters extends EditorPart {
 	public static String ID = "RMS.editor3";
 	private Table table;
 	private Table table_1;
+	private List router;
 	public DashBoard_alters() {
 		// TODO Auto-generated constructor stub
 	}
@@ -42,6 +48,9 @@ public class DashBoard_alters extends EditorPart {
 		this.setSite(site);
 		this.setInput(input);
 		this.setPartName(input.getName());
+		if(input instanceof DashBoard_alters_Input){
+			this.router = ((DashBoard_alters_Input) input).getRouter();
+		}
 	}
 
 	@Override
@@ -84,7 +93,7 @@ public class DashBoard_alters extends EditorPart {
 		tblclmnNewColumn.setText("Serial");
 		
 		TableColumn tblclmnNewColumn_1 = new TableColumn(table, SWT.NONE);
-		tblclmnNewColumn_1.setWidth(294);
+		tblclmnNewColumn_1.setWidth(303);
 		tblclmnNewColumn_1.setText("Date/Time Latest Alert Received");
 		
 		Label lblNewLabel_1 = new Label(parent, SWT.NONE);
@@ -108,15 +117,23 @@ public class DashBoard_alters extends EditorPart {
 		table_1.setLinesVisible(true);
 		
 		TableColumn tblclmnNewColumn_2 = new TableColumn(table_1, SWT.NONE);
-		tblclmnNewColumn_2.setWidth(114);
+		tblclmnNewColumn_2.setWidth(134);
 		tblclmnNewColumn_2.setText("Serial");
 		
 		TableColumn tblclmnNewColumn_3 = new TableColumn(table_1, SWT.NONE);
-		tblclmnNewColumn_3.setWidth(267);
+		tblclmnNewColumn_3.setWidth(304);
 		tblclmnNewColumn_3.setText("Last Successful Heartbeat Date /Time");
-
+        fillTable();
 	}
 
+	public void fillTable(){
+		    table_1.removeAll();
+			for(int i=0;i<router.size();i++){
+				Router r = (Router)router.get(i);
+				TableItem ti = new TableItem(table_1,SWT.NONE);
+				ti.setText(new String[]{r.getSerial(),r.getTime()});
+			}
+		}
 	@Override
 	public void setFocus() {
 		// TODO Auto-generated method stub
