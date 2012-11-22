@@ -6,26 +6,25 @@ import org.eclipse.core.runtime.IProgressMonitor;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.events.SelectionEvent;
 import org.eclipse.swt.events.SelectionListener;
+import org.eclipse.swt.layout.FormAttachment;
+import org.eclipse.swt.layout.FormData;
 import org.eclipse.swt.layout.FormLayout;
+import org.eclipse.swt.layout.GridLayout;
+import org.eclipse.swt.widgets.Button;
 import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Label;
+import org.eclipse.swt.widgets.Table;
+import org.eclipse.swt.widgets.TableColumn;
+import org.eclipse.swt.widgets.TableItem;
 import org.eclipse.ui.IEditorInput;
 import org.eclipse.ui.IEditorSite;
 import org.eclipse.ui.PartInitException;
 import org.eclipse.ui.part.EditorPart;
-//import org.eclipse.wb.swt.SWTResourceManager;
-import org.eclipse.swt.layout.FormData;
-import org.eclipse.swt.layout.FormAttachment;
-import org.eclipse.swt.widgets.Button;
-import org.eclipse.swt.widgets.Table;
-import org.eclipse.swt.widgets.TableColumn;
-import org.eclipse.swt.widgets.TableItem;
+
+import Editor.method.TableSort;
 
 import com.entity.Router;
 import com.query.QueryData;
-import org.eclipse.swt.layout.FillLayout;
-import org.eclipse.swt.layout.GridLayout;
-import org.eclipse.swt.layout.GridData;
 
 public class DashBoard_history extends EditorPart{
 	public static String ID = "RMS.editor2";
@@ -84,9 +83,6 @@ public class DashBoard_history extends EditorPart{
 		fd_composite.left = new FormAttachment(0);
 		composite.setLayoutData(fd_composite);
 		GridLayout gl_composite = new GridLayout(4, false);
-		gl_composite.horizontalSpacing = 10;
-		gl_composite.marginLeft = 5;
-		gl_composite.marginTop = 5;
 		gl_composite.verticalSpacing = 1;
 		composite.setLayout(gl_composite);
 		
@@ -235,8 +231,14 @@ public class DashBoard_history extends EditorPart{
 		tblclmnNewColumn_6.setWidth(270);
 		tblclmnNewColumn_6.setText("Cleared by");
 		fillTable();
+		
+		sortTable();
 	}
 
+	private void sortTable(){
+		new TableSort(table);
+		new TableSort(table_1);
+	}
 	private void fillTable() {
 		table_1.removeAll();
 		for(int i=0;i<router.size();i++){

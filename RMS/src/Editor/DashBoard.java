@@ -1,17 +1,16 @@
 package Editor;
 
-import java.awt.Font;
 import java.util.List;
 
 import org.eclipse.core.runtime.IProgressMonitor;
 import org.eclipse.swt.SWT;
-import org.eclipse.swt.custom.SashForm;
 import org.eclipse.swt.events.SelectionEvent;
 import org.eclipse.swt.events.SelectionListener;
 import org.eclipse.swt.layout.FillLayout;
 import org.eclipse.swt.layout.FormAttachment;
 import org.eclipse.swt.layout.FormData;
 import org.eclipse.swt.layout.FormLayout;
+import org.eclipse.swt.layout.GridLayout;
 import org.eclipse.swt.widgets.Button;
 import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Label;
@@ -23,12 +22,11 @@ import org.eclipse.ui.IEditorInput;
 import org.eclipse.ui.IEditorSite;
 import org.eclipse.ui.PartInitException;
 import org.eclipse.ui.part.EditorPart;
-//import org.eclipse.wb.swt.SWTResourceManager;
+
+import Editor.method.TableSort;
 
 import com.entity.Router;
 import com.query.QueryData;
-import org.eclipse.swt.layout.RowLayout;
-import org.eclipse.swt.layout.GridLayout;
 
 public class DashBoard extends EditorPart {
 	    public static String ID = "RMS.WebJieMian";
@@ -69,6 +67,7 @@ public class DashBoard extends EditorPart {
 			if(input instanceof DashBoardInput){
 				this.router = ((DashBoardInput) input).getRouter();
 			}
+			
 		}
 
 		@Override
@@ -86,7 +85,7 @@ public class DashBoard extends EditorPart {
 			parent.setLayout(new FormLayout());
 			//sashForm.setBackground(SWTResourceManager.getColor(SWT.COLOR_TITLE_INACTIVE_FOREGROUND));
 			
-			Composite composite = new Composite(parent, SWT.BORDER);
+			Composite composite = new Composite(parent, SWT.NONE);
 			composite.setLayout(new GridLayout(4, false));
 			FormData fd_composite = new FormData();
 			fd_composite.right = new FormAttachment(100, 0);
@@ -216,6 +215,8 @@ public class DashBoard extends EditorPart {
 			Table1();
 			Table2();
 			fillTable();
+			
+			sortTable();
 		}
 		
 		public void fillTable(){
@@ -243,6 +244,11 @@ public class DashBoard extends EditorPart {
 		
 		}
 		
+		private void sortTable(){
+			new TableSort(table);
+			new TableSort(table_1);
+			new TableSort(table_2);
+		}
 		@Override
 		public void setFocus() {
 			

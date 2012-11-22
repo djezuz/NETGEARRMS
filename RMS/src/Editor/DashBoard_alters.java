@@ -4,19 +4,20 @@ import java.util.List;
 
 import org.eclipse.core.runtime.IProgressMonitor;
 import org.eclipse.swt.SWT;
+import org.eclipse.swt.layout.FormAttachment;
+import org.eclipse.swt.layout.FormData;
 import org.eclipse.swt.layout.FormLayout;
 import org.eclipse.swt.widgets.Composite;
+import org.eclipse.swt.widgets.Label;
+import org.eclipse.swt.widgets.Table;
+import org.eclipse.swt.widgets.TableColumn;
+import org.eclipse.swt.widgets.TableItem;
 import org.eclipse.ui.IEditorInput;
 import org.eclipse.ui.IEditorSite;
 import org.eclipse.ui.PartInitException;
 import org.eclipse.ui.part.EditorPart;
-//import org.eclipse.wb.swt.SWTResourceManager;
-import org.eclipse.swt.widgets.Label;
-import org.eclipse.swt.layout.FormData;
-import org.eclipse.swt.layout.FormAttachment;
-import org.eclipse.swt.widgets.Table;
-import org.eclipse.swt.widgets.TableColumn;
-import org.eclipse.swt.widgets.TableItem;
+
+import Editor.method.TableSort;
 
 import com.entity.Router;
 
@@ -124,8 +125,15 @@ public class DashBoard_alters extends EditorPart {
 		tblclmnNewColumn_3.setWidth(304);
 		tblclmnNewColumn_3.setText("Last Successful Heartbeat Date /Time");
         fillTable();
+        
+        sortTable();
 	}
 
+	private void sortTable(){
+		new TableSort(table);
+		new TableSort(table_1);
+	}
+	
 	public void fillTable(){
 		    table_1.removeAll();
 			for(int i=0;i<router.size();i++){
