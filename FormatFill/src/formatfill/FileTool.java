@@ -31,7 +31,7 @@ public class FileTool {
 		Timer timer = new Timer();
 		MyTimer myTimeTask = new MyTimer();
 		Date date = new Date();
-		long timestamp = 1000 * 10*60;
+		long timestamp = 1000*60*60;
 		timer.schedule(myTimeTask, date, timestamp);
 	}
 	public static void main(String[]args){
