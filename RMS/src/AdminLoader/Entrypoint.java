@@ -1,6 +1,7 @@
 package AdminLoader;
 
 import org.eclipse.equinox.app.IApplication;
+import org.eclipse.jface.dialogs.Dialog;
 import org.eclipse.rwt.lifecycle.IEntryPoint;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.widgets.Display;
@@ -8,6 +9,8 @@ import org.eclipse.swt.widgets.Event;
 import org.eclipse.swt.widgets.Listener;
 import org.eclipse.ui.IWorkbench;
 import org.eclipse.ui.PlatformUI;
+
+import Editor.LoginDlg;
 
 public class Entrypoint implements IEntryPoint {
 
@@ -23,11 +26,16 @@ public class Entrypoint implements IEntryPoint {
 			}
 		});
 		try {
-			int returnCode = PlatformUI.createAndRunWorkbench(display, new ApplicationWorkbenchAdvisor());
-			if (returnCode == PlatformUI.RETURN_RESTART)
-				return IApplication.EXIT_RESTART;
-			else
+			LoginDlg login_dlg = new LoginDlg(null);
+			if (login_dlg.open()!=Dialog.OK){
 				return IApplication.EXIT_OK;
+			}else{
+				int returnCode = PlatformUI.createAndRunWorkbench(display, new ApplicationWorkbenchAdvisor());
+				if (returnCode == PlatformUI.RETURN_RESTART)
+					return IApplication.EXIT_RESTART;
+				else
+					return IApplication.EXIT_OK;
+			}
 		} finally {
 			display.dispose();
 		}
