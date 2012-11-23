@@ -84,10 +84,7 @@ public class LoginDlg extends Dialog {
 				messageBox.open();
 				
 			}else{
-				MessageBox messageBox = new MessageBox(getShell(), SWT.OK); 
-				messageBox.setText("LOGIN PROMPT");
-				messageBox.setMessage("Login success!"); 
-				messageBox.open();
+				
 				super.buttonPressed(buttonId);
 			}
 		}else if(buttonId==Dialog.CANCEL){

@@ -34,6 +34,7 @@ public class ApplicationWorkbenchWindowAdvisor extends WorkbenchWindowAdvisor {
         IWorkbenchWindowConfigurer configurer = getWindowConfigurer();
         configurer.setInitialSize(new Point(600, 600));
         configurer.setShowCoolBar(false);
+        configurer.setShowMenuBar(false);
         configurer.setShowStatusLine(false);
         configurer.setTitle("ReadyNAS Monitoring System"); //$NON-NLS-1$
        
