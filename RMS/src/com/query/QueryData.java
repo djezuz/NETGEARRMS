@@ -11,7 +11,7 @@ import com.entity.Router;
 import com.util.DBConnection;
 
 public class QueryData {
-	//查询所有router Information
+	//所有router Information
 	public static  List query(String  id){
 		Connection conn = DBConnection.getConnection();
 		PreparedStatement pst = null;
@@ -47,7 +47,7 @@ public class QueryData {
 	
 		return  li;
 	}
-	//查询关于Alert信息
+	//关于Alert信息
 	public static  List querylevel(String  id){
 		Connection conn = DBConnection.getConnection();
 		PreparedStatement pst = null;
@@ -83,7 +83,7 @@ public class QueryData {
 	
 		return  li;
 	}
-	//查询最新时间的记录(id最大的记录)
+	//最新时间的记录(id最大的记录)
 	public  String  queryLast(){
 		Connection conn = DBConnection.getConnection();
 		PreparedStatement pst = null;
@@ -108,7 +108,7 @@ public class QueryData {
 		return  time;
 		
 	}
-	//查询三天前的历史数据
+	//三天前的历史数据
 		public List querypastThree(){
 			Connection conn = DBConnection.getConnection();
 			PreparedStatement pst = null;
@@ -138,7 +138,7 @@ public class QueryData {
 			return  li;
 			
 		}
-		//查询七天前的历史数据
+		//七天前的历史数据
 				public List queryPastSeven(){
 					Connection conn = DBConnection.getConnection();
 					PreparedStatement pst = null;
@@ -168,7 +168,7 @@ public class QueryData {
 					return  li;
 					
 				}
-		//查询30天前的历史数据
+		//30天前的历史数据
 				public List queryPastThirty(){
 					Connection conn = DBConnection.getConnection();
 					PreparedStatement pst = null;
@@ -226,7 +226,7 @@ public class QueryData {
 					
 				}
 				
-	  //查询停止心跳的记录数据
+	  //停止心跳的记录数据
 				public List queryStopHeartbeat(){
 					Connection conn = DBConnection.getConnection();
 					PreparedStatement pst = null;
@@ -255,7 +255,36 @@ public class QueryData {
 					return  list;
 					
 				}		
+		//警告数据			
+		public List queryAlertInfo(){
+			Connection conn =DBConnection.getConnection();
+			PreparedStatement pst=null;
+			ResultSet rs=null;
+			String sql="SELECT *  from router WHERE  level='alert'";
+			List list =new ArrayList();
+			try {
+				pst=conn.prepareStatement(sql);
+				rs=pst.executeQuery();
+				if(rs!=null){
+					while (rs.next()){
+						Router router=new Router();
+						router.setSerial(rs.getString("serial"));
+						router.setTime(rs.getString("time"));
+						list.add(router);
+					}
 					
+				}
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}finally{
+				DBConnection.free(rs, null, pst, conn);
+			}
+			
+			return list;
+				
+		} 		
+				
 				
 	public static void main(String[] arg0){
 		query("all");
