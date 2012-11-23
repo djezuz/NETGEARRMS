@@ -44,14 +44,14 @@ public class LoginDlg extends Dialog {
 		lblNewLabel.setText("Username:");
 		
 		user_name = new Text(container, SWT.BORDER);
-		user_name.setBounds(94, 28, 174, 24);
+		user_name.setBounds(94, 28, 226, 24);
 		
 		Label lblPassword = new Label(container, SWT.NONE);
 		lblPassword.setBounds(9, 100, 79, 24);
 		lblPassword.setText("Password:");
 		
 		password = new Text(container, SWT.BORDER | SWT.PASSWORD);
-		password.setBounds(94, 97, 174, 24);
+		password.setBounds(94, 97, 226, 24);
 
 		return container;
 	}
@@ -79,11 +79,13 @@ public class LoginDlg extends Dialog {
 				if(!islogin){
 				System.out.println(islogin);
 				MessageBox messageBox = new MessageBox(getShell(), SWT.OK); 
+				messageBox.setText("LOGIN PROMPT");
 				messageBox.setMessage("Please input the correct username and password!"); 
 				messageBox.open();
 				
 			}else{
 				MessageBox messageBox = new MessageBox(getShell(), SWT.OK); 
+				messageBox.setText("LOGIN PROMPT");
 				messageBox.setMessage("Login success!"); 
 				messageBox.open();
 				super.buttonPressed(buttonId);
@@ -98,7 +100,7 @@ public class LoginDlg extends Dialog {
 	 */
 	@Override
 	protected Point getInitialSize() {
-		return new Point(302, 324);
+		return new Point(360, 327);
 	}
 	
 	@Override  
