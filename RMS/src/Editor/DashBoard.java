@@ -294,12 +294,16 @@ public class DashBoard extends EditorPart {
 			table_2.removeAll();
 			QueryData qd = new QueryData();
 		   String time=qd.queryLast();
+				TableItem ti = new TableItem(table_2,SWT.NONE);
+				ti.setText(time);
 		
 		}
 		public void Table1(){
 			table_1.removeAll();
 			QueryData qd = new QueryData();
 		   String time=qd.queryMoreOne();
+				TableItem ti = new TableItem(table_1,SWT.NONE);
+				ti.setText(time);
 		
 		}
 		
