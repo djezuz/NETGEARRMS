@@ -25,6 +25,10 @@ import Editor.method.TableSort;
 
 import com.entity.Router;
 import com.query.QueryData;
+import org.eclipse.swt.custom.SashForm;
+import org.eclipse.swt.layout.FillLayout;
+import org.eclipse.swt.widgets.TabFolder;
+import org.eclipse.swt.widgets.TabItem;
 
 public class DashBoard_history extends EditorPart{
 	public static String ID = "RMS.editor2";
@@ -73,12 +77,17 @@ public class DashBoard_history extends EditorPart{
 
 	@Override
 	public void createPartControl(Composite parent) {
-		parent.setLayout(new FormLayout());
+		parent.setLayout(new FillLayout(SWT.HORIZONTAL));
 		
-		Composite composite = new Composite(parent, SWT.NONE);
+		SashForm sashForm = new SashForm(parent, SWT.BORDER | SWT.VERTICAL);
+		
+		Composite composite_1 = new Composite(sashForm, SWT.NONE);
+		composite_1.setLayout(new FormLayout());
+		
+		Composite composite = new Composite(composite_1, SWT.NONE);
 		FormData fd_composite = new FormData();
 		fd_composite.bottom = new FormAttachment(0, 40);
-		fd_composite.right = new FormAttachment(100, 0);
+		fd_composite.right = new FormAttachment(100,0);
 		fd_composite.top = new FormAttachment(0);
 		fd_composite.left = new FormAttachment(0);
 		composite.setLayoutData(fd_composite);
@@ -99,6 +108,32 @@ public class DashBoard_history extends EditorPart{
 		
 		Button btnNewButton_2 = new Button(composite, SWT.NONE);
 		btnNewButton_2.setText("Past 30 Days");
+		
+		table = new Table(composite_1, SWT.BORDER | SWT.FULL_SELECTION);
+		FormData fd_table = new FormData();
+		fd_table.bottom = new FormAttachment(100,0);
+		fd_table.right = new FormAttachment(100,0);
+		fd_table.top = new FormAttachment(composite,5);
+		fd_table.left = new FormAttachment(0);
+		table.setLayoutData(fd_table);
+		table.setHeaderVisible(true);
+		table.setLinesVisible(true);
+		
+		TableColumn tblclmnNewColumn = new TableColumn(table, SWT.NONE);
+		tblclmnNewColumn.setWidth(109);
+		tblclmnNewColumn.setText("Serial");
+		
+		TableColumn tblclmnNewColumn_1 = new TableColumn(table, SWT.NONE);
+		tblclmnNewColumn_1.setWidth(170);
+		tblclmnNewColumn_1.setText("Message");
+		
+		TableColumn tblclmnNewColumn_2 = new TableColumn(table, SWT.NONE);
+		tblclmnNewColumn_2.setWidth(292);
+		tblclmnNewColumn_2.setText("Date/Time");
+		
+		TableColumn tblclmnNewColumn_3 = new TableColumn(table, SWT.NONE);
+		tblclmnNewColumn_3.setWidth(229);
+		tblclmnNewColumn_3.setText("Cleared");
 		//查询三十天前的数据
 		btnNewButton_2.addSelectionListener(new SelectionListener() {
 			
@@ -173,63 +208,47 @@ public class DashBoard_history extends EditorPart{
 				
 			}
 		});
-		
-		table = new Table(parent, SWT.BORDER | SWT.FULL_SELECTION);
-		FormData fd_table = new FormData();
-		fd_table.top = new FormAttachment(composite, 5);
-		fd_table.left = new FormAttachment(0);
-		fd_table.bottom = new FormAttachment(0, 300);
-		fd_table.right = new FormAttachment(100, 0);
-		table.setLayoutData(fd_table);
-		table.setHeaderVisible(true);
-		table.setLinesVisible(true);
-		
-		TableColumn tblclmnNewColumn = new TableColumn(table, SWT.NONE);
-		tblclmnNewColumn.setWidth(109);
-		tblclmnNewColumn.setText("Serial");
-		
-		TableColumn tblclmnNewColumn_1 = new TableColumn(table, SWT.NONE);
-		tblclmnNewColumn_1.setWidth(170);
-		tblclmnNewColumn_1.setText("Message");
-		
-		TableColumn tblclmnNewColumn_2 = new TableColumn(table, SWT.NONE);
-		tblclmnNewColumn_2.setWidth(292);
-		tblclmnNewColumn_2.setText("Date/Time");
-		
-		TableColumn tblclmnNewColumn_3 = new TableColumn(table, SWT.NONE);
-		tblclmnNewColumn_3.setWidth(229);
-		tblclmnNewColumn_3.setText("Cleared");
-		
-		Label lblNewLabel_2 = new Label(parent, SWT.NONE);
-		FormData fd_lblNewLabel_2 = new FormData();
-		fd_lblNewLabel_2.left = new FormAttachment(0);
-		fd_lblNewLabel_2.right = new FormAttachment(100,0);
-		fd_lblNewLabel_2.bottom = new FormAttachment(0, 330);
-		fd_lblNewLabel_2.top = new FormAttachment(table, 5);
-		lblNewLabel_2.setLayoutData(fd_lblNewLabel_2);
-		lblNewLabel_2.setText("Missed heartbeats");
-
-		table_1 = new Table(parent, SWT.BORDER | SWT.FULL_SELECTION);
-		FormData fd_table_1 = new FormData();
-		fd_table_1.bottom = new FormAttachment(100, 0);
-		fd_table_1.top = new FormAttachment(lblNewLabel_2, 5);
-		fd_table_1.right = new FormAttachment(100, 0);
-		fd_table_1.left = new FormAttachment(0);
-		table_1.setLayoutData(fd_table_1);
-		table_1.setHeaderVisible(true);
-		table_1.setLinesVisible(true);
-		
-		TableColumn tblclmnNewColumn_4 = new TableColumn(table_1, SWT.NONE);
-		tblclmnNewColumn_4.setWidth(203);
-		tblclmnNewColumn_4.setText("Serial");
-		
-		TableColumn tblclmnNewColumn_5 = new TableColumn(table_1, SWT.NONE);
-		tblclmnNewColumn_5.setWidth(252);
-		tblclmnNewColumn_5.setText("Last Heartbeat Date/Time");
-		
-		TableColumn tblclmnNewColumn_6 = new TableColumn(table_1, SWT.NONE);
-		tblclmnNewColumn_6.setWidth(270);
-		tblclmnNewColumn_6.setText("Cleared by");
+				
+				TabFolder tabFolder = new TabFolder(sashForm, SWT.NONE);
+				
+				TabItem tbtmMissedHeartbeats = new TabItem(tabFolder, SWT.NONE);
+				tbtmMissedHeartbeats.setText("Missed heartbeats");
+				
+				Composite composite_3 = new Composite(tabFolder, SWT.NONE);
+				tbtmMissedHeartbeats.setControl(composite_3);
+				composite_3.setLayout(new FormLayout());
+				
+				Label lblNewLabel_2 = new Label(composite_3, SWT.NONE);
+				FormData fd_lblNewLabel_2 = new FormData();
+				fd_lblNewLabel_2.bottom = new FormAttachment(0, 40);
+				fd_lblNewLabel_2.right = new FormAttachment(100,0);
+				fd_lblNewLabel_2.top = new FormAttachment(0);
+				fd_lblNewLabel_2.left = new FormAttachment(0);
+				lblNewLabel_2.setLayoutData(fd_lblNewLabel_2);
+				lblNewLabel_2.setText("Missed heartbeats");
+				
+						table_1 = new Table(composite_3, SWT.BORDER | SWT.FULL_SELECTION);
+						FormData fd_table_1 = new FormData();
+						fd_table_1.bottom = new FormAttachment(100,0);
+						fd_table_1.right = new FormAttachment(100,0);
+						fd_table_1.top = new FormAttachment(lblNewLabel_2,5);
+						fd_table_1.left = new FormAttachment(0);
+						table_1.setLayoutData(fd_table_1);
+						table_1.setHeaderVisible(true);
+						table_1.setLinesVisible(true);
+						
+						TableColumn tblclmnNewColumn_4 = new TableColumn(table_1, SWT.NONE);
+						tblclmnNewColumn_4.setWidth(203);
+						tblclmnNewColumn_4.setText("Serial");
+						
+						TableColumn tblclmnNewColumn_5 = new TableColumn(table_1, SWT.NONE);
+						tblclmnNewColumn_5.setWidth(252);
+						tblclmnNewColumn_5.setText("Last Heartbeat Date/Time");
+						
+						TableColumn tblclmnNewColumn_6 = new TableColumn(table_1, SWT.NONE);
+						tblclmnNewColumn_6.setWidth(270);
+						tblclmnNewColumn_6.setText("Cleared by");
+						sashForm.setWeights(new int[] {337, 222});
 		fillTable();
 		
 		sortTable();
