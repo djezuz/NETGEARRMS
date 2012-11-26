@@ -228,7 +228,6 @@ public class DashBoard extends EditorPart {
 			fd_lblNewLabel_1.top = new FormAttachment(0);
 			fd_lblNewLabel_1.left = new FormAttachment(0);
 			lblNewLabel_1.setLayoutData(fd_lblNewLabel_1);
-			lblNewLabel_1.setText("Missed Heartbeat History");
 			//composite_3.setBackground(SWTResourceManager.getColor(SWT.COLOR_TITLE_INACTIVE_FOREGROUND));
 			
 			table_1 = new Table(composite_1, SWT.BORDER | SWT.FULL_SELECTION);
@@ -259,7 +258,6 @@ public class DashBoard extends EditorPart {
 			fd_lblNewLabel_2.top = new FormAttachment(0);
 			fd_lblNewLabel_2.left = new FormAttachment(0);
 			lblNewLabel_2.setLayoutData(fd_lblNewLabel_2);
-			lblNewLabel_2.setText("Current Heartbeat status");
 			
 			table_2 = new Table(composite_4, SWT.BORDER | SWT.FULL_SELECTION);
 			FormData fd_table_2 = new FormData();

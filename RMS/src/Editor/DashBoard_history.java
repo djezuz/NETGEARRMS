@@ -225,7 +225,6 @@ public class DashBoard_history extends EditorPart{
 				fd_lblNewLabel_2.top = new FormAttachment(0);
 				fd_lblNewLabel_2.left = new FormAttachment(0);
 				lblNewLabel_2.setLayoutData(fd_lblNewLabel_2);
-				lblNewLabel_2.setText("Missed heartbeats");
 				
 						table_1 = new Table(composite_3, SWT.BORDER | SWT.FULL_SELECTION);
 						FormData fd_table_1 = new FormData();
