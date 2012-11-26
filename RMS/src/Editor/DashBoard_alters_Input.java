@@ -10,11 +10,23 @@ public class DashBoard_alters_Input implements IEditorInput{
 
 	
 	public List router;
+	public List router1;
 	
-	public DashBoard_alters_Input(List r){
+	public DashBoard_alters_Input(List r,List a){
 		this.router=r;
+		this.router1=a;
 	}
 	
+
+	
+	public List getRouter1() {
+		return router1;
+	}
+
+	public void setRouter1(List router1) {
+		this.router1 = router1;
+	}
+
 	public List getRouter() {
 		return router;
 	}

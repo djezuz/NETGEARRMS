@@ -20,12 +20,14 @@ import org.eclipse.ui.part.EditorPart;
 import Editor.method.TableSort;
 
 import com.entity.Router;
+import com.query.QueryData;
 
 public class DashBoard_alters extends EditorPart {
 	public static String ID = "RMS.editor3";
 	private Table table;
 	private Table table_1;
 	private List router;
+	private List router1;
 	public DashBoard_alters() {
 		// TODO Auto-generated constructor stub
 	}
@@ -51,6 +53,7 @@ public class DashBoard_alters extends EditorPart {
 		this.setPartName(input.getName());
 		if(input instanceof DashBoard_alters_Input){
 			this.router = ((DashBoard_alters_Input) input).getRouter();
+			this.router1 = ((DashBoard_alters_Input) input).getRouter1();
 		}
 	}
 
@@ -125,7 +128,7 @@ public class DashBoard_alters extends EditorPart {
 		tblclmnNewColumn_3.setWidth(304);
 		tblclmnNewColumn_3.setText("Last Successful Heartbeat Date /Time");
         fillTable();
-        
+        Table();
         sortTable();
 	}
 
@@ -136,12 +139,21 @@ public class DashBoard_alters extends EditorPart {
 	
 	public void fillTable(){
 		    table_1.removeAll();
-			for(int i=0;i<router.size();i++){
-				Router r = (Router)router.get(i);
+			for(int i=0;i<router1.size();i++){
+				Router r = (Router)router1.get(i);
 				TableItem ti = new TableItem(table_1,SWT.NONE);
 				ti.setText(new String[]{r.getSerial(),r.getTime()});
 			}
 		}
+	
+	public  void Table(){
+		table.removeAll();
+		for(int i=0;i<router.size();i++){
+		   Router r = (Router)router.get(i);
+				TableItem ti = new TableItem(table,SWT.NONE);
+				ti.setText(new String[]{r.getSerial(),r.getTime()});
+		}
+	}
 	@Override
 	public void setFocus() {
 		// TODO Auto-generated method stub

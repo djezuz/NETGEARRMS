@@ -45,14 +45,14 @@ public void postWindowOpen() {
 			//所有记录
 			QueryData qd = new QueryData();
 			List li = qd.query("all");
-			 //停止心跳的记录数据
+			 //停止心跳的记录数据与告警信息
+			List list1 = qd.queryAlertInfo();
 			List list = qd.queryStopHeartbeat();
-
 			PlatformUI
 			.getWorkbench()
 			.getActiveWorkbenchWindow()
 			.getActivePage()
-			.openEditor(new DashBoard_alters_Input(list),
+			.openEditor(new DashBoard_alters_Input(list1,list),
 					DashBoard_alters.ID);
 			
 			PlatformUI

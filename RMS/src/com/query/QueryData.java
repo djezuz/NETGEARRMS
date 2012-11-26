@@ -261,7 +261,7 @@ public class QueryData {
 			PreparedStatement pst=null;
 			ResultSet rs=null;
 			String sql="SELECT *  from router WHERE  level='alert'";
-			List list =new ArrayList();
+			List list1 =new ArrayList();
 			try {
 				pst=conn.prepareStatement(sql);
 				rs=pst.executeQuery();
@@ -270,7 +270,7 @@ public class QueryData {
 						Router router=new Router();
 						router.setSerial(rs.getString("serial"));
 						router.setTime(rs.getString("time"));
-						list.add(router);
+						list1.add(router);
 					}
 					
 				}
@@ -281,7 +281,7 @@ public class QueryData {
 				DBConnection.free(rs, null, pst, conn);
 			}
 			
-			return list;
+			return list1;
 				
 		} 		
 				
