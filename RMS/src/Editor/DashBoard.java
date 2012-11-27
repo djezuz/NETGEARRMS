@@ -30,19 +30,11 @@ import Editor.method.TableSort;
 import com.entity.Router;
 import com.query.QueryData;
 import org.eclipse.swt.custom.SashForm;
-import org.eclipse.swt.widgets.TabFolder;
-import org.eclipse.swt.widgets.TabItem;
-import org.eclipse.swt.custom.CTabFolder;
-import org.eclipse.swt.widgets.Display;
-import org.eclipse.swt.custom.CTabItem;
+import org.eclipse.swt.custom.TableEditor;
 
 public class DashBoard extends EditorPart {
 	    public static String ID = "RMS.WebJieMian";
 		private Text text;
-		private Label lblNewLabel_1;
-		private Label lblNewLabel_2;
-		private Table table_1;
-		private Table table_2;
 		private TableColumn tblclmnNewColumn;
 		private TableColumn tblclmnNewColumn_1;
 		private TableColumn tblclmnNewColumn_2;
@@ -51,8 +43,8 @@ public class DashBoard extends EditorPart {
 		private Table table;
 		
 		private List router;
-		private TableColumn tblclmnDatetime;
-		private TableColumn tblclmnNewColumn_5;
+		private Table table_4;
+		private Table table_5;
 		public DashBoard() {
 		}
 
@@ -134,6 +126,7 @@ public class DashBoard extends EditorPart {
 			});
 			Button btnNewButton = new Button(composite, SWT.NONE);
 			btnNewButton.setText("Show All");
+			
 			btnNewButton.addSelectionListener(new SelectionListener() {
 				
 				private static final long serialVersionUID = -2212711577026360395L;
@@ -209,74 +202,58 @@ public class DashBoard extends EditorPart {
 			tblclmnNewColumn_4.setText("Cleared by");
 			
 			Composite composite_3 = new Composite(sashForm, SWT.NONE);
-			composite_3.setLayout(new FillLayout(SWT.HORIZONTAL));
+			composite_3.setLayout(new FillLayout());
 			
-			TabFolder tabFolder = new TabFolder(composite_3, SWT.NONE);
+			SashForm sashForm_1 = new SashForm(composite_3, SWT.HORIZONTAL);
 			
-			TabItem tbtmMissedHeartbeatHistory = new TabItem(tabFolder, SWT.NONE);
-			tbtmMissedHeartbeatHistory.setText("Missed Heartbeat History");
+			Composite composite_1 = new Composite(sashForm_1, SWT.NONE);
+			composite_1.setLayout(new FillLayout(SWT.HORIZONTAL));
 			
-			Composite composite_1 = new Composite(tabFolder, SWT.NONE);
-			tbtmMissedHeartbeatHistory.setControl(composite_1);
-			composite_1.setLayout(new FormLayout());
-			//composite_2.setBackground(SWTResourceManager.getColor(SWT.COLOR_TITLE_INACTIVE_FOREGROUND));
+			SashForm sashForm_2 = new SashForm(composite_1, SWT.VERTICAL);
 			
-			lblNewLabel_1 = new Label(composite_1, SWT.NONE);
-			FormData fd_lblNewLabel_1 = new FormData();
-			fd_lblNewLabel_1.bottom = new FormAttachment(0, 40);
-			fd_lblNewLabel_1.right = new FormAttachment(100, 0);
-			fd_lblNewLabel_1.top = new FormAttachment(0);
-			fd_lblNewLabel_1.left = new FormAttachment(0);
-			lblNewLabel_1.setLayoutData(fd_lblNewLabel_1);
-			//composite_3.setBackground(SWTResourceManager.getColor(SWT.COLOR_TITLE_INACTIVE_FOREGROUND));
+			Label lblNewLabel_3 = new Label(sashForm_2, SWT.NONE);
+			//lblNewLabel_3.setFont(SWTResourceManager.getFont("ËÎÌו", 11, SWT.NORMAL));
+			lblNewLabel_3.setBounds(0, 0, 297, 12);
+			lblNewLabel_3.setText("Missed Heartbeat History");
 			
-			table_1 = new Table(composite_1, SWT.BORDER | SWT.FULL_SELECTION);
-			FormData fd_table_1 = new FormData();
-			fd_table_1.top = new FormAttachment(lblNewLabel_1, 5);
-			fd_table_1.left = new FormAttachment(0,0);
-			fd_table_1.bottom = new FormAttachment(100, 0);
-			fd_table_1.right = new FormAttachment(100,0);
-			table_1.setLayoutData(fd_table_1);
-			table_1.setHeaderVisible(true);
-			table_1.setLinesVisible(true);
+			table_4 = new Table(sashForm_2, SWT.BORDER | SWT.FULL_SELECTION);
+			table_4.setBounds(0, 18, 297, 216);
+			table_4.setHeaderVisible(true);
+			table_4.setLinesVisible(true);
 			
-			tblclmnDatetime = new TableColumn(table_1, SWT.CENTER);
-			tblclmnDatetime.setWidth(293);
-			tblclmnDatetime.setText("Date/Time");
+			TableColumn tblclmnNewColumn_6 = new TableColumn(table_4, SWT.LEFT);
+			tblclmnNewColumn_6.setText("Date/Time");
+			tblclmnNewColumn_6.setWidth(720);
+			sashForm_2.setWeights(new int[] {23, 200});
 			
-			TabItem tbtmCurrentHeartbeatStatus = new TabItem(tabFolder, SWT.NONE);
-			tbtmCurrentHeartbeatStatus.setText("Current Heartbeat status");
+			Composite composite_4 = new Composite(sashForm_1, SWT.NONE);
+			composite_4.setLayout(new FillLayout(SWT.VERTICAL));
 			
-			Composite composite_4 = new Composite(tabFolder, SWT.NONE);
-			tbtmCurrentHeartbeatStatus.setControl(composite_4);
-			composite_4.setLayout(new FormLayout());
+			//Composite composite_6 = new Composite(composite_4, SWT.NONE);
 			
-			lblNewLabel_2 = new Label(composite_4, SWT.NONE);
-			FormData fd_lblNewLabel_2 = new FormData();
-			fd_lblNewLabel_2.bottom = new FormAttachment(0, 40);
-			fd_lblNewLabel_2.right = new FormAttachment(100, 0);
-			fd_lblNewLabel_2.top = new FormAttachment(0);
-			fd_lblNewLabel_2.left = new FormAttachment(0);
-			lblNewLabel_2.setLayoutData(fd_lblNewLabel_2);
+			SashForm sashForm_3 = new SashForm(composite_4, SWT.VERTICAL);
+			sashForm.setWeights(new int[] {248, 227});
 			
-			table_2 = new Table(composite_4, SWT.BORDER | SWT.FULL_SELECTION);
-			FormData fd_table_2 = new FormData();
-			fd_table_2.top = new FormAttachment(lblNewLabel_2, 5);
-			fd_table_2.left = new FormAttachment(0, 0);
-			fd_table_2.bottom = new FormAttachment(100, 0);
-			fd_table_2.right = new FormAttachment(100,0);
-			table_2.setLayoutData(fd_table_2);
-			table_2.setHeaderVisible(true);
-			table_2.setLinesVisible(true);
+			Label lblNewLabel_4 = new Label(sashForm_3, SWT.NONE);
+			//lblNewLabel_4.setFont(SWTResourceManager.getFont("ËÎÌו", 11, SWT.NORMAL));
+			lblNewLabel_4.setBounds(0, 0, 294, 12);
+			lblNewLabel_4.setText("Current Heartbeat status");
 			
-			tblclmnNewColumn_5 = new TableColumn(table_2, SWT.CENTER);
-			tblclmnNewColumn_5.setWidth(431);
-			tblclmnNewColumn_5.setText("Last Successful  Heartbeat");
-			sashForm.setWeights(new int[] {275, 186});
-			Table1();
-			Table2();
+			table_5 = new Table(sashForm_3, SWT.BORDER | SWT.FULL_SELECTION);
+			table_5.setLocation(0, 18);
+			table_5.setSize(158, 181);
+			table_5.setHeaderVisible(true);
+			table_5.setLinesVisible(true);
+			
+			TableColumn tblclmnNewColumn_7 = new TableColumn(table_5, SWT.NONE);
+			tblclmnNewColumn_7.setWidth(729);
+			tblclmnNewColumn_7.setText("Last  Successful  Heartbeat");
+			sashForm_3.setWeights(new int[] {24, 199});
+			sashForm_1.setWeights(new int[] {286, 305});
+			
+	        Table4();
+		    Table5();
 			fillTable();
-			
 			sortTable();
 		}
 		
@@ -288,27 +265,27 @@ public class DashBoard extends EditorPart {
 				ti.setText(new String[]{r.getSerial(),r.getLevel(),r.getMessage(),r.getTime(),r.getClearedBy()});
 			}
 		}
-		public void Table2(){
-			table_2.removeAll();
+		public void Table5(){
+			table_5.removeAll();
 			QueryData qd = new QueryData();
 		   String time=qd.queryLast();
-				TableItem ti = new TableItem(table_2,SWT.NONE);
-				ti.setText(time);
+		   TableItem ti = new TableItem(table_5,SWT.NONE);
+			ti.setText(time);
 		
 		}
-		public void Table1(){
-			table_1.removeAll();
+		public void Table4(){
+			table_4.removeAll();
 			QueryData qd = new QueryData();
 		   String time=qd.queryMoreOne();
-				TableItem ti = new TableItem(table_1,SWT.NONE);
-				ti.setText(time);
+		   TableItem ti = new TableItem(table_4,SWT.NONE);
+			ti.setText(time);
 		
 		}
 		
 		private void sortTable(){
 			new TableSort(table);
-			new TableSort(table_1);
-			new TableSort(table_2);
+			new TableSort(table_4);
+			new TableSort(table_5);
 		}
 		@Override
 		public void setFocus() {
