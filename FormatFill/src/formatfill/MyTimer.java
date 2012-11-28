@@ -1,9 +1,12 @@
 package formatfill;
 import java.util.TimerTask;
+
 import org.apache.axis.client.Call;
 import org.apache.axis.client.Service;
 
 public class MyTimer extends TimerTask {
+	
+	
 	String last="";
 	public void run() {
 		StringBuffer list=new StringBuffer();
@@ -31,6 +34,9 @@ public class MyTimer extends TimerTask {
 	}
 	
 	public static Object getCall(String value){
+		String serial_no = FileTool.getS_no();
+		System.out.println("afasdfasdf");
+		System.out.println(serial_no);
 		String url="http://localhost:8080/server/services/login";
 		Service service=new Service();
 		Call call;
@@ -39,7 +45,7 @@ public class MyTimer extends TimerTask {
 			call=(Call)service.createCall();
 			call.setTargetEndpointAddress(new java.net.URL(url));
 			call.setOperationName("success");
-			rec=(String) call.invoke(new Object[]{value,"","","",""});
+			rec=(String) call.invoke(new Object[]{value,serial_no,"","",""});
 		}catch(Exception e){
 			e.printStackTrace();
 		}
