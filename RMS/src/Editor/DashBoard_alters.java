@@ -21,6 +21,10 @@ import Editor.method.TableSort;
 
 import com.entity.Router;
 import com.query.QueryData;
+import org.eclipse.swt.custom.SashForm;
+import org.eclipse.swt.widgets.TabFolder;
+import org.eclipse.swt.widgets.TabItem;
+import org.eclipse.swt.layout.FillLayout;
 
 public class DashBoard_alters extends EditorPart {
 	public static String ID = "RMS.editor3";
@@ -71,23 +75,28 @@ public class DashBoard_alters extends EditorPart {
 
 	@Override
 	public void createPartControl(Composite parent) {
-		parent.setLayout(new FormLayout());
+		parent.setLayout(new FillLayout(SWT.HORIZONTAL));
 		
-		Label lblNewLabel = new Label(parent, SWT.NONE);
+		SashForm sashForm = new SashForm(parent, SWT.BORDER | SWT.VERTICAL);
+		
+		Composite composite = new Composite(sashForm, SWT.NONE);
+		composite.setLayout(new FormLayout());
+		
+		Label lblNewLabel = new Label(composite, SWT.NONE);
 		FormData fd_lblNewLabel = new FormData();
-		fd_lblNewLabel.bottom = new FormAttachment(0, 30);
-		fd_lblNewLabel.right = new FormAttachment(100);
+		fd_lblNewLabel.bottom = new FormAttachment(0, 40);
+		fd_lblNewLabel.right = new FormAttachment(100,0);
 		fd_lblNewLabel.top = new FormAttachment(0);
 		fd_lblNewLabel.left = new FormAttachment(0);
 		lblNewLabel.setLayoutData(fd_lblNewLabel);
 		lblNewLabel.setText("Units with new,unresolved alerts");
 		
-		table = new Table(parent, SWT.BORDER | SWT.FULL_SELECTION);
+		table = new Table(composite, SWT.BORDER | SWT.FULL_SELECTION);
 		FormData fd_table = new FormData();
+		fd_table.bottom = new FormAttachment(100,0);
+		fd_table.right = new FormAttachment(100,0);
 		fd_table.top = new FormAttachment(lblNewLabel,5);
 		fd_table.left = new FormAttachment(0);
-		fd_table.bottom = new FormAttachment(0, 300);
-		fd_table.right = new FormAttachment(100,0);
 		table.setLayoutData(fd_table);
 		table.setHeaderVisible(true);
 		table.setLinesVisible(true);
@@ -100,22 +109,30 @@ public class DashBoard_alters extends EditorPart {
 		tblclmnNewColumn_1.setWidth(303);
 		tblclmnNewColumn_1.setText("Date/Time Latest Alert Received");
 		
-		Label lblNewLabel_1 = new Label(parent, SWT.NONE);
+		TabFolder tabFolder = new TabFolder(sashForm, SWT.NONE);
+		
+		TabItem tbtmMissedHeartbeats = new TabItem(tabFolder, SWT.NONE);
+		tbtmMissedHeartbeats.setText("Missed heartbeats");
+		
+		Composite composite_1 = new Composite(tabFolder, SWT.NONE);
+		tbtmMissedHeartbeats.setControl(composite_1);
+		composite_1.setLayout(new FormLayout());
+		
+		Label lblNewLabel_1 = new Label(composite_1, SWT.NONE);
 		FormData fd_lblNewLabel_1 = new FormData();
-		fd_lblNewLabel_1.top = new FormAttachment(table, 5);
-		fd_lblNewLabel_1.left = new FormAttachment(lblNewLabel, 0, SWT.LEFT);
-		fd_lblNewLabel_1.right = new FormAttachment(100);
-		fd_lblNewLabel_1.bottom = new FormAttachment(0, 330);
+		fd_lblNewLabel_1.bottom = new FormAttachment(0, 0);
+		fd_lblNewLabel_1.right = new FormAttachment(100,0);
+		fd_lblNewLabel_1.top = new FormAttachment(0);
+		fd_lblNewLabel_1.left = new FormAttachment(0);
 		lblNewLabel_1.setLayoutData(fd_lblNewLabel_1);
 		lblNewLabel_1.setText("Missed heartbeats");
 		
-		table_1 = new Table(parent, SWT.BORDER | SWT.FULL_SELECTION);
-		
+		table_1 = new Table(composite_1, SWT.BORDER | SWT.FULL_SELECTION);
 		FormData fd_table_1 = new FormData();
-		fd_table_1.top = new FormAttachment(lblNewLabel_1, 5);
-		fd_table_1.left = new FormAttachment(0);
+		fd_table_1.bottom = new FormAttachment(100,0);
 		fd_table_1.right = new FormAttachment(100,0);
-		fd_table_1.bottom = new FormAttachment(100, 0);
+		fd_table_1.top = new FormAttachment(lblNewLabel_1,5);
+		fd_table_1.left = new FormAttachment(0);
 		table_1.setLayoutData(fd_table_1);
 		table_1.setHeaderVisible(true);
 		table_1.setLinesVisible(true);
@@ -127,6 +144,7 @@ public class DashBoard_alters extends EditorPart {
 		TableColumn tblclmnNewColumn_3 = new TableColumn(table_1, SWT.NONE);
 		tblclmnNewColumn_3.setWidth(304);
 		tblclmnNewColumn_3.setText("Last Successful Heartbeat Date /Time");
+		sashForm.setWeights(new int[] {337, 222});
         fillTable();
         Table();
         sortTable();
