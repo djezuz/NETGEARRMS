@@ -56,9 +56,9 @@ public class QueryData {
 		List li = new ArrayList();
 		try {
 			 if(!id.equalsIgnoreCase("")){
-				sql=sql+" where  serial like '%"+id+"%' and level='Alert'";
+				sql=sql+" where  serial like '%"+id+"%' and level='Alert' ";
 			}else if(id.equalsIgnoreCase("")) {
-				sql=sql+" where  level='Alert'";
+				sql=sql+" where  level='Alert' order by id DESC";
 			}
 			pst = conn.prepareStatement(sql);
 			//pst.setInt(0, id);
@@ -260,7 +260,7 @@ public class QueryData {
 			Connection conn =DBConnection.getConnection();
 			PreparedStatement pst=null;
 			ResultSet rs=null;
-			String sql="SELECT *  from router WHERE  level='alert'";
+			String sql="SELECT *  from router WHERE  level='alert' order by id DESC";
 			List list1 =new ArrayList();
 			try {
 				pst=conn.prepareStatement(sql);
