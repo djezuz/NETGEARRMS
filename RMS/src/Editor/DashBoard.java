@@ -6,6 +6,7 @@ import org.eclipse.core.runtime.IProgressMonitor;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.events.KeyEvent;
 import org.eclipse.swt.events.KeyListener;
+import org.eclipse.swt.events.SelectionAdapter;
 import org.eclipse.swt.events.SelectionEvent;
 import org.eclipse.swt.events.SelectionListener;
 import org.eclipse.swt.layout.FillLayout;
@@ -43,6 +44,7 @@ public class DashBoard extends EditorPart {
 		private Table table;
 		
 		private List router;
+		private int id;
 		private Table table_4;
 		private Table table_5;
 		public DashBoard() {
@@ -183,10 +185,10 @@ public class DashBoard extends EditorPart {
 			
 			tblclmnNewColumn = new TableColumn(table, SWT.NONE);
 			tblclmnNewColumn.setText("Serial");
-			tblclmnNewColumn.setWidth(184);
+			tblclmnNewColumn.setWidth(354);
 			
 			tblclmnNewColumn_1 = new TableColumn(table, SWT.NONE);
-			tblclmnNewColumn_1.setWidth(229);
+			tblclmnNewColumn_1.setWidth(131);
 			tblclmnNewColumn_1.setText("Level");
 			
 			tblclmnNewColumn_2 = new TableColumn(table, SWT.NONE);
@@ -232,7 +234,6 @@ public class DashBoard extends EditorPart {
 			//Composite composite_6 = new Composite(composite_4, SWT.NONE);
 			
 			SashForm sashForm_3 = new SashForm(composite_4, SWT.VERTICAL);
-			sashForm.setWeights(new int[] {248, 227});
 			
 			Label lblNewLabel_4 = new Label(sashForm_3, SWT.NONE);
 			//lblNewLabel_4.setFont(SWTResourceManager.getFont("ËÎÌו", 11, SWT.NORMAL));
@@ -250,6 +251,7 @@ public class DashBoard extends EditorPart {
 			tblclmnNewColumn_7.setText("Last  Successful  Heartbeat");
 			sashForm_3.setWeights(new int[] {24, 199});
 			sashForm_1.setWeights(new int[] {286, 305});
+			sashForm.setWeights(new int[] {273, 198});
 			
 	        Table4();
 		    Table5();
@@ -257,14 +259,58 @@ public class DashBoard extends EditorPart {
 			sortTable();
 		}
 		
+		
+		
 		public void fillTable(){
 			table.removeAll();
 			for(int i=0;i<router.size();i++){
-				Router r = (Router)router.get(i);
+	            Router r = (Router)router.get(i);
 				TableItem ti = new TableItem(table,SWT.NONE);
 				ti.setText(new String[]{r.getSerial(),r.getLevel(),r.getMessage(),r.getTime(),r.getClearedBy()});
+				ti.setData("ti" + i);
+				TableEditor editor = null;
+				editor = new TableEditor(table);
+				final Button check = new Button(table, SWT.NONE);
+				check.setText("new case");
+				check.getLocation();
+				check.setSize(50,20);	
+				check.setData(i);
+				check.setFocus();
+				check.isFocusControl();
+				check.pack();
+				editor.minimumWidth = check.getSize().x;
+				editor.horizontalAlignment = SWT.CENTER;
+				editor.setEditor(check, ti, 0);
+			    
+				
+				TableEditor editor1 = null;
+				editor1 = new TableEditor(table);
+				final Button check1 = new Button(table, SWT.NONE);
+				check1.setText("clear");
+				check1.getLocation();
+				check1.setSize(50,20);	
+				check1.setData(r.getId());
+				check1.setFocus();
+				check1.isFocusControl();
+				check1.pack();
+				editor1.minimumWidth = check1.getSize().x;
+				editor1.horizontalAlignment = SWT.CENTER;
+				editor1.setEditor(check1, ti, 4);
+				check1.addSelectionListener(new SelectionAdapter() {
+					public void widgetSelected(SelectionEvent e) {
+						System.out.println("Click Me!!");
+						QueryData qd=new QueryData();
+						qd.deleteInfo((Integer) check1.getData());
+						router=qd.query("all");
+						fillTable();
+					}
+					
+					
+				});
 			}
 		}
+		
+		
 		public void Table5(){
 			table_5.removeAll();
 			QueryData qd = new QueryData();
