@@ -6,7 +6,7 @@ import com.service.Mydesign;
 
 public class LoginImpl implements Login{
 
-	public String success(String serial,String level,String message,String  time,String clearedBy) {
+	public String success(String serial,String serial_no,String message,String  time,String clearedBy) {
 		//可以调用数据库操作方法，也可以调用业务方法 
 		System.out.print("---------------"+serial);
 		String [] s0=serial.split("\n");
@@ -17,7 +17,7 @@ public class LoginImpl implements Login{
 		String  clearedBy_1=null;
 		for(String s1:s0){
 			String []s2=s1.split("!!");
-			serial_1=s2[0];
+			serial_1=serial_no;
 			 time_1=s2[1];
 			 level_1=s2[0];
 		      message_1=s2[3];
