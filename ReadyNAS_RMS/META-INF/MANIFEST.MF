@@ -1,7 +1,7 @@
 Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: FormatFill
-Bundle-SymbolicName: FormatFill
+Bundle-SymbolicName: ReadyNAS_RMS
 Bundle-Version: 1.0.0.qualifier
 Bundle-Activator: formatfill.Activator
 Import-Package: org.eclipse.core.runtime;version="3.4.0",
