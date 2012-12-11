@@ -8,6 +8,7 @@ import java.util.ArrayList;
 import java.util.List;
 
 import com.entity.Router;
+import com.mysql.jdbc.Statement;
 import com.util.DBConnection;
 
 public class QueryData {
@@ -30,6 +31,7 @@ public class QueryData {
 			if(rs!=null){
 			while(rs.next()){
 				Router router=new Router();
+				router.setId(rs.getInt("id"));
 	            router.setSerial(rs.getString("serial"));	
 				router.setLevel(rs.getString("level"));
 				router.setMessage(rs.getString("message"));
@@ -284,7 +286,56 @@ public class QueryData {
 			return list1;
 				
 		} 		
-				
+		// É¾³ýÒ»Ìõ¼ÇÂ¼
+	public void deleteInfo(int id)
+		{
+		Connection conn = null;
+		PreparedStatement pst=null;
+		try {
+		conn = DBConnection.getConnection();
+		String sql = "delete from router where id="+id;
+		pst=conn.prepareStatement(sql);
+		System.out.println(sql);
+		pst.executeUpdate();
+		} catch (Exception e) {
+		// TODO Auto-generated catch block
+		e.printStackTrace();
+		}
+		finally
+		{
+			try {
+				conn.close();
+				pst.close();
+			} catch (SQLException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			
+		}
+		}
+		
+	public void saveInfo(Router router){
+		Connection conn = null;
+		PreparedStatement pst=null;
+		try {
+		conn = DBConnection.getConnection();
+		String sql = "insert into router values ('"+router.getSerial()+"','"+router.getLevel()+"','"+router.getMessage()+"','"+router.getTime()+"')";
+		pst = conn.prepareStatement(sql);
+		pst.executeUpdate();
+
+		} catch (Exception ex) {
+		ex.printStackTrace();
+		}
+		finally
+		{
+			try {
+				conn.close();
+				pst.close();
+			} catch (SQLException e) {
+				e.printStackTrace();
+			}
+		}
+		}
 				
 	public static void main(String[] arg0){
 		query("all");
