@@ -6,9 +6,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
-
 import com.entity.Router;
-import com.mysql.jdbc.Statement;
 import com.util.DBConnection;
 
 public class QueryData {
@@ -277,7 +275,6 @@ public class QueryData {
 					
 				}
 			} catch (SQLException e) {
-				// TODO Auto-generated catch block
 				e.printStackTrace();
 			}finally{
 				DBConnection.free(rs, null, pst, conn);
@@ -298,7 +295,6 @@ public class QueryData {
 		System.out.println(sql);
 		pst.executeUpdate();
 		} catch (Exception e) {
-		// TODO Auto-generated catch block
 		e.printStackTrace();
 		}
 		finally
