@@ -120,19 +120,19 @@ public class DashBoard_history extends EditorPart{
 		table.setLinesVisible(true);
 		
 		TableColumn tblclmnNewColumn = new TableColumn(table, SWT.NONE);
-		tblclmnNewColumn.setWidth(109);
+		tblclmnNewColumn.setWidth(192);
 		tblclmnNewColumn.setText("Serial");
 		
 		TableColumn tblclmnNewColumn_1 = new TableColumn(table, SWT.NONE);
-		tblclmnNewColumn_1.setWidth(170);
+		tblclmnNewColumn_1.setWidth(411);
 		tblclmnNewColumn_1.setText("Message");
 		
 		TableColumn tblclmnNewColumn_2 = new TableColumn(table, SWT.NONE);
-		tblclmnNewColumn_2.setWidth(292);
+		tblclmnNewColumn_2.setWidth(376);
 		tblclmnNewColumn_2.setText("Date/Time");
 		
 		TableColumn tblclmnNewColumn_3 = new TableColumn(table, SWT.NONE);
-		tblclmnNewColumn_3.setWidth(229);
+		tblclmnNewColumn_3.setWidth(415);
 		tblclmnNewColumn_3.setText("Cleared");
 		//查询三十天前的数据
 		btnNewButton_2.addSelectionListener(new SelectionListener() {
