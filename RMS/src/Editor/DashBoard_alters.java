@@ -102,11 +102,11 @@ public class DashBoard_alters extends EditorPart {
 		table.setLinesVisible(true);
 		
 		TableColumn tblclmnNewColumn = new TableColumn(table, SWT.NONE);
-		tblclmnNewColumn.setWidth(132);
+		tblclmnNewColumn.setWidth(205);
 		tblclmnNewColumn.setText("Serial");
 		
 		TableColumn tblclmnNewColumn_1 = new TableColumn(table, SWT.NONE);
-		tblclmnNewColumn_1.setWidth(303);
+		tblclmnNewColumn_1.setWidth(380);
 		tblclmnNewColumn_1.setText("Date/Time Latest Alert Received");
 		
 		TabFolder tabFolder = new TabFolder(sashForm, SWT.NONE);
@@ -138,11 +138,11 @@ public class DashBoard_alters extends EditorPart {
 		table_1.setLinesVisible(true);
 		
 		TableColumn tblclmnNewColumn_2 = new TableColumn(table_1, SWT.NONE);
-		tblclmnNewColumn_2.setWidth(134);
+		tblclmnNewColumn_2.setWidth(200);
 		tblclmnNewColumn_2.setText("Serial");
 		
 		TableColumn tblclmnNewColumn_3 = new TableColumn(table_1, SWT.NONE);
-		tblclmnNewColumn_3.setWidth(304);
+		tblclmnNewColumn_3.setWidth(383);
 		tblclmnNewColumn_3.setText("Last Successful Heartbeat Date /Time");
 		sashForm.setWeights(new int[] {337, 222});
         fillTable();
