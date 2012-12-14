@@ -185,18 +185,18 @@ public class DashBoard extends EditorPart {
 			
 			tblclmnNewColumn = new TableColumn(table, SWT.NONE);
 			tblclmnNewColumn.setText("Serial");
-			tblclmnNewColumn.setWidth(354);
+			tblclmnNewColumn.setWidth(247);
 			
 			tblclmnNewColumn_1 = new TableColumn(table, SWT.NONE);
-			tblclmnNewColumn_1.setWidth(131);
+			tblclmnNewColumn_1.setWidth(122);
 			tblclmnNewColumn_1.setText("Level");
 			
 			tblclmnNewColumn_2 = new TableColumn(table, SWT.NONE);
-			tblclmnNewColumn_2.setWidth(356);
+			tblclmnNewColumn_2.setWidth(343);
 			tblclmnNewColumn_2.setText("Message");
 			
 			tblclmnNewColumn_3 = new TableColumn(table, SWT.NONE);
-			tblclmnNewColumn_3.setWidth(305);
+			tblclmnNewColumn_3.setWidth(334);
 			tblclmnNewColumn_3.setText("Date/Time");
 			
 			tblclmnNewColumn_4 = new TableColumn(table, SWT.NONE);
@@ -279,7 +279,7 @@ public class DashBoard extends EditorPart {
 				check.isFocusControl();
 				check.pack();
 				editor.minimumWidth = check.getSize().x;
-				editor.horizontalAlignment = SWT.CENTER;
+				editor.horizontalAlignment = SWT.RIGHT;
 				editor.setEditor(check, ti, 0);
 			    
 				
@@ -294,7 +294,7 @@ public class DashBoard extends EditorPart {
 				check1.isFocusControl();
 				check1.pack();
 				editor1.minimumWidth = check1.getSize().x;
-				editor1.horizontalAlignment = SWT.CENTER;
+				editor1.horizontalAlignment = SWT.RIGHT;
 				editor1.setEditor(check1, ti, 4);
 				check1.addSelectionListener(new SelectionAdapter() {
 					public void widgetSelected(SelectionEvent e) {
