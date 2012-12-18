@@ -3,10 +3,13 @@ import java.util.TimerTask;
 
 import org.apache.axis.client.Call;
 import org.apache.axis.client.Service;
+import org.eclipse.core.runtime.FileLocator;
+import org.eclipse.core.runtime.Platform;
 
 public class MyTimer extends TimerTask {
 	
 	
+	public static final String PLUGIN_ID = "ReadyNAS_RMS";
 	String last="";
 	public void run() {
 		StringBuffer list=new StringBuffer();
@@ -35,9 +38,15 @@ public class MyTimer extends TimerTask {
 	
 	public static Object getCall(String value){
 		String serial_no = FileTool.getS_no();
-		System.out.println("afasdfasdf");
 		System.out.println(serial_no);
-		String url="http://localhost:8080/server/services/login";
+		//String url="http://localhost:8080/server/services/login";
+		
+		FileTool fileTool =new FileTool();
+		StringBuffer str=fileTool.getStringBuffer(getRoot()+"META-INF/config.ini");
+		System.out.println(str);
+		String [] s=str.toString().split("=");
+		String  url=s[1];
+		System.out.println(url);
 		Service service=new Service();
 		Call call;
 		String rec="";
@@ -52,4 +61,19 @@ public class MyTimer extends TimerTask {
 		System.out.println(rec);
 		return rec;
 	}
+	
+	
+	public static String getRoot(){
+		  String path=null;
+		  try {
+		    path = FileLocator.toFileURL(
+		    Platform.getBundle(PLUGIN_ID).getEntry("")).getPath();
+			//  path=Platform.getBundle(PLUGIN_ID).getLocation();
+		    path = path.substring(path.indexOf("/") + 1, path.length());
+		  } catch (Exception e) {
+		    e.printStackTrace();
+		  }
+		  System.out.println(path);
+		  return path;
+		} 
 }
