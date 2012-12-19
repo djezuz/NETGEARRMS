@@ -41,8 +41,7 @@ public class MyTimer extends TimerTask {
 		System.out.println(serial_no);
 		//String url="http://localhost:8080/server/services/login";
 		
-		FileTool fileTool =new FileTool();
-		StringBuffer str=fileTool.getStringBuffer(getRoot()+"META-INF/config.ini");
+		StringBuffer str=FileTool.getStringBuffer(getRoot()+"META-INF/config.ini");
 		System.out.println(str);
 		String [] s=str.toString().split("=");
 		String  url=s[1];
