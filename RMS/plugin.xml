@@ -48,5 +48,13 @@
             title="ReadyNAS Monitoring System">
       </branding>
    </extension>
+   <extension
+         id="product"
+         point="org.eclipse.core.runtime.products">
+      <product
+            application="org.eclipse.ui.ide.workbench"
+            name="RMS">
+      </product>
+   </extension>
 
 </plugin>
