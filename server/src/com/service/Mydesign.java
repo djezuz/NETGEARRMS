@@ -34,9 +34,5 @@ public class Mydesign {
 	}
 	
 	
-/*	public static String call(String s){
-		System.out.print(s);
-		return "success";
-	}
-	*/
+
 }
