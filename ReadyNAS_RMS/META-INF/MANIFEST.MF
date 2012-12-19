@@ -3,7 +3,7 @@ Bundle-ManifestVersion: 2
 Bundle-Name: ReadyNAS_RMS
 Bundle-SymbolicName: ReadyNAS_RMS
 Bundle-Version: 1.0.0.qualifier
-Bundle-Activator: formatfill.Activator
+Bundle-Activator: ReadyNAS_RMS.Activator
 Import-Package: org.eclipse.core.runtime;version="3.4.0",
  org.osgi.framework;version="1.3.0"
 Bundle-RequiredExecutionEnvironment: JavaSE-1.7
