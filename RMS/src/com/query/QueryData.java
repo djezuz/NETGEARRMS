@@ -1,11 +1,18 @@
 package com.query;
 
 import java.sql.Connection;
+
 import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.util.ArrayList;
 import java.util.List;
+
+
+import org.eclipse.jface.dialogs.MessageDialog;
+import org.eclipse.swt.widgets.MessageBox;
+import org.eclipse.swt.widgets.Shell;
+
 import com.entity.Router;
 import com.util.DBConnection;
 
@@ -15,7 +22,7 @@ public class QueryData {
 		Connection conn = DBConnection.getConnection();
 		PreparedStatement pst = null;
 		ResultSet rs = null;
-		String  sql="SELECT *  FROM  ROUTER";
+		String  sql="SELECT *  FROM  router";
 		List li = new ArrayList();
 		try {
 			if (id.equalsIgnoreCase("level")){
@@ -23,10 +30,14 @@ public class QueryData {
 			}else if(!id.equalsIgnoreCase("all")){
 				sql=sql+" where  serial like '%"+id+"%'";
 			}
+			//MessageDialog.openError(new Shell(),"SQL","Query SQL  =  "+sql);
 			pst = conn.prepareStatement(sql);
-			//pst.setInt(0, id);
+			//MessageDialog.openError(new Shell(),"SQL","开始  1 "+pst);
 			rs=pst.executeQuery();
+			//MessageDialog.openError(new Shell(),"SQL","开始 2");
 			if(rs!=null){
+				//System.out.println("query.siz  =  "+rs.getRow());
+				//MessageDialog.openError(new Shell(),"first date","query.siz  =  "+rs.getRow());
 			while(rs.next()){
 				Router router=new Router();
 				router.setId(rs.getInt("id"));
@@ -40,7 +51,10 @@ public class QueryData {
 			}
 			}
 		}catch (SQLException e) {
+			//MessageDialog.openError(new Shell(),"first date","query fail "+e.getMessage());
+			System.out.println("query fail ");
 			e.printStackTrace();
+			//MessageDialog.openError(new Shell(),"first date","query fail "+e.toString());
 		} finally{
 			DBConnection.free(rs, null, pst, conn);
 		}		
