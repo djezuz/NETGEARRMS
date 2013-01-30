@@ -4,13 +4,5 @@
 	<classpathentry kind="con" path="org.eclipse.pde.core.requiredPlugins"/>
 	<classpathentry kind="src" path="src"/>
 	<classpathentry kind="lib" path="META-INF/lib/mysql-connector-java-5.0.4-bin.jar"/>
-	<classpathentry kind="lib" path="D:/GitHubStorage/NETGEARRMS/RMS/META-INF/lib/wsdl4j-1.5.1.jar"/>
-	<classpathentry kind="lib" path="D:/GitHubStorage/NETGEARRMS/RMS/META-INF/lib/axis.jar"/>
-	<classpathentry kind="lib" path="D:/GitHubStorage/NETGEARRMS/RMS/META-INF/lib/axis-ant.jar"/>
-	<classpathentry kind="lib" path="D:/GitHubStorage/NETGEARRMS/RMS/META-INF/lib/commons-discovery-0.2.jar"/>
-	<classpathentry kind="lib" path="D:/GitHubStorage/NETGEARRMS/RMS/META-INF/lib/commons-logging-1.0.4.jar"/>
-	<classpathentry kind="lib" path="D:/GitHubStorage/NETGEARRMS/RMS/META-INF/lib/jaxrpc.jar"/>
-	<classpathentry kind="lib" path="D:/GitHubStorage/NETGEARRMS/RMS/META-INF/lib/log4j-1.2.8.jar"/>
-	<classpathentry kind="lib" path="D:/GitHubStorage/NETGEARRMS/RMS/META-INF/lib/saaj.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>

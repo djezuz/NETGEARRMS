@@ -45,6 +45,7 @@ public class LoginDlg extends Dialog {
 		
 		user_name = new Text(container, SWT.BORDER);
 		user_name.setBounds(94, 28, 226, 24);
+		user_name.setText("Ye.zhang@netgear.com");
 		
 		Label lblPassword = new Label(container, SWT.NONE);
 		lblPassword.setBounds(9, 100, 79, 24);
@@ -52,6 +53,7 @@ public class LoginDlg extends Dialog {
 		
 		password = new Text(container, SWT.BORDER | SWT.PASSWORD);
 		password.setBounds(94, 97, 226, 24);
+		password.setText("Netgear-123");
 
 		return container;
 	}

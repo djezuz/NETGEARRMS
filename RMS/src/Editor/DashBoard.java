@@ -28,6 +28,7 @@ import org.eclipse.ui.part.EditorPart;
 
 import Editor.method.TableSort;
 
+import com.entity.LassHearbeat;
 import com.entity.Router;
 import com.query.QueryData;
 import org.eclipse.swt.custom.SashForm;
@@ -139,6 +140,8 @@ public class DashBoard extends EditorPart {
 					QueryData  qd=new QueryData();
 					router = qd.query(text.getText());
 					fillTable();
+					Table5();
+					Table4();
 					System.out.println(text.getText());
 				}
 				
@@ -160,7 +163,8 @@ public class DashBoard extends EditorPart {
 					QueryData  qd=new QueryData();
 					router = qd.querylevel(text.getText());
 					fillTable();
-					
+					Table5();
+					Table4();
 					
 				}
 				
@@ -223,9 +227,14 @@ public class DashBoard extends EditorPart {
 			table_4.setHeaderVisible(true);
 			table_4.setLinesVisible(true);
 			
-			TableColumn tblclmnNewColumn_6 = new TableColumn(table_4, SWT.LEFT);
+			TableColumn tblclmnNewColumn_5 = new TableColumn(table_4, SWT.CENTER);
+			tblclmnNewColumn_5.setWidth(129);
+			tblclmnNewColumn_5.setText("serial");
+			
+			TableColumn tblclmnNewColumn_6 = new TableColumn(table_4, SWT.CENTER);
+			tblclmnNewColumn_6.setWidth(144);
+			tblclmnNewColumn_6.setResizable(false);
 			tblclmnNewColumn_6.setText("Date/Time");
-			tblclmnNewColumn_6.setWidth(720);
 			sashForm_2.setWeights(new int[] {23, 200});
 			
 			Composite composite_4 = new Composite(sashForm_1, SWT.NONE);
@@ -246,8 +255,12 @@ public class DashBoard extends EditorPart {
 			table_5.setHeaderVisible(true);
 			table_5.setLinesVisible(true);
 			
+			TableColumn col_Serial = new TableColumn(table_5, SWT.CENTER);
+			col_Serial.setWidth(138);
+			col_Serial.setText("Serial");
+			
 			TableColumn tblclmnNewColumn_7 = new TableColumn(table_5, SWT.NONE);
-			tblclmnNewColumn_7.setWidth(729);
+			tblclmnNewColumn_7.setWidth(160);
 			tblclmnNewColumn_7.setText("Last  Successful  Heartbeat");
 			sashForm_3.setWeights(new int[] {24, 199});
 			sashForm_1.setWeights(new int[] {286, 305});
@@ -314,17 +327,23 @@ public class DashBoard extends EditorPart {
 		public void Table5(){
 			table_5.removeAll();
 			QueryData qd = new QueryData();
-		   String time=qd.queryLast();
-		   TableItem ti = new TableItem(table_5,SWT.NONE);
-			ti.setText(time);
+		    List<LassHearbeat> list=qd.queryPastlast(text.getText().trim());
+		    for(LassHearbeat hearb:list){
+		    	TableItem ti = new TableItem(table_5,SWT.NONE);
+		    	ti.setText(0, hearb.getDeviceId());
+		    	ti.setText(1, hearb.getTime());
+		    }
 		
 		}
 		public void Table4(){
 			table_4.removeAll();
 			QueryData qd = new QueryData();
-		   String time=qd.queryMoreOne();
-		   TableItem ti = new TableItem(table_4,SWT.NONE);
-			ti.setText(time);
+			List<LassHearbeat> list=qd.queryPastmisshearbeat(text.getText().trim());
+		    for(LassHearbeat hearb:list){
+		    	TableItem ti = new TableItem(table_4,SWT.NONE);
+		    	ti.setText(0, hearb.getDeviceId());
+		    	ti.setText(1, hearb.getTime());
+		    }
 		
 		}
 		

@@ -13,6 +13,7 @@ import org.eclipse.jface.dialogs.MessageDialog;
 import org.eclipse.swt.widgets.MessageBox;
 import org.eclipse.swt.widgets.Shell;
 
+import com.entity.LassHearbeat;
 import com.entity.Router;
 import com.util.DBConnection;
 
@@ -350,5 +351,79 @@ public class QueryData {
 	public static void main(String[] arg0){
 		query("all");
 	}
+	
+	
+	//最后的Hearbeat
+	public List queryPastlast(String serial_no){
+		Connection conn = DBConnection.getConnection();
+		PreparedStatement pst = null;
+		ResultSet rs = null;
+		String sql="";
+		if(serial_no!=null&&!"".equals(serial_no)){
+			sql="SELECT id,deviceId,MAX(createDatetime) as time FROM heartbeat where deviceId='"+serial_no+"' GROUP BY deviceId";
+		}else{
+			sql="SELECT id,deviceId,MAX(createDatetime) as time FROM heartbeat GROUP BY deviceId";
+		}
+		
+//		String  sql="select * FROM router WHERE DATEDIFF(SYSDATE(),STR_TO_DATE(time,'%a %b %d %h:%i:%s HKT %Y'))<=7;";
+		List<LassHearbeat> li = new ArrayList<LassHearbeat>();
+		try {
+			pst = conn.prepareStatement(sql);
+			rs=pst.executeQuery();
+			if(rs!=null){
+			while(rs.next()){
+				LassHearbeat hearbeat=new LassHearbeat();
+				hearbeat.setDeviceId(rs.getString("deviceId"));
+				hearbeat.setTime(rs.getString("time"));
+				li.add(hearbeat);
+			}
+			}
+		}catch (SQLException e) {
+			e.printStackTrace();
+		} finally{
+			DBConnection.free(rs, null, pst, conn);
+		}		
+	
+		return  li;
+	}
+	
+	
+	// miss  Hearbeat
+	
+	
+	//最后的Hearbeat
+	public List queryPastmisshearbeat(String serial_no){
+		Connection conn = DBConnection.getConnection();
+		PreparedStatement pst = null;
+		ResultSet rs = null;
+		String sql="";
+		if(serial_no!=null&&!"".equals(serial_no)){
+			sql="SELECT id,deviceId,createDatetime FROM heartbeat WHERE DATE_SUB(SYSDATE(),INTERVAL 2 HOUR)>STR_TO_DATE(createDatetime,'%Y-%m-%d %H:%i:%s') and deviceId='"+serial_no+"' GROUP BY deviceId";
+		}else{
+			sql="SELECT id,deviceId,createDatetime FROM heartbeat WHERE DATE_SUB(SYSDATE(),INTERVAL 2 HOUR)>STR_TO_DATE(createDatetime,'%Y-%m-%d %H:%i:%s') GROUP BY deviceId";
+		}
+		
+//		String  sql="select * FROM router WHERE DATEDIFF(SYSDATE(),STR_TO_DATE(time,'%a %b %d %h:%i:%s HKT %Y'))<=7;";
+		List<LassHearbeat> li = new ArrayList<LassHearbeat>();
+		try {
+			pst = conn.prepareStatement(sql);
+			rs=pst.executeQuery();
+			if(rs!=null){
+			while(rs.next()){
+				LassHearbeat hearbeat=new LassHearbeat();
+				hearbeat.setDeviceId(rs.getString("deviceId"));
+				hearbeat.setTime(rs.getString("createDatetime"));
+				li.add(hearbeat);
+			}
+			}
+		}catch (SQLException e) {
+			e.printStackTrace();
+		} finally{
+			DBConnection.free(rs, null, pst, conn);
+		}		
+	
+		return  li;
+	}
+	
 	
 }
