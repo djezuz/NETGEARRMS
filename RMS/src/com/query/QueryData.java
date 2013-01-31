@@ -398,9 +398,9 @@ public class QueryData {
 		ResultSet rs = null;
 		String sql="";
 		if(serial_no!=null&&!"".equals(serial_no)){
-			sql="SELECT id,deviceId,createDatetime FROM heartbeat WHERE DATE_SUB(SYSDATE(),INTERVAL 2 HOUR)>STR_TO_DATE(createDatetime,'%Y-%m-%d %H:%i:%s') and deviceId='"+serial_no+"' GROUP BY deviceId";
+			sql="SELECT id,deviceId,tt.aa AS ti FROM (SELECT id,deviceId,MAX(createDatetime) AS aa FROM heartbeat where deviceId='"+serial_no+"' GROUP BY deviceId ) AS tt WHERE DATE_SUB(SYSDATE(),INTERVAL 2 HOUR)>STR_TO_DATE(tt.aa,'%Y-%m-%d %H:%i:%s')";
 		}else{
-			sql="SELECT id,deviceId,createDatetime FROM heartbeat WHERE DATE_SUB(SYSDATE(),INTERVAL 2 HOUR)>STR_TO_DATE(createDatetime,'%Y-%m-%d %H:%i:%s') GROUP BY deviceId";
+			sql="SELECT id,deviceId,tt.aa AS ti FROM (SELECT id,deviceId,MAX(createDatetime) AS aa FROM heartbeat  GROUP BY deviceId ) AS tt WHERE DATE_SUB(SYSDATE(),INTERVAL 2 HOUR)>STR_TO_DATE(tt.aa,'%Y-%m-%d %H:%i:%s')";
 		}
 		
 //		String  sql="select * FROM router WHERE DATEDIFF(SYSDATE(),STR_TO_DATE(time,'%a %b %d %h:%i:%s HKT %Y'))<=7;";
@@ -412,7 +412,7 @@ public class QueryData {
 			while(rs.next()){
 				LassHearbeat hearbeat=new LassHearbeat();
 				hearbeat.setDeviceId(rs.getString("deviceId"));
-				hearbeat.setTime(rs.getString("createDatetime"));
+				hearbeat.setTime(rs.getString("ti"));
 				li.add(hearbeat);
 			}
 			}

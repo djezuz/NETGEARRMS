@@ -5,11 +5,14 @@ import java.util.Locale;
 
 import org.eclipse.swt.SWT;
 //import org.eclipse.swt.graphics.Image;
+import org.eclipse.swt.widgets.Control;
 import org.eclipse.swt.widgets.Event;
 import org.eclipse.swt.widgets.Listener;
 import org.eclipse.swt.widgets.Table;
 import org.eclipse.swt.widgets.TableColumn;
 import org.eclipse.swt.widgets.TableItem;
+
+import Editor.DashBoard;
 
 /**
  * 2012-11-21
@@ -47,6 +50,15 @@ public class TableSort {
 
 				public void handleEvent(Event event) {
 					columnHandleEvent(event, sortColIndex);
+					//ÇåÀí±à¼­Æ÷
+					Control oldEditor1=DashBoard.routerTable_caseEditor.getEditor();
+		  			if(oldEditor1!=null){
+		  				oldEditor1.dispose();
+		  			}
+		  			Control oldEditor2=DashBoard.routerTable_clearEditor.getEditor();
+		  			if(oldEditor2!=null){
+		  				oldEditor2.dispose();
+		  			}
 				}
 			});
 		}

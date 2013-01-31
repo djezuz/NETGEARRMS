@@ -4,6 +4,8 @@ import java.util.List;
 
 import org.eclipse.core.runtime.IProgressMonitor;
 import org.eclipse.swt.SWT;
+import org.eclipse.swt.events.FocusAdapter;
+import org.eclipse.swt.events.FocusEvent;
 import org.eclipse.swt.events.KeyEvent;
 import org.eclipse.swt.events.KeyListener;
 import org.eclipse.swt.events.SelectionAdapter;
@@ -16,7 +18,10 @@ import org.eclipse.swt.layout.FormLayout;
 import org.eclipse.swt.layout.GridLayout;
 import org.eclipse.swt.widgets.Button;
 import org.eclipse.swt.widgets.Composite;
+import org.eclipse.swt.widgets.Control;
+import org.eclipse.swt.widgets.Event;
 import org.eclipse.swt.widgets.Label;
+import org.eclipse.swt.widgets.Listener;
 import org.eclipse.swt.widgets.Table;
 import org.eclipse.swt.widgets.TableColumn;
 import org.eclipse.swt.widgets.TableItem;
@@ -43,6 +48,8 @@ public class DashBoard extends EditorPart {
 		private TableColumn tblclmnNewColumn_3;
 		private TableColumn tblclmnNewColumn_4;
 		private Table table;
+		public static TableEditor routerTable_clearEditor;
+		public static TableEditor routerTable_caseEditor;
 		
 		private List router;
 		private int id;
@@ -207,6 +214,22 @@ public class DashBoard extends EditorPart {
 			tblclmnNewColumn_4.setWidth(314);
 			tblclmnNewColumn_4.setText("Cleared by");
 			
+			routerTable_clearEditor=new TableEditor(table);
+			routerTable_caseEditor=new TableEditor(table);
+			
+			table.addSelectionListener(new SelectionAdapter() {
+				
+				@Override
+				public void widgetSelected(SelectionEvent e) {
+					if(e.item!=null){
+						
+						addButtonToTable((TableItem)e.item);
+						
+					}
+				}
+				
+			});
+			
 			Composite composite_3 = new Composite(sashForm, SWT.NONE);
 			composite_3.setLayout(new FillLayout());
 			
@@ -228,12 +251,11 @@ public class DashBoard extends EditorPart {
 			table_4.setLinesVisible(true);
 			
 			TableColumn tblclmnNewColumn_5 = new TableColumn(table_4, SWT.CENTER);
-			tblclmnNewColumn_5.setWidth(129);
+			tblclmnNewColumn_5.setWidth(147);
 			tblclmnNewColumn_5.setText("serial");
 			
 			TableColumn tblclmnNewColumn_6 = new TableColumn(table_4, SWT.CENTER);
 			tblclmnNewColumn_6.setWidth(144);
-			tblclmnNewColumn_6.setResizable(false);
 			tblclmnNewColumn_6.setText("Date/Time");
 			sashForm_2.setWeights(new int[] {23, 200});
 			
@@ -256,11 +278,11 @@ public class DashBoard extends EditorPart {
 			table_5.setLinesVisible(true);
 			
 			TableColumn col_Serial = new TableColumn(table_5, SWT.CENTER);
-			col_Serial.setWidth(138);
+			col_Serial.setWidth(155);
 			col_Serial.setText("Serial");
 			
 			TableColumn tblclmnNewColumn_7 = new TableColumn(table_5, SWT.NONE);
-			tblclmnNewColumn_7.setWidth(160);
+			tblclmnNewColumn_7.setWidth(260);
 			tblclmnNewColumn_7.setText("Last  Successful  Heartbeat");
 			sashForm_3.setWeights(new int[] {24, 199});
 			sashForm_1.setWeights(new int[] {286, 305});
@@ -275,51 +297,64 @@ public class DashBoard extends EditorPart {
 		
 		
 		public void fillTable(){
+			//移除所有数据
 			table.removeAll();
+			//移除编辑器
+			Control oldEditor1=routerTable_clearEditor.getEditor();
+			if(oldEditor1!=null && !oldEditor1.isDisposed()){
+				oldEditor1.dispose();
+			}
+			Control oldEditor2=routerTable_caseEditor.getEditor();
+			if(oldEditor2!=null && !oldEditor2.isDisposed()){
+				oldEditor2.dispose();
+			}
+			
+			QueryData  qd=new QueryData();
+			router = qd.query(text.getText());
 			for(int i=0;i<router.size();i++){
 	            Router r = (Router)router.get(i);
 				TableItem ti = new TableItem(table,SWT.NONE);
 				ti.setText(new String[]{r.getSerial(),r.getLevel(),r.getMessage(),r.getTime(),r.getClearedBy()});
-				ti.setData("ti" + i);
-				TableEditor editor = null;
-				editor = new TableEditor(table);
-				final Button check = new Button(table, SWT.NONE);
-				check.setText("new case");
-				check.getLocation();
-				check.setSize(50,20);	
-				check.setData(i);
-				check.setFocus();
-				check.isFocusControl();
-				check.pack();
-				editor.minimumWidth = check.getSize().x;
-				editor.horizontalAlignment = SWT.RIGHT;
-				editor.setEditor(check, ti, 0);
-			    
-				
-				TableEditor editor1 = null;
-				editor1 = new TableEditor(table);
-				final Button check1 = new Button(table, SWT.NONE);
-				check1.setText("clear");
-				check1.getLocation();
-				check1.setSize(50,20);	
-				check1.setData(r.getId());
-				check1.setFocus();
-				check1.isFocusControl();
-				check1.pack();
-				editor1.minimumWidth = check1.getSize().x;
-				editor1.horizontalAlignment = SWT.RIGHT;
-				editor1.setEditor(check1, ti, 4);
-				check1.addSelectionListener(new SelectionAdapter() {
-					public void widgetSelected(SelectionEvent e) {
-						System.out.println("Click Me!!");
-						QueryData qd=new QueryData();
-						qd.deleteInfo((Integer) check1.getData());
-						router=qd.query("all");
-						fillTable();
-					}
-					
-					
-				});
+				ti.setData(r);
+//				TableEditor editor = null;
+//				editor = new TableEditor(table);
+//				final Button check = new Button(table, SWT.NONE);
+//				check.setText("new case");
+//				check.getLocation();
+//				check.setSize(50,20);	
+//				check.setData(i);
+//				check.setFocus();
+//				check.isFocusControl();
+//				check.pack();
+//				editor.minimumWidth = check.getSize().x;
+//				editor.horizontalAlignment = SWT.RIGHT;
+//				editor.setEditor(check, ti, 0);
+//			    
+//				
+//				TableEditor editor1 = null;
+//				editor1 = new TableEditor(table);
+//				final Button check1 = new Button(table, SWT.NONE);
+//				check1.setText("clear");
+//				check1.getLocation();
+//				check1.setSize(50,20);	
+//				check1.setData(r.getId());
+//				check1.setFocus();
+//				check1.isFocusControl();
+//				check1.pack();
+//				editor1.minimumWidth = check1.getSize().x;
+//				editor1.horizontalAlignment = SWT.RIGHT;
+//				editor1.setEditor(check1, ti, 4);
+//				check1.addSelectionListener(new SelectionAdapter() {
+//					public void widgetSelected(SelectionEvent e) {
+//						System.out.println("Click Me!!");
+//						QueryData qd=new QueryData();
+//						qd.deleteInfo((Integer) check1.getData());
+//						router=qd.query("all");
+//						fillTable();
+//					}
+//					
+//					
+//				});
 			}
 		}
 		
@@ -357,4 +392,77 @@ public class DashBoard extends EditorPart {
 			
 			
 		}
+		
+		/**
+		 * 为路由table添加编辑器
+		 * @param tableItem 所选项
+		 */
+		private void addButtonToTable(TableItem tableItem){
+			
+			if(tableItem!=null){
+				
+				final Router router=(Router) tableItem.getData();
+				if(router!=null){
+					
+					//清理旧的编辑器
+					Control oldEditor1=routerTable_caseEditor.getEditor();
+		  			if(oldEditor1!=null){
+		  				oldEditor1.dispose();
+		  			}
+		  			Control oldEditor2=routerTable_clearEditor.getEditor();
+		  			if(oldEditor2!=null){
+		  				oldEditor2.dispose();
+		  			}
+		  			
+		  			
+		  			final Button caseButton = new Button(table, SWT.NONE);
+		  			caseButton.setText("new case");
+		  			caseButton.pack();
+		  			routerTable_caseEditor.minimumWidth=caseButton.getSize().x;
+		  			routerTable_caseEditor.horizontalAlignment = SWT.RIGHT;
+		  			routerTable_caseEditor.setEditor(caseButton, tableItem, 0);
+		  			
+		  			final Button clearButton = new Button(table, SWT.NONE);
+		  			clearButton.setText("clear");
+					clearButton.addSelectionListener(new SelectionAdapter() {
+						public void widgetSelected(SelectionEvent e) {
+							System.out.println("Click Me!!");
+							QueryData qd=new QueryData();
+							qd.deleteInfo(router.getId());
+							fillTable();
+						}
+						
+						
+					});
+					clearButton.pack();
+					routerTable_clearEditor.horizontalAlignment=SWT.RIGHT;
+					routerTable_clearEditor.minimumWidth=clearButton.getSize().x;
+					routerTable_clearEditor.setEditor(clearButton, tableItem, 4);
+		  			
+					
+					
+		  			table.addListener(SWT.Deactivate, new Listener() {
+						
+						@Override
+						public void handleEvent(Event event) {
+							// TODO Auto-generated method stub
+							Control oldEditor1=routerTable_caseEditor.getEditor();
+				  			if(oldEditor1!=null){
+				  				oldEditor1.dispose();
+				  			}
+				  			Control oldEditor2=routerTable_clearEditor.getEditor();
+				  			if(oldEditor2!=null){
+				  				oldEditor2.dispose();
+				  			}
+						}
+					});
+		  			
+				
+		  			
+				}
+				
+			}
+			
+		}
+		
 	}

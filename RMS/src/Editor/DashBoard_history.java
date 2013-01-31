@@ -141,14 +141,7 @@ public class DashBoard_history extends EditorPart{
 			public void widgetSelected(SelectionEvent e) {
 				QueryData qd=new QueryData();
 				router=qd.queryPastThirty();
-				fillTable();
-			}
-			private  void fillTable(){
-				for(int i=0;i<router.size();i++){
-					Router r=(Router)router.get(i);
-				TableItem ti =new TableItem(table, SWT.None);
-				ti.setText(new String[]{r.getSerial(),r.getMessage(),r.getTime(),r.getClearedBy()});
-				}
+				fillTable_new();
 			}
 			@Override
 			public void widgetDefaultSelected(SelectionEvent e) {
@@ -163,18 +156,9 @@ public class DashBoard_history extends EditorPart{
 			public void widgetSelected(SelectionEvent e) {
 				QueryData qd=new QueryData();
 				router=qd.queryPastSeven();
-				fillTable();
+				fillTable_new();
 			}
 			
-			private void fillTable() {
-				table.removeAll();
-				for(int i=0;i<router.size();i++){
-					Router r = (Router)router.get(i);
-					TableItem ti = new TableItem(table,SWT.NONE);
-					ti.setText(new String[]{r.getSerial(),r.getMessage(),r.getTime(),r.getClearedBy()});
-				}
-				
-			}
 			@Override
 			public void widgetDefaultSelected(SelectionEvent e) {
 				// TODO Auto-generated method stub
@@ -188,18 +172,7 @@ public class DashBoard_history extends EditorPart{
 			public void widgetSelected(SelectionEvent e) {
 				QueryData  qd=new QueryData();
 				router = qd.querypastThree();
-				fillTable();
-				
-			}
-			
-			private void fillTable() {
-				table.removeAll();
-				for(int i=0;i<router.size();i++){
-					Router r = (Router)router.get(i);
-					TableItem ti = new TableItem(table,SWT.NONE);
-					ti.setText(new String[]{r.getSerial(),r.getMessage(),r.getTime(),r.getClearedBy()});
-				}
-				
+				fillTable_new();
 			}
 
 			@Override
@@ -218,19 +191,11 @@ public class DashBoard_history extends EditorPart{
 				tbtmMissedHeartbeats.setControl(composite_3);
 				composite_3.setLayout(new FormLayout());
 				
-				Label lblNewLabel_2 = new Label(composite_3, SWT.NONE);
-				FormData fd_lblNewLabel_2 = new FormData();
-				fd_lblNewLabel_2.bottom = new FormAttachment(0, 40);
-				fd_lblNewLabel_2.right = new FormAttachment(100,0);
-				fd_lblNewLabel_2.top = new FormAttachment(0);
-				fd_lblNewLabel_2.left = new FormAttachment(0);
-				lblNewLabel_2.setLayoutData(fd_lblNewLabel_2);
-				
 						table_1 = new Table(composite_3, SWT.BORDER | SWT.FULL_SELECTION);
 						FormData fd_table_1 = new FormData();
-						fd_table_1.bottom = new FormAttachment(100,0);
+						fd_table_1.bottom = new FormAttachment(0, 154);
+						fd_table_1.top = new FormAttachment(0);
 						fd_table_1.right = new FormAttachment(100,0);
-						fd_table_1.top = new FormAttachment(lblNewLabel_2,5);
 						fd_table_1.left = new FormAttachment(0);
 						table_1.setLayoutData(fd_table_1);
 						table_1.setHeaderVisible(true);
@@ -267,6 +232,16 @@ public class DashBoard_history extends EditorPart{
 		
 	}
 
+	
+	private  void fillTable_new(){
+		table.removeAll();
+		for(int i=0;i<router.size();i++){
+			Router r=(Router)router.get(i);
+		TableItem ti =new TableItem(table, SWT.None);
+		ti.setText(new String[]{r.getSerial(),r.getMessage(),r.getTime(),r.getClearedBy()});
+		}
+	}
+	
 	@Override
 	public void setFocus() {
 		// TODO Auto-generated method stub
