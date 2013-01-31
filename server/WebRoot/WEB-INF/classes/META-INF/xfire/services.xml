@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<beans xmlns="http://xfire.codehaus.org/config/1.0">
-	  <service >  
-	    <name>login</name>  
-	    <namespace>http://localhost:8080/services/login</namespace>  
-	    <serviceClass>service.Login</serviceClass>  
-	    <implementationClass>service.impl.LoginImpl</implementationClass>  
-	  </service>  
-</beans>

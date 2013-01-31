@@ -10,9 +10,9 @@ import java.sql.Statement;
 public class DBConnection {
 	
 	private static String driverClass = "com.mysql.jdbc.Driver";
-	private static String url = "jdbc:mysql://localhost/router";
+	private static String url = "jdbc:mysql://192.168.9.123/router";
 	private static String username = "root";
-	private static String password = "root";
+	private static String password = "siteview";
 
 	
 	static{		
