@@ -19,19 +19,23 @@ import org.eclipse.ui.part.EditorPart;
 
 import Editor.method.TableSort;
 
+import com.entity.LassHeartbeat;
 import com.entity.Router;
 import com.query.QueryData;
 import org.eclipse.swt.custom.SashForm;
 import org.eclipse.swt.widgets.TabFolder;
 import org.eclipse.swt.widgets.TabItem;
 import org.eclipse.swt.layout.FillLayout;
+import org.eclipse.swt.widgets.Button;
+import org.eclipse.swt.events.SelectionAdapter;
+import org.eclipse.swt.events.SelectionEvent;
 
 public class DashBoard_alters extends EditorPart {
 	public static String ID = "RMS.editor3";
 	private Table table;
 	private Table table_1;
-	private List router;
-	private List router1;
+	private List unresolvedRouter;
+	private List hbList;
 	public DashBoard_alters() {
 		// TODO Auto-generated constructor stub
 	}
@@ -52,13 +56,14 @@ public class DashBoard_alters extends EditorPart {
 	public void init(IEditorSite site, IEditorInput input)
 			throws PartInitException {
 		// TODO Auto-generated method stub
+		QueryData  qd=new QueryData();
+		unresolvedRouter = qd.queryUnresolvedAlertHistory();
+		hbList=qd.queryMissedHeartBeatByDay(90);
+		
 		this.setSite(site);
 		this.setInput(input);
 		this.setPartName(input.getName());
-		if(input instanceof DashBoard_alters_Input){
-			this.router = ((DashBoard_alters_Input) input).getRouter();
-			this.router1 = ((DashBoard_alters_Input) input).getRouter1();
-		}
+		
 	}
 
 	@Override
@@ -84,18 +89,17 @@ public class DashBoard_alters extends EditorPart {
 		
 		Label lblNewLabel = new Label(composite, SWT.NONE);
 		FormData fd_lblNewLabel = new FormData();
-		fd_lblNewLabel.bottom = new FormAttachment(0, 40);
-		fd_lblNewLabel.right = new FormAttachment(100,0);
 		fd_lblNewLabel.top = new FormAttachment(0);
+		fd_lblNewLabel.bottom = new FormAttachment(0, 40);
 		fd_lblNewLabel.left = new FormAttachment(0);
 		lblNewLabel.setLayoutData(fd_lblNewLabel);
 		lblNewLabel.setText("Units with new,unresolved alerts");
 		
 		table = new Table(composite, SWT.BORDER | SWT.FULL_SELECTION);
 		FormData fd_table = new FormData();
-		fd_table.bottom = new FormAttachment(100,0);
+		fd_table.top = new FormAttachment(lblNewLabel, 5);
+		fd_table.bottom = new FormAttachment(100);
 		fd_table.right = new FormAttachment(100,0);
-		fd_table.top = new FormAttachment(lblNewLabel,5);
 		fd_table.left = new FormAttachment(0);
 		table.setLayoutData(fd_table);
 		table.setHeaderVisible(true);
@@ -108,6 +112,26 @@ public class DashBoard_alters extends EditorPart {
 		TableColumn tblclmnNewColumn_1 = new TableColumn(table, SWT.NONE);
 		tblclmnNewColumn_1.setWidth(380);
 		tblclmnNewColumn_1.setText("Date/Time Latest Alert Received");
+		
+		Button btnNewButton = new Button(composite, SWT.NONE);
+		btnNewButton.addSelectionListener(new SelectionAdapter() {
+			@Override
+			public void widgetSelected(SelectionEvent e) {
+				
+				QueryData  qd=new QueryData();
+				unresolvedRouter = qd.queryUnresolvedAlertHistory();
+				hbList=qd.queryMissedHeartBeatByDay(90);
+				fillTable();
+		        Table();
+		        
+			}
+		});
+		fd_lblNewLabel.right = new FormAttachment(btnNewButton, -6);
+		FormData fd_btnNewButton = new FormData();
+		fd_btnNewButton.bottom = new FormAttachment(table, -5);
+		fd_btnNewButton.right = new FormAttachment(100, -10);
+		btnNewButton.setLayoutData(fd_btnNewButton);
+		btnNewButton.setText("Show");
 		
 		TabFolder tabFolder = new TabFolder(sashForm, SWT.NONE);
 		
@@ -145,6 +169,7 @@ public class DashBoard_alters extends EditorPart {
 		tblclmnNewColumn_3.setWidth(383);
 		tblclmnNewColumn_3.setText("Last Successful Heartbeat Date /Time");
 		sashForm.setWeights(new int[] {337, 222});
+		
         fillTable();
         Table();
         sortTable();
@@ -157,19 +182,23 @@ public class DashBoard_alters extends EditorPart {
 	
 	public void fillTable(){
 		    table_1.removeAll();
-			for(int i=0;i<router1.size();i++){
-				Router r = (Router)router1.get(i);
-				TableItem ti = new TableItem(table_1,SWT.NONE);
-				ti.setText(new String[]{r.getSerial(),r.getTime()});
-			}
+		    if(hbList!=null){
+				for(int i=0;i<hbList.size();i++){
+					LassHeartbeat hb = (LassHeartbeat)hbList.get(i);
+					TableItem ti = new TableItem(table_1,SWT.NONE);
+					ti.setText(new String[]{hb.getDeviceId(),hb.getTime()});
+				}
+		    }
 		}
 	
 	public  void Table(){
 		table.removeAll();
-		for(int i=0;i<router.size();i++){
-		   Router r = (Router)router.get(i);
-				TableItem ti = new TableItem(table,SWT.NONE);
-				ti.setText(new String[]{r.getSerial(),r.getTime()});
+		if(unresolvedRouter!=null){
+			for(int i=0;i<unresolvedRouter.size();i++){
+			   Router r = (Router)unresolvedRouter.get(i);
+					TableItem ti = new TableItem(table,SWT.NONE);
+					ti.setText(new String[]{r.getSerial(),r.getTime()});
+			}
 		}
 	}
 	@Override

@@ -33,7 +33,7 @@ import org.eclipse.ui.part.EditorPart;
 
 import Editor.method.TableSort;
 
-import com.entity.LassHearbeat;
+import com.entity.LassHeartbeat;
 import com.entity.Router;
 import com.query.QueryData;
 import org.eclipse.swt.custom.SashForm;
@@ -314,47 +314,21 @@ public class DashBoard extends EditorPart {
 			for(int i=0;i<router.size();i++){
 	            Router r = (Router)router.get(i);
 				TableItem ti = new TableItem(table,SWT.NONE);
-				ti.setText(new String[]{r.getSerial(),r.getLevel(),r.getMessage(),r.getTime(),r.getClearedBy()});
+				ti.setText(new String[]{r.getSerial(),"",r.getMessage(),r.getTime(),""});
+				if(r.getLevel()!=null){
+					if("0".equals(r.getLevel().trim())){
+						ti.setText(1, "Alert");
+					}else if("1".equals(r.getLevel().trim())){
+						ti.setText(1, "Status");
+					}
+				}
+				if(r.getCaseid()!=null && !"".equals(r.getCaseid().trim())){
+					ti.setText(4,"Case:"+r.getCaseid().trim()+" "+(r.getCasedby()==null?"":r.getCasedby().trim()));
+				}else{
+					ti.setText(4,"n/a (low level alert)");
+				}
 				ti.setData(r);
-//				TableEditor editor = null;
-//				editor = new TableEditor(table);
-//				final Button check = new Button(table, SWT.NONE);
-//				check.setText("new case");
-//				check.getLocation();
-//				check.setSize(50,20);	
-//				check.setData(i);
-//				check.setFocus();
-//				check.isFocusControl();
-//				check.pack();
-//				editor.minimumWidth = check.getSize().x;
-//				editor.horizontalAlignment = SWT.RIGHT;
-//				editor.setEditor(check, ti, 0);
-//			    
-//				
-//				TableEditor editor1 = null;
-//				editor1 = new TableEditor(table);
-//				final Button check1 = new Button(table, SWT.NONE);
-//				check1.setText("clear");
-//				check1.getLocation();
-//				check1.setSize(50,20);	
-//				check1.setData(r.getId());
-//				check1.setFocus();
-//				check1.isFocusControl();
-//				check1.pack();
-//				editor1.minimumWidth = check1.getSize().x;
-//				editor1.horizontalAlignment = SWT.RIGHT;
-//				editor1.setEditor(check1, ti, 4);
-//				check1.addSelectionListener(new SelectionAdapter() {
-//					public void widgetSelected(SelectionEvent e) {
-//						System.out.println("Click Me!!");
-//						QueryData qd=new QueryData();
-//						qd.deleteInfo((Integer) check1.getData());
-//						router=qd.query("all");
-//						fillTable();
-//					}
-//					
-//					
-//				});
+
 			}
 		}
 		
@@ -362,8 +336,8 @@ public class DashBoard extends EditorPart {
 		public void Table5(){
 			table_5.removeAll();
 			QueryData qd = new QueryData();
-		    List<LassHearbeat> list=qd.queryPastlast(text.getText().trim());
-		    for(LassHearbeat hearb:list){
+		    List<LassHeartbeat> list=qd.queryPastlast(text.getText().trim());
+		    for(LassHeartbeat hearb:list){
 		    	TableItem ti = new TableItem(table_5,SWT.NONE);
 		    	ti.setText(0, hearb.getDeviceId());
 		    	ti.setText(1, hearb.getTime());
@@ -373,8 +347,8 @@ public class DashBoard extends EditorPart {
 		public void Table4(){
 			table_4.removeAll();
 			QueryData qd = new QueryData();
-			List<LassHearbeat> list=qd.queryPastmisshearbeat(text.getText().trim());
-		    for(LassHearbeat hearb:list){
+			List<LassHeartbeat> list=qd.queryPastmisshearbeat(text.getText().trim());
+		    for(LassHeartbeat hearb:list){
 		    	TableItem ti = new TableItem(table_4,SWT.NONE);
 		    	ti.setText(0, hearb.getDeviceId());
 		    	ti.setText(1, hearb.getTime());

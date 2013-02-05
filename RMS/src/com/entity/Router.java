@@ -14,6 +14,9 @@ public class Router implements java.io.Serializable {
 	private String message;
 	private String time;
 	private String clearedBy;
+	private String caseid;
+	private int status;
+	private String casedby;
 
 	// Constructors
 
@@ -85,6 +88,31 @@ public class Router implements java.io.Serializable {
 		this.clearedBy = clearedBy;
 	}
 
+	public String getCaseid() {
+		return caseid;
+	}
+
+	public void setCaseid(String caseid) {
+		this.caseid = caseid;
+	}
+
+	public int getStatus() {
+		return status;
+	}
+
+	public void setStatus(int status) {
+		this.status = status;
+	}
+
+	public String getCasedby() {
+		return casedby;
+	}
+
+	public void setCasedby(String casedby) {
+		this.casedby = casedby;
+	}
+
+	
 	// Property accessors
 
 

@@ -1,6 +1,6 @@
 package com.entity;
 
-public class LassHearbeat {
+public class LassHeartbeat {
 
 	public String deviceId="";
 	public String time="";
