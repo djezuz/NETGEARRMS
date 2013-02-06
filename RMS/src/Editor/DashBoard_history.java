@@ -1,34 +1,33 @@
 package Editor;
 
-import java.io.IOException;
-import java.io.OutputStream;
 import java.util.List;
-
-import javax.servlet.ServletException;
-import javax.servlet.http.HttpServletResponse;
 
 import org.eclipse.core.runtime.IProgressMonitor;
 import org.eclipse.jface.dialogs.MessageDialog;
-import org.eclipse.rwt.RWT;
-import org.eclipse.rwt.service.IServiceHandler;
+import org.eclipse.rwt.internal.widgets.JSExecutor;
 import org.eclipse.swt.SWT;
+import org.eclipse.swt.custom.SashForm;
+import org.eclipse.swt.custom.TableEditor;
 import org.eclipse.swt.events.SelectionAdapter;
 import org.eclipse.swt.events.SelectionEvent;
 import org.eclipse.swt.events.SelectionListener;
+import org.eclipse.swt.layout.FillLayout;
 import org.eclipse.swt.layout.FormAttachment;
 import org.eclipse.swt.layout.FormData;
 import org.eclipse.swt.layout.FormLayout;
+import org.eclipse.swt.layout.GridData;
 import org.eclipse.swt.layout.GridLayout;
 import org.eclipse.swt.widgets.Button;
 import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Control;
-import org.eclipse.swt.widgets.Display;
-import org.eclipse.swt.widgets.Event;
 import org.eclipse.swt.widgets.Label;
-import org.eclipse.swt.widgets.Listener;
+import org.eclipse.swt.widgets.Spinner;
+import org.eclipse.swt.widgets.TabFolder;
+import org.eclipse.swt.widgets.TabItem;
 import org.eclipse.swt.widgets.Table;
 import org.eclipse.swt.widgets.TableColumn;
 import org.eclipse.swt.widgets.TableItem;
+import org.eclipse.swt.widgets.Text;
 import org.eclipse.ui.IEditorInput;
 import org.eclipse.ui.IEditorSite;
 import org.eclipse.ui.PartInitException;
@@ -40,16 +39,6 @@ import com.entity.LassHeartbeat;
 import com.entity.LoginUser;
 import com.entity.Router;
 import com.query.QueryData;
-
-import org.eclipse.swt.browser.Browser;
-import org.eclipse.swt.custom.SashForm;
-import org.eclipse.swt.custom.TableEditor;
-import org.eclipse.swt.layout.FillLayout;
-import org.eclipse.swt.widgets.TabFolder;
-import org.eclipse.swt.widgets.TabItem;
-import org.eclipse.swt.widgets.Text;
-import org.eclipse.swt.layout.GridData;
-import org.eclipse.swt.widgets.Spinner;
 
 public class DashBoard_history extends EditorPart{
 	public static String ID = "RMS.editor2";
@@ -276,9 +265,9 @@ public class DashBoard_history extends EditorPart{
 				
 		table_1 = new Table(composite_3, SWT.BORDER | SWT.FULL_SELECTION);
 		FormData fd_table_1 = new FormData();
-		fd_table_1.bottom = new FormAttachment(0, 154);
+		fd_table_1.bottom = new FormAttachment(100);
 		fd_table_1.top = new FormAttachment(0);
-		fd_table_1.right = new FormAttachment(100,0);
+		fd_table_1.right = new FormAttachment(100);
 		fd_table_1.left = new FormAttachment(0);
 		table_1.setLayoutData(fd_table_1);
 		table_1.setHeaderVisible(true);
@@ -385,38 +374,34 @@ public class DashBoard_history extends EditorPart{
 	  			caseButton.addSelectionListener(new SelectionAdapter() {
 					public void widgetSelected(SelectionEvent e) {
 						System.out.println("case Click Me!!");
-						try {
-//							URI	url=URI.create("https://fred.netgear.com/");
-//				        	java.awt.Desktop.getDesktop().browse(url); 
+						
+						JSExecutor.executeJS("window.open('https://fred.netgear.com/');");
+//						try {
+//							
+							
+//							final StringBuffer url = new StringBuffer();
+//						    url.append( RWT.getRequest().getContextPath() );
+//						    url.append( RWT.getRequest().getServletPath() );
+//						    url.append( "?" );
+//						    url.append( IServiceHandler.REQUEST_PARAM ).append( "=" ).append( "netgear" );
+//							
+//							RWT.getServiceManager().registerServiceHandler("netgear",new IServiceHandler() {
+//								public void service() throws IOException, ServletException {
+//									HttpServletResponse response=RWT.getResponse();
+//									OutputStream out=response.getOutputStream();
+//									
+//									out.write("<script>window.open('https://fred.netgear.com/')</script>".getBytes());
+//									out.flush();
+//								}
+//							});
+//
+//							Browser brower=new Browser(Display.getCurrent().getActiveShell(),SWT.NONE);
+//							brower.setUrl(url.toString());
 //				        	
-//				        	RWT.getResponse().getWriter().write("<script>window.open('http://www.baidu.com/')</script>");
-//				        	RWT.getResponse().getWriter().flush();
-//				        	EditorHtmlDlg eh=new EditorHtmlDlg(new Shell());
-//				        	eh.open();
-							
-							final StringBuffer url = new StringBuffer();
-						    url.append( RWT.getRequest().getContextPath() );
-						    url.append( RWT.getRequest().getServletPath() );
-						    url.append( "?" );
-						    url.append( IServiceHandler.REQUEST_PARAM ).append( "=" ).append( "netgear" );
-							
-							RWT.getServiceManager().registerServiceHandler("netgear",new IServiceHandler() {
-								public void service() throws IOException, ServletException {
-									HttpServletResponse response=RWT.getResponse();
-									OutputStream out=response.getOutputStream();
-									
-									out.write("<script>window.open('https://fred.netgear.com/')</script>".getBytes());
-									out.flush();
-								}
-							});
-
-							Browser brower=new Browser(Display.getCurrent().getActiveShell(),SWT.NONE);
-							brower.setUrl(url.toString());
-				        	
-						} catch (Exception e1) {
-							// TODO Auto-generated catch block
-							e1.printStackTrace();
-						}
+//						} catch (Exception e1) {
+//							// TODO Auto-generated catch block
+//							e1.printStackTrace();
+//						}
 					}
 					
 					

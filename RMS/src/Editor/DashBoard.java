@@ -1,19 +1,13 @@
 package Editor;
 
-import java.io.IOException;
-import java.io.OutputStream;
 import java.util.List;
-
-import javax.servlet.ServletException;
-import javax.servlet.http.HttpServletResponse;
 
 import org.eclipse.core.runtime.IProgressMonitor;
 import org.eclipse.jface.dialogs.MessageDialog;
-import org.eclipse.rwt.RWT;
-import org.eclipse.rwt.service.IServiceHandler;
+import org.eclipse.rwt.internal.widgets.JSExecutor;
 import org.eclipse.swt.SWT;
-import org.eclipse.swt.events.FocusAdapter;
-import org.eclipse.swt.events.FocusEvent;
+import org.eclipse.swt.custom.SashForm;
+import org.eclipse.swt.custom.TableEditor;
 import org.eclipse.swt.events.KeyEvent;
 import org.eclipse.swt.events.KeyListener;
 import org.eclipse.swt.events.SelectionAdapter;
@@ -23,15 +17,11 @@ import org.eclipse.swt.layout.FillLayout;
 import org.eclipse.swt.layout.FormAttachment;
 import org.eclipse.swt.layout.FormData;
 import org.eclipse.swt.layout.FormLayout;
-import org.eclipse.swt.layout.GridData;
 import org.eclipse.swt.layout.GridLayout;
 import org.eclipse.swt.widgets.Button;
 import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Control;
-import org.eclipse.swt.widgets.Display;
-import org.eclipse.swt.widgets.Event;
 import org.eclipse.swt.widgets.Label;
-import org.eclipse.swt.widgets.Listener;
 import org.eclipse.swt.widgets.Table;
 import org.eclipse.swt.widgets.TableColumn;
 import org.eclipse.swt.widgets.TableItem;
@@ -47,10 +37,6 @@ import com.entity.LassHeartbeat;
 import com.entity.LoginUser;
 import com.entity.Router;
 import com.query.QueryData;
-
-import org.eclipse.swt.browser.Browser;
-import org.eclipse.swt.custom.SashForm;
-import org.eclipse.swt.custom.TableEditor;
 
 public class DashBoard extends EditorPart {
 	    public static String ID = "RMS.WebJieMian";
@@ -413,31 +399,33 @@ public class DashBoard extends EditorPart {
 		  			caseButton.addSelectionListener(new SelectionAdapter() {
 						public void widgetSelected(SelectionEvent e) {
 							System.out.println("case Click Me!!");
-							try {
-								
-								final StringBuffer url = new StringBuffer();
-							    url.append( RWT.getRequest().getContextPath() );
-							    url.append( RWT.getRequest().getServletPath() );
-							    url.append( "?" );
-							    url.append( IServiceHandler.REQUEST_PARAM ).append( "=" ).append( "netgear" );
-								
-								RWT.getServiceManager().registerServiceHandler("netgear",new IServiceHandler() {
-									public void service() throws IOException, ServletException {
-										HttpServletResponse response=RWT.getResponse();
-										OutputStream out=response.getOutputStream();
-										
-										out.write("<script>window.open('https://fred.netgear.com/')</script>".getBytes());
-										out.flush();
-									}
-								});
-
-								Browser brower=new Browser(Display.getCurrent().getActiveShell(),SWT.NONE);
-								brower.setUrl(url.toString());
-					        	
-							} catch (Exception e1) {
-								// TODO Auto-generated catch block
-								e1.printStackTrace();
-							}
+							
+							JSExecutor.executeJS("window.open('https://fred.netgear.com/');");
+//							try {
+//								
+//								final StringBuffer url = new StringBuffer();
+//							    url.append( RWT.getRequest().getContextPath() );
+//							    url.append( RWT.getRequest().getServletPath() );
+//							    url.append( "?" );
+//							    url.append( IServiceHandler.REQUEST_PARAM ).append( "=" ).append( "netgear" );
+//								
+//								RWT.getServiceManager().registerServiceHandler("netgear",new IServiceHandler() {
+//									public void service() throws IOException, ServletException {
+//										HttpServletResponse response=RWT.getResponse();
+//										OutputStream out=response.getOutputStream();
+//										
+//										out.write("<script>window.open('https://fred.netgear.com/')</script>".getBytes());
+//										out.flush();
+//									}
+//								});
+//
+//								Browser brower=new Browser(Display.getCurrent().getActiveShell(),SWT.NONE);
+//								brower.setUrl(url.toString());
+//					        	
+//							} catch (Exception e1) {
+//								// TODO Auto-generated catch block
+//								e1.printStackTrace();
+//							}
 						}
 						
 						
