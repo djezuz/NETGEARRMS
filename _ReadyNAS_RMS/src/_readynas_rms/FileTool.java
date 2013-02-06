@@ -20,12 +20,16 @@ public class FileTool {
 				str.append(s+"\n");
 			}
 		} catch (FileNotFoundException e1) {
-			e1.printStackTrace();
+			System.out.println("get file FileNotFoundException");
+//			e1.printStackTrace();
+			return str;
 		} catch (IOException e) {
-			e.printStackTrace();
+			System.out.println("get file IOException");
+//			e.printStackTrace();
+			return str;
 		}
-		System.out.print(str);
-		System.out.println("=========================================");
+//		System.out.print(str);
+//		System.out.println("=========================================");
 		return str;
 		
 	}
