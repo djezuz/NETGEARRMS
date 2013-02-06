@@ -317,9 +317,9 @@ public class DashBoard extends EditorPart {
 				ti.setText(new String[]{r.getSerial(),"",r.getMessage(),r.getTime(),""});
 				if(r.getLevel()!=null){
 					if("0".equals(r.getLevel().trim())){
-						ti.setText(1, "Alert");
-					}else if("1".equals(r.getLevel().trim())){
 						ti.setText(1, "Status");
+					}else if("1".equals(r.getLevel().trim())){
+						ti.setText(1, "Alert");
 					}
 				}
 				if(r.getCaseid()!=null && !"".equals(r.getCaseid().trim())){
