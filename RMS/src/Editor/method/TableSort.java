@@ -13,6 +13,7 @@ import org.eclipse.swt.widgets.TableColumn;
 import org.eclipse.swt.widgets.TableItem;
 
 import Editor.DashBoard;
+import Editor.DashBoard_history;
 
 /**
  * 2012-11-21
@@ -58,6 +59,15 @@ public class TableSort {
 		  			Control oldEditor2=DashBoard.routerTable_clearEditor.getEditor();
 		  			if(oldEditor2!=null){
 		  				oldEditor2.dispose();
+		  			}
+		  			
+		  			Control oldEditor3=DashBoard_history.routerTable_caseEditor.getEditor();
+		  			if(oldEditor3!=null){
+		  				oldEditor3.dispose();
+		  			}
+		  			Control oldEditor4=DashBoard_history.routerTable_clearEditor.getEditor();
+		  			if(oldEditor4!=null){
+		  				oldEditor4.dispose();
 		  			}
 				}
 			});

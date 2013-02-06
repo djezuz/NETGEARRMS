@@ -146,6 +146,7 @@ public class QueryData {
 				if(rs!=null){
 				while(rs.next()){
 					Router router=new Router();
+					router.setId(rs.getInt("id"));
 		            router.setSerial(rs.getString("serial"));	
 					router.setMessage(rs.getString("message"));
 					if(rs.getTimestamp("time")!=null){
@@ -181,6 +182,7 @@ public class QueryData {
 				if(rs!=null){
 				while(rs.next()){
 					Router router=new Router();
+					router.setId(rs.getInt("id"));
 		            router.setSerial(rs.getString("serial"));	
 					router.setMessage(rs.getString("message"));
 					if(rs.getTimestamp("time")!=null){
@@ -217,6 +219,7 @@ public class QueryData {
 				if(rs!=null){
 				while(rs.next()){
 					Router router=new Router();
+					router.setId(rs.getInt("id"));
 		            router.setSerial(rs.getString("serial"));	
 				
 					router.setMessage(rs.getString("message"));
@@ -260,6 +263,7 @@ public class QueryData {
 					if(rs!=null){
 					while(rs.next()){
 						Router router=new Router();
+						router.setId(rs.getInt("id"));
 			            router.setSerial(rs.getString("serial"));	
 					
 						router.setMessage(rs.getString("message"));
@@ -580,6 +584,81 @@ public class QueryData {
 			DBConnection.free(rs, null, pst, conn);
 		}	
 		return list;
+	}
+	
+	/**
+	 * Clear Case
+	 * @param id 记录ID
+	 * @param caseNum Case Number
+	 * @return
+	 */
+	public Router clearInputCase(int id,String caseNum,String loginUsername){
+		
+		Router router=null;
+		if(id>=0 && loginUsername!=null && !"".equals(loginUsername.trim()) && caseNum!=null){
+			Connection conn = DBConnection.getConnection();
+			PreparedStatement pst = null;
+			String  sql="update router set caseid=?,status=?,casedby=? where id=?";
+			try {
+				pst = conn.prepareStatement(sql);
+				pst.setString(1, caseNum.trim());
+				pst.setInt(2, 1);
+				pst.setString(3, loginUsername.trim());
+				pst.setInt(4, id);
+				int i=pst.executeUpdate();
+				if(i>0){
+					router=getRouterById(id);
+				}
+				
+			}catch (SQLException e) {
+				e.printStackTrace();
+			} finally{
+				DBConnection.free(null, null, pst, conn);
+			}	
+		}
+		return router;
+		
+	}
+	
+	/**
+	 * 通过ID查询Router记录
+	 * @param id
+	 * @return
+	 */
+	public Router getRouterById(int id){
+		
+		Router router=null;
+		
+		Connection conn = DBConnection.getConnection();
+		PreparedStatement pst = null;
+		ResultSet rs=null;
+		String  sql="select * from router where id=?";
+		try {
+			pst = conn.prepareStatement(sql);
+			pst.setInt(1, id);
+			rs=pst.executeQuery();
+			if(rs.next()){
+				router=new Router();
+				router.setId(rs.getInt("id"));
+	            router.setSerial(rs.getString("serial"));	
+	            router.setLevel(rs.getString("level"));
+				router.setMessage(rs.getString("message"));
+				if(rs.getTimestamp("time")!=null){
+					router.setTime(new SimpleDateFormat("MM/dd/yyyy HH:mm:ss").format(rs.getTimestamp("time")));
+				}
+				router.setClearedBy(rs.getString("clearedBy"));
+				router.setCaseid(rs.getString("caseid"));
+				router.setStatus(rs.getInt("status"));
+				router.setCasedby(rs.getString("casedby"));
+			}
+			
+		}catch (SQLException e) {
+			e.printStackTrace();
+		} finally{
+			DBConnection.free(rs, null, pst, conn);
+		}	
+		
+		return router;
 	}
 	
 }

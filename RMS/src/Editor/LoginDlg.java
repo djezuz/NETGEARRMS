@@ -15,12 +15,14 @@ import org.eclipse.swt.widgets.Button;
 import org.eclipse.swt.events.SelectionAdapter;
 import org.eclipse.swt.events.SelectionEvent;
 
+import com.entity.LoginUser;
 import com.wsclient.LoginServer;
 
 public class LoginDlg extends Dialog {
 	private Text user_name;
 	private Text password;
 	private boolean islogin;
+	private LoginUser loginUser;
 
 	/**
 	 * Create the dialog.
@@ -78,7 +80,7 @@ public class LoginDlg extends Dialog {
 			islogin=ls.login(user_name.getText(),password.getText());
 			System.out.println(islogin);
 			 
-				if(!islogin){
+			if(!islogin){
 				System.out.println(islogin);
 				MessageBox messageBox = new MessageBox(getShell(), SWT.OK); 
 				messageBox.setText("LOGIN PROMPT");
@@ -86,6 +88,8 @@ public class LoginDlg extends Dialog {
 				messageBox.open();
 				
 			}else{
+				this.loginUser=new LoginUser();
+				this.loginUser.setUsername(ls.getUername().trim());
 				
 				super.buttonPressed(buttonId);
 			}
@@ -114,4 +118,14 @@ public class LoginDlg extends Dialog {
 	    // 取消关闭“X”按钮  
 	    super.setShellStyle(newShellStyle ^ SWT.CLOSE);  
 	}
+	
+	/**
+	 * 获得用户信息
+	 * @return
+	 */
+	public LoginUser getLoginUser() {
+		return loginUser;
+	}
+	
+	 
 }

@@ -10,3 +10,5 @@ Bundle-ActivationPolicy: lazy
 Bundle-RequiredExecutionEnvironment: JavaSE-1.6
 Bundle-ClassPath: .,
  META-INF/lib/mysql-connector-java-5.0.4-bin.jar
+Import-Package: javax.servlet;version="2.6.0",
+ javax.servlet.http;version="2.6.0"

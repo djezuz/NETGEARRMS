@@ -6,33 +6,30 @@ import org.eclipse.jface.resource.ImageDescriptor;
 import org.eclipse.ui.IEditorInput;
 import org.eclipse.ui.IPersistableElement;
 
+import com.entity.LoginUser;
+
 public class DashBoard_alters_Input implements IEditorInput{
 
+	private LoginUser loginUser;
 	
-	public List router;
-	public List router1;
-	
-	public DashBoard_alters_Input(List r,List a){
-		this.router=r;
-		this.router1=a;
+	public DashBoard_alters_Input(){
+		
 	}
 	
-
+	public DashBoard_alters_Input(LoginUser user){
+		
+		this.loginUser=user;
+	}
 	
-	public List getRouter1() {
-		return router1;
+	
+	
+
+	public LoginUser getLoginUser() {
+		return loginUser;
 	}
 
-	public void setRouter1(List router1) {
-		this.router1 = router1;
-	}
-
-	public List getRouter() {
-		return router;
-	}
-
-	public void setRouter(List router) {
-		this.router = router;
+	public void setLoginUser(LoginUser loginUser) {
+		this.loginUser = loginUser;
 	}
 
 	@Override

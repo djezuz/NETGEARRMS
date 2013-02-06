@@ -20,6 +20,7 @@ import org.eclipse.ui.part.EditorPart;
 import Editor.method.TableSort;
 
 import com.entity.LassHeartbeat;
+import com.entity.LoginUser;
 import com.entity.Router;
 import com.query.QueryData;
 import org.eclipse.swt.custom.SashForm;
@@ -36,6 +37,9 @@ public class DashBoard_alters extends EditorPart {
 	private Table table_1;
 	private List unresolvedRouter;
 	private List hbList;
+	
+	private LoginUser loginUser;
+	
 	public DashBoard_alters() {
 		// TODO Auto-generated constructor stub
 	}
@@ -59,10 +63,11 @@ public class DashBoard_alters extends EditorPart {
 		QueryData  qd=new QueryData();
 		unresolvedRouter = qd.queryUnresolvedAlertHistory();
 		hbList=qd.queryMissedHeartBeatByDay(90);
-		
+		this.loginUser=((DashBoard_alters_Input)input).getLoginUser();
 		this.setSite(site);
 		this.setInput(input);
 		this.setPartName(input.getName());
+		
 		
 	}
 

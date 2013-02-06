@@ -30,7 +30,9 @@ public class Entrypoint implements IEntryPoint {
 			if (login_dlg.open()!=Dialog.OK){
 				return IApplication.EXIT_OK;
 			}else{
-				int returnCode = PlatformUI.createAndRunWorkbench(display, new ApplicationWorkbenchAdvisor());
+				ApplicationWorkbenchAdvisor advisor=new ApplicationWorkbenchAdvisor();
+				advisor.setLoginUser(login_dlg.getLoginUser());
+				int returnCode = PlatformUI.createAndRunWorkbench(display, advisor);
 				if (returnCode == PlatformUI.RETURN_RESTART)
 					return IApplication.EXIT_RESTART;
 				else

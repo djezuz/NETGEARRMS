@@ -1,8 +1,16 @@
 package Editor;
 
+import java.io.IOException;
+import java.io.OutputStream;
 import java.util.List;
 
+import javax.servlet.ServletException;
+import javax.servlet.http.HttpServletResponse;
+
 import org.eclipse.core.runtime.IProgressMonitor;
+import org.eclipse.jface.dialogs.MessageDialog;
+import org.eclipse.rwt.RWT;
+import org.eclipse.rwt.service.IServiceHandler;
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.events.SelectionAdapter;
 import org.eclipse.swt.events.SelectionEvent;
@@ -14,6 +22,7 @@ import org.eclipse.swt.layout.GridLayout;
 import org.eclipse.swt.widgets.Button;
 import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Control;
+import org.eclipse.swt.widgets.Display;
 import org.eclipse.swt.widgets.Event;
 import org.eclipse.swt.widgets.Label;
 import org.eclipse.swt.widgets.Listener;
@@ -28,8 +37,11 @@ import org.eclipse.ui.part.EditorPart;
 import Editor.method.TableSort;
 
 import com.entity.LassHeartbeat;
+import com.entity.LoginUser;
 import com.entity.Router;
 import com.query.QueryData;
+
+import org.eclipse.swt.browser.Browser;
 import org.eclipse.swt.custom.SashForm;
 import org.eclipse.swt.custom.TableEditor;
 import org.eclipse.swt.layout.FillLayout;
@@ -48,6 +60,11 @@ public class DashBoard_history extends EditorPart{
 	
 	public static TableEditor routerTable_clearEditor;
 	public static TableEditor routerTable_caseEditor;
+	public static TableEditor hbTable_caseEditor;
+	
+	private TableColumn Column_3;
+	private TableColumn hbColumn_2;
+	private LoginUser loginUser;
 	
 	public DashBoard_history() {
 	}
@@ -72,7 +89,7 @@ public class DashBoard_history extends EditorPart{
 		QueryData  qd=new QueryData();
 		router = qd.querypastThree();
 		missedHBList=qd.queryMissedHeartBeatByDay(3);
-		
+		this.loginUser=((DashBoard_history_Input)input).getLoginUser();
 		this.setSite(site);
 		this.setInput(input);
 		this.setPartName(input.getName());
@@ -166,16 +183,16 @@ public class DashBoard_history extends EditorPart{
 		tblclmnNewColumn.setText("Serial");
 		
 		TableColumn tblclmnNewColumn_1 = new TableColumn(table, SWT.NONE);
-		tblclmnNewColumn_1.setWidth(411);
+		tblclmnNewColumn_1.setWidth(452);
 		tblclmnNewColumn_1.setText("Message");
 		
 		TableColumn tblclmnNewColumn_2 = new TableColumn(table, SWT.NONE);
-		tblclmnNewColumn_2.setWidth(376);
+		tblclmnNewColumn_2.setWidth(250);
 		tblclmnNewColumn_2.setText("Date/Time");
 		
-		TableColumn tblclmnNewColumn_3 = new TableColumn(table, SWT.NONE);
-		tblclmnNewColumn_3.setWidth(415);
-		tblclmnNewColumn_3.setText("Cleared");
+		Column_3 = new TableColumn(table, SWT.NONE);
+		Column_3.setWidth(285);
+		Column_3.setText("Cleared");
 		
 		routerTable_clearEditor=new TableEditor(table);
 		routerTable_caseEditor=new TableEditor(table);
@@ -268,12 +285,19 @@ public class DashBoard_history extends EditorPart{
 		table_1.setLinesVisible(true);
 		
 		TableColumn tblclmnNewColumn_4 = new TableColumn(table_1, SWT.NONE);
-		tblclmnNewColumn_4.setWidth(203);
+		tblclmnNewColumn_4.setWidth(187);
 		tblclmnNewColumn_4.setText("Serial");
 		
 		TableColumn tblclmnNewColumn_5 = new TableColumn(table_1, SWT.NONE);
-		tblclmnNewColumn_5.setWidth(252);
+		tblclmnNewColumn_5.setWidth(240);
 		tblclmnNewColumn_5.setText("Last Heartbeat Date/Time");
+		
+		hbColumn_2 = new TableColumn(table_1, SWT.NONE);
+		hbColumn_2.setWidth(205);
+		hbColumn_2.setText("Cleared by");
+		
+		hbTable_caseEditor=new TableEditor(table_1);
+		
 		sashForm.setWeights(new int[] {337, 222});
 		
 		fillTable();
@@ -303,6 +327,17 @@ public class DashBoard_history extends EditorPart{
 	
 	private  void fillTable_new(){
 		table.removeAll();
+		
+		//移除编辑器
+		Control oldEditor1=routerTable_clearEditor.getEditor();
+		if(oldEditor1!=null && !oldEditor1.isDisposed()){
+			oldEditor1.dispose();
+		}
+		Control oldEditor2=routerTable_caseEditor.getEditor();
+		if(oldEditor2!=null && !oldEditor2.isDisposed()){
+			oldEditor2.dispose();
+		}
+		
 		for(int i=0;i<router.size();i++){
 			Router r=(Router)router.get(i);
 			TableItem ti =new TableItem(table, SWT.None);
@@ -326,7 +361,7 @@ public class DashBoard_history extends EditorPart{
 	 * 为路由table添加编辑器
 	 * @param tableItem 所选项
 	 */
-	private void addButtonToTable(TableItem tableItem){
+	private void addButtonToTable(final TableItem tableItem){
 		
 		if(tableItem!=null){
 			
@@ -347,44 +382,124 @@ public class DashBoard_history extends EditorPart{
 	  			final Button caseButton = new Button(table, SWT.NONE);
 	  			caseButton.setText("new case");
 	  			caseButton.pack();
+	  			caseButton.addSelectionListener(new SelectionAdapter() {
+					public void widgetSelected(SelectionEvent e) {
+						System.out.println("case Click Me!!");
+						try {
+//							URI	url=URI.create("https://fred.netgear.com/");
+//				        	java.awt.Desktop.getDesktop().browse(url); 
+//				        	
+//				        	RWT.getResponse().getWriter().write("<script>window.open('http://www.baidu.com/')</script>");
+//				        	RWT.getResponse().getWriter().flush();
+//				        	EditorHtmlDlg eh=new EditorHtmlDlg(new Shell());
+//				        	eh.open();
+							
+							final StringBuffer url = new StringBuffer();
+						    url.append( RWT.getRequest().getContextPath() );
+						    url.append( RWT.getRequest().getServletPath() );
+						    url.append( "?" );
+						    url.append( IServiceHandler.REQUEST_PARAM ).append( "=" ).append( "netgear" );
+							
+							RWT.getServiceManager().registerServiceHandler("netgear",new IServiceHandler() {
+								public void service() throws IOException, ServletException {
+									HttpServletResponse response=RWT.getResponse();
+									OutputStream out=response.getOutputStream();
+									
+									out.write("<script>window.open('https://fred.netgear.com/')</script>".getBytes());
+									out.flush();
+								}
+							});
+
+							Browser brower=new Browser(Display.getCurrent().getActiveShell(),SWT.NONE);
+							brower.setUrl(url.toString());
+				        	
+						} catch (Exception e1) {
+							// TODO Auto-generated catch block
+							e1.printStackTrace();
+						}
+					}
+					
+					
+				});
 	  			routerTable_caseEditor.minimumWidth=caseButton.getSize().x;
 	  			routerTable_caseEditor.horizontalAlignment = SWT.RIGHT;
 	  			routerTable_caseEditor.setEditor(caseButton, tableItem, 0);
 	  			
-	  			final Button clearButton = new Button(table, SWT.NONE);
-	  			clearButton.setText("clear");
-				clearButton.addSelectionListener(new SelectionAdapter() {
-					public void widgetSelected(SelectionEvent e) {
-						System.out.println("Click Me!!");
-						QueryData qd=new QueryData();
-						qd.deleteInfo(router.getId());
-						fillTable();
-					}
-					
-					
-				});
-				clearButton.pack();
-				routerTable_clearEditor.horizontalAlignment=SWT.RIGHT;
-				routerTable_clearEditor.minimumWidth=clearButton.getSize().x;
-				routerTable_clearEditor.setEditor(clearButton, tableItem, 3);
-	  			
+	  			//未Clear的显示Clear页面
+	  			if(router.getStatus()==0){
+		  			//clear面板 
+		  			Composite clearComp=new Composite(table, SWT.NONE);
+		  			clearComp.setLayout(new FormLayout());
+		  			
+		  			final Text caseText = new Text(clearComp, SWT.BORDER);
+		  			FormData fd_text = new FormData();
+		  			fd_text.left = new FormAttachment(0);
+		  			fd_text.bottom = new FormAttachment(100, 0);
+		  			fd_text.top = new FormAttachment(0);
+		  			caseText.setToolTipText("Input Case Number");
+		  			caseText.setLayoutData(fd_text);
+		  			
+		  			final Button clearButton = new Button(clearComp, SWT.NONE);
+		  			fd_text.right = new FormAttachment(clearButton, -1);
+		  			FormData fd_btnNewButton = new FormData();
+		  			fd_btnNewButton.bottom = new FormAttachment(caseText, 0, SWT.BOTTOM);
+		  			fd_btnNewButton.left = new FormAttachment(100, -86);
+		  			fd_btnNewButton.right = new FormAttachment(100, -2);
+		  			fd_btnNewButton.top = new FormAttachment(0);
+		  			clearButton.setLayoutData(fd_btnNewButton);
+		  			clearButton.setText("clear");
+					clearButton.addSelectionListener(new SelectionAdapter() {
+						public void widgetSelected(SelectionEvent e) {
+							System.out.println("Click Me!!");
+							if(loginUser!=null){
+								if(!"".equals(caseText.getText().trim())){
+									QueryData qd=new QueryData();
+									Router newRouter=qd.clearInputCase(router.getId(), caseText.getText().trim(),loginUser.getUsername().trim());
+									if(newRouter!=null){
+										if(newRouter.getCaseid()!=null && !"".equals(newRouter.getCaseid().trim())){
+											tableItem.setText(3,"Case:"+newRouter.getCaseid().trim()+" "+(newRouter.getCasedby()==null?"":newRouter.getCasedby().trim()));
+										}else{
+											tableItem.setText(3,"n/a (low level alert)");
+										}
+										tableItem.setData(newRouter);
+										//清除编辑器
+										Control oldEditor2=routerTable_clearEditor.getEditor();
+							  			if(oldEditor2!=null){
+							  				oldEditor2.dispose();
+							  			}
+							  			
+									}else{
+										MessageDialog.openError(getSite().getShell(), "Clear", "Clear Fail!");
+									}
+								}else{
+									MessageDialog.openError(getSite().getShell(), "Clear", "Please Input Case Number!");
+								}
+							}
+						}
+						
+					});
+					//clearComp.pack();
+					routerTable_clearEditor.horizontalAlignment=SWT.RIGHT;
+					routerTable_clearEditor.minimumWidth=Column_3.getWidth();
+					routerTable_clearEditor.setEditor(clearComp, tableItem, 3);
+		  			
+	  			}
 				
-				
-	  			table.addListener(SWT.Deactivate, new Listener() {
-					
-					@Override
-					public void handleEvent(Event event) {
-						// TODO Auto-generated method stub
-						Control oldEditor1=routerTable_caseEditor.getEditor();
-			  			if(oldEditor1!=null){
-			  				oldEditor1.dispose();
-			  			}
-			  			Control oldEditor2=routerTable_clearEditor.getEditor();
-			  			if(oldEditor2!=null){
-			  				oldEditor2.dispose();
-			  			}
-					}
-				});
+//	  			table.addListener(SWT.Deactivate, new Listener() {
+//					
+//					@Override
+//					public void handleEvent(Event event) {
+//						// TODO Auto-generated method stub
+//						Control oldEditor1=routerTable_caseEditor.getEditor();
+//			  			if(oldEditor1!=null){
+//			  				oldEditor1.dispose();
+//			  			}
+//			  			Control oldEditor2=routerTable_clearEditor.getEditor();
+//			  			if(oldEditor2!=null){
+//			  				oldEditor2.dispose();
+//			  			}
+//					}
+//				});
 	  			
 			
 	  			
@@ -393,4 +508,94 @@ public class DashBoard_history extends EditorPart{
 		}
 		
 	}
+	
+	/**
+	 * 为心跳table添加编辑器
+	 * @param tableItem 所选项
+	 */
+	private void addButtonToHBTable(TableItem tableItem){
+		
+		if(tableItem!=null){
+			
+			final Router router=(Router) tableItem.getData();
+			if(router!=null){
+				
+				//清理旧的编辑器
+				Control oldEditor1=hbTable_caseEditor.getEditor();
+	  			if(oldEditor1!=null){
+	  				oldEditor1.dispose();
+	  			}
+	  			
+	  			//未Clear的显示Clear页面
+	  			if(router.getStatus()==0){
+		  			//clear面板 
+		  			Composite clearComp=new Composite(table_1, SWT.NONE);
+		  			clearComp.setLayout(new FormLayout());
+		  			
+		  			final Text caseText = new Text(clearComp, SWT.BORDER);
+		  			FormData fd_text = new FormData();
+		  			fd_text.left = new FormAttachment(0);
+		  			fd_text.bottom = new FormAttachment(100, 0);
+		  			fd_text.top = new FormAttachment(0);
+		  			caseText.setToolTipText("Input Case Number");
+		  			caseText.setLayoutData(fd_text);
+		  			
+		  			final Button clearButton = new Button(clearComp, SWT.NONE);
+		  			fd_text.right = new FormAttachment(clearButton, -1);
+		  			FormData fd_btnNewButton = new FormData();
+		  			fd_btnNewButton.bottom = new FormAttachment(caseText, 0, SWT.BOTTOM);
+		  			fd_btnNewButton.left = new FormAttachment(100, -86);
+		  			fd_btnNewButton.right = new FormAttachment(100, -2);
+		  			fd_btnNewButton.top = new FormAttachment(0);
+		  			clearButton.setLayoutData(fd_btnNewButton);
+		  			clearButton.setText("clear");
+					clearButton.addSelectionListener(new SelectionAdapter() {
+						public void widgetSelected(SelectionEvent e) {
+							System.out.println("Click Me!!");
+							if(loginUser!=null){
+								if(!"".equals(caseText.getText().trim())){
+									QueryData qd=new QueryData();
+									if(qd.clearInputCase(router.getId(), caseText.getText().trim(),loginUser.getUsername().trim())!=null){
+										fillTable();
+									}else{
+										MessageDialog.openError(getSite().getShell(), "Clear", "Clear Fail!");
+									}
+								}else{
+									MessageDialog.openError(getSite().getShell(), "Clear", "Please Input Case Number!");
+								}
+							}
+						}
+						
+					});
+					//clearComp.pack();
+					hbTable_caseEditor.horizontalAlignment=SWT.RIGHT;
+					hbTable_caseEditor.minimumWidth=hbColumn_2.getWidth();
+					hbTable_caseEditor.setEditor(clearComp, tableItem, 2);
+		  			
+	  			}
+				
+//	  			table.addListener(SWT.Deactivate, new Listener() {
+//					
+//					@Override
+//					public void handleEvent(Event event) {
+//						// TODO Auto-generated method stub
+//						Control oldEditor1=routerTable_caseEditor.getEditor();
+//			  			if(oldEditor1!=null){
+//			  				oldEditor1.dispose();
+//			  			}
+//			  			Control oldEditor2=routerTable_clearEditor.getEditor();
+//			  			if(oldEditor2!=null){
+//			  				oldEditor2.dispose();
+//			  			}
+//					}
+//				});
+	  			
+			
+	  			
+			}
+			
+		}
+		
+	}
+	
 }

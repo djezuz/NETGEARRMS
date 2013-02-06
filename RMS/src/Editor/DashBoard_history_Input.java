@@ -6,23 +6,31 @@ import org.eclipse.jface.resource.ImageDescriptor;
 import org.eclipse.ui.IEditorInput;
 import org.eclipse.ui.IPersistableElement;
 
+import com.entity.LoginUser;
+
 public class DashBoard_history_Input implements IEditorInput{
 
+	private LoginUser loginUser;
 	
-    public List router;
-	
-	public DashBoard_history_Input(List r) {
+	public DashBoard_history_Input(LoginUser user) {
 		// TODO Auto-generated constructor stub
-		this.router = r;
+		this.loginUser=user;
 	}
 
-	public List getRouter() {
-		return router;
+	
+	
+	public LoginUser getLoginUser() {
+		return loginUser;
 	}
 
-	public void setRouter(List router) {
-		this.router = router;
+
+
+	public void setLoginUser(LoginUser loginUser) {
+		this.loginUser = loginUser;
 	}
+
+
+
 	@Override
 	public Object getAdapter(Class adapter) {
 		// TODO Auto-generated method stub

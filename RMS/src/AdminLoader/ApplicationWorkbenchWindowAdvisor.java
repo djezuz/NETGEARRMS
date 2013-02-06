@@ -17,13 +17,21 @@ import Editor.DashBoard_history_Input;
 import Editor.DashBoard_alters;
 import Editor.DashBoard_alters_Input;
 
+import com.entity.LoginUser;
 import com.query.QueryData;
 
 
 public class ApplicationWorkbenchWindowAdvisor extends WorkbenchWindowAdvisor {
 
+	private LoginUser loginUser;
+	
     public ApplicationWorkbenchWindowAdvisor(IWorkbenchWindowConfigurer configurer) {
         super(configurer);
+    }
+    
+    public ApplicationWorkbenchWindowAdvisor(IWorkbenchWindowConfigurer configurer,LoginUser loginUser) {
+        super(configurer);
+        this.loginUser=loginUser;
     }
 
     public ActionBarAdvisor createActionBarAdvisor(IActionBarConfigurer configurer) {
@@ -42,36 +50,44 @@ public class ApplicationWorkbenchWindowAdvisor extends WorkbenchWindowAdvisor {
 public void postWindowOpen() {
 	PlatformUI.getWorkbench().getActiveWorkbenchWindow().getShell().setMaximized(true);
 		try {
-			//所有记录
-			QueryData qd = new QueryData();
-			List li = qd.query("all");
-			 //停止心跳的记录数据与告警信息
-			List list1 = qd.queryAlertInfo();
-			List list = qd.queryStopHeartbeat();
-			PlatformUI
-			.getWorkbench()
-			.getActiveWorkbenchWindow()
-			.getActivePage()
-			.openEditor(new DashBoard_alters_Input(list1,list),
-					DashBoard_alters.ID);
 			
-			PlatformUI
-			.getWorkbench()
-			.getActiveWorkbenchWindow()
-			.getActivePage()
-			.openEditor(new DashBoard_history_Input(list),
-					DashBoard_history.ID);
+			if(loginUser!=null){
+				PlatformUI
+				.getWorkbench()
+				.getActiveWorkbenchWindow()
+				.getActivePage()
+				.openEditor(new DashBoard_alters_Input(this.loginUser),
+						DashBoard_alters.ID);
+				
+				PlatformUI
+				.getWorkbench()
+				.getActiveWorkbenchWindow()
+				.getActivePage()
+				.openEditor(new DashBoard_history_Input(this.loginUser),
+						DashBoard_history.ID);
+				
+				PlatformUI
+				.getWorkbench()
+				.getActiveWorkbenchWindow()
+				.getActivePage()
+				.openEditor(new DashBoardInput(loginUser),
+						DashBoard.ID);
+			}
 			
-			PlatformUI
-			.getWorkbench()
-			.getActiveWorkbenchWindow()
-			.getActivePage()
-			.openEditor(new DashBoardInput(li),
-					DashBoard.ID);
 		} catch (PartInitException e) {
 			// TODO Auto-generated catch block
 			e.printStackTrace();
 		}
 	}
+
+	public LoginUser getLoginUser() {
+		return loginUser;
+	}
+	
+	public void setLoginUser(LoginUser loginUser) {
+		this.loginUser = loginUser;
+	}
+
+	
 
 }
