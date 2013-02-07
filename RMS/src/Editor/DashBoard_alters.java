@@ -191,7 +191,7 @@ public class DashBoard_alters extends EditorPart {
 				for(int i=0;i<hbList.size();i++){
 					LassHeartbeat hb = (LassHeartbeat)hbList.get(i);
 					TableItem ti = new TableItem(table_1,SWT.NONE);
-					ti.setText(new String[]{hb.getDeviceId(),hb.getTime()});
+					ti.setText(new String[]{hb.getDeviceId(),hb.getCreateDatetime()});
 				}
 		    }
 		}

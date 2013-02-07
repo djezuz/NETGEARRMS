@@ -344,7 +344,7 @@ public class DashBoard extends EditorPart {
 		    for(LassHeartbeat hearb:list){
 		    	TableItem ti = new TableItem(table_5,SWT.NONE);
 		    	ti.setText(0, hearb.getDeviceId());
-		    	ti.setText(1, hearb.getTime());
+		    	ti.setText(1, hearb.getCreateDatetime());
 		    }
 		
 		}
@@ -355,7 +355,7 @@ public class DashBoard extends EditorPart {
 		    for(LassHeartbeat hearb:list){
 		    	TableItem ti = new TableItem(table_4,SWT.NONE);
 		    	ti.setText(0, hearb.getDeviceId());
-		    	ti.setText(1, hearb.getTime());
+		    	ti.setText(1, hearb.getCreateDatetime());
 		    }
 		
 		}
@@ -463,7 +463,7 @@ public class DashBoard extends EditorPart {
 								if(loginUser!=null){
 									if(!"".equals(caseText.getText().trim())){
 										QueryData qd=new QueryData();
-										Router newRouter=qd.clearInputCase(router.getId(), caseText.getText().trim(),loginUser.getUsername().trim());
+										Router newRouter=qd.clearRouterInputCase(router.getId(), caseText.getText().trim(),loginUser.getUsername().trim());
 										if(newRouter!=null){
 											if(newRouter.getCaseid()!=null && !"".equals(newRouter.getCaseid().trim())){
 												tableItem.setText(4,"Case:"+newRouter.getCaseid().trim()+" "+(newRouter.getCasedby()==null?"":newRouter.getCasedby().trim()));

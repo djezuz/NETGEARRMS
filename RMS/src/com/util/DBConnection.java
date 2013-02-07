@@ -12,7 +12,7 @@ public class DBConnection {
 	private static String driverClass = "com.mysql.jdbc.Driver";
 	private static String url = "jdbc:mysql://localhost/router";
 	private static String username = "root";
-	private static String password = "siteview";
+	private static String password = "root";
 
 	
 	static{		

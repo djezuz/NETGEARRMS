@@ -7,6 +7,7 @@ import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.List;
 
 
@@ -21,12 +22,15 @@ import com.util.DBConnection;
 public class QueryData {
 	//所有router Information
 	public static  List query(String  id){
-		Connection conn = DBConnection.getConnection();
+		Connection conn = null;
 		PreparedStatement pst = null;
 		ResultSet rs = null;
 		String  sql="SELECT *  FROM  router";
 		List li = new ArrayList();
 		try {
+			
+			conn = DBConnection.getConnection();
+			
 			if (id.equalsIgnoreCase("level")){
 				sql=sql+" where  level ='Alert' ";
 			}else if(!id.equalsIgnoreCase("all")){
@@ -70,12 +74,14 @@ public class QueryData {
 	}
 	//关于Alert信息
 	public static  List querylevel(String  id){
-		Connection conn = DBConnection.getConnection();
+		Connection conn = null;
 		PreparedStatement pst = null;
 		ResultSet rs = null;
 		String  sql="SELECT *  FROM  ROUTER";
 		List li = new ArrayList();
 		try {
+			conn = DBConnection.getConnection();
+			
 			 if(!id.equalsIgnoreCase("")){
 				sql=sql+" where  serial like '%"+id+"%' and level='Alert' ";
 			}else if(id.equalsIgnoreCase("")) {
@@ -108,12 +114,13 @@ public class QueryData {
 	}
 	//最新时间的记录(id最大的记录)
 	public  String  queryLast(){
-		Connection conn = DBConnection.getConnection();
+		Connection conn = null;
 		PreparedStatement pst = null;
 		ResultSet rs = null;
 		String  sql="SELECT time from router WHERE id=(SELECT MAX(id) from router)";
 		String time="";
 		try {
+			conn = DBConnection.getConnection();
 			pst = conn.prepareStatement(sql);
 			rs=pst.executeQuery();
 			if(rs!=null){
@@ -135,12 +142,13 @@ public class QueryData {
 	}
 	//三天前的历史数据
 		public List querypastThree(){
-			Connection conn = DBConnection.getConnection();
+			Connection conn = null;
 			PreparedStatement pst = null;
 			ResultSet rs = null;
 			String  sql="select * FROM router WHERE level='1' and DATEDIFF(SYSDATE(),time)<=3 order by id desc;";
 			List li = new ArrayList();
 			try {
+				conn = DBConnection.getConnection();
 				pst = conn.prepareStatement(sql);
 				rs=pst.executeQuery();
 				if(rs!=null){
@@ -171,12 +179,13 @@ public class QueryData {
 		}
 		//七天前的历史数据
 		public List queryPastSeven(){
-			Connection conn = DBConnection.getConnection();
+			Connection conn = null;
 			PreparedStatement pst = null;
 			ResultSet rs = null;
 			String  sql="select * FROM router WHERE level='1' and DATEDIFF(SYSDATE(),time)<=7 order by id desc;";
 			List li = new ArrayList();
 			try {
+				conn = DBConnection.getConnection();
 				pst = conn.prepareStatement(sql);
 				rs=pst.executeQuery();
 				if(rs!=null){
@@ -208,12 +217,13 @@ public class QueryData {
 				
 		//30天前的历史数据
 		public List queryPastThirty(){
-			Connection conn = DBConnection.getConnection();
+			Connection conn = null;
 			PreparedStatement pst = null;
 			ResultSet rs = null;
 			String  sql="select * FROM router WHERE level='1' and DATEDIFF(SYSDATE(),time)<=30 order by id desc;";
 			List li = new ArrayList();
 			try {
+				conn = DBConnection.getConnection();
 				pst = conn.prepareStatement(sql);
 				rs=pst.executeQuery();
 				if(rs!=null){
@@ -253,11 +263,12 @@ public class QueryData {
 			
 			List<Router> list=new ArrayList<Router>();
 			if(day>0){
-				Connection conn = DBConnection.getConnection();
+				Connection conn = null;
 				PreparedStatement pst = null;
 				ResultSet rs = null;
 				String  sql="select * FROM router WHERE level='1' and DATEDIFF(SYSDATE(),time)<="+day+" order by id desc;";
 				try {
+					conn = DBConnection.getConnection();
 					pst = conn.prepareStatement(sql);
 					rs=pst.executeQuery();
 					if(rs!=null){
@@ -289,12 +300,13 @@ public class QueryData {
 	
         //大于一个小时的数据--错过的心跳数据
 		public  String  queryMoreOne(){
-			Connection conn = DBConnection.getConnection();
+			Connection conn = null;
 			PreparedStatement pst = null;
 			ResultSet rs = null;
 			String  sql="select time FROM router WHERE date_sub(SYSDATE(),INTERVAL 1 Hour)>time and id=(SELECT max(id) FROM router r order by id)";
 			String time="";
 			try {
+				conn = DBConnection.getConnection();
 				pst = conn.prepareStatement(sql);
 				rs=pst.executeQuery();
 				if(rs!=null){
@@ -317,12 +329,13 @@ public class QueryData {
 				
 	  //停止心跳的记录数据
 		public List queryStopHeartbeat(){
-			Connection conn = DBConnection.getConnection();
+			Connection conn = null;
 			PreparedStatement pst = null;
 			ResultSet rs = null;
 			String  sql="select * FROM router WHERE date_sub(SYSDATE(),INTERVAL 1 Hour)>time) and id=(SELECT max(id) FROM router r order by id)";
 			List list = new ArrayList();
 			try {
+				conn = DBConnection.getConnection();
 				pst = conn.prepareStatement(sql);
 				rs=pst.executeQuery();
 				if(rs!=null){
@@ -349,12 +362,13 @@ public class QueryData {
 		
 		//警告数据			
 		public List queryAlertInfo(){
-			Connection conn =DBConnection.getConnection();
+			Connection conn =null;
 			PreparedStatement pst=null;
 			ResultSet rs=null;
 			String sql="SELECT *  from router WHERE  level='alert' order by id DESC";
 			List list1 =new ArrayList();
 			try {
+				conn =DBConnection.getConnection();
 				pst=conn.prepareStatement(sql);
 				rs=pst.executeQuery();
 				if(rs!=null){
@@ -434,7 +448,7 @@ public class QueryData {
 	
 	//最后的Hearbeat
 	public List queryPastlast(String serial_no){
-		Connection conn = DBConnection.getConnection();
+		Connection conn = null;
 		PreparedStatement pst = null;
 		ResultSet rs = null;
 		String sql="";
@@ -447,6 +461,7 @@ public class QueryData {
 //		String  sql="select * FROM router WHERE DATEDIFF(SYSDATE(),STR_TO_DATE(time,'%a %b %d %h:%i:%s HKT %Y'))<=7;";
 		List<LassHeartbeat> li = new ArrayList<LassHeartbeat>();
 		try {
+			conn = DBConnection.getConnection();
 			pst = conn.prepareStatement(sql);
 			rs=pst.executeQuery();
 			if(rs!=null){
@@ -454,7 +469,7 @@ public class QueryData {
 				LassHeartbeat hearbeat=new LassHeartbeat();
 				hearbeat.setDeviceId(rs.getString("deviceId"));
 				if(rs.getTimestamp("time")!=null){
-					hearbeat.setTime(new SimpleDateFormat("MM/dd/yyyy HH:mm:ss").format(rs.getTimestamp("time")));
+					hearbeat.setCreateDatetime(new SimpleDateFormat("MM/dd/yyyy HH:mm:ss").format(rs.getTimestamp("time")));
 				}
 				li.add(hearbeat);
 			}
@@ -474,7 +489,7 @@ public class QueryData {
 	
 	//最后的Hearbeat
 	public List queryPastmisshearbeat(String serial_no){
-		Connection conn = DBConnection.getConnection();
+		Connection conn = null;
 		PreparedStatement pst = null;
 		ResultSet rs = null;
 		String sql="";
@@ -487,6 +502,7 @@ public class QueryData {
 //		String  sql="select * FROM router WHERE DATEDIFF(SYSDATE(),STR_TO_DATE(time,'%a %b %d %h:%i:%s HKT %Y'))<=7;";
 		List<LassHeartbeat> li = new ArrayList<LassHeartbeat>();
 		try {
+			conn = DBConnection.getConnection();
 			pst = conn.prepareStatement(sql);
 			rs=pst.executeQuery();
 			if(rs!=null){
@@ -494,7 +510,7 @@ public class QueryData {
 				LassHeartbeat hearbeat=new LassHeartbeat();
 				hearbeat.setDeviceId(rs.getString("deviceId"));
 				if(rs.getTimestamp("ti")!=null){
-					hearbeat.setTime(new SimpleDateFormat("MM/dd/yyyy HH:mm:ss").format(rs.getTimestamp("ti")));
+					hearbeat.setCreateDatetime(new SimpleDateFormat("MM/dd/yyyy HH:mm:ss").format(rs.getTimestamp("ti")));
 				}
 				li.add(hearbeat);
 			}
@@ -517,23 +533,38 @@ public class QueryData {
 		List<LassHeartbeat> list=new ArrayList<LassHeartbeat>();
 		if(day>0){
 			
-			Connection conn = DBConnection.getConnection();
+			Connection conn = null;
 			PreparedStatement pst = null;
 			ResultSet rs = null;
 			String sql="";
 			
-			sql="SELECT id,deviceId,tt.aa AS ti FROM (SELECT hb.id,hb.deviceId,MAX(hb.createDatetime) AS aa FROM (select * from heartbeat WHERE DATEDIFF(SYSDATE(),createDatetime)<="+day+" order by id desc) as hb GROUP BY deviceId ) AS tt WHERE DATE_SUB(SYSDATE(),INTERVAL 2 HOUR)>tt.aa";
+			sql="SELECT c.id,c.deviceId,c.createDatetime,d.caseid,d.casedby,d.cleartime FROM (" +
+					"SELECT a.id,a.deviceId,a.createDatetime FROM(" +
+					"SELECT aa.id,aa.deviceId,aa.createDatetime FROM(" +
+					"SELECT hb.id,hb.deviceId,MAX(hb.createDatetime) createDatetime FROM (select * from heartbeat WHERE DATEDIFF(SYSDATE(),createDatetime)<=? order by id desc) as hb GROUP BY deviceId" +
+					") AS aa WHERE DATE_SUB(SYSDATE(),INTERVAL 2 HOUR)>createDatetime " +
+					") AS a LEFT JOIN (SELECT deviceId,MAX(misstime) misstime  FROM missheartbeat AS bb GROUP BY bb.deviceId" +
+					") AS b ON a.deviceId =b.deviceId AND a.createDatetime=b.misstime " +
+					") AS c LEFT JOIN missheartbeat d ON c.createDatetime = d.misstime AND c.deviceId=d.deviceId";
 			
 	//		String  sql="select * FROM router WHERE DATEDIFF(SYSDATE(),STR_TO_DATE(time,'%a %b %d %h:%i:%s HKT %Y'))<=7;";
 			try {
+				conn = DBConnection.getConnection();
 				pst = conn.prepareStatement(sql);
+				pst.setInt(1, day);
 				rs=pst.executeQuery();
 				if(rs!=null){
 				while(rs.next()){
 					LassHeartbeat hearbeat=new LassHeartbeat();
+					hearbeat.setId(rs.getInt("id"));
 					hearbeat.setDeviceId(rs.getString("deviceId"));
-					if(rs.getTimestamp("ti")!=null){
-						hearbeat.setTime(new SimpleDateFormat("MM/dd/yyyy HH:mm:ss").format(rs.getTimestamp("ti")));
+					if(rs.getTimestamp("createDatetime")!=null){
+						hearbeat.setCreateDatetime(new SimpleDateFormat("MM/dd/yyyy HH:mm:ss").format(rs.getTimestamp("createDatetime")));
+					}
+					hearbeat.setCaseid(rs.getString("caseid"));
+					hearbeat.setCasedby(rs.getString("casedby"));
+					if(rs.getTimestamp("cleartime")!=null){
+						hearbeat.setCleartime(new SimpleDateFormat("MM/dd/yyyy HH:mm:ss").format(rs.getTimestamp("cleartime")));
 					}
 					list.add(hearbeat);
 				}
@@ -557,11 +588,12 @@ public class QueryData {
 	public List<Router> queryUnresolvedAlertHistory(){
 		
 		List<Router> list=new ArrayList<Router>();
-		Connection conn = DBConnection.getConnection();
+		Connection conn = null;
 		PreparedStatement pst = null;
 		ResultSet rs = null;
 		String  sql="select * FROM router WHERE level='1' and status=0 order by id desc;";
 		try {
+			conn = DBConnection.getConnection();
 			pst = conn.prepareStatement(sql);
 			rs=pst.executeQuery();
 			if(rs!=null){
@@ -620,6 +652,42 @@ public class QueryData {
 		
 	}
 	
+	
+	/**
+	 * Clear Router Case
+	 * @param id 记录ID
+	 * @param caseNum Case Number
+	 * @return
+	 */
+	public Router clearRouterInputCase(int id,String caseNum,String loginUsername){
+		
+		Router router=null;
+		if(id>=0 && loginUsername!=null && !"".equals(loginUsername.trim()) && caseNum!=null && !"".equals(caseNum.trim())){
+			Connection conn = null;
+			PreparedStatement pst = null;
+			String  sql="update router set caseid=?,status=?,casedby=? where id=?";
+			try {
+				conn = DBConnection.getConnection();
+				pst = conn.prepareStatement(sql);
+				pst.setString(1, caseNum.trim());
+				pst.setInt(2, 1);
+				pst.setString(3, loginUsername.trim());
+				pst.setInt(4, id);
+				int i=pst.executeUpdate();
+				if(i>0){
+					router=getRouterById(id);
+				}
+				
+			}catch (SQLException e) {
+				e.printStackTrace();
+			} finally{
+				DBConnection.free(null, null, pst, conn);
+			}	
+		}
+		return router;
+		
+	}
+	
 	/**
 	 * 通过ID查询Router记录
 	 * @param id
@@ -629,11 +697,12 @@ public class QueryData {
 		
 		Router router=null;
 		
-		Connection conn = DBConnection.getConnection();
+		Connection conn =null;
 		PreparedStatement pst = null;
 		ResultSet rs=null;
 		String  sql="select * from router where id=?";
 		try {
+			conn = DBConnection.getConnection();
 			pst = conn.prepareStatement(sql);
 			pst.setInt(1, id);
 			rs=pst.executeQuery();
@@ -659,6 +728,144 @@ public class QueryData {
 		}	
 		
 		return router;
+	}
+	
+	
+	
+	/**
+	 * Clear HeartBeat Case
+	 * @param deviceId
+	 * @param createDT
+	 * @param caseNum
+	 * @param loginUsername
+	 * @return
+	 */
+	public LassHeartbeat clearHBInputCase(String deviceId,String createDT,String caseNum,String loginUsername){
+		
+		LassHeartbeat hb=null;
+		if(deviceId!=null && !"".equals(deviceId.trim()) && createDT!=null && !"".equals(createDT.trim()) && loginUsername!=null && !"".equals(loginUsername.trim()) && caseNum!=null && !"".equals(caseNum.trim())){
+			Connection conn =null;
+			PreparedStatement pst = null;
+			String  sql="insert into missheartbeat(deviceId,misstime,caseid,casedby,cleartime) values(?,STR_TO_DATE(?,'%m/%d/%Y %k:%i:%s'),?,?,?)";
+			try {
+				conn = DBConnection.getConnection();
+				pst = conn.prepareStatement(sql);
+				pst.setString(1, deviceId.trim());
+				pst.setString(2, createDT.trim());
+				pst.setString(3, caseNum.trim());
+				pst.setString(4, loginUsername.trim());
+				pst.setString(5,  new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(new Date()).toString());
+				int i=pst.executeUpdate();
+				if(i>0){
+					hb=queryOneMissedHeartBeat(deviceId.trim(),createDT.trim());
+					if(hb==null){
+						deleteHBInputCase(deviceId.trim(), createDT.trim());
+					}
+				}
+				
+			}catch (SQLException e) {
+				e.printStackTrace();
+			} finally{
+				DBConnection.free(null, null, pst, conn);
+			}	
+		}
+		return hb;
+		
+	}
+	
+	
+	/**
+	 * 删除Cleared HeartBeat Case
+	 * @param deviceId
+	 * @param createDT
+	 * @param caseNum
+	 * @param loginUsername
+	 * @return
+	 */
+	public boolean deleteHBInputCase(String deviceId,String createDT){
+		
+		boolean flag=false;
+		if(deviceId!=null && !"".equals(deviceId.trim()) && createDT!=null && !"".equals(createDT.trim()) ){
+			Connection conn =null;
+			PreparedStatement pst = null;
+			String  sql="delete from missheartbeat where deviceId=?,misstime=STR_TO_DATE(?,'%m/%d/%Y %k:%i:%s')";
+			try {
+				conn = DBConnection.getConnection();
+				pst = conn.prepareStatement(sql);
+				pst.setString(1, deviceId.trim());
+				pst.setString(2, createDT.trim());
+				int i=pst.executeUpdate();
+				if(i>0){
+					flag=true;
+				}
+				
+			}catch (SQLException e) {
+				e.printStackTrace();
+			} finally{
+				DBConnection.free(null, null, pst, conn);
+			}	
+		}
+		return flag;
+		
+	}
+	
+	/**
+	 * 获得丢失心跳记录
+	 * @param day 天数
+	 * @return 丢失心跳记录
+	 */
+	public LassHeartbeat queryOneMissedHeartBeat(String deviceId,String createDatetime){
+		
+		LassHeartbeat hearbeat=null;
+		
+		if(deviceId!=null && !"".equals(deviceId.trim()) && createDatetime!=null && !"".equals(createDatetime.trim())){
+			
+			Connection conn = null;
+			PreparedStatement pst = null;
+			ResultSet rs = null;
+			String sql="";
+			
+			sql="select * from (SELECT c.id,c.deviceId,c.createDatetime,d.caseid,d.casedby,d.cleartime FROM (" +
+					"SELECT a.id,a.deviceId,a.createDatetime FROM(" +
+					"SELECT aa.id,aa.deviceId,aa.createDatetime FROM(" +
+					"SELECT id,deviceId,MAX(createDatetime) createDatetime FROM heartbeat GROUP BY deviceId" +
+					") AS aa WHERE DATE_SUB(SYSDATE(),INTERVAL 2 HOUR)>createDatetime " +
+					") AS a LEFT JOIN (SELECT deviceId,MAX(misstime) misstime  FROM missheartbeat AS bb GROUP BY bb.deviceId" +
+					") AS b ON a.deviceId =b.deviceId AND a.createDatetime=b.misstime " +
+					") AS c LEFT JOIN missheartbeat d ON c.createDatetime = d.misstime AND c.deviceId=d.deviceId ) mhb where mhb.deviceId=? and mhb.createDatetime=STR_TO_DATE(?,'%m/%d/%Y %k:%i:%s')";
+			
+	//		String  sql="select * FROM router WHERE DATEDIFF(SYSDATE(),STR_TO_DATE(time,'%a %b %d %h:%i:%s HKT %Y'))<=7;";
+			try {
+				conn = DBConnection.getConnection();
+				pst = conn.prepareStatement(sql);
+				pst.setString(1, deviceId.trim());
+				pst.setString(2, createDatetime.trim());
+				rs=pst.executeQuery();
+				if(rs!=null){
+					if(rs.next()){
+						hearbeat=new LassHeartbeat();
+						hearbeat.setId(rs.getInt("id"));
+						hearbeat.setDeviceId(rs.getString("deviceId"));
+						if(rs.getTimestamp("createDatetime")!=null){
+							hearbeat.setCreateDatetime(new SimpleDateFormat("MM/dd/yyyy HH:mm:ss").format(rs.getTimestamp("createDatetime")));
+						}
+						hearbeat.setCaseid(rs.getString("caseid"));
+						hearbeat.setCasedby(rs.getString("casedby"));
+						if(rs.getTimestamp("cleartime")!=null){
+							hearbeat.setCleartime(new SimpleDateFormat("MM/dd/yyyy HH:mm:ss").format(rs.getTimestamp("cleartime")));
+						}
+						
+					}
+				}
+			}catch (SQLException e) {
+				e.printStackTrace();
+			} finally{
+				DBConnection.free(rs, null, pst, conn);
+			}	
+		
+		}
+		
+		return hearbeat;
 	}
 	
 }

@@ -2,6 +2,8 @@ package Editor;
 
 import java.util.List;
 
+import javax.swing.text.AbstractDocument.LeafElement;
+
 import org.eclipse.core.runtime.IProgressMonitor;
 import org.eclipse.jface.dialogs.MessageDialog;
 import org.eclipse.rwt.internal.widgets.JSExecutor;
@@ -264,6 +266,16 @@ public class DashBoard_history extends EditorPart{
 		composite_3.setLayout(new FormLayout());
 				
 		table_1 = new Table(composite_3, SWT.BORDER | SWT.FULL_SELECTION);
+		table_1.addSelectionListener(new SelectionAdapter() {
+			@Override
+			public void widgetSelected(SelectionEvent e) {
+				
+				if(e.item!=null){
+					addButtonToHBTable((TableItem)e.item);
+				}
+				
+			}
+		});
 		FormData fd_table_1 = new FormData();
 		fd_table_1.bottom = new FormAttachment(100);
 		fd_table_1.top = new FormAttachment(0);
@@ -304,10 +316,22 @@ public class DashBoard_history extends EditorPart{
 	 */
 	private void fillTable() {
 		table_1.removeAll();
+		
+		//ÒÆ³ý±à¼­Æ÷
+		Control oldEditor1=hbTable_caseEditor.getEditor();
+		if(oldEditor1!=null && !oldEditor1.isDisposed()){
+			oldEditor1.dispose();
+		}
+		
 		for(int i=0;i<missedHBList.size();i++){
 			LassHeartbeat hb = (LassHeartbeat)missedHBList.get(i);
 			TableItem ti = new TableItem(table_1,SWT.NONE);
-			ti.setText(new String[]{hb.getDeviceId(),hb.getTime(),""});
+			ti.setText(new String[]{hb.getDeviceId(),hb.getCreateDatetime(),""});
+			if(hb.getCaseid()!=null && !"".equals(hb.getCaseid().trim())){
+				ti.setText(2,"Case:"+hb.getCaseid().trim()+" "+(hb.getCasedby()==null?"":hb.getCasedby().trim()));
+			}else{
+				ti.setText(2,"n/a (low level alert)");
+			}
 			ti.setData(hb);
 		}
 		
@@ -498,12 +522,12 @@ public class DashBoard_history extends EditorPart{
 	 * ÎªÐÄÌøtableÌí¼Ó±à¼­Æ÷
 	 * @param tableItem ËùÑ¡Ïî
 	 */
-	private void addButtonToHBTable(TableItem tableItem){
+	private void addButtonToHBTable(final TableItem tableItem){
 		
 		if(tableItem!=null){
 			
-			final Router router=(Router) tableItem.getData();
-			if(router!=null){
+			final LassHeartbeat hb=(LassHeartbeat) tableItem.getData();
+			if(hb!=null){
 				
 				//ÇåÀí¾ÉµÄ±à¼­Æ÷
 				Control oldEditor1=hbTable_caseEditor.getEditor();
@@ -512,7 +536,7 @@ public class DashBoard_history extends EditorPart{
 	  			}
 	  			
 	  			//Î´ClearµÄÏÔÊ¾ClearÒ³Ãæ
-	  			if(router.getStatus()==0){
+	  			if(hb.getCaseid()==null || (hb.getCaseid()!=null && "".equals(hb.getCaseid().trim()))){
 		  			//clearÃæ°å 
 		  			Composite clearComp=new Composite(table_1, SWT.NONE);
 		  			clearComp.setLayout(new FormLayout());
@@ -540,8 +564,19 @@ public class DashBoard_history extends EditorPart{
 							if(loginUser!=null){
 								if(!"".equals(caseText.getText().trim())){
 									QueryData qd=new QueryData();
-									if(qd.clearInputCase(router.getId(), caseText.getText().trim(),loginUser.getUsername().trim())!=null){
-										fillTable();
+									LassHeartbeat newHB=qd.clearHBInputCase(hb.getDeviceId().trim(), hb.getCreateDatetime().trim(), caseText.getText().trim(),loginUser.getUsername().trim());
+									if(newHB!=null){
+										if(newHB.getCaseid()!=null && !"".equals(newHB.getCaseid().trim())){
+											tableItem.setText(2,"Case:"+newHB.getCaseid().trim()+" "+(newHB.getCasedby()==null?"":newHB.getCasedby().trim()));
+										}else{
+											tableItem.setText(2,"n/a (low level alert)");
+										}
+										tableItem.setData(newHB);
+										//Çå³ý±à¼­Æ÷
+										Control oldEditor2=hbTable_caseEditor.getEditor();
+							  			if(oldEditor2!=null){
+							  				oldEditor2.dispose();
+							  			}
 									}else{
 										MessageDialog.openError(getSite().getShell(), "Clear", "Clear Fail!");
 									}
