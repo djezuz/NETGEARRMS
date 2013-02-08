@@ -391,51 +391,26 @@ public class DashBoard_history extends EditorPart{
 	  				oldEditor2.dispose();
 	  			}
 	  			
-	  			
-	  			final Button caseButton = new Button(table, SWT.NONE);
-	  			caseButton.setText("new case");
-	  			caseButton.pack();
-	  			caseButton.addSelectionListener(new SelectionAdapter() {
-					public void widgetSelected(SelectionEvent e) {
-						System.out.println("case Click Me!!");
-						
-						JSExecutor.executeJS("window.open('https://fred.netgear.com/');");
-//						try {
-//							
-							
-//							final StringBuffer url = new StringBuffer();
-//						    url.append( RWT.getRequest().getContextPath() );
-//						    url.append( RWT.getRequest().getServletPath() );
-//						    url.append( "?" );
-//						    url.append( IServiceHandler.REQUEST_PARAM ).append( "=" ).append( "netgear" );
-//							
-//							RWT.getServiceManager().registerServiceHandler("netgear",new IServiceHandler() {
-//								public void service() throws IOException, ServletException {
-//									HttpServletResponse response=RWT.getResponse();
-//									OutputStream out=response.getOutputStream();
-//									
-//									out.write("<script>window.open('https://fred.netgear.com/')</script>".getBytes());
-//									out.flush();
-//								}
-//							});
-//
-//							Browser brower=new Browser(Display.getCurrent().getActiveShell(),SWT.NONE);
-//							brower.setUrl(url.toString());
-//				        	
-//						} catch (Exception e1) {
-//							// TODO Auto-generated catch block
-//							e1.printStackTrace();
-//						}
-					}
-					
-					
-				});
-	  			routerTable_caseEditor.minimumWidth=caseButton.getSize().x;
-	  			routerTable_caseEditor.horizontalAlignment = SWT.RIGHT;
-	  			routerTable_caseEditor.setEditor(caseButton, tableItem, 0);
-	  			
 	  			//未Clear的显示Clear页面
 	  			if(router.getStatus()==0){
+	  			
+		  			final Button caseButton = new Button(table, SWT.NONE);
+		  			caseButton.setText("new case");
+		  			caseButton.pack();
+		  			caseButton.addSelectionListener(new SelectionAdapter() {
+						public void widgetSelected(SelectionEvent e) {
+							System.out.println("case Click Me!!");
+							
+							JSExecutor.executeJS("window.open('https://fred.netgear.com/');");
+	//						
+						}
+						
+						
+					});
+		  			routerTable_caseEditor.minimumWidth=caseButton.getSize().x;
+		  			routerTable_caseEditor.horizontalAlignment = SWT.RIGHT;
+		  			routerTable_caseEditor.setEditor(caseButton, tableItem, 0);
+	  			
 		  			//clear面板 
 		  			Composite clearComp=new Composite(table, SWT.NONE);
 		  			clearComp.setLayout(new FormLayout());
