@@ -8,6 +8,7 @@ import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Date;
 import java.util.List;
+import java.util.Locale;
 
 import com.entity.HeartBeat;
 import com.util.DBConnection;
@@ -25,14 +26,22 @@ public class Mydesign {
 		PreparedStatement pst = null;
 		ResultSet rs = null;
 		int xx = 0;
-		String sql = "insert into  router(serial,level,message,time,clearedBy) values(?,?,?,?,?)";
+		String sql = "insert into  router(serial,level,message,time,clearedBy,status) values(?,?,?,?,?,?)";
 		try {
 			pst = conn.prepareStatement(sql);
 			pst.setString(1, serial_1);
 			pst.setString(2, level_1);
 			pst.setString(3, message_1);
-			pst.setString(4, time_1);
+			String time="";
+			try{
+				Date date=new SimpleDateFormat("EEE MMM dd HH:mm:ss z yyyy",Locale.ENGLISH).parse(time_1.trim());
+				time=new SimpleDateFormat("yyyy-MM-dd HH:mm:ss").format(date);
+			}catch(Exception ex){
+				ex.printStackTrace();
+			}
+			pst.setString(4, time);
 			pst.setString(5, clearedBy_1);
+			pst.setInt(6, 0);
 			xx = pst.executeUpdate();
 
 		} catch (SQLException e) {

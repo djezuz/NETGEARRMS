@@ -44,6 +44,7 @@ public class LoginImpl implements Login{
 		if (log_value.equals("")) {
 			if (mydesign != null) {
 				mydesign.finsh();
+				mydesign=null;
 			}
 			System.out.println("~~~~~~no date done!");
 			return "FALSE";
@@ -70,6 +71,7 @@ public class LoginImpl implements Login{
 			mydesign.login(serial_1, level_1, message_1, time_1, clearedBy_1);
 		}
 		mydesign.finsh();
+		mydesign=null;
 		return "TRUE";
 	}
 	
