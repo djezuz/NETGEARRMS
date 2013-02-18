@@ -2,7 +2,7 @@ Manifest-Version: 1.0
 Bundle-ManifestVersion: 2
 Bundle-Name: _ReadyNAS_RMS
 Bundle-SymbolicName: _ReadyNAS_RMS
-Bundle-Version: 3.1.2
+Bundle-Version: 3.1.5
 Bundle-Activator: _readynas_rms.Activator
 Import-Package: javax.naming,
  javax.xml.parsers,

@@ -40,13 +40,36 @@ public class MyTimer extends TimerTask {
 		// Random i = new Random();
 		// int j = i.nextInt(5);
 
+		if("Not found".equals(seriallist.get(0))){
+			//取序列号值
+			try {
+	            Process process = Runtime.getRuntime().exec(" grep serial /proc/sys/dev/boot/info");
+	            InputStreamReader ir = new InputStreamReader(process.getInputStream());
+	            LineNumberReader input = new LineNumberReader(ir);
+	            String line;
+	            while ((line = input.readLine()) != null) {
+	                String endlog=line.trim();
+	                endlog=  endlog.substring(endlog.indexOf(":")+1,endlog.length()).trim();
+	                MyTimer.seriallist.add(endlog);
+	                System.out.println("run cmd value=============="+endlog);
+	                break;
+	            }
+	        } catch (java.io.IOException e) {
+//	            System.err.println("IOException " + e.getMessage());
+	        	MyTimer.seriallist.add("Not found");
+	        	return "";
+	        }
+		}
+		
 		String serial_no = seriallist.get(0);
 
 		String sussessvalue = parse(str0, str1, str).toString();
 		String rec = "";
 		System.out.println("call start:" + serial_no);
 //		String url = "http://192.168.9.123:8082/server/services/login";
-		String url = "http://10.1.1.136:8080/server/services/login";
+//		String url = "http://10.1.1.136:8080/server/services/login";
+//		String url = "http://10.100.1.73:8080/server/services/login";
+		String url="http://rnasmon.netgear.com/server/services/login";
 		Service service;
 		Call call;
 		try {
