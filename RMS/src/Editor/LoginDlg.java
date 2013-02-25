@@ -2,18 +2,18 @@ package Editor;
 
 import org.eclipse.jface.dialogs.Dialog;
 import org.eclipse.jface.dialogs.IDialogConstants;
-import org.eclipse.jface.dialogs.MessageDialog;
+import org.eclipse.jface.dialogs.TitleAreaDialog;
 import org.eclipse.swt.SWT;
+import org.eclipse.swt.graphics.Image;
 import org.eclipse.swt.graphics.Point;
+import org.eclipse.swt.widgets.Button;
 import org.eclipse.swt.widgets.Composite;
 import org.eclipse.swt.widgets.Control;
+import org.eclipse.swt.widgets.Display;
+import org.eclipse.swt.widgets.Label;
 import org.eclipse.swt.widgets.MessageBox;
 import org.eclipse.swt.widgets.Shell;
-import org.eclipse.swt.widgets.Label;
 import org.eclipse.swt.widgets.Text;
-import org.eclipse.swt.widgets.Button;
-import org.eclipse.swt.events.SelectionAdapter;
-import org.eclipse.swt.events.SelectionEvent;
 
 import com.entity.LoginUser;
 import com.wsclient.LoginServer;
@@ -30,7 +30,10 @@ public class LoginDlg extends Dialog {
 	 */
 	public LoginDlg(Shell parentShell) {
 		super(parentShell);
+		
 	}
+	
+	
 
 	/**
 	 * Create contents of the dialog.
@@ -38,6 +41,7 @@ public class LoginDlg extends Dialog {
 	 */
 	@Override
 	protected Control createDialogArea(Composite parent) {
+		
 		Composite container = (Composite) super.createDialogArea(parent);
 		container.setLayout(null);
 		
@@ -57,6 +61,8 @@ public class LoginDlg extends Dialog {
 		password.setBounds(94, 97, 226, 24);
 		password.setText("Netgear-123");
 
+//		this.setTitleImage(ResourceManager.getPluginImage("RMS", "icons/alt_launcher.ico"));
+		
 		return container;
 	}
 
@@ -103,14 +109,17 @@ public class LoginDlg extends Dialog {
 	 */
 	@Override
 	protected Point getInitialSize() {
-		return new Point(360, 327);
+		return new Point(396, 300);
 	}
+	
 	
 	@Override  
 	protected void configureShell(Shell newShell) {  
 	    // TODO Auto-generated method stub  
 	    super.configureShell(newShell);  
 	    newShell.setText("RMS LOGIN");
+	    newShell.setImage(new Image(Display.getCurrent(), this.getClass().getResourceAsStream("/icons/logo.png")));
+//	    newShell.
 	}
 	@Override  
 	protected void setShellStyle(int newShellStyle) {  

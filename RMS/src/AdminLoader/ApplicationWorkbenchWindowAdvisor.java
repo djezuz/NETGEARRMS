@@ -2,7 +2,10 @@ package AdminLoader;
 
 import java.util.List;
 
+import org.eclipse.swt.SWT;
+import org.eclipse.swt.graphics.Image;
 import org.eclipse.swt.graphics.Point;
+import org.eclipse.swt.widgets.Display;
 import org.eclipse.ui.PartInitException;
 import org.eclipse.ui.PlatformUI;
 import org.eclipse.ui.application.ActionBarAdvisor;
@@ -45,13 +48,17 @@ public class ApplicationWorkbenchWindowAdvisor extends WorkbenchWindowAdvisor {
         configurer.setShowMenuBar(false);
         configurer.setShowStatusLine(false);
         configurer.setTitle("ReadyNAS Monitoring System"); //$NON-NLS-1$
+        configurer.setShellStyle(SWT.TITLE);
        
     }
 public void postWindowOpen() {
 	PlatformUI.getWorkbench().getActiveWorkbenchWindow().getShell().setMaximized(true);
+	PlatformUI.getWorkbench().getActiveWorkbenchWindow().getShell().setMinimized(false);
+	PlatformUI.getWorkbench().getActiveWorkbenchWindow().getShell().setImage(new Image(Display.getCurrent(), this.getClass().getResourceAsStream("/icons/logo.png")));
 		try {
 			
 			if(loginUser!=null){
+				
 				PlatformUI
 				.getWorkbench()
 				.getActiveWorkbenchWindow()

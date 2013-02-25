@@ -68,7 +68,6 @@ public class DashBoard_alters extends EditorPart {
 		this.setInput(input);
 		this.setPartName(input.getName());
 		
-		
 	}
 
 	@Override

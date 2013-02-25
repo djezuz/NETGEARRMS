@@ -4,6 +4,7 @@ import org.eclipse.equinox.app.IApplication;
 import org.eclipse.jface.dialogs.Dialog;
 import org.eclipse.rwt.lifecycle.IEntryPoint;
 import org.eclipse.swt.SWT;
+import org.eclipse.swt.graphics.Image;
 import org.eclipse.swt.widgets.Display;
 import org.eclipse.swt.widgets.Event;
 import org.eclipse.swt.widgets.Listener;
