@@ -59,7 +59,7 @@ public class LoginDlg extends Dialog {
 		
 		password = new Text(container, SWT.BORDER | SWT.PASSWORD);
 		password.setBounds(94, 97, 226, 24);
-		password.setText("Netgear-123");
+		password.setText("");
 
 //		this.setTitleImage(ResourceManager.getPluginImage("RMS", "icons/alt_launcher.ico"));
 		
@@ -118,6 +118,7 @@ public class LoginDlg extends Dialog {
 	    // TODO Auto-generated method stub  
 	    super.configureShell(newShell);  
 	    newShell.setText("RMS LOGIN");
+//	    System.out.println("-->"+this.getClass().getResource("/icons/logo.png").getPath());
 	    newShell.setImage(new Image(Display.getCurrent(), this.getClass().getResourceAsStream("/icons/logo.png")));
 //	    newShell.
 	}
